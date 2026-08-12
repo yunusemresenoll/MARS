@@ -1,0 +1,30 @@
+{
+  "dataset_id": "mars.mro.rss.jgmro-120f",
+  "source_id": "nasa-pds-jgmro-120f-2020",
+  "target": "Mars",
+  "processing_state": "ARCHIVED_DERIVED",
+  "products": [
+    {
+      "product_id": "jgmro_120f_sha",
+      "property_id": "gravity.cosine_harmonic_coefficient",
+      "data_path": "resources/archive/nasa-pds-mro120f-gravity/jgmro_120f_sha.tab",
+      "label_path": "resources/archive/nasa-pds-mro120f-gravity/jgmro_120f_sha.lbl",
+      "record_count_method": "FIXED_BYTES",
+      "record_bytes": 122,
+      "records": 7382,
+      "canonical_source_unit": "1",
+      "structure": {
+        "model_name": "MRO120F",
+        "maximum_degree": 120,
+        "maximum_order": 120,
+        "normalization": "FULLY_NORMALIZED",
+        "coefficient_rows": 7380,
+        "coefficients_per_row": ["C", "S", "sigma_C", "sigma_S"],
+        "reference_radius_km": 3396.0,
+        "static_field": true
+      },
+      "observation_period": "Radio-tracking inputs spanning 1976-07-21 through 2019-08-09; mission-specific intervals are in the label",
+      "notes": "The PDS file contains 7,382 fixed-length physical records: a two-record header representation followed by 7,380 harmonic rows."
+    }
+  ]
+}

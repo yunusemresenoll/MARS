@@ -1,0 +1,202 @@
+PDS_VERSION_ID = PDS3
+RECORD_TYPE   = FIXED_LENGTH
+RECORD_BYTES  = 461
+FILE_RECORDS  = 18276
+^INDEX_TABLE  = "INDEX.TAB"
+MISSION_NAME                  = "MARS SCIENCE LABORATORY"
+PRODUCER_INSTITUTION_NAME     = "CENTRO DE ASTROBIOLOGIA"
+DESCRIPTION                   = "This index file lists information
+                                 about each of the RDR data products
+                                 contained on this archive volume."
+
+OBJECT                        = INDEX_TABLE
+  INTERCHANGE_FORMAT          = ASCII
+  ROW_BYTES                   = 461
+  ROWS                        = 18276
+  COLUMNS                     = 17
+  INDEX_TYPE                  = SINGLE
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 1
+    NAME                      = VOLUME_ID
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 2
+    BYTES                     = 11
+    DESCRIPTION               = "The volume on which this product is
+                                 stored."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 2
+    NAME                      = DATA_SET_ID
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 16
+    BYTES                     = 40
+    DESCRIPTION               = "A unique identifier for the dataset."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 3
+    NAME                      = INSTRUMENT_HOST_ID
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 59
+    BYTES                     = 4
+    DESCRIPTION               = "The identifier for the host on which the
+                                 instrument is based."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 4
+    NAME                      = INSTRUMENT_ID
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 66
+    BYTES                     = 18
+    DESCRIPTION               = "The instrument identifier."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 5
+    NAME                      = PATH_NAME
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 87
+    BYTES                     = 65
+    DESCRIPTION               = "The full directory path to the file
+                                 relative to the volume root
+                                 directory."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 6
+    NAME                      = FILE_NAME
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 155
+    BYTES                     = 40
+    DESCRIPTION               = "The name of the data product file
+                                 and attached PDS label."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 7
+    NAME                      = RELEASE_ID
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 198
+    BYTES                     = 4
+    DESCRIPTION               = "Specifies the unique identifier
+                                 associated with a specific release
+                                 of a data set."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 8
+    NAME                      = PRODUCT_ID
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 205
+    BYTES                     = 40
+    DESCRIPTION               = "Unique identifier for this product."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 9
+    NAME                      = PRODUCT_CREATION_TIME
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 248
+    BYTES                     = 23
+    DESCRIPTION               = "UTC date and time that this product
+                                 was created, in the format
+                                 yyyy-mm-ddThh:mm:ssZ."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 10
+    NAME                      = TARGET_NAME
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 274
+    BYTES                     = 6
+    DESCRIPTION               = "Planetary body that is the target of
+                                 the observation."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 11
+    NAME                      = MISSION_PHASE_NAME
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 283
+    BYTES                     = 30
+    DESCRIPTION               = "Mission phase during which data
+                                 were acquired."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 12
+    NAME                      = PLANET_DAY_NUMBER
+    DATA_TYPE                 = ASCII_INTEGER
+    START_BYTE                = 315
+    BYTES                     = 4
+    FORMAT                    = "I4"
+    DESCRIPTION               = "Specifies the number of sidereal days
+                                 (rotation of 360 degrees) elapsed since
+                                 a reference day (e.g., the day on which
+                                 the landing vehicle set down). Days are
+                                 measured in rotations of the planet
+                                 from the reference day."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 13
+    NAME                      = START_TIME
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 321
+    BYTES                     = 23
+    DESCRIPTION               = "UTC date and time at the start of
+                                 data acquisition for this product,
+                                 in the format
+                                 yyyy-mm-ddThh:mm:ssZ."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 14
+    NAME                      = STOP_TIME
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 347
+    BYTES                     = 23
+    DESCRIPTION               = "UTC date and time at the end of
+                                 data acquisition for this product,
+                                 in the format 
+                                 yyyy-mm-ddThh:mm:ssZ."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 15
+    NAME                      = SPACECRAFT_CLOCK_START_COUNT
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 373
+    BYTES                     = 30
+    DESCRIPTION               = "Specifies the value of the spacecraft
+                                 clock at the beginning of a time
+                                 period of interest."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 16
+    NAME                      = SPACECRAFT_CLOCK_STOP_COUNT
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 406
+    BYTES                     = 30
+    DESCRIPTION               = "Specifies the value of the spacecraft
+                                 clock at the end of a time period of
+                                 interest."
+  END_OBJECT                  = COLUMN
+
+  OBJECT                      = COLUMN
+    COLUMN_NUMBER             = 17
+    NAME                      = OBSERVATION_ID
+    DATA_TYPE                 = CHARACTER
+    START_BYTE                = 439
+    BYTES                     = 20
+    DESCRIPTION               = "Unique identifier for a scientific
+                                 observation within a data set."
+  END_OBJECT                  = COLUMN
+
+END_OBJECT                    = INDEX_TABLE
+
+END

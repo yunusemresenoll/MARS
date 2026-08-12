@@ -1,0 +1,111 @@
+{
+  "dataset_id": "mars.maven.ngims.reference",
+  "dataset_version": "0.1.0",
+  "record_count": 8,
+  "records": [
+    {
+      "record_id": "mars.atmosphere.ngims-l2-20260217.inventory-count",
+      "property_id": "atmosphere.ngims_l2_collection_record_count",
+      "status": "DERIVED",
+      "value": 33583,
+      "unit": "count",
+      "location": {"scope": "ARCHIVE", "collection_lid": "urn:nasa:pds:maven_ngims:l2"},
+      "time": {"temporal_scope": "ARCHIVE_BUILD", "published_at": "2026-02-17"},
+      "uncertainty": {"kind": "EXACT_FOR_ARCHIVED_PRODUCT"},
+      "source_id": "nasa-pds-maven-ngims-l2-v8.0-l3-samples",
+      "source_locator": "collection_ngims_l2_inventory.xml records=33583 and CSV line count",
+      "notes": "Yereldeki L2 bilim ürünü sayısı değildir."
+    },
+    {
+      "record_id": "mars.atmosphere.ngims-l3-20260217.inventory-count",
+      "property_id": "atmosphere.ngims_l3_collection_record_count",
+      "status": "DERIVED",
+      "value": 27606,
+      "unit": "count",
+      "location": {"scope": "ARCHIVE", "collection_lid": "urn:nasa:pds:maven_ngims:l3"},
+      "time": {"temporal_scope": "ARCHIVE_BUILD", "published_at": "2026-02-17"},
+      "uncertainty": {"kind": "EXACT_FOR_ARCHIVED_PRODUCT"},
+      "source_id": "nasa-pds-maven-ngims-l2-v8.0-l3-samples",
+      "source_locator": "collection_ngims_l3_inventory.xml records=27606 and CSV line count",
+      "notes": "Yereldeki L3 bilim ürünü sayısı değildir."
+    },
+    {
+      "record_id": "mars.atmosphere.ngims-tid63116.neutral-row-count",
+      "property_id": "atmosphere.ngims_l2_neutral_sample_count",
+      "status": "DERIVED",
+      "value": 4254,
+      "unit": "count",
+      "location": {"scope": "DATASET", "tid": 63116, "orbit": 24808},
+      "time": {"temporal_scope": "PRODUCT", "start_utc": "2025-11-15T00:00:54Z", "stop_utc": "2025-11-15T01:32:13Z"},
+      "uncertainty": {"kind": "EXACT_FOR_ARCHIVED_PRODUCT"},
+      "source_id": "nasa-pds-maven-ngims-l2-v8.0-l3-samples",
+      "source_locator": "mvn_ngi_l2_csn-abund-63116 XML Table_Delimited records=4254",
+      "notes": null
+    },
+    {
+      "record_id": "mars.ionosphere.ngims-tid63116.ion-row-count",
+      "property_id": "ionosphere.ngims_l2_ion_sample_count",
+      "status": "DERIVED",
+      "value": 3355,
+      "unit": "count",
+      "location": {"scope": "DATASET", "tid": 63116, "orbit": 24808},
+      "time": {"temporal_scope": "PRODUCT", "start_utc": "2025-11-15T00:00:54Z", "stop_utc": "2025-11-15T01:32:13Z"},
+      "uncertainty": {"kind": "EXACT_FOR_ARCHIVED_PRODUCT"},
+      "source_id": "nasa-pds-maven-ngims-l2-v8.0-l3-samples",
+      "source_locator": "mvn_ngi_l2_ion-abund-63116 XML Table_Delimited records=3355",
+      "notes": null
+    },
+    {
+      "record_id": "mars.atmosphere.ngims-tid14934.resampled-density-row-count",
+      "property_id": "atmosphere.ngims_l3_density_sample_count",
+      "status": "DERIVED",
+      "value": 362,
+      "unit": "count",
+      "location": {"scope": "DATASET", "tid": 14934, "orbit": 717},
+      "time": {"temporal_scope": "PRODUCT", "start_utc": "2015-02-11T20:35:08Z", "stop_utc": "2015-02-11T22:19:26Z"},
+      "uncertainty": {"kind": "EXACT_FOR_ARCHIVED_PRODUCT"},
+      "source_id": "nasa-pds-maven-ngims-l2-v8.0-l3-samples",
+      "source_locator": "mvn_ngi_l3_res-den-14934 XML Table_Delimited records=362",
+      "notes": null
+    },
+    {
+      "record_id": "mars.atmosphere.ngims-tid14934.scale-height-row-count",
+      "property_id": "atmosphere.ngims_l3_temperature_sample_count",
+      "status": "DERIVED",
+      "value": 6,
+      "unit": "count",
+      "location": {"scope": "DATASET", "tid": 14934, "orbit": 717},
+      "time": {"temporal_scope": "PRODUCT", "start_utc": "2015-02-11T20:35:08Z", "stop_utc": "2015-02-11T22:19:26Z"},
+      "uncertainty": {"kind": "EXACT_FOR_ARCHIVED_PRODUCT"},
+      "source_id": "nasa-pds-maven-ngims-l2-v8.0-l3-samples",
+      "source_locator": "mvn_ngi_l3_res-sht-14934 XML Table_Delimited records=6",
+      "notes": "Beş satırda uyum sonucu vardır; He satırı boş ve quality=na'dır."
+    },
+    {
+      "record_id": "mars.atmosphere.ngims.instrument-mass-range",
+      "property_id": "atmosphere.ngims_instrument_mass_range",
+      "status": "MEASURED",
+      "value": {"lower": 2, "upper": 150},
+      "unit": "Da",
+      "location": {"scope": "INSTRUMENT", "instrument": "MAVEN NGIMS"},
+      "time": {"temporal_scope": "TIME_INVARIANT"},
+      "uncertainty": {"kind": "NOT_AVAILABLE", "note": "Cihaz tasarım aralığıdır."},
+      "source_id": "nasa-pds-maven-ngims-l2-v8.0-l3-samples",
+      "source_locator": "ngims_pds_sis_v03_r01.pdf, section 3.1 and Table 1",
+      "notes": null
+    },
+    {
+      "record_id": "mars.atmosphere.ngims.nominal-mass-resolution",
+      "property_id": "atmosphere.ngims_unit_mass_resolution",
+      "status": "MEASURED",
+      "value": 1,
+      "unit": "Da",
+      "location": {"scope": "INSTRUMENT", "instrument": "MAVEN NGIMS"},
+      "time": {"temporal_scope": "TIME_INVARIANT"},
+      "uncertainty": {"kind": "QUALITATIVE", "note": "SIS 'unit mass resolution' olarak bildirir."},
+      "source_id": "nasa-pds-maven-ngims-l2-v8.0-l3-samples",
+      "source_locator": "ngims_pds_sis_v03_r01.pdf, section 3.1 and Table 1",
+      "notes": "Nominal cihaz çözünürlüğüdür; her kütle kanalının kimyasal olarak benzersiz olduğu anlamına gelmez."
+    }
+  ]
+}

@@ -1,0 +1,611 @@
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 1
+        NAME            = "TIMESTAMP"
+        UNIT            = "SECOND"
+        DESCRIPTION     = "Number of seconds since noon 1-Jan-2000"
+        DATA_TYPE       = ASCII_INTEGER
+        START_BYTE      = 1
+        BYTES           = 10
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 2
+        NAME            = "LMST"
+        DESCRIPTION     = "Local Mean Solar Time. It is in the format
+                           SSSSSMHH:MM:SS.sss where:
+                           SS  - Sol number (00000-99999)
+                           M   - sol/time separator
+                           HH  - hour (0-23)
+                           MM  - minute (0-59)
+                           SS  - second (0-59)
+                           sss - fractions of second (000-999)"
+        DATA_TYPE       = CHARACTER
+        START_BYTE      = 13
+        BYTES           = 18
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 3
+        NAME            = "LTST"
+        DESCRIPTION     = "Local True Solar Time with respect to the 
+                           rover position. It is in the format 
+                           SSSSS HH:MM:SS.sss where:
+                           SS  - Sol number (00000-99999)
+                           HH  - hour (0-23)
+                           MM  - minute (0-59)
+                           SS  - second (0-59)"
+        DATA_TYPE       = CHARACTER
+        START_BYTE      = 34
+        BYTES           = 14
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 4
+        NAME            = "HORIZONTAL_WIND_SPEED"
+        UNIT            = "METERS/SECOND"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "The horizontal wind direction refers to the 
+                           local incoming direction of wind and it is 
+                           defined clockwise w.r.t. North"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 50
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 5
+        NAME            = "VERTICAL_WIND_SPEED"
+        UNIT            = "METERS/SECOND"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "The vertical wind speed, is the wind speed along
+                           the vector defined by the local gravity"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 58
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 6
+        NAME            = "WIND_DIRECTION"
+        UNIT            = "DEGREE"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "The wind direction refers to the local incoming 
+                           direction of wind and it is defined clockwise 
+                           w.r.t. North"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 66
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 7
+        NAME            = "WS_CONFIDENCE_LEVEL"
+        DESCRIPTION     = "String representing the confidence level for 
+                           the wind sensor; 0 = bad; 1 = good; X = unknown;
+                           (byte 0 is on the left end)
+                           - Byte 0: ASIC temperature; 
+                             0 = less than -50C;  
+                             1 = more than -50C;
+                           - Byte 1: ASIC noise; 
+                             0 = electronic noise (warning);
+                             1 = no electronic noise;
+                           - Byte 2: Rover movement; 
+                             0 = moving; 
+                             1 = still;
+                           - Byte 3: Wind Sensor correctly configured based 
+                             on air temperature;
+                             0 = wrong configuration;
+                             1 = good configuration;
+                           - Byte 4: Wind direction;
+                             0 = rear wind;
+                             1 = front wind;
+                           - Byte 5: Wind observation reliability;
+                             0 = preliminary;
+                             1 = reliable;"
+        DATA_TYPE       = CHARACTER
+        START_BYTE      = 75
+        BYTES           = 8
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 8
+        NAME            = "BRIGHTNESS_TEMP"
+        UNIT            = "KELVIN"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Brightness temperature"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 85
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 9
+        NAME            = "BRIGHTNESS_TEMP_LONG_TERM_UNCERTAINTY"
+        UNIT            = "KELVIN"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Absolute systematic uncertainty of the 
+                           brightness temperature"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 93
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 10
+        NAME            = "BRIGHTNESS_TEMP_SHORT_TERM_UNCERTAINTY"
+        UNIT            = "KELVIN"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Relative systematic uncertainty of the 
+                           brightness temperature"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 101
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 11
+        NAME            = "GTS_CONFIDENCE_LEVEL"
+        DESCRIPTION     = "String representing the GTS confidence level; 
+                           0 = bad; 1 = good; X = unknown; (byte 0 is on the
+                           left end)
+                           - Byte 0: ASIC power supply range; 
+                             0 = out of range; 
+                             1 = in range (V = [4.87 - 4.97]);
+                           - Byte 1: GTS recalibration quality; 
+                             0 = low quality; 
+                             1 = high quality; 
+                           - Byte 2: Rover movement; 
+                             0 = moving; 
+                             1 = still;
+                           - Byte 3: Shadow in GTS Field of View
+                             0 = full or partial shadow;
+                             1 = no shadow;"
+        DATA_TYPE       = CHARACTER
+        START_BYTE      = 110
+        BYTES           = 8
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 12
+        NAME            = "BOOM1_LOCAL_AIR_TEMP"
+        UNIT            = "KELVIN"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Local temperature for boom 1"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 120
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 13
+        NAME            = "ATS_BOOM1_CONFIDENCE_LEVEL"
+        DESCRIPTION     = "String representing the boom 1 ATS confidence 
+                           level; 0 = bad; 1 = good; X = unknown; (byte 0 is
+                           on the left end)
+                           - Byte 0: ASIC temperature; 
+                             0 = less than -50C; 
+                             1 = more than -50C;
+                           - Byte 1: Wind Sensor status; 
+                             0 = WS off; 
+                             1 = WS on;
+                           - Byte 2: ASIC power supply range; 
+                             0 = out of range; 
+                             1 = in range (valid ranges: 
+                             [4.71 - 4.79], [4.82 - 4.98], [5.11 - 5.19]);
+                           - Byte 3: Wind speed; 
+                             0 = wind speed > TBD; 
+                             1 = wind speed < TBD;
+                           - Byte 4: Wind direction with respect to 
+                             each boom; 
+                             0 = from RTG or rover desk; 
+                             1 = free to rover perturbation;
+                           - Byte 5: Shadow;
+                             0 = no shadow or partial shadow in tip or 
+                                 intermediate sensors;
+                             1 = total shadow in both sensors or at night;
+                           - Byte 6: Boom in shadow;
+                             0 = no shadow or partial shadow; 
+                             1 = total shadow or at night;
+                           - Byte 7: Observation reliability;
+                             0 = unreliable; 
+                             1 = reliable;"
+        DATA_TYPE       = CHARACTER
+        START_BYTE      = 129
+        BYTES           = 8
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 14
+        NAME            = "BOOM2_LOCAL_AIR_TEMP"
+        UNIT            = "KELVIN"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Local temperature for boom 2"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 139
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 15
+        NAME            = "ATS_BOOM2_CONFIDENCE_LEVEL"
+        DESCRIPTION     = "String representing the boom 2 ATS confidence 
+                           level; 0 = bad; 1 = good; X = unknown; (byte 0 is
+                           on the left end)
+                           - Byte 0: ASIC temperature; 
+                             0 = less than -50C; 
+                             1 = more than -50C;
+                           - Byte 1: Wind Sensor status; 
+                             0 = WS off; 
+                             1 = WS on;
+                           - Byte 2: ASIC power supply range; 
+                             0 = out of range; 
+                             1 = in range (valid ranges: 
+                             [4.71 - 4.79], [4.82 - 4.98], [5.11 - 5.19]);
+                           - Byte 3: Wind speed; 
+                             0 = wind speed > TBD; 
+                             1 = wind speed < TBD;
+                           - Byte 4: Wind direction with respect to 
+                             each boom; 
+                             0 = from RTG or rover desk; 
+                             1 = free to rover perturbation;
+                           - Byte 5: Shadow;
+                             0 = no shadow or partial shadow in tip or 
+                                 intermediate sensors;
+                             1 = total shadow in both sensors or at night;
+                           - Byte 6: Boom in shadow;
+                             0 = no shadow or partial shadow; 
+                             1 = total shadow or at night;
+                           - Byte 7: Observation reliability;
+                             0 = unreliable; 
+                             1 = reliable;"
+        DATA_TYPE       = CHARACTER
+        START_BYTE      = 148
+        BYTES           = 8
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 16
+        NAME            = "AMBIENT_TEMP"
+        UNIT            = "KELVIN"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Estimated ambient air temperature"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 158
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 17
+        NAME            = "AMBIENT_TEMP_CONFIDENCE_LEVEL"
+        DESCRIPTION     = "String representing the ambient temperature 
+                           confidence level; 0 = bad; 1 = good; X = unknown;
+                           (byte 0 is on the left end)
+                           - Byte 0: ASIC temperature; 
+                             0 = less than -50C; 
+                             1 = more than -50C;
+                           - Byte 1: Wind Sensor status; 
+                             0 = WS off; 
+                             1 = WS on;
+                           - Byte 2: ASIC power supply range; 
+                             0 = out of range; 
+                             1 = in range (valid ranges: 
+                             [4.71 - 4.79], [4.82 - 4.98], [5.11 - 5.19]);
+                           - Byte 3: Wind speed; 
+                             0 = wind speed > TBD; 
+                             1 = wind speed < TBD;
+                           - Byte 4: Wind direction with respect to 
+                             each boom; 
+                             0 = from RTG or rover desk; 
+                             1 = free to rover perturbation;
+                           - Byte 5: Shadow;
+                             0 = no shadow or partial shadow;
+                             1 = total shadow or at night;
+                           - Byte 6: Boom in shadow;
+                             0 = no shadow or partial shadow; 
+                             1 = total shadow or at night;
+                           - Byte 7: Operational range (error < 5 kelvin);
+                             0 = error higher than operational range;
+                             1 = error in operational range;
+                           - Byte 8: Observation reliability;
+                             0 = unreliable; 
+                             1 = reliable;"
+        DATA_TYPE       = CHARACTER
+        START_BYTE      = 167
+        BYTES           = 12
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 18
+        NAME            = "UV_A"
+        UNIT            = "W/m**2"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Ultraviolet radiation in band A"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 181
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 19
+        NAME            = "UV_B"
+        UNIT            = "W/m**2"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Ultraviolet radiation in band B"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 189
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 20
+        NAME            = "UV_C"
+        UNIT            = "W/m**2"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Ultraviolet radiation in band C"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 197
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 21
+        NAME            = "UV_ABC"
+        UNIT            = "W/m**2"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Ultraviolet radiation in band ABC"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 205
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 22
+        NAME            = "UV_D"
+        UNIT            = "W/m**2"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Ultraviolet radiation in band D"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 213
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 23
+        NAME            = "UV_E"
+        UNIT            = "W/m**2"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Ultraviolet radiation in band E"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 221
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 24
+        NAME            = "UV_A_UNCERTAINTY"
+        UNIT            = "%"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Systematic uncertainty in the ultraviolet 
+                           radiation band A"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 229
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 25
+        NAME            = "UV_B_UNCERTAINTY"
+        UNIT            = "%"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Systematic uncertainty in the ultraviolet 
+                           radiation band B"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 237
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 26
+        NAME            = "UV_C_UNCERTAINTY"
+        UNIT            = "%"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Systematic uncertainty in the ultraviolet 
+                           radiation band C"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 245
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 27
+        NAME            = "UV_ABC_UNCERTAINTY"
+        UNIT            = "%"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Systematic uncertainty in the ultraviolet 
+                           radiation band ABC"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 253
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 28
+        NAME            = "UV_D_UNCERTAINTY"
+        UNIT            = "%"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Systematic uncertainty in the ultraviolet 
+                           radiation band D"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 261
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 29
+        NAME            = "UV_E_UNCERTAINTY"
+        UNIT            = "%"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Systematic uncertainty in the ultraviolet 
+                           radiation band E"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 269
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 30
+        NAME            = "UVS_CONFIDENCE_LEVEL"
+        DESCRIPTION     = "String representing the confidence level for 
+                           the ultraviolet sensor; 0 = bad; 1 = good; X =
+                           unknown; (byte 0 is on the left end)
+                           - Byte 0: Global irradiance; 
+                             0 = no global irradiance;
+                             1 = global irradiance (SZA in (0,30));
+                           - Byte 1: Diffuse irradiance; 
+                             0 = no diffuse irradiance;
+                             1 = diffuse irradiance (SZA in (30,inf));
+                           - Byte 2: Arm position; 
+                             0 = unstowed; 
+                             1 = stowed;
+                           - Byte 3: Shadow; 
+                             0 = partial or total shadow;
+                             1 = no shadow;
+                           - Byte 4: Dust sensor degradation; 
+                             0 = attenuation by dust unknown or attenuation 
+                             above 10%; 
+                             1 = attenuation by dust below 10%"
+        DATA_TYPE       = CHARACTER
+        START_BYTE      = 278
+        BYTES           = 8
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 31
+        NAME            = "LOCAL_RELATIVE_HUMIDITY"
+        UNIT            = "%"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Local relative humidity at humidity sensor"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 288
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 32
+        NAME            = "HS_TEMP"
+        UNIT            = "KELVIN"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Humidity sensor operating temperature at the
+                           time of data collection"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 296
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 33
+        NAME            = "LOCAL_RELATIVE_HUMIDITY_UNCERTAINTY"
+        UNIT            = "%"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Calibration uncertainty for the local relative 
+                           humidity. "
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 304
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 34
+        NAME            = "VOLUME_MIXING_RATIO"
+        UNIT            = "ppm"
+        FORMAT          = "F8.2"
+        DESCRIPTION     = "Volume mixing ratio"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 312
+        BYTES           = 8
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 35
+        NAME            = "VOLUME_MIXING_RATIO_UNCERTAINTY"
+        UNIT            = "ppm"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Uncertainty for the volume mixing ratio."
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 321
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 36
+        NAME            = "HS_CONFIDENCE_LEVEL"
+        DESCRIPTION     = "String representing the confidence level for the 
+                           humidity; 0 = bad; 1 = good; X = unknown;
+                           (byte 0 is on the left end)
+                           - Byte 0: Humidity observation reliability;
+                             0 = preliminary;
+                             1 = reliable;
+                           - Byte 1: Relative humidity quality;  
+                             0 = bad;
+                             1 = good;
+                           - Byte 2: Obtained H2O volume mixing ratio in 
+                             range (ppm < 400);
+                             0 = out of range;
+                             1 = in range;" 
+        DATA_TYPE       = CHARACTER
+        START_BYTE      = 330
+        BYTES           = 8
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 37
+        NAME            = "PS_CONFIGURATION"
+        DESCRIPTION     = "Pressure sensor configuration.
+                           First character: '1' = oscillator 1 on
+                                            '2' = oscillator 2 on
+                           Second character: 'L' = low resolution
+                                             'H' = high resolution"
+        DATA_TYPE       = CHARACTER
+        START_BYTE      = 341
+        BYTES           = 2
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 38
+        NAME            = "PRESSURE"
+        UNIT            = "PASCAL"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Pressure"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 345
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 39
+        NAME            = "PRESSURE_UNCERTAINTY"
+        UNIT            = "PASCAL"
+        FORMAT          = "F7.2"
+        DESCRIPTION     = "Pressure absolute accuracy"
+        DATA_TYPE       = ASCII_REAL
+        START_BYTE      = 353
+        BYTES           = 7
+END_OBJECT      = COLUMN
+
+OBJECT          = COLUMN
+        COLUMN_NUMBER   = 40
+        NAME            = "PS_CONFIDENCE_LEVEL"
+        DESCRIPTION     = "String representing the confidence level for the 
+                           pressure sensor; 0 = bad; 1 = good; X = unknown;
+                           (byte 0 is on the left end)
+                           - Byte 0: Oscillator; 
+                             0 = oscillator 1;
+                             1 = oscillator 2;
+                           - Byte 1: Shadow effect; 
+                             0 = shadow effect;
+                             1 = no shadow effect;"
+        DATA_TYPE       = CHARACTER
+        START_BYTE      = 362
+        BYTES           = 8
+END_OBJECT      = COLUMN

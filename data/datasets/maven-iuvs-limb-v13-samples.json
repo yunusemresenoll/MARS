@@ -1,0 +1,70 @@
+{
+  "dataset_id": "mars.maven.iuvs.limb-v13-samples",
+  "source_id": "nasa-pds-maven-iuvs-limb-v13-snapshot",
+  "target": "Mars limb ultraviolet radiance and retrieved upper-atmosphere profiles",
+  "processing_state": "ARCHIVED_DERIVED",
+  "products": [
+    {
+      "product_id": "MAVEN_IUVS_CALIBRATED_LIMB_COLLECTION_V13",
+      "property_id": "atmosphere.iuvs_calibrated_limb_inventory_count",
+      "data_path": "resources/archive/nasa-pds-maven-iuvs-limb-2026-snapshot/collection_maven_iuvs_calibrated_limb_inventory.tab",
+      "label_path": "resources/archive/nasa-pds-maven-iuvs-limb-2026-snapshot/collection_maven_iuvs_calibrated_limb.xml",
+      "record_count_method": "TEXT_LINES",
+      "records": 632427,
+      "canonical_source_unit": "count",
+      "structure": {"format":"PDS4 collection inventory","fields":2,"collection_lid":"urn:nasa:pds:maven.iuvs.calibrated:limb","collection_version":"13.0"},
+      "observation_period": "2014-10-18/2025-12-15",
+      "notes": "Tam kalibre FITS koleksiyonu yerelde değildir; bir gerçek FUV örnek çifti kopyalanmıştır."
+    },
+    {
+      "product_id": "MAVEN_IUVS_PROCESSED_LIMB_COLLECTION_V13",
+      "property_id": "atmosphere.iuvs_processed_limb_inventory_count",
+      "data_path": "resources/archive/nasa-pds-maven-iuvs-limb-2026-snapshot/collection_maven_iuvs_processed_limb_inventory.tab",
+      "label_path": "resources/archive/nasa-pds-maven-iuvs-limb-2026-snapshot/collection_maven_iuvs_processed_limb.xml",
+      "record_count_method": "TEXT_LINES",
+      "records": 8706,
+      "canonical_source_unit": "count",
+      "structure": {"format":"PDS4 collection inventory","fields":2,"collection_lid":"urn:nasa:pds:maven.iuvs.processed:limb","collection_version":"13.0"},
+      "observation_period": "2014-10-18/2025-05-21",
+      "notes": "Tam envanter kopyasıdır; bilim FITS üyeleri topluca kopyalanmamıştır."
+    },
+    {
+      "product_id": "MAVEN_IUVS_DERIVED_LIMB_COLLECTION_V13",
+      "property_id": "atmosphere.iuvs_derived_limb_inventory_count",
+      "data_path": "resources/archive/nasa-pds-maven-iuvs-limb-2026-snapshot/collection_maven_iuvs_derived_limb_inventory.tab",
+      "label_path": "resources/archive/nasa-pds-maven-iuvs-limb-2026-snapshot/collection_maven_iuvs_derived_limb.xml",
+      "record_count_method": "TEXT_LINES",
+      "records": 6505,
+      "canonical_source_unit": "count",
+      "structure": {"format":"PDS4 collection inventory","fields":2,"collection_lid":"urn:nasa:pds:maven.iuvs.derived:limb","collection_version":"13.0"},
+      "observation_period": "2014-10-18/2025-05-21",
+      "notes": "Ana IUVS web sayfasındaki 'none yet archived' ifadesiyle çelişen gerçek, güncel derived koleksiyondur."
+    },
+    {
+      "product_id": "MVN_IUV_L1B_INLIMB_ORBIT24914_FUV_20251201T073542_V13_R01",
+      "property_id": "atmosphere.iuvs_calibrated_spectral_radiance",
+      "data_path": "resources/archive/nasa-pds-maven-iuvs-limb-2026-snapshot/mvn_iuv_l1b_inlimb-orbit24914-fuv_20251201T073542_v13_r01.fits",
+      "label_path": "resources/archive/nasa-pds-maven-iuvs-limb-2026-snapshot/mvn_iuv_l1b_inlimb-orbit24914-fuv_20251201T073542.xml",
+      "record_count_method": "PDS_ARRAY_ELEMENTS",
+      "label_array_id": "data_Primary",
+      "records": 118272,
+      "canonical_source_unit": "kR/nm",
+      "structure": {"format":"FITS 3.0 with detached PDS4 XML","channel":"FUV","time_integrations":33,"spatial_lines":7,"spectral_samples":512,"radiance_elements":118272,"random_physical_uncertainty_elements":118272,"combined_uncertainty_elements":118272,"fill":"IEEE NaN"},
+      "observation_period": "2025-12-01T07:38:46.77Z/2025-12-01T07:41:24.57Z",
+      "notes": "Radyans ve belirsizlik dizileri aynı boyuttadır. DN belirsizlik dizisi fiziksel radyans belirsizliğinden ayrı tutulur."
+    },
+    {
+      "product_id": "MVN_IUV_L2_PERIAPSE_ORBIT23508_20250501T000707_V13_R01",
+      "property_id": "atmosphere.iuvs_retrieved_number_density",
+      "data_path": "resources/archive/nasa-pds-maven-iuvs-limb-2026-snapshot/mvn_iuv_l2_periapse-orbit23508_20250501T000707_v13_r01.fits",
+      "label_path": "resources/archive/nasa-pds-maven-iuvs-limb-2026-snapshot/mvn_iuv_l2_periapse-orbit23508_20250501T000707.xml",
+      "record_count_method": "PDS_TABLE_RECORDS",
+      "label_array_id": "data_DENSITY",
+      "records": 14,
+      "canonical_source_unit": "1/cm3",
+      "structure": {"format":"FITS 3.0 binary tables with detached PDS4 XML","orbit":23508,"species_in_fits":["CO2","N2","O"],"limb_profiles":14,"altitude_levels_per_species":19,"density_cells":798,"temperature_profiles":14,"temperature_levels":19,"emission_features":29,"uncertainty_separation":["random","systematic"],"product_version":"13.0"},
+      "observation_period": "2025-05-01T00:07:07Z",
+      "notes": "XML SPECIES açıklaması CO2/O2/O3 der, fakat gerçek FITS SPECIES tablosu CO2/N2/O içerir; gerçek içerik esas alınmış, çelişki korunmuştur."
+    }
+  ]
+}

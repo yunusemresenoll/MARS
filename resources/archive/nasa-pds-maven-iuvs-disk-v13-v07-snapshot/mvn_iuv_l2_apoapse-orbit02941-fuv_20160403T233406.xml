@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1301.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/disp/v1/PDS4_DISP_1004.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:disp="http://pds.nasa.gov/pds4/disp/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+  http://pds.nasa.gov/pds4/disp/v1 http://pds.nasa.gov/pds4/disp/v1/PDS4_DISP_1004.xsd
+  http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1301.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:maven.iuvs.derived:disk:mvn_iuv_l2_apoapse-orbit02941-fuv_20160403t233406</logical_identifier>
+    <version_id>7.0</version_id>
+    <title>MAVEN IUVS Experiment</title>
+    <information_model_version>1.3.0.1</information_model_version>
+    <product_class>Product_Observational</product_class>
+<Modification_History>
+  <Modification_Detail>
+    <modification_date>2015-07-28</modification_date>
+    <version_id>1.0</version_id>
+    <description>First PDS release of IUVS products</description>
+  </Modification_Detail>
+  <Modification_Detail>
+    <modification_date>2015-08-18</modification_date>
+    <version_id>2.0</version_id>
+    <description>Second PDS release. This collection is only extended with new data -- no data from the previous version has been reprocessed</description>
+  </Modification_Detail>
+  <Modification_Detail>
+    <modification_date>2015-11-16</modification_date>
+    <version_id>3.0</version_id>
+    <description>Third PDS release. Additional upper-level products have been added, and uncertainty has been modified in level 1C periapse. All products have been reprocessed with the new software, even if this would not change the data.</description>
+  </Modification_Detail>
+  <Modification_Detail>
+    <modification_date>2016-02-08</modification_date>
+    <version_id>4.0</version_id>
+    <description>Fourth PDS release. Wavelength scale is improved in level 1B, and all upper-level products use this modified wavelength scale. Additional upper-level products have been added. All products have been reprocessed with the new software, even if this would not change the data.</description>
+  </Modification_Detail>
+  <Modification_Detail>
+    <modification_date>2016-05-10</modification_date>
+    <version_id>5.0</version_id>
+    <description>Fifth PDS release. This collection is only extended with new data -- no data from the previous version has been reprocessed.</description>
+  </Modification_Detail>
+  <Modification_Detail>
+    <modification_date>2016-08-15</modification_date>
+    <version_id>6.0</version_id>
+    <description>Sixth PDS release. A bug in dark subtraction has been fixed.</description>
+  </Modification_Detail>
+  <Modification_Detail>
+    <modification_date>2016-11-15</modification_date>
+    <version_id>7.0</version_id>
+    <description>Seventh PDS release. Periapse retrieval is based on DN, rather than calibrated, images. MUV calibration curve shifted 7nm. Several pixel geometry fields have been modified.</description>
+  </Modification_Detail>
+</Modification_History>
+  </Identification_Area>
+  <Observation_Area>
+    <Time_Coordinates>
+      <start_date_time>2016-04-03T23:34:11.54Z</start_date_time>
+      <stop_date_time>2016-04-03T23:34:25.94Z</stop_date_time>
+    </Time_Coordinates>
+    <Primary_Result_Summary>
+      <purpose>Science</purpose>
+      <processing_level>Derived</processing_level>
+      <Science_Facets>
+      <wavelength_range>Ultraviolet</wavelength_range>
+      <domain>Atmosphere</domain>
+      <discipline_name>Atmospheres</discipline_name>
+      <facet1>Structure</facet1>
+      </Science_Facets>
+    </Primary_Result_Summary>
+    <Investigation_Area>
+      <name>IUVS</name>
+      <type>Mission</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:mission.maven</lid_reference>
+        <reference_type>data_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+    <Observing_System>
+      <name>MAVEN</name>
+      <Observing_System_Component>
+        <name>IUVS</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:iuvs.maven</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>MAVEN</name>
+        <type>Spacecraft</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.maven</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Target_Identification>
+      <name>MARS</name>
+      <type>Planet</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+        <reference_type>data_to_target</reference_type>
+      </Internal_Reference>
+    </Target_Identification>
+    <Discipline_Area>
+    </Discipline_Area>
+  </Observation_Area>
+  <File_Area_Observational>
+    <File>
+      <file_name>mvn_iuv_l2_apoapse-orbit02941-fuv_20160403T233406_v07_r01.fits</file_name>
+      <local_identifier>file</local_identifier>
+      <creation_date_time>2016-12-15T01:35:49Z</creation_date_time>
+    </File>
+    <Header>
+      <local_identifier>header_emission_features</local_identifier>
+      <offset unit="byte">2880</offset>
+      <object_length unit="byte">5760</object_length>
+      <parsing_standard_id>FITS 3.0</parsing_standard_id>
+    </Header>
+    <Table_Binary>
+      <local_identifier>data_emission_features</local_identifier>
+      <offset unit="byte">8640</offset>
+      <records>11</records>
+      <Record_Binary>
+        <fields>4</fields>
+        <groups>1</groups>
+        <record_length unit="byte">2075</record_length>
+        <Field_Binary>
+          <name>EMISSION</name>
+          <field_location unit="byte">1</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">15</field_length>
+          <description>Name of emission feature</description>
+        </Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>256</repetitions>
+          <fields>1</fields>
+          <groups>0</groups>
+          <group_location unit="byte">16</group_location>
+          <group_length unit="byte">2048</group_length>
+          <Field_Binary>
+            <name>FIT_TEMPLATE</name>
+            <field_location unit="byte">1</field_location>
+            <data_type>IEEE754MSBDouble</data_type>
+            <field_length unit="byte">8</field_length>
+            <description>Spectra template for the given emission</description>
+          </Field_Binary>
+        </Group_Field_Binary>
+        <Field_Binary>
+          <name>START</name>
+          <field_location unit="byte">2064</field_location>
+          <data_type>IEEE754MSBSingle</data_type>
+          <field_length unit="byte">4</field_length>
+          <unit>nm</unit>
+          <description>Start value of wavelength for the multilinear fit for the given emission</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>STOP</name>
+          <field_location unit="byte">2068</field_location>
+          <data_type>IEEE754MSBSingle</data_type>
+          <field_length unit="byte">4</field_length>
+          <unit>nm</unit>
+          <description>Stop value of wavelength for the multilinear fit for the given emission</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>DOF</name>
+          <field_location unit="byte">2072</field_location>
+          <data_type>IEEE754MSBSingle</data_type>
+          <field_length unit="byte">4</field_length>
+          <description>Degree of freedom for regression fitted emision features.</description>
+        </Field_Binary>
+      </Record_Binary>
+    </Table_Binary>
+    <Header>
+      <local_identifier>header_brightness_ratio</local_identifier>
+      <offset unit="byte">31680</offset>
+      <object_length unit="byte">2880</object_length>
+      <parsing_standard_id>FITS 3.0</parsing_standard_id>
+    </Header>
+    <Table_Binary>
+      <local_identifier>data_brightness_ratio</local_identifier>
+      <offset unit="byte">34560</offset>
+      <records>1</records>
+      <Record_Binary>
+        <fields>0</fields>
+        <groups>4</groups>
+        <record_length unit="byte">777654</record_length>
+        <Group_Field_Binary>
+          <repetitions>2</repetitions>
+          <fields>1</fields>
+          <groups>0</groups>
+          <group_location unit="byte">1</group_location>
+          <group_length unit="byte">54</group_length>
+          <Field_Binary>
+            <name>ID</name>
+            <field_location unit="byte">1</field_location>
+            <data_type>ASCII_String</data_type>
+            <field_length unit="byte">27</field_length>
+          </Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>2</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">55</group_location>
+          <group_length unit="byte">259200</group_length>
+          <Group_Field_Binary>
+            <repetitions>180</repetitions>
+            <fields>0</fields>
+            <groups>1</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">129600</group_length>
+            <Group_Field_Binary>
+              <repetitions>90</repetitions>
+              <fields>1</fields>
+              <groups>0</groups>
+              <group_location unit="byte">1</group_location>
+              <group_length unit="byte">720</group_length>
+              <Field_Binary>
+                <name>VALUE</name>
+                <field_location unit="byte">1</field_location>
+                <data_type>IEEE754MSBDouble</data_type>
+                <field_length unit="byte">8</field_length>
+              </Field_Binary>
+            </Group_Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>2</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">259255</group_location>
+          <group_length unit="byte">259200</group_length>
+          <Group_Field_Binary>
+            <repetitions>180</repetitions>
+            <fields>0</fields>
+            <groups>1</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">129600</group_length>
+            <Group_Field_Binary>
+              <repetitions>90</repetitions>
+              <fields>1</fields>
+              <groups>0</groups>
+              <group_location unit="byte">1</group_location>
+              <group_length unit="byte">720</group_length>
+              <Field_Binary>
+                <name>RANDOM_UNC</name>
+                <field_location unit="byte">1</field_location>
+                <data_type>IEEE754MSBDouble</data_type>
+                <field_length unit="byte">8</field_length>
+              </Field_Binary>
+            </Group_Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>2</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">518455</group_location>
+          <group_length unit="byte">259200</group_length>
+          <Group_Field_Binary>
+            <repetitions>180</repetitions>
+            <fields>0</fields>
+            <groups>1</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">129600</group_length>
+            <Group_Field_Binary>
+              <repetitions>90</repetitions>
+              <fields>1</fields>
+              <groups>0</groups>
+              <group_location unit="byte">1</group_location>
+              <group_length unit="byte">720</group_length>
+              <Field_Binary>
+                <name>SYSTEMATIC_UNC</name>
+                <field_location unit="byte">1</field_location>
+                <data_type>IEEE754MSBDouble</data_type>
+                <field_length unit="byte">8</field_length>
+              </Field_Binary>
+            </Group_Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+      </Record_Binary>
+    </Table_Binary>
+    <Header>
+      <local_identifier>header_column_density_ratio</local_identifier>
+      <offset unit="byte">815040</offset>
+      <object_length unit="byte">2880</object_length>
+      <parsing_standard_id>FITS 3.0</parsing_standard_id>
+    </Header>
+    <Table_Binary>
+      <local_identifier>data_column_density_ratio</local_identifier>
+      <offset unit="byte">817920</offset>
+      <records>1</records>
+      <Record_Binary>
+        <fields>0</fields>
+        <groups>4</groups>
+        <record_length unit="byte">777612</record_length>
+        <Group_Field_Binary>
+          <repetitions>2</repetitions>
+          <fields>1</fields>
+          <groups>0</groups>
+          <group_location unit="byte">1</group_location>
+          <group_length unit="byte">12</group_length>
+          <Field_Binary>
+            <name>ID</name>
+            <field_location unit="byte">1</field_location>
+            <data_type>ASCII_String</data_type>
+            <field_length unit="byte">6</field_length>
+          </Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>2</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">13</group_location>
+          <group_length unit="byte">259200</group_length>
+          <Group_Field_Binary>
+            <repetitions>180</repetitions>
+            <fields>0</fields>
+            <groups>1</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">129600</group_length>
+            <Group_Field_Binary>
+              <repetitions>90</repetitions>
+              <fields>1</fields>
+              <groups>0</groups>
+              <group_location unit="byte">1</group_location>
+              <group_length unit="byte">720</group_length>
+              <Field_Binary>
+                <name>VALUE</name>
+                <field_location unit="byte">1</field_location>
+                <data_type>IEEE754MSBDouble</data_type>
+                <field_length unit="byte">8</field_length>
+              </Field_Binary>
+            </Group_Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>2</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">259213</group_location>
+          <group_length unit="byte">259200</group_length>
+          <Group_Field_Binary>
+            <repetitions>180</repetitions>
+            <fields>0</fields>
+            <groups>1</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">129600</group_length>
+            <Group_Field_Binary>
+              <repetitions>90</repetitions>
+              <fields>1</fields>
+              <groups>0</groups>
+              <group_location unit="byte">1</group_location>
+              <group_length unit="byte">720</group_length>
+              <Field_Binary>
+                <name>RANDOM_UNC</name>
+                <field_location unit="byte">1</field_location>
+                <data_type>IEEE754MSBDouble</data_type>
+                <field_length unit="byte">8</field_length>
+              </Field_Binary>
+            </Group_Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>2</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">518413</group_location>
+          <group_length unit="byte">259200</group_length>
+          <Group_Field_Binary>
+            <repetitions>180</repetitions>
+            <fields>0</fields>
+            <groups>1</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">129600</group_length>
+            <Group_Field_Binary>
+              <repetitions>90</repetitions>
+              <fields>1</fields>
+              <groups>0</groups>
+              <group_location unit="byte">1</group_location>
+              <group_length unit="byte">720</group_length>
+              <Field_Binary>
+                <name>SYSTEMATIC_UNC</name>
+                <field_location unit="byte">1</field_location>
+                <data_type>IEEE754MSBDouble</data_type>
+                <field_length unit="byte">8</field_length>
+              </Field_Binary>
+            </Group_Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+      </Record_Binary>
+    </Table_Binary>
+    <Header>
+      <local_identifier>header_apoapse_geometry</local_identifier>
+      <offset unit="byte">1598400</offset>
+      <object_length unit="byte">5760</object_length>
+      <parsing_standard_id>FITS 3.0</parsing_standard_id>
+    </Header>
+    <Table_Binary>
+      <local_identifier>data_apoapse_geometry</local_identifier>
+      <offset unit="byte">1604160</offset>
+      <records>1</records>
+      <Record_Binary>
+        <fields>0</fields>
+        <groups>6</groups>
+        <record_length unit="byte">260280</record_length>
+        <Group_Field_Binary>
+          <repetitions>90</repetitions>
+          <fields>1</fields>
+          <groups>0</groups>
+          <group_location unit="byte">1</group_location>
+          <group_length unit="byte">360</group_length>
+          <Field_Binary>
+            <name>LATITUDE</name>
+            <field_location unit="byte">1</field_location>
+            <data_type>IEEE754MSBSingle</data_type>
+            <field_length unit="byte">4</field_length>
+            <unit>deg</unit>
+            <description>Latitude</description>
+          </Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>1</fields>
+          <groups>0</groups>
+          <group_location unit="byte">361</group_location>
+          <group_length unit="byte">720</group_length>
+          <Field_Binary>
+            <name>LONGITUDE</name>
+            <field_location unit="byte">1</field_location>
+            <data_type>IEEE754MSBSingle</data_type>
+            <field_length unit="byte">4</field_length>
+            <unit>deg</unit>
+            <description>Longitude, counted east positive</description>
+          </Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">1081</group_location>
+          <group_length unit="byte">64800</group_length>
+          <Group_Field_Binary>
+            <repetitions>90</repetitions>
+            <fields>1</fields>
+            <groups>0</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">360</group_length>
+            <Field_Binary>
+              <name>LOCAL_TIME</name>
+              <field_location unit="byte">1</field_location>
+              <data_type>IEEE754MSBSingle</data_type>
+              <field_length unit="byte">4</field_length>
+              <unit>hr</unit>
+              <description>Local time</description>
+            </Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">65881</group_location>
+          <group_length unit="byte">64800</group_length>
+          <Group_Field_Binary>
+            <repetitions>90</repetitions>
+            <fields>1</fields>
+            <groups>0</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">360</group_length>
+            <Field_Binary>
+              <name>SOLAR_ZENITH_ANGLE</name>
+              <field_location unit="byte">1</field_location>
+              <data_type>IEEE754MSBSingle</data_type>
+              <field_length unit="byte">4</field_length>
+              <unit>deg</unit>
+              <description>Solar zenith angle</description>
+            </Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">130681</group_location>
+          <group_length unit="byte">64800</group_length>
+          <Group_Field_Binary>
+            <repetitions>90</repetitions>
+            <fields>1</fields>
+            <groups>0</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">360</group_length>
+            <Field_Binary>
+              <name>PHASE_ANGLE</name>
+              <field_location unit="byte">1</field_location>
+              <data_type>IEEE754MSBSingle</data_type>
+              <field_length unit="byte">4</field_length>
+              <unit>deg</unit>
+              <description>Phase angle</description>
+            </Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">195481</group_location>
+          <group_length unit="byte">64800</group_length>
+          <Group_Field_Binary>
+            <repetitions>90</repetitions>
+            <fields>1</fields>
+            <groups>0</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">360</group_length>
+            <Field_Binary>
+              <name>EMISSION_ANGLE</name>
+              <field_location unit="byte">1</field_location>
+              <data_type>IEEE754MSBSingle</data_type>
+              <field_length unit="byte">4</field_length>
+              <unit>deg</unit>
+              <description>Angle between normal and spacecraft</description>
+            </Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+      </Record_Binary>
+    </Table_Binary>
+    <Header>
+      <local_identifier>header_observation</local_identifier>
+      <offset unit="byte">1866240</offset>
+      <object_length unit="byte">8640</object_length>
+      <parsing_standard_id>FITS 3.0</parsing_standard_id>
+    </Header>
+    <Table_Binary>
+      <local_identifier>data_observation</local_identifier>
+      <offset unit="byte">1874880</offset>
+      <records>1</records>
+      <Record_Binary>
+        <fields>22</fields>
+        <groups>1</groups>
+        <record_length unit="byte">537</record_length>
+        <Field_Binary>
+          <name>PRODUCT_ID</name>
+          <field_location unit="byte">1</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">62</field_length>
+          <description>Original filename of this product</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>COLLECTION_ID</name>
+          <field_location unit="byte">63</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">4</field_length>
+          <description>PDS collection ID (currently unused)</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>BUNDLE_ID</name>
+          <field_location unit="byte">67</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">7</field_length>
+          <description>PDS bundle ID (currently unused)</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>CODE_SVN_REVISION</name>
+          <field_location unit="byte">74</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">2</field_length>
+          <description>SVN revision number of code used to produce this product</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>ANC_SVN_REVISION</name>
+          <field_location unit="byte">76</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">2</field_length>
+          <description>SVN revision number of ancillary data used to produce this product</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>PRODUCT_CREATION_DATE</name>
+          <field_location unit="byte">78</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">33</field_length>
+          <description>Product creation date</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>OBSERVATION_TYPE</name>
+          <field_location unit="byte">111</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">3</field_length>
+          <description>Observation type string</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>CALIBRATION_VERSION</name>
+          <field_location unit="byte">114</field_location>
+          <data_type>SignedMSB2</data_type>
+          <field_length unit="byte">2</field_length>
+        </Field_Binary>
+        <Field_Binary>
+          <name>MISSION_PHASE</name>
+          <field_location unit="byte">116</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">5</field_length>
+          <description>Mission phase string</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>TARGET_NAME</name>
+          <field_location unit="byte">121</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">4</field_length>
+          <description>Target name string</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>ORBIT_SEGMENT</name>
+          <field_location unit="byte">125</field_location>
+          <data_type>SignedMSB2</data_type>
+          <field_length unit="byte">2</field_length>
+          <description>Orbit segment (periapse, apoapse, corona etc, currently 0)</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>ORBIT_NUMBER</name>
+          <field_location unit="byte">127</field_location>
+          <data_type>SignedMSB2</data_type>
+          <field_length unit="byte">2</field_length>
+          <description>Orbit number (MOI is start of orbit 1, orbit number changes 30min before each periapse)</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>SOLAR_LONGITUDE</name>
+          <field_location unit="byte">129</field_location>
+          <data_type>IEEE754MSBSingle</data_type>
+          <field_length unit="byte">4</field_length>
+          <unit>deg</unit>
+          <description>Solar longitude, 0deg=Martian spring equinox, 90deg=solstice, etc</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>GRATING_SELECT</name>
+          <field_location unit="byte">133</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">6</field_length>
+          <description>Grating select (one of 'ECHELLE'/'LOWRES')</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>KEYHOLE_SELECT</name>
+          <field_location unit="byte">139</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">7</field_length>
+          <description>Keyhole select (one of 'LARGE'/'SMALL'/'NEITHER')</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>BIN_PATTERN_INDEX</name>
+          <field_location unit="byte">146</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">18</field_length>
+          <description>Name of linear or nonlinear binning table used for this observation.</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>CADENCE</name>
+          <field_location unit="byte">164</field_location>
+          <data_type>IEEE754MSBSingle</data_type>
+          <field_length unit="byte">4</field_length>
+        </Field_Binary>
+        <Field_Binary>
+          <name>INT_TIME</name>
+          <field_location unit="byte">168</field_location>
+          <data_type>IEEE754MSBSingle</data_type>
+          <field_length unit="byte">4</field_length>
+        </Field_Binary>
+        <Field_Binary>
+          <name>DUTY_CYCLE</name>
+          <field_location unit="byte">172</field_location>
+          <data_type>IEEE754MSBSingle</data_type>
+          <field_length unit="byte">4</field_length>
+        </Field_Binary>
+        <Field_Binary>
+          <name>CHANNEL</name>
+          <field_location unit="byte">176</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">11</field_length>
+        </Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>8</repetitions>
+          <fields>1</fields>
+          <groups>0</groups>
+          <group_location unit="byte">187</group_location>
+          <group_length unit="byte">288</group_length>
+          <Field_Binary>
+            <name>KERNELS</name>
+            <field_location unit="byte">1</field_location>
+            <data_type>ASCII_String</data_type>
+            <field_length unit="byte">36</field_length>
+          </Field_Binary>
+        </Group_Field_Binary>
+        <Field_Binary>
+          <name>L1C_FN</name>
+          <field_location unit="byte">475</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">62</field_length>
+          <description>Name of L1C file used in L2</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>EUVM_L3_FN</name>
+          <field_location unit="byte">537</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">1</field_length>
+        </Field_Binary>
+      </Record_Binary>
+    </Table_Binary>
+  </File_Area_Observational>
+</Product_Observational>

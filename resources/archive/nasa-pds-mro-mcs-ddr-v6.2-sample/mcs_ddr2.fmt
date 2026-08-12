@@ -1,0 +1,149 @@
+
+OBJECT               = COLUMN
+  COLUMN_NUMBER      = 1
+  NAME               = 1
+  DATA_TYPE          = ASCII_INTEGER
+  START_BYTE         = 1
+  BYTES              = 1
+  DESCRIPTION        = "A quality indicator:  0 means this record contains valid data."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+  COLUMN_NUMBER      = 2
+  NAME               = PRES
+  DATA_TYPE          = ASCII_REAL
+  START_BYTE         = 3
+  BYTES              = 13
+  DESCRIPTION        = "Pressure surface for this layer of the profile (Pa).
+    The pressures calculated from p(i) = p0*exp(-.125*(i-10)), 
+    i = 1..105 where p0 = 610."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+  COLUMN_NUMBER      = 3
+  NAME               = T
+  DATA_TYPE          = ASCII_REAL
+  START_BYTE         = 17
+  BYTES              = 8
+  DESCRIPTION        = "Temperature on the pressure surface (K)."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+  COLUMN_NUMBER      = 4
+  NAME               = T_ERR
+  DATA_TYPE          = ASCII_REAL
+  START_BYTE         = 26
+  BYTES              = 8
+  DESCRIPTION        = "Temperature uncertainty on the pressure surface (K)."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+  COLUMN_NUMBER      = 5
+  NAME               = DUST
+  DATA_TYPE          = ASCII_REAL
+  START_BYTE         = 35
+  BYTES              = 11
+  DESCRIPTION        = "Dust opacity per km on the pressure surface at 463 
+    wavenumbers (or 21.6 microns)."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+  COLUMN_NUMBER      = 6
+  NAME               = DUST_ERR
+  DATA_TYPE          = ASCII_REAL
+  START_BYTE         = 47
+  BYTES              = 11
+  DESCRIPTION        = "Dust opacity uncertainty on the pressure surface 
+    (opacity per km at 463 wavenumbers or 21.6 microns)."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+  COLUMN_NUMBER      = 7
+  NAME               = H2OVAP
+  DATA_TYPE          = ASCII_REAL
+  START_BYTE         = 59
+  BYTES              = 11
+  DESCRIPTION        = "Water vapor volume mixing ratio on the pressure surface."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+  COLUMN_NUMBER      = 8
+  NAME               = H2OVAP_ERR
+  DATA_TYPE          = ASCII_REAL
+  START_BYTE         = 71
+  BYTES              = 11
+  DESCRIPTION        = "Water vapor uncertainty on the pressure surface 
+    (volume mixing ratio, ppm)."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+  COLUMN_NUMBER      = 9
+  NAME               = H2OICE
+  DATA_TYPE          = ASCII_REAL
+  START_BYTE         = 83
+  BYTES              = 11
+  DESCRIPTION        = "Water ice opacity per km on the pressure surface 
+    at 843 wavenumbers (or 11.9 microns)."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+  COLUMN_NUMBER      = 10
+  NAME               = H2OICE_ERR
+  DATA_TYPE          = ASCII_REAL
+  START_BYTE         = 95
+  BYTES              = 11
+  DESCRIPTION        = "Water ice opacity uncertainty on the pressure 
+    surface (opacity per km in at 843 wavenumbers or 11.9 microns).
+"
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+  COLUMN_NUMBER      = 11
+  NAME               = CO2ICE
+  DATA_TYPE          = ASCII_REAL
+  START_BYTE         = 107
+  BYTES              = 11
+  DESCRIPTION        = "CO2 ice opacity per km on the pressure surface 
+    at 607 wavenumbers (or 16.5 microns)."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+  COLUMN_NUMBER      = 12
+  NAME               = CO2ICE_ERR
+  DATA_TYPE          = ASCII_REAL
+  START_BYTE         = 119
+  BYTES              = 11
+  DESCRIPTION        = "CO2 ice opacity uncertainty on the pressure 
+    surface (opacity per km at 607 wavenumbers or 16.5 microns)."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+  COLUMN_NUMBER      = 13
+  NAME               = ALT
+  DATA_TYPE          = ASCII_REAL
+  START_BYTE         = 131
+  BYTES              = 8
+  DESCRIPTION        = "Altitude of the pressure surface above the 
+    surface point (DDR1, column 21) (km)."
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+  COLUMN_NUMBER      = 14
+  NAME               = LAT
+  DATA_TYPE          = ASCII_REAL
+  START_BYTE         = 140
+  BYTES              = 10
+  DESCRIPTION        = "Latitude of the center of the measurement 
+    region on the pressure surface (deg).
+"
+END_OBJECT           = COLUMN
+
+OBJECT               = COLUMN
+  COLUMN_NUMBER      = 15
+  NAME               = LON
+  DATA_TYPE          = ASCII_REAL
+  START_BYTE         = 151
+  BYTES              = 10
+  DESCRIPTION        = "Longitude of the center of the measurement 
+    region on the pressure surface (deg)."
+END_OBJECT           = COLUMN

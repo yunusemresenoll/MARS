@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1100.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Collection
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 	https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1100.xsd"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:maven_ngims:l2</logical_identifier>
+    <version_id>8.0</version_id>  <!--RC 20240816 was 1.0-->
+    <title>NGIMS L2 Data Collection</title>
+    <information_model_version>1.1.0.0</information_model_version>
+    <product_class>Product_Collection</product_class>
+    <Citation_Information>
+        <author_list>Elrod, Meredith; Navas, Tiffany; Benna, Mehdi</author_list>
+      <publication_year>2015</publication_year>
+      <description>
+        Data acquired from the NGIMS instrument during its primary
+        mission, with corrections and interpretations applied.
+      </description>
+    </Citation_Information>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2015-06-10</modification_date>
+        <version_id>1.0</version_id>
+        <description>First PDS release of NGIMS L2 products</description>
+      </Modification_Detail>
+      <Modification_Detail>
+        <modification_date>2015-08-27</modification_date>
+        <version_id>2.0</version_id>
+        <description>
+            Second PDS release of NGIMS L2 products. This collection
+            contains new data as well as reprocessed l2 products
+            originally delivered during PDS release 1.
+        </description>
+      </Modification_Detail>
+      <Modification_Detail>
+        <modification_date>2015-10-30</modification_date>
+        <version_id>3.0</version_id>
+        <description>
+            Third PDS release of NGIMS L2 products. This collection
+            contains new data as well as reprocessed l2 products
+            originally delivered during PDS release 2.
+        </description>
+      </Modification_Detail>
+      <Modification_Detail>
+        <modification_date>2016-02-17</modification_date>
+        <version_id>4.0</version_id>
+        <description>
+            Fourth PDS release of NGIMS L2 products. This collection
+            contains new data as well as reprocessed l2 products
+            originally delivered during PDS release 3.
+        </description>
+      </Modification_Detail>
+      <Modification_Detail>
+        <modification_date>2016-08-01</modification_date>
+        <version_id>6.0</version_id>
+        <description>
+            Sixth PDS release of NGIMS L2 products. This collection
+            contains new data as well as reprocessed l2 products
+            originally delivered during PDS release 5.
+        </description>
+      </Modification_Detail>
+      <Modification_Detail>
+        <modification_date>2016-11-08</modification_date>
+        <version_id>7.0</version_id>
+        <description>
+            Seventh PDS release of NGIMS L2 products. This collection
+            contains new data as well as reprocessed l2 products
+            originally delivered during PDS release 6.
+        </description>
+      </Modification_Detail>      
+      <Modification_Detail>
+        <modification_date>2017-02-08</modification_date>
+        <version_id>8.0</version_id>
+        <description>
+            Eighth PDS release of NGIMS L2 products. This collection
+            contains new data only.
+        </description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Context_Area>
+      <Investigation_Area>
+          <name>MAVEN</name>
+          <type>Mission</type>
+          <Internal_Reference>
+              <lid_reference>urn:nasa:pds:context:investigation:mission.maven</lid_reference>
+              <reference_type>collection_to_investigation</reference_type>
+          </Internal_Reference>
+      </Investigation_Area>
+      <Observing_System>
+          <name>MAVEN</name>
+          <description>Mars Atmosphere and Volatiles Evolution</description>
+          <Observing_System_Component>
+              <name>MAVEN</name>
+              <type>Spacecraft</type>
+              <description>Mars Atmosphere and Volatiles Evolution</description>
+              <Internal_Reference>
+                  <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.maven</lid_reference>
+                  <reference_type>is_instrument_host</reference_type>
+              </Internal_Reference>
+          </Observing_System_Component>
+          <Observing_System_Component>
+              <name>NGIMS</name>
+              <type>Instrument</type>
+              <description>Neutral Gas and Ion Mass Spectrometer</description>
+              <Internal_Reference>
+                  <lid_reference>urn:nasa:pds:context:instrument:ngims.maven</lid_reference>
+                  <reference_type>is_instrument</reference_type>
+              </Internal_Reference>
+          </Observing_System_Component>
+      </Observing_System>
+      <Target_Identification>
+          <name>Mars</name>
+          <type>Planet</type>
+          <Internal_Reference>
+              <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+              <reference_type>data_to_target</reference_type>
+          </Internal_Reference>
+      </Target_Identification>
+  </Context_Area>
+  <Reference_List>
+    <Internal_Reference>
+    <lid_reference>urn:nasa:pds:context:resource:resource.maven_ngims_online</lid_reference>
+      <reference_type>has_resource</reference_type>
+    </Internal_Reference>
+  </Reference_List>
+  <Collection>
+    <collection_type>Data</collection_type>
+    <description>
+        Data acquired from the NGIMS instrument during its primary
+        mission, with corrections and interpretations applied.
+    </description>
+  </Collection>
+  <File_Area_Inventory>
+    <File>
+      <file_name>collection_ngims_l2_inventory.csv</file_name>
+    </File>
+    <Inventory>
+      <offset unit="byte">0</offset>
+      <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+      <records>33583</records>
+      <record_delimiter>carriage-return line-feed</record_delimiter>
+      <field_delimiter>comma</field_delimiter>
+      <Record_Delimited>
+        <fields>2</fields>
+        <groups>0</groups>
+        <Field_Delimited>
+          <name>Member_Status</name>
+          <field_number>1</field_number>
+          <data_type>ASCII_String</data_type>
+          <maximum_field_length unit="byte">1</maximum_field_length>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>LIDVID_LID</name>
+          <field_number>2</field_number>
+          <data_type>ASCII_LIDVID_LID</data_type>
+          <field_format>urn:nasa:pds:xxxx::M.n</field_format>
+        </Field_Delimited>
+      </Record_Delimited>
+      <reference_type>inventory_has_member_product</reference_type>
+    </Inventory>
+  </File_Area_Inventory>
+</Product_Collection>

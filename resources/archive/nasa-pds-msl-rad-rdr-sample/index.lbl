@@ -1,0 +1,115 @@
+PDS_VERSION_ID                = PDS3                                          
+RECORD_TYPE                   = FIXED_LENGTH                                  
+RECORD_BYTES                  = 196                                           
+FILE_RECORDS                  = 5436                                          
+^HEADER                       = ("INDEX.TAB", 1<BYTES>)                       
+^INDEX_TABLE                  = ("INDEX.TAB", 197<BYTES>)                     
+INSTRUMENT_HOST_ID            = "MSL"                                         
+                                                                              
+OBJECT                        = HEADER                                        
+  HEADER_TYPE                 = "TEXT"                                        
+  DESCRIPTION                 = "This row assigns named to each column."      
+  RECORDS                     = 1                                             
+  BYTES                       = 196                                           
+END_OBJECT                    = HEADER                                        
+                                                                              
+OBJECT                        = INDEX_TABLE                                   
+  INTERCHANGE_FORMAT          = ASCII                                         
+  INDEX_TYPE                  = SINGLE                                        
+  DESCRIPTION                 = "INDEX.TAB lists all the data files on        
+                                 this volume. It starts on line two           
+                                 because the first row has column headers"    
+  ROW_BYTES                   = 196                                           
+  ROWS                        = 5435                                          
+  COLUMNS                     = 8                                             
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = DATA_SET_ID                                   
+    DESCRIPTION               = "The DATA_SET_ID                              
+                                 associated with the file.                    
+                                 Please refer to the PDS Data Dictionary for  
+                                 a full description"                          
+    DATA_TYPE                 = CHARACTER                                     
+    START_BYTE                = 2                                             
+    BYTES                     = 20                                            
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = FILE_SPECIFICATION_NAME                       
+    DESCRIPTION               = "The FILE_SPECIFICATION_NAME                  
+                                 associated with the file.                    
+                                 Please refer to the PDS Data Dictionary for  
+                                 a full description"                          
+    DATA_TYPE                 = CHARACTER                                     
+    START_BYTE                = 25                                            
+    BYTES                     = 57                                            
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = PRODUCT_ID                                    
+    DESCRIPTION               = "The PRODUCT_ID                               
+                                 associated with the file.                    
+                                 Please refer to the PDS Data Dictionary for  
+                                 a full description"                          
+    DATA_TYPE                 = CHARACTER                                     
+    START_BYTE                = 85                                            
+    BYTES                     = 31                                            
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = VOLUME_ID                                     
+    DESCRIPTION               = "The VOLUME_ID                                
+                                 associated with the file.                    
+                                 Please refer to the PDS Data Dictionary for  
+                                 a full description"                          
+    DATA_TYPE                 = CHARACTER                                     
+    START_BYTE                = 119                                           
+    BYTES                     = 11                                            
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = PRODUCT_CREATION_TIME                         
+    DESCRIPTION               = "The PRODUCT_CREATION_TIME                    
+                                 associated with the file.                    
+                                 Please refer to the PDS Data Dictionary for  
+                                 a full description"                          
+    DATA_TYPE                 = TIME                                          
+    START_BYTE                = 132                                           
+    BYTES                     = 21                                            
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = TARGET_NAME                                   
+    DESCRIPTION               = "The TARGET_NAME                              
+                                 associated with the file.                    
+                                 Please refer to the PDS Data Dictionary for  
+                                 a full description"                          
+    DATA_TYPE                 = CHARACTER                                     
+    START_BYTE                = 155                                           
+    BYTES                     = 11                                            
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = START_TIME                                    
+    DESCRIPTION               = "The START_TIME                               
+                                 associated with the file.                    
+                                 Please refer to the PDS Data Dictionary for  
+                                 a full description"                          
+    DATA_TYPE                 = TIME                                          
+    START_BYTE                = 168                                           
+    BYTES                     = 17                                            
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = STOP_TIME                                     
+    DESCRIPTION               = "The STOP_TIME                                
+                                 associated with the file.                    
+                                 Please refer to the PDS Data Dictionary for  
+                                 a full description"                          
+    DATA_TYPE                 = TIME                                          
+    START_BYTE                = 186                                           
+    BYTES                     = 9                                             
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+ END_OBJECT                   = INDEX_TABLE                                   
+END                                                                           

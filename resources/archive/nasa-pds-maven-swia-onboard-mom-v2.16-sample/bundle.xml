@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.sch" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/mission/mvn/v1/PDS4_MVN_1D00_1110.sch"
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Bundle 
+   xmlns="http://pds.nasa.gov/pds4/pds/v1"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:mvn="http://pds.nasa.gov/pds4/mission/mvn/v1"
+   xsi:schemaLocation="
+   http://pds.nasa.gov/pds4/pds/v1
+   https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.xsd
+
+      http://pds.nasa.gov/pds4/mission/mvn/v1
+      https://pds.nasa.gov/pds4/mission/mvn/v1/PDS4_MVN_1D00_1110.xsd
+   ">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:maven.swia.calibrated</logical_identifier>
+        <version_id>2.16</version_id>
+        <title>MAVEN SWIA Calibrated Data Bundle</title>
+        <information_model_version>1.24.0.0</information_model_version>
+        <product_class>Product_Bundle</product_class>
+        <Citation_Information>
+            <publication_year>2026</publication_year>
+            <doi>10.17189/1414182</doi>
+            <keyword>MAVEN SWIA Calibrated Data</keyword>
+            <description>
+               This bundle contains fully calibrated MAVEN SWIA data, including ion velocity distributions, 
+               energy spectra, and density, temperature, and velocity moments from onboard calculations. 
+               Tables of sensitivity and energy/angle maps are included in files.
+            </description>
+            <List_Author>
+                <Person>
+                    <given_name>Jasper S.</given_name>
+                    <family_name>Halekas</family_name>
+                    <person_orcid>0000-0001-5258-6128</person_orcid>
+                    <Affiliation>
+                        <organization_name>University of Iowa</organization_name>
+                        <organization_rorid>https://ror.org/036jqmy94</organization_rorid>
+                    </Affiliation>
+                </Person>
+            </List_Author>
+        </Citation_Information>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2026-06-11</modification_date>
+                <version_id>2.15</version_id>
+                <description>
+                    MAVEN Release 45. Consists of an incremental release of
+                    SWIA calibrated data, including the initial release of
+                    2025-11-15 to 2025-12-05.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2026-02-11</modification_date>
+                <version_id>2.15</version_id>
+                <description>
+                    MAVEN Release 44. Consists of an incremental release of
+                    SWIA calibrated data, including the initial release of
+                    2025-08-15 to 2025-11-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2025-11-10</modification_date>
+                <version_id>2.14</version_id>
+                <description>
+                    MAVEN Release 43. Consists of an incremental release of
+                    SWIA calibrated data, including the initial release of
+                    2025-05-15 to 2025-08-14. A minor update to the Document 
+                    Collection Inventory file and update to a document LID 
+                    was also included..
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2025-08-15</modification_date>
+                <version_id>2.13</version_id>
+                <description>
+                    MAVEN Release 42. Consists of an incremental release of
+                    SWIA calibrated data, including the initial release of
+                    2025-02-15 to 2025-05-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2025-05-15</modification_date>
+                <version_id>2.12</version_id>
+                <description>
+                    MAVEN Release 41. Consists of an incremental release of
+                    SWIA calibrated data, including the initial release of
+                    2024-11-15 to 2025-02-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2025-02-14</modification_date>
+                <version_id>2.11</version_id>
+                <description>
+                    MAVEN Release 40. Consists of an incremental release of
+                    SWIA calibrated data, including the initial release of
+                    2024-08-15 to 2024-11-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2024-11-15</modification_date>
+                <version_id>2.10</version_id>
+                <description>
+                    MAVEN Release 39. Consists of an incremental release of
+                    SWIA calibrated data, including the initial release of
+                    2024-05-15 to 2024-08-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2024-08-15</modification_date>
+                <version_id>2.9</version_id>
+                <description>
+                    MAVEN Release 38. Consists of an incremental release of SWIA calibrated data,
+                    including the initial release of 2024-02-15 through 2024-05-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2024-05-15</modification_date>
+                <version_id>2.8</version_id>
+                <description>
+                    MAVEN Release 37. Consists of an incremental release of SWIA calibrated data,
+                    including the initial release of 2023-11-15 through 2024-02-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2024-02-02</modification_date>
+                <version_id>2.7</version_id>
+                <description>
+                    MAVEN Release 36. Consists of an incremental release of SWIA calibrated data,
+                    including the initial release of 2023-08-15 through 2023-11-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2023-08-16</modification_date>
+                <version_id>2.6</version_id>
+                <description>
+                    MAVEN Release 35. Consists of an incremental release of SWIA calibrated data,
+                    including the initial release of 2023-05-15 through 2023-08-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2023-08-14</modification_date>
+                <version_id>2.5</version_id>
+                <description>
+                    MAVEN Release 34. Consists of an incremental release of SWIA calibrated data,
+                    including the initial release of 2023-02-15 through 2023-05-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2023-05-17</modification_date>
+                <version_id>2.4</version_id>
+                <description>
+                    MAVEN Release 33. Consists of an incremental release of SWIA calibrated data,
+                    including the initial release of 2022-11-15 through 2023-02-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2023-02-11</modification_date>
+                <version_id>2.3</version_id>
+                <description>
+                    MAVEN Release 32. Consists of an incremental release of SWIA calibrated data,
+                    including the initial release of 2022-08-16 through 2022-11-14 and a re-release
+                    of 2022-08-15.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2022-11-16</modification_date>
+                <version_id>2.2</version_id>
+                <description>
+                    MAVEN Release 31. Consists of an incremental release of SWIA calibrated data,
+                    including the initial release of 2022-05-15 through 2022-08-15.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2022-08-09</modification_date>
+                <version_id>2.1</version_id>
+                <description>
+                    MAVEN Release 30. Consists of an incremental release of SWIA calibrated data,
+                    including the initial release of 2022-02-23 through 2022-05-14 and (for some
+                    collections) of 2022-02-22.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2022-05-06</modification_date>
+                <version_id>2.0</version_id>
+                <description>
+                    MAVEN Release 29. Consists of a full redelivery of SWIA calibrated data,
+                    including new versions of all data through 2021-11-14 and the initial
+                    release of data from 2021-11-15 to 2022-02-22.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2022-02-11</modification_date>
+                <version_id>1.28</version_id>
+                <description>
+                    MAVEN Release 28. Consists of an incremental release of SWIA calibrated data,
+                    including the initial release of 2021-08-15 to 2021-11-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2021-11-10</modification_date>
+                <version_id>1.27</version_id>
+                <description>
+                    MAVEN Release 27. Consists of an incremental release of SWIA calibrated data,
+                    including the initial release of 2021-05-15 to 2021-08-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2021-08-11</modification_date>
+                <version_id>1.26</version_id>
+                <description>
+                    MAVEN Release 26. Consists of an incremental release of SWIA calibrated data, 
+                    including the initial release of 2021-02-15 to 2021-05-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2021-05-14</modification_date>
+                <version_id>1.25</version_id>
+                <description>
+                    MAVEN Release 25. Consists of an incremental release of SWIA calibrated data,
+                    including the initial release of 2020-11-15 to 2021-02-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2021-02-11</modification_date>
+                <version_id>1.24</version_id>
+                <description>
+                    MAVEN Release 24. Consists of an incremental release of SWIA calibrated data,
+                    including the initial release of 2020-08-15 to 2020-11-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2020-11-12</modification_date>
+                <version_id>1.23</version_id>
+                <description>
+                    MAVEN Release 23. Consists of an incremental release of SWIA calibrated data,
+                    including the initial release of 2020-05-15 to 2020-08-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2020-08-12</modification_date>
+                <version_id>1.22</version_id>
+                <description>
+                    MAVEN Release 22. Consists of an incremental release of SWIA calibrated data,
+                    including the initial release of 2020-02-15 to 2020-05-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2020-05-21</modification_date>
+                <version_id>1.21</version_id>
+                <description>
+                    MAVEN Release 21. Consists of an incremental release of SWIA calibrated data, 
+                    including the initial release of 2019-11-15 to 2020-02-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2020-02-12</modification_date>
+                <version_id>1.20</version_id>
+                <description>
+                    MAVEN Release 20 (2020-02-15). Consists of an incremental release of SWIA calibrated 
+                    data, including the initial release of 2019-08-15 to 2019-11-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2019-11-04</modification_date>
+                <version_id>1.19</version_id>
+                <description>
+                    MAVEN Release 19 (2019-11-15). Consists of an incremental release of SWIA calibrated 
+                    data, including the initial release of 2019-05-15 to 2019-08-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2019-08-09</modification_date>
+                <version_id>1.18</version_id>
+                <description>
+                    MAVEN Release 18 (2019-08-15). Consists of an incremental release of SWIA calibrated 
+                    data, including the initial release of 2019-02-15 to 2019-05-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2019-05-13</modification_date>
+                <version_id>1.17</version_id>
+                <description>
+                    MAVEN Release 17 (2019-05-15). Consists of an incremental release of SWIA calibrated 
+                    data, including the initial release of 2018-11-15 to 2019-02-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2019-02-14</modification_date>
+                <version_id>1.16</version_id>
+                <description>
+                    MAVEN Release 16 (2019-02-15). Consists of an incremental release of SWIA calibrated 
+                    data, including the initial release of 2018-08-15 to 2018-11-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2018-08-09</modification_date>
+                <version_id>1.14</version_id>
+                <description>
+                    MAVEN Release 14 (2018-08-15). Consists of an incremental release of SWIA calibrated 
+                    data, including the initial release of 2018-02-15 to 2018-05-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2018-05-02</modification_date>
+                <version_id>1.13</version_id>
+                <description>
+                    MAVEN Release 13 (2018-05-15). Consists of an incremental release of SWIA calibrated 
+                    data, including the initial release of 2017-11-15 to 2018-02-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2018-02-08</modification_date>
+                <version_id>1.12</version_id>
+                <description>
+                    MAVEN Release 12 (2018-02-15). Consists of an incremental release of SWIA calibrated 
+                    data, including the initial release of 2017-08-15 to 2017-11-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2017-11-13</modification_date>
+                <version_id>1.11</version_id>
+                <description>
+                    MAVEN Release 11 (2017-11-15). Consists of an incremental release of SWIA calibrated 
+                    data, including the initial release of 2017-05-15 to 2017-08-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2017-08-10</modification_date>
+                <version_id>1.10</version_id>
+                <description>
+                    MAVEN Release 10 (2017-08-15). Consists of an incremental release of SWIA calibrated 
+                    data, including the initial release of 2017-02-15 to 2017-05-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2017-08-09</modification_date>
+                <version_id>1.9</version_id>
+                <description>
+                    This version included corrections to a 1 second timing error in the data following the 
+                    leap second at 2016-12-31T23:59:60 UTC. Coverage is the same as for version 1.8.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2017-05-15</modification_date>
+                <version_id>1.8</version_id>
+                <description>
+                    MAVEN Release 9. Consists of an incremental release of SWIA calibrated data. Coverage is 
+                    2016-11-15 to 2017-02-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2017-02-13</modification_date>
+                <version_id>1.7</version_id>
+                <description>
+                    MAVEN Release 8. Consists of an incremental release of SWIA calibrated data. Coverage is 
+                    2016-08-15 to 2016-11-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-11-15</modification_date>
+                <version_id>1.6</version_id>
+                <description>
+                    MAVEN Release 7. Consists of an incremental release of SWIA calibrated data. Coverage is 
+                    2016-05-15 to 2016-08-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-08-14</modification_date>
+                <version_id>1.5</version_id>
+                <description>
+                    MAVEN Release 6. Consists of an incremental release of SWIA calibrated data. Coverage is 
+                    2014-03-19 to 2016-05-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-05-16</modification_date>
+                <version_id>1.4</version_id>
+                <description>
+                    MAVEN Release 5. Consists of an incremental release of SWIA calibrated data. Coverage is 
+                    2014-03-19 to 2016-02-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-02-11</modification_date>
+                <version_id>1.3</version_id>
+                <description>MAVEN Release 4</description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2015-11-06</modification_date>
+                <version_id>1.2</version_id>
+                <description>MAVEN Release 3</description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2015-08-11</modification_date>
+                <version_id>1.1</version_id>
+                <description>MAVEN Release 2</description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2015-05-29</modification_date>
+                <version_id>1.0</version_id>
+                <description>MAVEN Release 1</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Context_Area>
+        <Time_Coordinates>
+            <start_date_time>2014-03-19T14:19:43.095Z</start_date_time>
+            <stop_date_time>2025-12-06T00:00:43.587Z</stop_date_time>
+        </Time_Coordinates>
+             <Primary_Result_Summary>
+                   <purpose>Science</purpose>
+                   <processing_level>Calibrated</processing_level>
+                   <Science_Facets>
+                         <domain>Heliosphere</domain>
+                         <domain>Magnetosphere</domain>
+                         <discipline_name>Particles</discipline_name>
+                         <facet1>Ions</facet1>
+                         <facet2>Solar Energetic</facet2>
+                  </Science_Facets>
+            </Primary_Result_Summary>
+             <Investigation_Area>
+                   <name>Mars Atmosphere and Volatile EvolutioN Mission</name>
+                   <type>Mission</type>
+                   <Internal_Reference>
+                         <lid_reference>urn:nasa:pds:context:investigation:mission.maven</lid_reference>
+                         <reference_type>bundle_to_investigation</reference_type>
+                  </Internal_Reference>
+            </Investigation_Area>
+       <Observing_System>
+          <Observing_System_Component>
+              <name>MAVEN</name>
+              <type>Host</type>   
+              <Internal_Reference>
+                 <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.maven</lid_reference>
+                 <reference_type>is_instrument_host</reference_type>
+              </Internal_Reference>
+          </Observing_System_Component>
+          <Observing_System_Component>
+             <name>Solar Wind Ion Analyzer</name>
+             <type>Instrument</type>
+             <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:instrument:swia.maven</lid_reference>
+                <reference_type>is_instrument</reference_type>
+             </Internal_Reference>
+          </Observing_System_Component>
+       </Observing_System>
+        <Target_Identification>
+            <name>Solar Wind</name>
+            <type>Plasma Stream</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:target:plasma_stream.solar_wind</lid_reference>
+                <reference_type>bundle_to_target</reference_type>
+            </Internal_Reference>
+        </Target_Identification>
+        <Target_Identification>
+            <name>Mars</name>
+            <type>Planet</type>
+            <Internal_Reference>
+               <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+                <reference_type>bundle_to_target</reference_type>
+            </Internal_Reference>
+        </Target_Identification>
+             <Mission_Area>
+                   <mvn:MAVEN>
+                       <mvn:mission_phase_name>Cruise</mvn:mission_phase_name>
+                       <mvn:mission_phase_name>Transition</mvn:mission_phase_name>
+                       <mvn:mission_phase_name>Prime Mission</mvn:mission_phase_name>
+                       <mvn:mission_phase_name>EM-1</mvn:mission_phase_name>
+                       <mvn:mission_phase_name>EM-2</mvn:mission_phase_name>
+                       <mvn:mission_phase_name>EM-3</mvn:mission_phase_name>
+                       <mvn:mission_phase_name>EM-4</mvn:mission_phase_name>
+                       <mvn:mission_phase_name>EM-5</mvn:mission_phase_name>
+                       <mvn:mission_phase_name>EM-6</mvn:mission_phase_name>
+                  </mvn:MAVEN>
+            </Mission_Area>
+    </Context_Area>
+    <Reference_List>
+       <Internal_Reference>
+          <lid_reference>urn:nasa:pds:maven.swia.calibrated:document:sis</lid_reference>
+          <reference_type>bundle_to_document</reference_type>
+       </Internal_Reference>
+    </Reference_List>
+    <Bundle>
+        <bundle_type>Archive</bundle_type>
+        <description>MAVEN SWIA Calibrated Data Bundle</description>
+    </Bundle>
+    <File_Area_Text>
+        <File>
+            <file_name>Readme_2.16.txt</file_name>
+            <creation_date_time>2026-06-10T09:25:05</creation_date_time>
+            <md5_checksum>c8baf00b10568112ce90f8906c282146</md5_checksum>
+            <comment>This file contains a brief overview of the MAVEN SWIA Calibrated data bundle.</comment>
+        </File>
+        <Stream_Text>
+            <name>Readme_2.16.txt</name>
+            <offset unit="byte">0</offset>
+            <object_length unit="byte">16205</object_length>
+            <parsing_standard_id>7-Bit ASCII Text</parsing_standard_id>
+            <description>This file contains a brief overview of the MAVEN SWIA Calibrated data bundle.</description>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+        </Stream_Text>
+    </File_Area_Text>
+    <Bundle_Member_Entry>
+        <lidvid_reference>urn:nasa:pds:maven.swia.calibrated:data.coarse_arc_3d::2.16</lidvid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_data_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lidvid_reference>urn:nasa:pds:maven.swia.calibrated:data.coarse_svy_3d::2.16</lidvid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_data_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lidvid_reference>urn:nasa:pds:maven.swia.calibrated:data.fine_arc_3d::2.16</lidvid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_data_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lidvid_reference>urn:nasa:pds:maven.swia.calibrated:data.fine_svy_3d::2.16</lidvid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_data_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lidvid_reference>urn:nasa:pds:maven.swia.calibrated:data.onboard_svy_mom::2.16</lidvid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_data_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lidvid_reference>urn:nasa:pds:maven.swia.calibrated:data.onboard_svy_spec::2.16</lidvid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_data_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lidvid_reference>urn:nasa:pds:maven.swia.calibrated:document::1.1</lidvid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_document_collection</reference_type>
+    </Bundle_Member_Entry>
+</Product_Bundle>

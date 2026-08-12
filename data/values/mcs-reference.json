@@ -1,0 +1,72 @@
+{
+  "dataset_id": "mars.mro.mcs.reference",
+  "dataset_version": "0.1.0",
+  "record_count": 5,
+  "records": [
+    {
+      "record_id": "mars.climate.mcs.ddr-v6.2.profile-layer-count",
+      "property_id": "climate.mcs_profile_layer_count",
+      "status": "DERIVED",
+      "value": 105,
+      "unit": "count",
+      "location": {"scope": "DATASET", "product_id": "2015041500_DDR.TAB"},
+      "time": {"temporal_scope": "STATIC_PRODUCT_STRUCTURE"},
+      "uncertainty": {"kind": "NOT_APPLICABLE", "note": "Ürün yapısındaki kesin tekrar sayısıdır."},
+      "source_id": "nasa-pds-mro-mcs-ddr-v6.2-mrom2104-sample",
+      "source_locator": "2015041500_ddr.lbl, FRAME_STRUCTURE REPETITIONS = 105",
+      "notes": "Her profil aynı basınç koordinatı dizisini taşır."
+    },
+    {
+      "record_id": "mars.climate.mcs.2015041500.profile-count",
+      "property_id": "climate.mcs_profile_count",
+      "status": "DERIVED",
+      "value": 379,
+      "unit": "count",
+      "location": {"scope": "DATASET", "product_id": "2015041500_DDR.TAB"},
+      "time": {"temporal_scope": "PRODUCT", "start_utc": "2015-04-15T00:00:22.056", "stop_utc": "2015-04-15T03:59:36.412"},
+      "uncertainty": {"kind": "EXACT_FOR_ARCHIVED_PRODUCT"},
+      "source_id": "nasa-pds-mro-mcs-ddr-v6.2-mrom2104-sample",
+      "source_locator": "2015041500_ddr.lbl, TABLE ROWS = 379; byte-size validation after 2,888-byte header",
+      "notes": null
+    },
+    {
+      "record_id": "mars.climate.mcs.mrom2104.cumulative-product-count",
+      "property_id": "climate.mcs_cumulative_product_count",
+      "status": "DERIVED",
+      "value": 17032,
+      "unit": "count",
+      "location": {"scope": "ARCHIVE", "through_volume": "MROM_2104"},
+      "time": {"temporal_scope": "ARCHIVE_BUILD", "published_at": "2025-02-20"},
+      "uncertainty": {"kind": "EXACT_FOR_ARCHIVED_PRODUCT"},
+      "source_id": "nasa-pds-mro-mcs-ddr-v6.2-mrom2104-sample",
+      "source_locator": "cumindex.lbl, TABLE ROWS = 17032; cumindex.tab line count",
+      "notes": "Yerel kopyalanmış DDR dosyası sayısı değil, kümülatif dizindeki ürün sayısıdır."
+    },
+    {
+      "record_id": "mars.climate.mcs.2015041500.start-solar-longitude",
+      "property_id": "climate.mcs_solar_longitude",
+      "status": "DERIVED",
+      "value": 325.97911,
+      "unit": "deg",
+      "location": {"scope": "GLOBAL_TIME_REFERENCE"},
+      "time": {"temporal_scope": "INSTANT", "utc": "2015-04-15T00:00:22.056"},
+      "uncertainty": {"kind": "NOT_AVAILABLE"},
+      "source_id": "nasa-pds-mro-mcs-ddr-v6.2-mrom2104-sample",
+      "source_locator": "2015041500_ddr.lbl, START_SOLAR_LONGITUDE = 325.97911",
+      "notes": "Ürünün başlangıç mevsim koordinatıdır."
+    },
+    {
+      "record_id": "mars.climate.mcs.2015041500.stop-solar-longitude",
+      "property_id": "climate.mcs_solar_longitude",
+      "status": "DERIVED",
+      "value": 326.07165,
+      "unit": "deg",
+      "location": {"scope": "GLOBAL_TIME_REFERENCE"},
+      "time": {"temporal_scope": "INSTANT", "utc": "2015-04-15T03:59:36.412"},
+      "uncertainty": {"kind": "NOT_AVAILABLE"},
+      "source_id": "nasa-pds-mro-mcs-ddr-v6.2-mrom2104-sample",
+      "source_locator": "2015041500_ddr.lbl, STOP_SOLAR_LONGITUDE = 326.07165",
+      "notes": "Ürünün bitiş mevsim koordinatıdır."
+    }
+  ]
+}

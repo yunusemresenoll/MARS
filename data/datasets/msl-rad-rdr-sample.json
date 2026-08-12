@@ -1,0 +1,52 @@
+{
+  "dataset_id": "mars.msl.rad.rdr-current-index-and-one-sol",
+  "source_id": "nasa-pds-msl-rad-rdr-release-2026-sample",
+  "target": "Mars",
+  "processing_state": "ARCHIVED_RAW",
+  "products": [
+    {
+      "product_id": "MSL_RAD_RDR_INDEX_2026_03_17",
+      "property_id": "radiation.rdr_product_index",
+      "data_path": "resources/archive/nasa-pds-msl-rad-rdr-sample/index.tab",
+      "label_path": "resources/archive/nasa-pds-msl-rad-rdr-sample/index.lbl",
+      "record_count_method": "FIXED_BYTES",
+      "record_bytes": 196,
+      "records": 5436,
+      "canonical_source_unit": null,
+      "structure": {
+        "format": "PDS3 fixed-length ASCII",
+        "header_records": 1,
+        "index_rows": 5435,
+        "columns": 8,
+        "archive_stop_time": "2025-11-05T01:25:27",
+        "release_date": "2026-03-17"
+      },
+      "observation_period": "2011-11-20T18:24:41/2025-11-05T01:25:27",
+      "notes": "records fiziksel kayıt sayısıdır: bir başlık ve 5.435 ürün satırı. Dizin tamdır fakat işaret ettiği veri dosyalarının tamamı yerel değildir."
+    },
+    {
+      "product_id": "RAD_RDR_2012_260_17_50_0041_V00",
+      "property_id": "radiation.rdr_surface_sol_file",
+      "data_path": "resources/archive/nasa-pds-msl-rad-rdr-sample/rad_rdr_2012_260_17_50_0041_v00.txt",
+      "label_path": "resources/archive/nasa-pds-msl-rad-rdr-sample/rad_rdr_sis.pdf",
+      "record_count_method": "TEXT_LINES",
+      "records": 26877,
+      "canonical_source_unit": null,
+      "structure": {
+        "format": "RAD RDR SIS sectioned ASCII",
+        "indexed_product_start_time": "2012-260T17:50:56",
+        "contains": [
+          "observation metadata",
+          "stopping-particle histograms",
+          "penetrating-particle histograms",
+          "neutral-particle histograms",
+          "detector B and E absorbed dose rates",
+          "B/A1 and B/A2 LET histograms",
+          "pulse-height-analysis events"
+        ]
+      },
+      "observation_period": "single Curiosity surface sol beginning 2012-260T17:50:56",
+      "notes": "Bu ürün Gale Krateri'ndeki araç konumuna ait zamana bağlı noktasal ölçümdür. Küresel Mars radyasyon alanı olarak kullanılamaz; diğer 5.434 indeksli ürün yerel arşivde değildir."
+    }
+  ]
+}

@@ -1,0 +1,549 @@
+PDS_VERSION_ID     = PDS3
+RECORD_TYPE        = STREAM
+OBJECT             = TEXT
+  NOTE             = "Release notes and errata for the MSL REMS RDR 
+                      data set (ERRATA.TXT)"
+  PUBLICATION_DATE = 2026-03-17
+END_OBJECT         = TEXT
+END
+
+Users are encouraged to provide comments to the PDS Atmospheres Node
+if errors are found either in data or in documentation in this archive.
+Please send comments by e-mail or U.S. mail to the Atmospheres Node:
+
+          PDS Atmospheres Node
+          Astronomy Department
+          New Mexico State University
+          P.O. Box 30001, Dept 4500
+          Las Cruces, NM 88003  
+
+          Web:   http://atmos.pds.nasa.gov/
+
+This file, ERRATA.TXT, contains release notes and errata concerning the
+MSL REMS EDR archive.
+
+During the course of the MSL mission the REMS science team may update
+previously released data products or documentation; for example, updates may
+occur due to changes in calibration data or procedures. Updates will be
+reported in this file. Older versions of data and documentation will not be
+retained in the archive.
+
+Section A of this file contains an entry for each MSL release with
+general information about the contents of the release, in order from newest
+to oldest.  Updates to previously released files are reported in these
+entries, along with any known errata.
+
+Section B of this file contains general notes, if any, concerning the archive
+as a whole.
+
+
+******** SECTION A ********
+
+RELEASE NUMBER: 41
+RELEASE DATE: 2026-03-17
+DATA COVERAGE: 2025-07-28 to 2025-11-05 (Sols 4613-4709)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+RELEASE NUMBER: 40
+RELEASE DATE: 2025-12-05
+DATA COVERAGE: 2025-03-22 to 2025-07-28 (Sols 4489-4612)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+RELEASE NUMBER: 39
+RELEASE DATE: 2025-08-01
+DATA COVERAGE: 2024-11-05 to 2025-03-22 (Sols 4355-4488)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+RELEASE NUMBER: 38
+RELEASE DATE: 2025-03-17
+DATA COVERAGE: 2024-07-28 to 2024-11-05 (Sols 4258-4354)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+RELEASE NUMBER: 37
+RELEASE DATE: 2024-12-06
+DATA COVERAGE: 2023-11-03 to 2024-07-28 (Sols 3997-4257)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+REMS RDR products for sols 3997-4133 have been updated and
+re-released in order to use updated Pressure Sensor calibration data.
+
+RELEASE NUMBER: 36
+RELEASE DATE: 2024-08-02
+DATA COVERAGE: 2023-11-06 to 2024-03-23 (Sols 4000-4133)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+This release has a format change applied only to the new released data: columns
+whose values cannot be determined (due to reasons such as sensor damage,
+saturation, etc) will no longer be "UNK" or "NULL".  Instead, they will have a
+special value, which will be -999.  Depending on the given column format
+definition, this may be -999.00 or -9.990E+02. For the particular case of
+THERMOPILE_[A..C]_BETA columns, it will be 9.00.
+
+The reason for this change is to ensure compatibility with PDS4. All data in
+the archive, as well as the relevant documentation, will be updated for the
+next release.
+
+RELEASE NUMBER: 35
+RELEASE DATE: 2024-03-15
+DATA COVERAGE: 2023-07-29 to 2023-11-06 (Sols 3903-3999)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+RELEASE NUMBER: 34
+RELEASE DATE: 2023-12-05
+DATA COVERAGE: 2023-03-24 to 2023-07-29 (Sols 3779-3902)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+RELEASE NUMBER: 33
+RELEASE DATE: 2023-08-01
+DATA COVERAGE: 2022-11-06 to 2023-03-24 (Sols 3645-3778)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+RELEASE NUMBER: 32
+RELEASE DATE: 2023-03-16
+DATA COVERAGE: 2022-07-30 to 2022-11-06 (Sols 3548-3644)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+RELEASE NUMBER: 31
+RELEASE DATE: 2022-12-05
+DATA COVERAGE: 2019-07-31 to 2022-07-30 (Sols 2483-3547)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+This release covers sols 3424-3547 for the nominal REMS RDRs products. 
+
+In addition, it includes the "CORRECTED UV 3" data release, covering sols
+2483-3423. The "CORRECTED UV" data releases contain REMS UV fluxes acquired for
+solar zenith angles < 55 degrees, corrected for the effects of dust deposition
+and inaccuracies in the original angular response calibration functions.
+
+RELEASE NUMBER: 30
+RELEASE DATE: 2022-08-01
+DATA COVERAGE: 2021-11-07 to 2022-03-24 (Sols 3290-3423)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+RELEASE NUMBER: 29
+RELEASE DATE: 2022-03-16
+DATA COVERAGE: 2021-07-30 to 2021-11-07 (Sols 3193-3289)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+RELEASE NUMBER: 28
+RELEASE DATE: 2021-12-06
+DATA COVERAGE: 2021-03-24 to 2021-07-30 (Sols 3069-3192)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+RELEASE NUMBER: 27
+RELEASE DATE: 2021-08-02
+DATA COVERAGE: 2020-07-27 to 2021-03-24 (Sols 2835-3068)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+REMS RDR products for sols 2835-2934 have been updated and
+re-released in order to use updated Humidity Sensor
+calibration data.
+
+RELEASE NUMBER: CORRECTED UV 2 (Interim Release)
+RELEASE DATE: 2021-08-02
+DATA COVERAGE: 2018-03-23 to 2019-07-31 (Sols 2001-2482) 
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR 
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+New dataset containing REMS UV fluxes acquired for solar zenith 
+angles < 55 degrees during sols 2001-2482, corrected for the effects
+of dust deposition and inaccuracies in the original angular response 
+calibration functions.
+
+RELEASE NUMBER: 26
+RELEASE DATE: 2021-03-16
+DATA COVERAGE: 2020-07-30 to 2020-11-07 (Sols 2838-2934)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+RELEASE NUMBER: 25
+RELEASE DATE: 2020-12-04
+DATA COVERAGE: 2020-02-24 to 2020-07-30 (Sols 2685-2837)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+REMS RDR products for sols 2685-2713 have been updated and
+re-released in order to use updated Humidity Sensor
+calibration data.
+
+RELEASE NUMBER: 24
+RELEASE DATE: 2020-07-31
+DATA COVERAGE: 2019-10-24 to 2020-03-25 (Sols 2565-2713)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+REMS RDR products for sols 2565-2579 have been updated and
+re-released in order to use updated Humidity Sensor 
+calibration data.
+
+RELEASE NUMBER: 23
+RELEASE DATE: 2020-03-16
+DATA COVERAGE: 2019-07-22 to 2019-11-08 (Sols 2474-2579)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+REMS RDR products for sols 2474-2482 have been updated and
+re-released in order to use updated Humidity Sensor calibration 
+parameters.
+
+RELEASE NUMBER: 22
+RELEASE DATE: 2019-12-05
+DATA COVERAGE: 2019-03-22 to 2019-07-31 (Sols 2355-2482)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+REMS RDR products for sols 2355-2358 have been updated and
+re-released in order to use updated Humidity Sensor calibration 
+parameters.
+
+RELEASE NUMBER: CORRECTED UV 1 (Interim Release)
+RELEASE DATE: 2019-10-04
+DATA COVERAGE: 2012-08-07 to 2018-03-23 (Sols 0-2000) 
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR 
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+New dataset containing REMS UV fluxes acquired for solar zenith 
+angles < 55 degrees during the first 2000 sols, corrected for the effects
+of dust deposition and inaccuracies in the original angular response 
+calibration functions.
+
+RELEASE NUMBER: 21
+RELEASE DATE: 2019-08-01
+DATA COVERAGE: 2018-08-01 to 2019-03-26 (Sols 2128-2358)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+REMS RDR products for sols 2128 to 2224 have been updated and
+re-released in order to use updated Humidity and Pressure Sensors
+calibration parameters.
+
+RELEASE NUMBER: 20
+RELEASE DATE: 2019-03-15
+DATA COVERAGE: 2018-07-18 to 2018-11-08 (Sols 2115-2224)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+REMS RDR products for sols 2115 to 2127 have been updated and
+re-released in order to use updated Humidity and Pressure Sensors
+calibration parameters.
+
+RELEASE NUMBER: 19
+RELEASE DATE: 2018-12-05
+DATA COVERAGE: 2018-10-26 to 2018-08-01 (Sols 1935-2127)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+REMS RDR products for sols 1935 to 2003 have been updated and
+re-released in order to use updated Humidity Sensor calibration
+parameters.
+
+RELEASE NUMBER: 18
+RELEASE DATE: 2018-08-01
+DATA COVERAGE: 2017-08-12 to 2018-06-28 (Sols 1784-2003)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+REMS RDR products for sols 1784 to 1869 have been updated and
+re-released in order to use updated Pressure Sensor calibration
+parameters.
+
+RELEASE NUMBER: 17
+RELEASE DATE: 2018-03-16
+DATA COVERAGE: 2017-08-01 to 2017-11-08 (Sols 1773-1869)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+RELEASE NUMBER: 16
+RELEASE DATE: 2017-12-05
+DATA COVERAGE: 2017-03-12 to 2017-08-01 (Sols 1635-1772)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+REMS RDR products for sols 1635 to 1648 have been updated and
+re-released in order to use updated Humidity Sensor calibration
+parameters.
+
+RELEASE NUMBER: 15
+RELEASE DATE: 2017-08-01
+DATA COVERAGE: 2016-11-09 to 2017-03-26 (Sols 1515-1648)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+RELEASE NUMBER: 14
+RELEASE DATE: 2017-03-16
+DATA COVERAGE: 2016-04-07 to 2016-11-09 (Sols 1305-1514)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+REMS RDR products for sols 1305 to 1417 have been updated and
+re-released in order to use updated Humidity Sensors calibration
+parameters.
+
+RELEASE NUMBER: 13
+RELEASE DATE: 2016-12-05
+DATA COVERAGE: 2016-03-27 to 2016-08-01 (Sols 1294-1417)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+RELEASE NUMBER: 12
+RELEASE DATE: 2016-08-18
+DATA COVERAGE: 2015-11-05 to 2016-03-27 (Sols 1155-1293)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+REMS RDR products for sols 1155 to 1159 have been updated and
+re-released in order to use updated Humidity Sensors calibration
+parameters.
+
+RELEASE NUMBER: 11
+RELEASE DATE: 2016-03-16
+DATA COVERAGE: 2014-08-29 to 2015-11-10 (Sols 735-1159)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+REMS RDR products for sols 735 to 1062 have been re-released in order
+to use updated Humidity and Pressure Sensors calibration
+parameters. MODRDR horizontal wind speed for those sols has also been
+updated due to its dependency on pressure.
+
+RELEASE NUMBER: 10
+RELEASE DATE: 2015-12-04
+DATA COVERAGE: 2015-03-29 to 2015-08-02 (Sols 939-1062)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+This release adds a new document that explains how wind direction and
+speed calculations are done.
+
+RELEASE NUMBER: 9
+RELEASE DATE: 2015-07-31
+DATA COVERAGE: 2012-08-06 to 2015-03-28 (Sols 0-938)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+All REMS RDR products from Sols 0 through 804 have been revised and
+re-released in order to update and add new data. The list of updates
+can be found below. As in the previous releases, revised products can
+be identified by an increment in the label keywords PRODUCT_VERSION_ID
+and PRODUCT_CREATION_TIME.
+
+List of changes:
+
+1. Inclusion of LTST (calculated with respect to rover position).
+2. Inclusion of wind horizontal speed and direction. Confidence levels
+   updated.
+3. Relative humidity processing updated.
+4. Atmospheric relative humidity removed. Inclusion of VMR (Volume
+   Mixing Ratio). Confidence levels updated.
+5. Humidity Sensor upper and lower uncertainties bounds replaced by 
+   calibration uncertainty.
+6. Added the temperature uncertainty for the air temperature sensor
+   located in the boom base in Boom 1.
+
+RELEASE NUMBER: 8
+RELEASE DATE: 2015-03-16
+DATA COVERAGE: 2014-08-03 to 2014-11-10 (Sols 708-804)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+REMS RDR products for sols 1,9,356,647 and 673 have been re-released 
+in order to correct the following errors:
+
+ 1. Bug fixed in ATS AMBIENT_TEMP.
+ 2. Minor ancillary data updates.
+
+RELEASE NUMBER: 7
+RELEASE DATE: 2014-12-05
+DATA COVERAGE: 2012-08-06 to 2014-08-03 (Sols 0-707)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+All REMS RDR products from Sols 0 through 583 have been revised and
+re-released in order to correct errors and to add new data. The list
+of updates can be found below. As in the previous releases, revised
+products can be identified by an increment in the label keywords
+PRODUCT_VERSION_ID and PRODUCT_CREATION_TIME.
+
+List of changes:
+
+ 1. Update to ATS calibration parameters.
+ 2. Update to HS calibration parameters.
+
+RELEASE NUMBER: 6
+RELEASE DATE: 2014-08-01
+DATA COVERAGE: 2012-08-06 to 2013-03-28 (Sols 0-583)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+All REMS RDR products from Sols 0 through 449 have been revised and
+re-released in order to correct errors and to add new data. The list
+of updates can be found below. As in the previous releases, revised
+products can be identified by an increment in the label keywords
+PRODUCT_VERSION_ID and PRODUCT_CREATION_TIME.
+
+List of changes:
+
+ 1. New Humidity Sensor algorithm for relative humidity. 
+ 2. New boom selection algorithm for Ambient Temperature in MODRDRs.
+ 3. Updated calibration parameters for Wind Sensor, Pressure Sensor, 
+    and Air Temperature Sensor. 
+ 4. New confidence level flag for ATS: Observation reliability.
+ 5. Inclusion of UVS and HS uncertainities.
+ 6. Removal of GTS temperatures below 50K.
+
+RELEASE NUMBER: 5
+RELEASE DATE: 2014-03-17
+DATA COVERAGE: 2012-08-06 to 2013-11-10 (Sols 0-449)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+All REMS RDR products from Sols 0 through 359 have been revised and
+re-released in order to correct errors and to add new data. The list
+of updates can be found below. As in the previous releases, revised
+products can be identified by an increment in the label keywords
+PRODUCT_VERSION_ID and PRODUCT_CREATION_TIME.
+
+List of changes:
+
+ 1. Changes in the rover movement flag for GTS (rover angular 
+    movement error resolved).
+ 2. Included rover angular movements in the rover movement flags for 
+    WS and UVS (these flags included only rover velocity changes so
+    far).
+ 3. New flag of "boom in shadow" for ATS confidence levels. 
+ 4. Change in the algorithm to select the ambient temperature from
+    boom1 or boom2. 
+ 5. Changes in HS calibration parameters for sols 75-104. 
+
+
+RELEASE NUMBER: 4
+RELEASE DATE: 2013-12-13
+DATA COVERAGE: 2012-08-06 to 2013-08-10 (Sols 0-359)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+All REMS RDR products from Sols 0 through 269 have been revised and
+re-released in order to correct errors and to add new data. The list
+of updates can be found below. As in the previous releases, revised
+products can be identified by an increment in the label keywords
+PRODUCT_VERSION_ID and PRODUCT_CREATION_TIME.
+
+List of changes:
+
+ 1. Added Humidity Sensor ENVRDR and MODRDR data. The relative
+    humidity in MODRDR level has been divided into local relative
+    humidity and atmospheric relative humidity. Atmospheric relative
+    humidity has been set to NULL pending further revision.
+ 2. Calibration parameters have been updated for GTS and PS. Data from
+    these sensors have changed as a result of this. For PS this
+    happens only from sol 276 onwards.
+ 3. GTS systematic uncertainties are now divided into absolute (long term)
+    uncertainty and relative (short term) uncertainty.
+ 4. Rover movement flag in GTS confidence level code flipped (now is 
+    0 = moving, 1 = still).
+ 5. SPICE kernels provided by NAIF used for processing have been
+    updated. This has an impact in position and time dependent data.
+ 6. Width field changes in ADR_GEOM.FMT for the rover positions
+    columns (ROVER_POSITION_X, ROVER_POSITION_Y, ROVER_POSITION_Z)
+ 7. Updates in rover velocity processing to minimize noise and to
+    remove spurious data.
+
+RELEASE NUMBER: 3
+RELEASE DATE: 2013-06-20
+DATA COVERAGE: 2012-08-06 to 2013-05-09 (Sols 0-269)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+The following errors have been detected in this dataset. They will be
+corrected in the next release.
+ 
+List of errors:
+
+ 1. In MODRDR the columns BOOM1_LOCAL_AIR_TEMP, BOOM2_LOCAL_AIR_TEMP
+    and AMBIENT_TEMP are in Celsius degrees instead of Kelvin as the 
+    format file indicates.
+ 2. The flag 'Wind Sensor status' value is swapped for Air Temperature 
+    Sensor confidence levels (WS ON is marked as 0 instead of 1, and
+    WS OFF is marked as 1 instead of 0). This error concerns the columns
+    ATS_BOOM1_CONFIDENCE_LEVEL and ATS_BOOM2_CONFIDENCE_LEVEL in ENVRDR
+    and ATS_BOOM1_CONFIDENCE_LEVEL, ATS_BOOM2_CONFIDENCE_LEVEL and
+    AMBIENT_TEMP_CONFIDENCE_LEVEL in MODRDR.
+
+All REMS RDR products from Sols 0 through 179 have been revised and
+re-released. The list of updates can be found below. As in the previous
+release, revised products can be identified with the label keywords
+PRODUCT_VERSION_ID and PRODUCT_CREATION_TIME.
+
+List of changes:
+
+ 1. Added Air Temperature Sensor MODRDR data.
+ 2. Corrected rover position and velocity data in ADRs which were
+    mistakenly set to 0. Data dependent on these factors (such as rover 
+    motion flags in confidence levels or MODRDRs UV data) were affected.
+ 3. A new confidence level flag in Wind Sensor data indicates whether its 
+    configuration was correctly selected based on measured air temperature.
+ 4. New confidence level flag for the Ground Temperature Sensor that takes
+    shadows in its field of view into account.
+ 5. Change on the saturation limit for convective powers in Wind Sensor. 
+ 6. Calibration parameters for the Pressure sensor have been updated.
+ 
+RELEASE NUMBER: 2
+RELEASE DATE: 2013-06-20
+DATA COVERAGE: 2012-08-06 to 2013-02-06 (Sols 0-179)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: REMS RDR
+
+All REMS RDR products from Sols 0 through 89 have been revised and
+re-released. Revisions were made to correct errors discovered in the
+data processing and to update confidence level codes. Revised products
+may be identified by the label keyword PRODUCT_VERSION_ID, which will
+have a value greater than 1.0, by the keyword PRODUCT_CREATION_TIME,
+which will have a value later than the previous release date of
+February 6, 2013, and by the version number in the filename, which
+will be greater than 1.
+
+List of changes:
+ 1. Corrected a processing error in UV sensor in ENVRDRs, in which
+    when the Solar Zenith Angle was between 20 and 30 degrees UV
+    radiation was processed as diffuse radiation instead of as direct
+    radiation.
+ 2. The time drift of 3 seconds has been corrected.
+ 3. SOLAR_AZIMUTH column in ADR_GEOM1.FMT has been renamed to
+    SOLAR_LONGITUDE_ANGLE. SOLAR_ELEVATION column in the same file has been 
+    renamed to SOLAR_ZENITHAL_ANGLE.
+ 4. ASIC Noise flag in Wind Sensor confidence level now occupies two 
+    characters.
+ 5. New flag in Pressure Sensor confidence level to take into account
+    the oscillator being used.
+ 6. Ultraviolet confidence level in MODRDR now includes a dust sensor
+    degradation flag.
+
+RELEASE NUMBER: 1
+RELEASE DATE: 2013-02-27
+DATA COVERAGE: 2012-08-06 to 2012-11-05 (Sols 0-89)
+PRODUCT TYPES RELEASED FOR THIS ARCHIVE: REMS RDR
+PRODUCT TYPES UPDATED FOR THIS ARCHIVE: None
+
+
+ 1. All dates and times in the data products have a drift of 3 seconds.
+
+
+******** SECTION B ********
+
+This section is provided for general notes concerning the archive as a whole.
+

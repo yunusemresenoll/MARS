@@ -1,0 +1,63 @@
+Mars Global Surveyor (MGS) MAG/ER Derived Field Map of Mars Data Description  
+MAG - Magnetometer                                                            
+ER - Electron Reflectometer                                                   
+                                                                              
+  PDS3 DATA_SET_ID               = MGS-M-ER-5-FIELD-MAP-V1.0                  
+  ORIGINAL DATA_SET_NAME         = MGS MARS ER 5 FIELD MAP V1.0               
+  START_TIME                     = N/A                                        
+  STOP_TIME                      = N/A                                        
+  DATA_SET_RELEASE_DATE          = 2010-08-05                                 
+  PRODUCER_FULL_NAME             = DR. ROBERT J. LILLIS                       
+                                                                              
+  ====================================================================        
+  Collection Overview:                                                        
+  ===================                                                         
+                                                                              
+    The electron reflectometry map of Mars consists of an ASCII file with     
+    latitude and longitude in bins of 0.5 deg.  This map is a derived         
+    data product; a number of assumptions went into its creation.  For        
+    details, please consult the following paper:                              
+                                                                              
+        An improved crustal magnetic field map of Mars from electron          
+        reflectometry: Highland volcano magmatic history and the end of the   
+        martian dynamo                                                        
+                                                                              
+        Robert J. Lillis, Herbert V. Frey, Michael Manga, David L. Mitchell,  
+        Robert P. Lin, Mario H. Acuna, Stephen W. Bougher                     
+                                                                              
+        Icarus 194 (2008) 575-596                                             
+                                                                              
+        doi:10.1016/j.icarus.2007.09.032                                      
+                                                                              
+    (To access the paper, go to the DOI website at http://dx.doi.org          
+    and type in the above DOI.)                                               
+                                                                              
+    The ASCII map file in this data set is the same one used in the above     
+    cited paper.                                                              
+                                                                              
+                                                                              
+    Data                                                                      
+    ====                                                                      
+                                                                              
+    The contents of the map file are the elements of a 720 x 360-element      
+    matrix, i.e. 720 rows and 360 columns.  The spacing is 0.5 deg in both    
+    latitude and longitude.  The values of latitude are:                      
+                                                                              
+    -89.75 deg, -89.25 deg, -88.75 deg,...... -0.25 deg, 0.25 deg,...,        
+    88.75 deg, 89.25 deg, 89.75 deg.                                          
+                                                                              
+    The longitudes are EAST longitudes and, from right to left, are:          
+    0.25 deg, 0.75 deg, 1.25 deg,..., 358.75 deg, 359.25 deg, 359.75 deg.     
+                                                                              
+    In the file, the elements of the matrix are grouped into rows of six      
+    values each."                                                             
+                                                                              
+                                                                              
+    Confidence Level Overview                                                 
+    =========================                                                 
+                                                                              
+  IMPORTANT NOTE:  ER-derived magnetic field magnitudes are NOT the same as   
+  magnetometer data and should NOT be treated as such.  Users of the data are 
+  strongly advised to contact Dr. Robert J. Lillis, the provider of the map,  
+  before using the data in publications.                                      
+                                                                              

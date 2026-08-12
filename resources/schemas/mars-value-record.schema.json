@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mars.local/schemas/mars-value-record.schema.json",
+  "title": "MARS Value Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "property_id",
+    "status",
+    "value",
+    "unit",
+    "location",
+    "time",
+    "uncertainty",
+    "source_id",
+    "source_locator"
+  ],
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "property_id": {"type": "string", "minLength": 1},
+    "status": {
+      "type": "string",
+      "enum": ["MEASURED", "DERIVED", "MODELLED", "UNKNOWN"]
+    },
+    "value": {},
+    "unit": {"type": ["string", "null"]},
+    "location": {
+      "type": "object",
+      "required": ["scope"],
+      "properties": {
+        "scope": {"enum": ["GLOBAL", "POINT", "AREA", "VOLUME"]},
+        "latitude_deg": {"type": ["number", "null"], "minimum": -90, "maximum": 90},
+        "longitude_deg_east": {"type": ["number", "null"]},
+        "elevation_m": {"type": ["number", "null"]},
+        "depth_m": {"type": ["number", "null"]},
+        "reference_frame": {"type": ["string", "null"]},
+        "spatial_resolution_m": {"type": ["number", "null"], "exclusiveMinimum": 0}
+      },
+      "additionalProperties": false
+    },
+    "time": {
+      "type": "object",
+      "properties": {
+        "utc": {"type": ["string", "null"]},
+        "mars_year": {"type": ["integer", "null"]},
+        "sol": {"type": ["number", "null"]},
+        "solar_longitude_ls_deg": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 360
+        },
+        "local_solar_time": {"type": ["string", "null"]},
+        "temporal_scope": {"enum": ["INSTANT", "INTERVAL", "CLIMATOLOGY", "TIME_INVARIANT", "UNKNOWN"]}
+      },
+      "required": ["temporal_scope"],
+      "additionalProperties": false
+    },
+    "uncertainty": {
+      "type": "object",
+      "required": ["kind"],
+      "properties": {
+        "kind": {"enum": ["STANDARD", "RANGE", "CONFIDENCE_INTERVAL", "QUALITATIVE", "NOT_AVAILABLE"]},
+        "value": {},
+        "lower": {"type": ["number", "null"]},
+        "upper": {"type": ["number", "null"]},
+        "unit": {"type": ["string", "null"]},
+        "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+        "note": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "source_id": {"type": "string", "minLength": 1},
+    "source_locator": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Page, table, figure, field, PDS product or other precise locator"
+    },
+    "notes": {"type": ["string", "null"]}
+  }
+}
+

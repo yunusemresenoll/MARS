@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.sch" 
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/mission/mvn/v1/PDS4_MVN_1D00_1110.sch"
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Collection
+   xmlns="http://pds.nasa.gov/pds4/pds/v1"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:mvn="http://pds.nasa.gov/pds4/mission/mvn/v1"
+   xsi:schemaLocation="
+       http://pds.nasa.gov/pds4/pds/v1    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.xsd
+       http://pds.nasa.gov/pds4/mission/mvn/v1    https://pds.nasa.gov/pds4/mission/mvn/v1/PDS4_MVN_1D00_1110.xsd
+    ">
+   <Identification_Area>
+      <logical_identifier>urn:nasa:pds:maven.lpw.derived:data.lp.nt</logical_identifier>
+      <version_id>6.2</version_id>
+      <title>MAVEN LPW Derived Electron Temperature Data Collection</title>
+      <information_model_version>1.24.0.0</information_model_version>
+      <product_class>Product_Collection</product_class>
+      <Citation_Information>
+         <publication_year>2026</publication_year>
+         <doi>10.17189/8hsd-zd46</doi>
+         <description>
+            The electron temperature and density derived based on the IV-curves and when available adjusted based on wave derived electron density. Note that data values of '-nan' can be treated as equivalent to 'nan'.
+         </description>
+         <List_Author>
+            <Person>
+               <given_name>Laila</given_name>
+               <family_name>Andersson</family_name>
+               <person_orcid>0000-0001-5909-7415</person_orcid>
+               <sequence_number>1</sequence_number>
+               <Affiliation>
+                  <organization_name>Laboratory for Atmospheric and Space Physics</organization_name>
+                  <organization_rorid>https://ror.org/01fcjzv38</organization_rorid>
+                  <sequence_number>1</sequence_number>
+               </Affiliation>
+               <Affiliation>
+                  <organization_name>University of Colorado Boulder</organization_name>
+                  <organization_rorid>https://ror.org/02ttsq026</organization_rorid>
+                  <sequence_number>2</sequence_number>
+               </Affiliation>
+            </Person>
+         </List_Author>
+      </Citation_Information>
+      <Modification_History>
+         <Modification_Detail>
+            <modification_date>2026-06-02</modification_date>
+            <version_id>6.2</version_id>
+            <description>MAVEN Release 45.</description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2026-02-18</modification_date>
+            <version_id>6.1</version_id>
+            <description>MAVEN Release 44.</description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2025-11-25</modification_date>
+            <version_id>6.0</version_id>
+            <description>
+               LPW reprocessed, LPW has slots for 10 different products and 
+               only used 3 of them before, now the first three slots: LP-density-combined,
+               LP-temperature and LP-potential, and the rest have LP-density and other information.
+            </description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2025-05-15</modification_date>
+            <version_id>5.4</version_id>
+            <description>MAVEN Release 41.</description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2025-02-14</modification_date>
+            <version_id>5.3</version_id>
+            <description>MAVEN Release 40.</description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2024-11-15</modification_date>
+            <version_id>5.2</version_id>
+            <description>MAVEN Release 39.</description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2024-08-05</modification_date>
+            <version_id>5.1</version_id>
+            <description>MAVEN Release 38.</description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2024-06-27</modification_date>
+            <version_id>5.0</version_id>
+            <description>
+               The data and PDS label for the products have been updated.
+               The data was reprocessed as a result of fixing various timing
+               and data processing issues that were found by the LPW team.
+            </description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2024-05-06</modification_date>
+            <version_id>4.24</version_id>
+            <description>MAVEN Release 37.</description>
+         </Modification_Detail>
+      </Modification_History>
+   </Identification_Area>
+   <Context_Area>
+      <Time_Coordinates>
+         <start_date_time>2014-10-11T00:00:00.000Z</start_date_time>
+         <stop_date_time>2025-12-05T23:59:59.999Z</stop_date_time>
+      </Time_Coordinates>
+      <Primary_Result_Summary>
+         <purpose>Science</purpose>
+         <processing_level>Derived</processing_level>
+         <Science_Facets>
+            <domain>Magnetosphere</domain>
+            <discipline_name>Particles</discipline_name>
+            <facet1>Electrons</facet1>
+            <facet2>Plasma</facet2>
+         </Science_Facets>
+      </Primary_Result_Summary>
+      <Investigation_Area>
+         <name>Mars Atmosphere and Volatile EvolutioN Mission</name>
+         <type>Mission</type>
+         <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:investigation:mission.maven</lid_reference>
+            <reference_type>collection_to_investigation</reference_type>
+         </Internal_Reference>
+      </Investigation_Area>
+      <Observing_System>
+         <Observing_System_Component>
+            <name>MAVEN</name>
+            <type>Host</type>   
+            <Internal_Reference>
+               <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.maven</lid_reference>
+               <reference_type>is_instrument_host</reference_type>
+            </Internal_Reference>
+         </Observing_System_Component>
+         <Observing_System_Component>
+            <name>Langmuir Probe and Waves Instrument</name>
+            <type>Instrument</type>   
+            <Internal_Reference>
+               <lid_reference>urn:nasa:pds:context:instrument:lpw.maven</lid_reference>
+               <reference_type>is_instrument</reference_type>
+            </Internal_Reference>
+         </Observing_System_Component>
+      </Observing_System>
+      <Target_Identification>
+         <name>Mars</name>
+         <type>Planet</type>
+         <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+            <reference_type>collection_to_target</reference_type>
+         </Internal_Reference>
+      </Target_Identification>
+      <Mission_Area>
+         <mvn:MAVEN>
+            <mvn:mission_phase_name>EM-5</mvn:mission_phase_name>
+            <mvn:mission_phase_name>Transition</mvn:mission_phase_name>
+            <mvn:mission_phase_name>Prime Mission</mvn:mission_phase_name>
+            <mvn:mission_phase_name>EM-1</mvn:mission_phase_name>
+            <mvn:mission_phase_name>EM-2</mvn:mission_phase_name>
+            <mvn:mission_phase_name>EM-3</mvn:mission_phase_name>
+            <mvn:mission_phase_name>EM-4</mvn:mission_phase_name>
+            <mvn:mission_phase_name>EM-6</mvn:mission_phase_name>
+         </mvn:MAVEN>
+      </Mission_Area>
+   </Context_Area>
+   <Reference_List>
+
+   </Reference_List>
+   <Collection>
+      <collection_type>Data</collection_type>
+      <description>
+         The electron temperature and density derived based on the IV-curves and when available adjusted based on wave derived electron density. Note that data values of '-nan' can be treated as equivalent to 'nan'.
+      </description>
+   </Collection>
+   <File_Area_Inventory>
+      <File>
+         <file_name>collection_data_l2_lpnt_6.2.csv</file_name>
+         <creation_date_time>2026-05-27T14:35:09</creation_date_time>
+         <file_size unit="byte">298275</file_size>
+         <md5_checksum>599907751e454e3a74b1fee2b3890f4a</md5_checksum>
+      </File>
+      <Inventory>
+         <offset unit="byte">0</offset>
+         <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+         <records>3977</records>
+         <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+         <field_delimiter>Comma</field_delimiter>
+         <Record_Delimited>
+            <fields>2</fields>
+            <groups>0</groups>
+            <maximum_record_length unit="byte">259</maximum_record_length>               
+            <Field_Delimited>
+               <name>Member Status</name>
+               <field_number>1</field_number>
+               <data_type>ASCII_String</data_type>
+               <maximum_field_length unit="byte">1</maximum_field_length>
+            </Field_Delimited>
+            <Field_Delimited>
+               <name>LIDVID_LID</name>
+               <field_number>2</field_number>
+               <data_type>ASCII_LIDVID_LID</data_type>
+               <maximum_field_length unit="byte">255</maximum_field_length>    
+            </Field_Delimited>
+         </Record_Delimited>
+         <reference_type>inventory_has_member_product</reference_type>
+      </Inventory>
+   </File_Area_Inventory>
+</Product_Collection>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1M00.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1M00_1303.sch"
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Collection
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:msn="http://pds.nasa.gov/pds4/msn/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1M00.xsd
+    
+    http://pds.nasa.gov/pds4/msn/v1
+    https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1M00_1303.xsd
+    ">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:mgs-mager:data-fieldmap-derived</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MGS MAG/ER Derived Map of Mars Data Collection</title>
+        <information_model_version>1.22.0.0</information_model_version>
+        <product_class>Product_Collection</product_class>
+        <Citation_Information>
+            <publication_year>2024</publication_year> 
+           <doi>10.17189/x1h2-6660</doi> 
+            <description> 
+                This collection contains an ASCII file representing a crustal magnetic field   
+                map of Mars.  This map was constructed from data from the Electron           
+                Reflectometer (ER) section of the MAG/ER instrument aboard Mars Global       
+                Surveyor (MGS).
+            </description>
+            <List_Author>
+                <Person>
+                    <given_name>Robert J.</given_name>
+                    <family_name>Lillis</family_name>
+                    <person_orcid>0000-0003-0578-517X</person_orcid>
+                    <sequence_number>1</sequence_number>
+                    <Affiliation>
+                        <organization_name>University of California, Berkeley</organization_name>
+                        <organization_rorid>https://ror.org/01an7q238</organization_rorid>
+                    </Affiliation>
+                </Person>
+            </List_Author>
+        </Citation_Information> 
+        <Modification_History>
+            <Modification_Detail> 
+                <modification_date>2024-07-05</modification_date>
+                <version_id>1.0</version_id>
+                <description> 
+                    This is the original version of this collection in PDS4.
+                    It was migrated to PDS4 from the PDS3 data set MGS-M-ER-5-FIELD-MAP-V1.0.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Context_Area>
+        <Time_Coordinates>
+            <start_date_time xsi:nil="true" nilReason="unknown"/>
+            <stop_date_time xsi:nil="true" nilReason="unknown"/>
+        </Time_Coordinates> 
+        <Primary_Result_Summary>
+            <purpose>Science</purpose>
+            <processing_level>Derived</processing_level> 
+            <description>MGS MAG/ER Derived Map of Mars</description>
+            <Science_Facets>
+                <domain>Magnetosphere</domain>
+                <discipline_name>Fields</discipline_name>
+                <facet1>Magnetic</facet1>
+                <facet2>Background</facet2>
+            </Science_Facets>
+        </Primary_Result_Summary> 
+        <Investigation_Area>
+            <name>Mars Global Surveyor</name>
+            <type>Mission</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:investigation:mission.mars_global_surveyor</lid_reference> 
+                <reference_type>collection_to_investigation</reference_type>
+            </Internal_Reference> 
+        </Investigation_Area> 
+        <Observing_System>
+            <Observing_System_Component>
+                <name>Mars Global Surveyor</name>
+                <type>Host</type> 
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mgs</lid_reference> 
+                    <reference_type>is_instrument_host</reference_type> 
+                </Internal_Reference> 
+            </Observing_System_Component> 
+            <Observing_System_Component>
+                <name>Electron Reflectometer</name>
+                <type>Instrument</type> 
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument:mgs.er</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference> 
+            </Observing_System_Component> 
+            <Observing_System_Component>
+                <name>Magnetometer</name>
+                <type>Instrument</type> 
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument:mgs.mag</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference> 
+            </Observing_System_Component> 
+        </Observing_System>  
+        <Target_Identification> 
+            <name>Mars</name> 
+            <type>Planet</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference> 
+                <reference_type>collection_to_target</reference_type> 
+            </Internal_Reference> 
+        </Target_Identification>
+    </Context_Area> 
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:resource:resource.mgs-mager_colxn_data-fieldmap-derived_online</lid_reference>
+            <reference_type>has_resource</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:resource:resource.mgs-mager_online</lid_reference>
+            <reference_type>has_resource</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:mgs-mager:document:data-fieldmap-derived-desc</lid_reference>
+            <reference_type>collection_to_document</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:mgs-mager:document:errata</lid_reference>
+            <reference_type>collection_to_errata</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1016/j.icarus.2007.09.032</doi>
+            <reference_text>
+                An improved crustal magnetic field map of Mars from electron
+                reflectometry: Highland volcano magmatic history and the end of the
+                martian dynamo
+                
+                Robert J. Lillis, Herbert V. Frey, Michael Manga, David L. Mitchell,
+                Robert P. Lin, Mario H. Acuna, Stephen W. Bougher
+                
+                Icarus 194 (2008) 575-596
+            </reference_text>
+            <description>
+                The electron reflectometry map of Mars consists of an ASCII file with
+                latitude and longitude in bins of 0.5 deg.  This map is a derived
+                data product; a number of assumptions went into its creation.
+            </description>
+        </External_Reference>
+        <Source_Product_External>
+            <external_source_product_identifier>MGS-M-ER-5-FIELD-MAP-V1.0</external_source_product_identifier>
+            <reference_type>data_to_calibrated_source_product</reference_type>
+            <doi>10.17189/1519751</doi>
+            <curating_facility>PDS Planetary Plasma Interactions Node</curating_facility>
+            <description>
+                This is the first version converted to PDS4. The DOI references the source PDS3 data set.  
+            </description>
+        </Source_Product_External> 
+    </Reference_List>
+    <Collection>
+        <collection_type>Data</collection_type>
+        <description>
+            MGS MAG/ER Derived Map of Mars Data Collection
+        </description>
+    </Collection>
+    <File_Area_Inventory>
+        <File>
+            <file_name>collection_data_er_map_1.0.csv</file_name>
+            <creation_date_time>2024-06-05T10:18:51</creation_date_time>
+            <file_size unit="byte">67</file_size>
+            <md5_checksum>db2ce06d989e9eea4c64d5075016f0a8</md5_checksum>
+        </File>
+        <Inventory>
+            <offset unit="byte">0</offset>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <records>1</records>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <field_delimiter>Comma</field_delimiter>
+            <Record_Delimited>
+                <fields>2</fields>
+                <groups>0</groups>
+                <Field_Delimited>
+                    <name>Member Status</name>
+                    <field_number>1</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <maximum_field_length unit="byte">1</maximum_field_length>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>LIDVID_LID</name>
+                    <field_number>2</field_number>
+                    <data_type>ASCII_LIDVID_LID</data_type>
+                    <maximum_field_length unit="byte">255</maximum_field_length>
+                </Field_Delimited>
+            </Record_Delimited>
+            <reference_type>inventory_has_member_product</reference_type>
+        </Inventory>
+    </File_Area_Inventory>
+</Product_Collection>

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mars.local/schemas/source-dataset.schema.json",
+  "title": "MARS Archived Source Dataset",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["dataset_id", "source_id", "target", "processing_state", "products"],
+  "properties": {
+    "dataset_id": {"type": "string", "minLength": 1},
+    "source_id": {"type": "string", "minLength": 1},
+    "target": {"type": "string", "minLength": 1},
+    "processing_state": {"enum": ["ARCHIVED_RAW", "ARCHIVED_DERIVED", "NORMALIZED"]},
+    "products": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "product_id",
+          "property_id",
+          "data_path",
+          "label_path",
+          "records",
+          "canonical_source_unit",
+          "structure"
+        ],
+        "properties": {
+          "product_id": {"type": "string", "minLength": 1},
+          "property_id": {"type": "string", "minLength": 1},
+          "data_path": {"type": "string", "minLength": 1},
+          "label_path": {"type": "string", "minLength": 1},
+          "records": {"type": "integer", "minimum": 1},
+          "canonical_source_unit": {"type": ["string", "null"]},
+          "structure": {"type": "object"},
+          "record_count_method": {
+            "enum": [
+              "TEXT_LINES",
+              "ZIP_TEXT_LINES",
+              "ZIP_DBF_RECORDS",
+              "ZIP_BINARY_CELLS",
+              "FIXED_BYTES",
+              "PDS_STREAM_ROWS",
+              "BINARY_CELLS",
+              "PDS_ARRAY_ELEMENTS",
+              "PDS_TABLE_RECORDS"
+            ]
+          },
+          "data_member": {"type": "string", "minLength": 1},
+          "data_member_pattern": {"type": "string", "minLength": 1},
+          "label_member_pattern": {"type": "string", "minLength": 1},
+          "record_bytes": {"type": "integer", "minimum": 1},
+          "data_offset_bytes": {"type": "integer", "minimum": 0},
+          "sample_bits": {"type": "integer", "minimum": 1},
+          "label_array_id": {"type": "string", "minLength": 1},
+          "observation_period": {"type": ["string", "null"]},
+          "notes": {"type": ["string", "null"]}
+        }
+      }
+    }
+  }
+}

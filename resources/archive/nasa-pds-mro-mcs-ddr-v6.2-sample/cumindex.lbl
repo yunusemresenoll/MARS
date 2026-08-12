@@ -1,0 +1,119 @@
+PDS_VERSION_ID                 = PDS3
+RECORD_TYPE                    = STREAM
+^TABLE                         = "CUMINDEX.TAB"
+DATA_SET_ID                    = "MRO-M-MCS-5-DDR-V6.2"
+MISSION_NAME                   = "MARS RECONNAISSANCE ORBITER"
+SPACECRAFT_NAME                = "MARS RECONNAISSANCE ORBITER"
+SPACECRAFT_ID                  = MRO
+INSTRUMENT_NAME                = "MARS CLIMATE SOUNDER"
+TARGET_NAME                    = MARS
+MISSION_PHASE_NAME             = "PRIMARY MISSION"
+
+OBJECT                         = TABLE
+ INTERCHANGE_FORMAT            = ASCII
+ ROWS                          = 17032
+ COLUMNS                       = 10
+ ROW_BYTES                     = 178
+
+  OBJECT = COLUMN
+  COLUMN_NUMBER = 1
+  NAME = VOLUME_ID
+  DATA_TYPE = CHARACTER
+  START_BYTE = 2
+  BYTES = 9
+  FORMAT = "A9"
+  DESCRIPTION = "volume id"
+  END_OBJECT = COLUMN
+
+  OBJECT = COLUMN
+  COLUMN_NUMBER = 2
+  NAME = PATH
+  DATA_TYPE = CHARACTER
+  START_BYTE = 14
+  BYTES = 20
+  FORMAT = "A20"
+  DESCRIPTION = "Path to data file, relative to DATA/ directory"
+  END_OBJECT = COLUMN
+
+  OBJECT = COLUMN
+  COLUMN_NUMBER = 3
+  NAME = FILENAME
+  DATA_TYPE = CHARACTER
+  START_BYTE = 37
+  BYTES = 18
+  FORMAT = "A18"
+  DESCRIPTION = "Filename (identical to PRODUCT_ID)"
+  END_OBJECT = COLUMN
+
+  OBJECT = COLUMN
+  COLUMN_NUMBER = 4
+  NAME = PRODUCT_CREATION_TIME
+  DATA_TYPE = CHARACTER
+  START_BYTE = 58
+  BYTES = 19
+  FORMAT = "A19"
+  DESCRIPTION = "Time at which the product file was created (UTC)"
+  END_OBJECT = COLUMN
+
+  OBJECT = COLUMN
+  COLUMN_NUMBER = 5
+  NAME = START_TIME
+  DATA_TYPE = CHARACTER
+  START_BYTE = 80
+  BYTES = 23
+  FORMAT = "A23"
+  DESCRIPTION = "Time of first record in product file (UTC)"
+  END_OBJECT = COLUMN
+
+  OBJECT = COLUMN
+  COLUMN_NUMBER = 6
+  NAME = STOP_TIME
+  DATA_TYPE = CHARACTER
+  START_BYTE = 106
+  BYTES = 23
+  FORMAT = "A23"
+  DESCRIPTION = "Time of last record in product file (UTC)"
+  END_OBJECT = COLUMN
+
+  OBJECT = COLUMN
+  COLUMN_NUMBER = 7
+  NAME = SPACECRAFT_CLOCK_START_COUNT
+  DATA_TYPE = ASCII_INTEGER
+  START_BYTE = 132
+  BYTES = 13
+  FORMAT = "I13"
+  DESCRIPTION = "MCS-internal Spacecraft clock count of first record"
+  END_OBJECT = COLUMN
+
+  OBJECT = COLUMN
+  COLUMN_NUMBER = 8
+  NAME = SPACECRAFT_CLOCK_STOP_COUNT
+  DATA_TYPE = ASCII_INTEGER
+  START_BYTE = 148
+  BYTES = 13
+  FORMAT = "I13"
+  DESCRIPTION = "MCS-internal Spacecraft clock count of last record"
+  END_OBJECT = COLUMN
+
+  OBJECT = COLUMN
+  COLUMN_NUMBER = 9
+  NAME = START_ORBIT_NUMBER
+  DATA_TYPE = ASCII_INTEGER
+  START_BYTE = 164
+  BYTES = 5
+  FORMAT = "I5"
+  DESCRIPTION = "Orbit number at time of first record in file"
+  END_OBJECT = COLUMN
+
+  OBJECT = COLUMN
+  COLUMN_NUMBER = 10
+  NAME = STOP_ORBIT_NUMBER
+  DATA_TYPE = ASCII_INTEGER
+  START_BYTE = 172
+  BYTES = 5
+  FORMAT = "I5"
+  DESCRIPTION = "Orbit number at time of last record in file"
+  END_OBJECT = COLUMN
+
+END_OBJECT = TABLE
+END

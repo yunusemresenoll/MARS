@@ -1,0 +1,1411 @@
+{
+  "catalog_version": "1.0.0",
+  "sources": [
+    {
+      "source_id": "nasa-naif-pck00011-2022",
+      "title": "Planetary Constants Kernel pck00011.tpc",
+      "authors": ["Nat Bachman", "NASA Navigation and Ancillary Information Facility"],
+      "publisher": "NASA Jet Propulsion Laboratory / NAIF",
+      "published_at": "2022-12-27",
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/pck00011.tpc",
+      "doi": null,
+      "retrieved_at": "2026-07-29",
+      "license": "NASA/JPL source terms apply; preserve attribution and source notices",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-naif-pck00011-2022/pck00011.tpc",
+          "sha256": "3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+          "bytes": 131226,
+          "media_type": "text/plain"
+        }
+      ],
+      "citation": "NASA Navigation and Ancillary Information Facility (2022), Planetary Constants Kernel pck00011.tpc, JPL.",
+      "notes": "Primary local source for Mars size, shape and IAU rotational elements. The file states that mission-specific PCK files may be preferable for mission applications."
+    },
+    {
+      "source_id": "nasa-pds4-standards-1.26.0",
+      "title": "PDS4 Planetary Science Standards Reference, Version 1.26.0",
+      "authors": ["NASA Planetary Data System"],
+      "publisher": "NASA Planetary Data System",
+      "published_at": "2026-06",
+      "url": "https://pds.nasa.gov/data/pds4/documents/document_pds4_standards/1.26.0.0/StdRef_1.26.0.pdf",
+      "doi": null,
+      "retrieved_at": "2026-07-29",
+      "license": "NASA source terms apply; preserve attribution and source notices",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-pds4-standards-1.26.0/StdRef_1.26.0.pdf",
+          "sha256": "9d965eb77495c6df8ae79675535354a50dfa2fa26c767cdab40cf302d4fe7df1",
+          "bytes": 2456955,
+          "media_type": "application/pdf"
+        }
+      ],
+      "citation": "NASA Planetary Data System (2026), PDS4 Planetary Science Standards Reference, Version 1.26.0.",
+      "notes": "Normative source for the archive and metadata conventions used by MARS."
+    },
+    {
+      "source_id": "nasa-mars-facts-2026",
+      "title": "Mars: Facts",
+      "authors": ["NASA Science Editorial Team"],
+      "publisher": "NASA Science",
+      "published_at": null,
+      "url": "https://science.nasa.gov/mars/facts/",
+      "doi": null,
+      "retrieved_at": "2026-07-29",
+      "license": "NASA web content usage guidelines apply; third-party credited material remains subject to its own terms",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-mars-facts-2026/mars-facts.html",
+          "sha256": "4ef849e92e3e086f2147c1ae6e00a4f18644a28218dc3824b1661af3f71698a6",
+          "bytes": 294269,
+          "media_type": "text/html"
+        }
+      ],
+      "citation": "NASA Science, Mars: Facts, retrieved 2026-07-29.",
+      "notes": "Archived HTML only; linked images and other third-party assets were not copied."
+    },
+    {
+      "source_id": "nasa-tm-20220006678",
+      "title": "Power System Design Trades for a Pressurized Lunar/Mars Rover",
+      "authors": [
+        "Steven Oleson",
+        "Jim Fittje",
+        "Paul Schmitz",
+        "Lucia Tian",
+        "Brandon Klefman",
+        "Steven Korn",
+        "Max Chaiken",
+        "Mike Smith",
+        "Tom Packard",
+        "Tony Colozza",
+        "John Gyekenyesi",
+        "Elizabeth Turnbull",
+        "Tom Parkey",
+        "Taylor Phillips-Hungerford"
+      ],
+      "publisher": "NASA Glenn Research Center",
+      "published_at": "2022-09",
+      "url": "https://ntrs.nasa.gov/api/citations/20220006678/downloads/TM-20220006678.pdf",
+      "doi": null,
+      "retrieved_at": "2026-07-29",
+      "license": "NASA source terms apply; preserve attribution and source notices",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-tm-20220006678/TM-20220006678.pdf",
+          "sha256": "4d3b04afa32db01c306d4cb7ee4e2f71688f5bf19b51485ab1702ad9db3641c6",
+          "bytes": 24612560,
+          "media_type": "application/pdf"
+        }
+      ],
+      "citation": "Oleson, S. et al. (2022), Power System Design Trades for a Pressurized Lunar/Mars Rover, NASA/TM-20220006678.",
+      "notes": "Table 4.10 supplies an engineering reference composition for the Martian atmosphere. It is not a spatially and temporally resolved atmospheric observation."
+    },
+    {
+      "source_id": "nasa-pds-rems-modrdr",
+      "title": "MSL Mars Rover Environmental Monitoring Station 5 MODRDR V1.0",
+      "authors": ["J. Gomez-Elvira"],
+      "publisher": "NASA Planetary Data System",
+      "published_at": "2013",
+      "url": "https://pds.nasa.gov/ds-view/pds/viewProfile.jsp?dsid=MSL-M-REMS-5-MODRDR-V1.0",
+      "doi": null,
+      "retrieved_at": "2026-07-29",
+      "license": "NASA PDS source terms apply; preserve dataset citation",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-pds-rems-modrdr/dataset.html",
+          "sha256": "7c11b4891dca4fd6cf57e6ea970a8989d131d0afec20ded6e8c662fa2aabb581",
+          "bytes": 22734,
+          "media_type": "text/html"
+        }
+      ],
+      "citation": "Gomez-Elvira, J. (2013), Mars Science Laboratory Rover Environmental Monitoring Station RDR Data V1.0, MSL-M-REMS-5-MODRDR-V1.0, NASA PDS.",
+      "notes": "Catalog description documents measured/derived REMS parameters and important quality limitations. This local copy is metadata, not the full measurement archive."
+    },
+    {
+      "source_id": "nasa-pds-crism-atmos-db",
+      "title": "Atmospheric Retrievals for Mars Integrated from MRO-CRISM Bundle",
+      "authors": ["NASA Planetary Data System", "MRO CRISM Team"],
+      "publisher": "NASA Planetary Data System",
+      "published_at": "2024",
+      "url": "https://pds.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amro-crism_atmos-db&version=1.0",
+      "doi": "10.17189/76ha-be75",
+      "retrieved_at": "2026-07-29",
+      "license": "NASA PDS source terms apply; preserve dataset citation",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-pds-crism-atmos-db/bundle.html",
+          "sha256": "b44e3286eb55ee04042c6603538ee7bacfb3ede131bb583273c4fd55cfefe326",
+          "bytes": 14904,
+          "media_type": "text/html"
+        }
+      ],
+      "citation": "NASA PDS and MRO CRISM Team (2024), Atmospheric Retrievals for Mars Integrated from MRO-CRISM, DOI 10.17189/76ha-be75.",
+      "notes": "Catalog metadata describes water vapor, carbon monoxide, oxygen airglow, dust and water-ice retrieval products. This local copy is metadata, not the full derived-data bundle."
+    },
+    {
+      "source_id": "nasa-pds-odyssey-grs-special",
+      "title": "Mars Odyssey GRS Special Products Bundle",
+      "authors": ["William Boynton", "Mars Odyssey GRS Science Team"],
+      "publisher": "NASA Planetary Data System Geosciences Node",
+      "published_at": "2026",
+      "url": "https://pds.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Aodyssey_grs_special&version=1.0",
+      "doi": "10.17189/r1eh-tz02",
+      "retrieved_at": "2026-07-29",
+      "license": "NASA PDS source terms apply; preserve dataset and article citations",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-pds-odyssey-grs-special/bundle.html",
+          "sha256": "bc0b703b7289764f232002f6927b4bf3bce3fb8a4d236a402be4389ac7e56c78",
+          "bytes": 14884,
+          "media_type": "text/html"
+        },
+        {
+          "path": "archive/nasa-pds-odyssey-grs-special/ns_epithermal_020917.tab",
+          "sha256": "2ac2dbdc964a4ff7a0c79e535a8ed91b9835a44e7c697f6f3c8d199c78cfdde0",
+          "bytes": 6739200,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-odyssey-grs-special/ns_epithermal_020917.xml",
+          "sha256": "bf645d04674722749ee95c654b8842b990458ff50af136588920d1ffe6f9172b",
+          "bytes": 7838,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-odyssey-grs-special/ns_thermal_020917.tab",
+          "sha256": "839317e972cb3db1275b80b1dc23d055d1623ba4371eef5ce5774ea0c3ec0760",
+          "bytes": 6739200,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-odyssey-grs-special/ns_thermal_020917.xml",
+          "sha256": "b71c26611e1bbbad088e3622bb978cd10748ea5c92a722a347f8233f01802bc8",
+          "bytes": 7964,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-odyssey-grs-special/ns_fast_020917.tab",
+          "sha256": "defc528234fd19d9d2034873ba5ecb83f7499c5777aff6b21ca9ea2199174dda",
+          "bytes": 6739200,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-odyssey-grs-special/ns_fast_020917.xml",
+          "sha256": "70ac5bae460196e91d6ff2529d80b48ec935f5a2b2992c8b51bc8c4ba8e1a724",
+          "bytes": 7937,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-odyssey-grs-special/hend_epithermal_020917.tab",
+          "sha256": "ae142217947ee0394f3b1d140c7fa5bbcf057c256a6e3f741a9766f1a6c51545",
+          "bytes": 202500,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-odyssey-grs-special/hend_epithermal_020917.xml",
+          "sha256": "7bd9fddb11f0dbe8ba86f3053165a93131d2f60a5c114924cfa3182a932b2fda",
+          "bytes": 8127,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-odyssey-grs-special/hend_fast_020917.tab",
+          "sha256": "2be9dce5166acf58561c0e93e9e951dd8d224802fb7297ebb0a45730d3641b3c",
+          "bytes": 182250,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-odyssey-grs-special/hend_fast_020917.xml",
+          "sha256": "629a7a89257c2a435ce566677e68c0ec1189ae89be14584960595ae2ef98bdf3",
+          "bytes": 8072,
+          "media_type": "application/xml"
+        }
+      ],
+      "citation": "Boynton, W. and Mars Odyssey GRS Science Team (2026 PDS4 migration), Mars Odyssey GRS Special Products, NASA PDS, DOI 10.17189/r1eh-tz02.",
+      "notes": "Contains the actual PDS tables and PDS4 labels for NS thermal, epithermal and fast neutron flux and HEND epithermal and fast neutron flux. Neutron flux is an observation related to hydrogen; it is not itself a direct water-ice percentage."
+    },
+    {
+      "source_id": "nasa-pds-sharad-rdr",
+      "title": "MRO SHARAD Reduced Data Record V1.0",
+      "authors": ["Roberto Orosei"],
+      "publisher": "NASA Planetary Data System",
+      "published_at": "2006",
+      "url": "https://pds.nasa.gov/ds-view/pds/viewProfile.jsp?dsid=MRO-M-SHARAD-4-RDR-V1.0",
+      "doi": null,
+      "retrieved_at": "2026-07-29",
+      "license": "NASA PDS source terms apply; preserve dataset citation",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-pds-sharad-rdr/dataset.html",
+          "sha256": "b83ae140c18bce9f2438a2d7e5fde4b4d47a0abe19e0f4b51c97704e9e5ceac3",
+          "bytes": 22099,
+          "media_type": "text/html"
+        }
+      ],
+      "citation": "Orosei, R. (2006), Mars Reconnaissance Orbiter Shallow Radar Reduced Data Record, MRO-M-SHARAD-4-RDR-V1.0, NASA PDS.",
+      "notes": "Metadata only. The source explicitly warns that off-nadir surface clutter can appear as subsurface reflections."
+    },
+    {
+      "source_id": "nasa-swim-map-2024",
+      "title": "SWIM Map Shows Subsurface Water Ice on Mars",
+      "authors": ["Alicia Cermak", "NASA Science Editorial Team"],
+      "publisher": "NASA Science",
+      "published_at": "2023-10-26",
+      "url": "https://science.nasa.gov/resource/swim-map-shows-subsurface-water-ice-on-mars/",
+      "doi": null,
+      "retrieved_at": "2026-07-29",
+      "license": "NASA web content usage guidelines apply; credited third-party material retains its own terms",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-swim-map-2024/resource.html",
+          "sha256": "388ca8c12e52b733c0509326a6ba0c3b63eee67f2dc35d8c62560cb16667b588",
+          "bytes": 258935,
+          "media_type": "text/html"
+        }
+      ],
+      "citation": "NASA Science (2023, updated 2024), SWIM Map Shows Subsurface Water Ice on Mars.",
+      "notes": "Archived HTML only. The page explains that SWIM combines multiple missions and maps subsurface ice evidence from the equator to 60 degrees north; the linked image is not treated as a quantitative raster."
+    },
+    {
+      "source_id": "usgs-sim3292-2014",
+      "title": "Geologic Map of Mars, Scientific Investigations Map 3292",
+      "authors": [
+        "Kenneth L. Tanaka",
+        "James A. Skinner Jr.",
+        "James M. Dohm",
+        "Rossman P. Irwin III",
+        "Eric J. Kolb",
+        "Corey M. Fortezzo",
+        "Thomas Platz",
+        "Gregory G. Michael",
+        "Trent M. Hare"
+      ],
+      "publisher": "U.S. Geological Survey",
+      "published_at": "2014-07-14",
+      "url": "https://pubs.usgs.gov/sim/3292/",
+      "doi": "10.3133/sim3292",
+      "retrieved_at": "2026-07-29",
+      "license": "Public Domain",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/usgs-sim3292/sim3292_database.zip",
+          "sha256": "ef75f059b1f2f5a47aff55e6c6e39500cf1ab65e743fabc5d463b97bc10b6541",
+          "bytes": 808910442,
+          "media_type": "application/zip"
+        },
+        {
+          "path": "archive/usgs-sim3292/sim3292_dmu_with_locality_images.pdf",
+          "sha256": "4e408760c438f630cb05345f4274430aa310b43cc61493e5b4bc4d1eee526f95",
+          "bytes": 809770,
+          "media_type": "application/pdf"
+        },
+        {
+          "path": "archive/usgs-sim3292/sim3292_metadata.xml",
+          "sha256": "38806845cae2354e4ab65c55f57819d3e001b3865aceb5a24426efd5412683f8",
+          "bytes": 14721,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/usgs-sim3292/sim3292_pamphlet.pdf",
+          "sha256": "18d3f0547e2f8cd82891f5adc454a8177ab62339c0b4a7f8370d8d2ecbce16ca",
+          "bytes": 3415492,
+          "media_type": "application/pdf"
+        },
+        {
+          "path": "archive/usgs-sim3292/sim3292_readme.txt",
+          "sha256": "702c8d8dd705a7746dad2b47a36f85fd850cc44939388ccc5f8e636369731aeb",
+          "bytes": 5580,
+          "media_type": "text/plain"
+        }
+      ],
+      "citation": "Tanaka, K.L. et al. (2014), Geologic Map of Mars, U.S. Geological Survey Scientific Investigations Map 3292, scale 1:20,000,000, DOI 10.3133/sim3292.",
+      "notes": "Complete 790 MB-class GIS database, metadata, pamphlet and map-unit descriptions are archived. The USGS distribution contains geology polygons, contacts, structures, symbology and basemaps."
+    },
+    {
+      "source_id": "nasa-pds-crism-mica-2015",
+      "title": "MRO Mars CRISM Type Spectra Library V1.0",
+      "authors": ["Christina E. Viviano-Beck", "MRO CRISM Science Team"],
+      "publisher": "NASA Planetary Data System Geosciences Node",
+      "published_at": "2015",
+      "url": "https://pds.nasa.gov/ds-view/pds/viewProfile.jsp?dsid=MRO-M-CRISM-4-TYPESPEC-V1.0",
+      "doi": null,
+      "retrieved_at": "2026-07-29",
+      "license": "NASA PDS source terms apply; preserve dataset and member-level citations",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-pds-crism-mica/dataset.html",
+          "sha256": "324eb0b72b4cf7e6028a85f7b7e459672aef943c02cf4a2d02dd894ca5d9049f",
+          "bytes": 16138,
+          "media_type": "text/html"
+        },
+        {
+          "path": "archive/nasa-pds-crism-mica/mrocr_8001.zip",
+          "sha256": "20042f8b5676eb14d1ae030a0abad9e9e1e2ca387918c42c89c7a6fea590f606",
+          "bytes": 3193063,
+          "media_type": "application/zip"
+        }
+      ],
+      "citation": "Viviano-Beck, C.E. et al. (2015), MRO CRISM Type Spectra Library, MRO-M-CRISM-4-TYPESPEC-V1.0, NASA Planetary Data System.",
+      "notes": "The complete MROCR_8001 volume is archived: 31 phase type spectra, each with 480 wavelength records and seven columns. A type spectrum is evidence for an identified phase at its type location; it is not a quantitative global abundance map."
+    },
+    {
+      "source_id": "nasa-pds-crism-mrdr-2025",
+      "title": "Mars Reconnaissance Orbiter CRISM MRDR Bundle",
+      "authors": ["Scott Murchie", "Chris Hash"],
+      "publisher": "NASA Planetary Data System",
+      "published_at": "2025",
+      "url": "https://pds.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amro_crism_mrdr&version=1.0",
+      "doi": "10.17189/3gnq-5m91",
+      "retrieved_at": "2026-07-29",
+      "license": "NASA PDS source terms apply; preserve dataset citation",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-pds-crism-mrdr/bundle.html",
+          "sha256": "735230b1df415a5f488490fbbff03c97b02116c9f53430b7a99185eb7d33f8bc",
+          "bytes": 14538,
+          "media_type": "text/html"
+        }
+      ],
+      "citation": "Murchie, S. and Hash, C. (2025), Mars Reconnaissance Orbiter CRISM MRDR Bundle, NASA PDS, DOI 10.17189/3gnq-5m91.",
+      "notes": "Catalog metadata only. It establishes MRDR as derived, calibrated, mosaicked and map-projected multispectral survey data; full chart tiles will be ingested in a later batch."
+    },
+    {
+      "source_id": "nasa-pds-mola-megdr-16ppd-v2",
+      "title": "MOLA Mission Experiment Gridded Data Record, Final Version, 16 Pixels per Degree",
+      "authors": ["David E. Smith", "MGS MOLA Science Team"],
+      "publisher": "NASA Planetary Data System Geosciences Node",
+      "published_at": "2003-05-07",
+      "url": "https://pds-geosciences.wustl.edu/missions/mgs/megdr.html",
+      "doi": null,
+      "retrieved_at": "2026-07-29",
+      "license": "NASA PDS source terms apply; preserve dataset citation",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-pds-mola-megdr-16ppd/mega90n000eb.img",
+          "sha256": "e80333b01489e66ebf20ac83ec7e130bd5a03f0c3f98f8f7b8d5c054cd6ad239",
+          "bytes": 33177600,
+          "media_type": "application/octet-stream"
+        },
+        {
+          "path": "archive/nasa-pds-mola-megdr-16ppd/mega90n000eb.lbl",
+          "sha256": "83b4df3255dade92ab64c7261a3ce54728675e0f1e9c023b56e5facae9ec41ef",
+          "bytes": 3760,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mola-megdr-16ppd/megc90n000eb.img",
+          "sha256": "9a300c6cd9f5a282ae31299be228ea2e75993049e88c9f6ab69a84f4db5f01d7",
+          "bytes": 33177600,
+          "media_type": "application/octet-stream"
+        },
+        {
+          "path": "archive/nasa-pds-mola-megdr-16ppd/megc90n000eb.lbl",
+          "sha256": "94618a68e1def1afe7d10897333071c07027484f2c93d9ff2e9607e7946be8fb",
+          "bytes": 3079,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mola-megdr-16ppd/megr90n000eb.img",
+          "sha256": "976cb28c7a6561d1c3f7b4281e035e0c1dd02d387375e4a4aba5010b7064a8d0",
+          "bytes": 33177600,
+          "media_type": "application/octet-stream"
+        },
+        {
+          "path": "archive/nasa-pds-mola-megdr-16ppd/megr90n000eb.lbl",
+          "sha256": "39caa45880c19cb3df1bd8dce0ff33a64d14eee844b03419f84ce30c24d7849c",
+          "bytes": 4567,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mola-megdr-16ppd/megt90n000eb.img",
+          "sha256": "d18d9b9ab8c5516d02e157dd2cde0f1d0d160c21940e953ba22391269a545e7b",
+          "bytes": 33177600,
+          "media_type": "application/octet-stream"
+        },
+        {
+          "path": "archive/nasa-pds-mola-megdr-16ppd/megt90n000eb.lbl",
+          "sha256": "0f2bd919dddb86d83489a008d3007bd915507c892a0f22ce49ad5dd5d2fc7d8a",
+          "bytes": 4813,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mola-megdr-16ppd/megdrds.cat",
+          "sha256": "31db8d521ecf2e48b659b510b26f7568932b50e939361598814ecb7345b497be",
+          "bytes": 12459,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mola-megdr-16ppd/dsmap.cat",
+          "sha256": "26ef7facd75a7a4523b2fb6a1c92c075f3a9b4cc30888f01d1e6fe0be4816531",
+          "bytes": 3145,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mola-megdr-16ppd/egdrsis.pdf",
+          "sha256": "4f17b0b853e46b71aa7effecd794020354ff56d036f951c16a1c63ac16a30f6c",
+          "bytes": 219536,
+          "media_type": "application/pdf"
+        }
+      ],
+      "citation": "Smith, D.E. and MGS MOLA Science Team (2003), MOLA Mission Experiment Gridded Data Record, MGS-M-MOLA-5-MEGDR-L3-V1.0, NASA PDS.",
+      "notes": "Complete final Version 2 global products at 16 pixels per degree: areoid, observation count, mean planetary radius and median topography. Each raster has 5,760 by 2,880 signed 16-bit big-endian samples in IAU2000 planetocentric, east-positive coordinates."
+    },
+    {
+      "source_id": "nasa-pds-jgmro-120f-2020",
+      "title": "JPL Mars Gravity Field MRO120F",
+      "authors": ["Alex S. Konopliv", "MRO Gravity Science Team"],
+      "publisher": "NASA Planetary Data System Geosciences Node",
+      "published_at": "2020-09-30",
+      "url": "https://pds-geosciences.wustl.edu/mro/mro-m-rss-5-sdp-v1/mrors_1xxx/data/shadr/",
+      "doi": "10.17189/1519521",
+      "retrieved_at": "2026-07-29",
+      "license": "NASA PDS source terms apply; preserve dataset and model citations",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-pds-mro120f-gravity/jgmro_120f_sha.tab",
+          "sha256": "ddd3de9c30d75879fe37aa17a1149e7c96c141c095962954cb7ea865a2c025b6",
+          "bytes": 900604,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mro120f-gravity/jgmro_120f_sha.lbl",
+          "sha256": "bf50ba3a03c1c2ec8d63c3132a9b3cd89a5e880d546f195d9eb10a902ea0c80a",
+          "bytes": 15955,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mro120f-gravity/dataset.cat",
+          "sha256": "af085860793e2c509ebc9740968cd149011d7b0857549bb550cc115c5c46f443",
+          "bytes": 29506,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mro120f-gravity/shadr.pdf",
+          "sha256": "4ccd36a87afe2851ad24ec07eb84cacb349dcf35efb2a45c71b15f4c9e4affbc",
+          "bytes": 128899,
+          "media_type": "application/pdf"
+        }
+      ],
+      "citation": "Konopliv, A.S. et al. (2020), JPL Mars Gravity Field MRO120F, MRO-M-RSS-5-SDP-V1.0, NASA PDS, DOI 10.17189/1519521.",
+      "notes": "Final static Mars gravity field to degree and order 120. The complete SHADR coefficient table, detached label, dataset catalog and format specification are archived. The label documents that seasonal mass exchange requires a time-dependent J3 correction when applicable."
+    },
+    {
+      "source_id": "nasa-pds-tes-special-maps-2002",
+      "title": "Mars Global Surveyor TES Special Products: Global Bolometric Albedo and Thermal Inertia Maps",
+      "authors": ["Philip Christensen", "Michael Mellon", "MGS TES Science Team"],
+      "publisher": "NASA Planetary Data System Geosciences Node",
+      "published_at": "2002-10-25",
+      "url": "https://pds-geosciences.wustl.edu/missions/mgs/tesspecial.html",
+      "doi": null,
+      "retrieved_at": "2026-07-29",
+      "license": "NASA PDS source terms apply; preserve product and dataset attribution",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-pds-tes-special/global_albedo_8ppd.img",
+          "sha256": "47ee17fc9aca6aa9fd5d49e383c1acc366d4cb31cab4635bc823bc27a33283c7",
+          "bytes": 16588800,
+          "media_type": "application/octet-stream"
+        },
+        {
+          "path": "archive/nasa-pds-tes-special/global_albedo_8ppd.lbl",
+          "sha256": "af384feba24d44a87bcf2caaf5e0f41c9ed0f27c045e6d1a00dd1fd99bd2f749",
+          "bytes": 2334,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-tes-special/global_ti_60n_50s_8ppd.img",
+          "sha256": "dde592738958ae61123ec50e8ded8ad9fa7b4d8833fff632b46ce7ef794c3a01",
+          "bytes": 10160640,
+          "media_type": "application/octet-stream"
+        },
+        {
+          "path": "archive/nasa-pds-tes-special/global_ti_60n_50s_8ppd.lbl",
+          "sha256": "f718866609c7ff358fa0fa7a459f62381f434e48ff1cba75206363e1fcc30887",
+          "bytes": 2373,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-tes-special/dsmap.cat",
+          "sha256": "32970e3ef9fb8c40f992e7f493cca393eb39c7928e6accfd1de0d5689937bd38",
+          "bytes": 3215,
+          "media_type": "text/plain"
+        }
+      ],
+      "citation": "Christensen, P.R., Mellon, M.T. and MGS TES Science Team (2002), TES Global Bolometric Albedo and Thermal Inertia Special Products, NASA PDS Geosciences Node.",
+      "notes": "Actual detached PDS3 raster products and labels are archived. Albedo is global at 8 pixels/degree; the thermal-inertia raster covers 60.125 N to 50.125 S at 8 pixels/degree."
+    },
+    {
+      "source_id": "nasa-pds-tes-timap-2009",
+      "title": "MGS Mars TES Derived Thermal Inertia Maps V1.0",
+      "authors": ["Nathaniel E. Putzig", "Michael T. Mellon", "T. L. Heet", "J. G. Ward"],
+      "publisher": "NASA Planetary Data System Geosciences Node",
+      "published_at": "2009",
+      "url": "https://pds-geosciences.wustl.edu/missions/mgs/tes-timap.html",
+      "doi": null,
+      "retrieved_at": "2026-07-29",
+      "license": "NASA PDS source terms apply; preserve dataset and cited publication attribution",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-pds-tes-timap/mgst_9001.zip",
+          "sha256": "407ec6d61f24a0f5b58315449a14bf4fb9300ae7d5c789646853c8b7e4b94fe3",
+          "bytes": 69628554,
+          "media_type": "application/zip"
+        }
+      ],
+      "citation": "Putzig, N.E., Mellon, M.T., Heet, T.L. and Ward, J.G. (2009), MGS Mars TES Derived Thermal Inertia Maps V1.0, MGS-M-TES-5-TIMAP-V1.0, NASA PDS.",
+      "notes": "Complete PDS volume archive. It contains global daytime and nighttime 20-pixel/degree thermal-inertia rasters, both interpolation masks, labels, catalog documents, browse products and checksums. Values are derived from TES surface-temperature observations rather than direct temperature measurements."
+    },
+    {
+      "source_id": "nasa-pds-msl-rad-rdr-release-2026-sample",
+      "title": "MSL Mars Radiation Assessment Detector RDR V1.0 — Current Index, Documentation and One Surface-Sol Sample",
+      "authors": ["J. Peterson", "S. Rafkin", "C. Zeitlin", "B. Ehresmann", "E. Weigle", "S. Jeffers", "D. M. Hassler"],
+      "publisher": "NASA Planetary Data System Planetary Plasma Interactions Node",
+      "published_at": "2026-03-17",
+      "url": "https://pds-ppi.igpp.ucla.edu/data/MSL-M-RAD-3-RDR-V1.0/",
+      "doi": "10.17189/1519761",
+      "retrieved_at": "2026-07-29",
+      "license": "NASA PDS source terms apply; preserve dataset citation",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-pds-msl-rad-rdr-sample/aareadme.txt",
+          "sha256": "1fea5073924df190dc879d19ffd2c3e4eb44739b454e3fcd5cde2cbaab3c2022",
+          "bytes": 11753,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-msl-rad-rdr-sample/checksums.txt",
+          "sha256": "305b0fb0ef6ac2f0bf3e1ada9e1eb0fd7988cb4c905b10daabd96176b9dc3188",
+          "bytes": 1074025,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-msl-rad-rdr-sample/index.tab",
+          "sha256": "8756fe7ff70887c1728548515bbe0cb7434552c6038ad9c7c7f2cdf1e0cc38b8",
+          "bytes": 1065456,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-msl-rad-rdr-sample/index.lbl",
+          "sha256": "ac4e1e521e58e0f3f8530aff40510cb05e82c4fb05d02404f35e47480a3d3029",
+          "bytes": 9200,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-msl-rad-rdr-sample/rad_rdr_ds.cat",
+          "sha256": "be5401ddee089775fd98d6751635ed7115bd3c4cb6af9cf2b92065b59a635d77",
+          "bytes": 9760,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-msl-rad-rdr-sample/rad_inst.cat",
+          "sha256": "65bb74da3735bd15d9613e51e85100849a6ecf5d9d3b516359ba0b702510453b",
+          "bytes": 35575,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-msl-rad-rdr-sample/rad_rdr_sis.pdf",
+          "sha256": "3cfe8335d8c8d5c1ae6dd0b2775c57aa341ef2481f31f82d70593a3a51791239",
+          "bytes": 1311144,
+          "media_type": "application/pdf"
+        },
+        {
+          "path": "archive/nasa-pds-msl-rad-rdr-sample/rad_rdr_2012_260_17_50_0041_v00.txt",
+          "sha256": "b812074d7183fe6917c3040afbb58a7b72a65091e74090233812f829b1c59d7a",
+          "bytes": 17551961,
+          "media_type": "text/plain"
+        }
+      ],
+      "citation": "Peterson, J. et al. (2013–2026), MSL Mars Radiation Assessment Detector RDR V1.0, MSL-M-RAD-3-RDR-V1.0, NASA PDS, DOI 10.17189/1519761.",
+      "notes": "Partial local archive: the complete current index, checksum inventory, dataset/instrument catalogs, SIS and one actual surface-sol RDR data file are archived. The thousands of other indexed RDR files are not local. The sample is a point/time-series measurement at Curiosity, not a global Mars radiation map."
+    },
+    {
+      "source_id": "nasa-pds-msl-rems-modrdr-release41-sol4709",
+      "title": "MSL Rover Environmental Monitoring Station MODRDR V1.0 — Release 0041 Index and Sol 4709",
+      "authors": ["REMS Team", "Centro de Astrobiologia"],
+      "publisher": "NASA Planetary Data System Atmospheres Node",
+      "published_at": "2026-03-16",
+      "url": "https://atmos.nmsu.edu/PDS/data/mslrem_1001/",
+      "doi": null,
+      "retrieved_at": "2026-07-29",
+      "license": "NASA PDS source terms apply; preserve dataset and instrument attribution",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-pds-msl-rems-modrdr-sol4709/aareadme.txt",
+          "sha256": "de89dddb0d0f08dc6cf95a431892e1e36ff6d83b9ab891c866b24acfef097e01",
+          "bytes": 11303,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-msl-rems-modrdr-sol4709/errata.txt",
+          "sha256": "d1fa75831098b4e7bcb76724bf7aa8a643817ec6e9fed10f4df5404fc258929b",
+          "bytes": 21520,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-msl-rems-modrdr-sol4709/index.lbl",
+          "sha256": "7c8d1f3b2c944b32bc7c6f3b3cdc4f3f783118f2948e2c5fa78ed70d4ce53963",
+          "bytes": 8355,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-msl-rems-modrdr-sol4709/index.tab",
+          "sha256": "62b10b94f48de219952fe751f025ec91278f45d22e7beb9dd61c1aad79494c97",
+          "bytes": 8425236,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-msl-rems-modrdr-sol4709/rems_modrdr_ds.cat",
+          "sha256": "af957dbba9374f549c5b72ae113bf6bfc4548f684d50f24c80d90927232eeda2",
+          "bytes": 15937,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-msl-rems-modrdr-sol4709/rems_inst.cat",
+          "sha256": "e83bae7099ee72789443e1a89ecde5f211b4dfe538983c007947b4b2e479267b",
+          "bytes": 19725,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-msl-rems-modrdr-sol4709/rems_rdr_sis.txt",
+          "sha256": "ddeed88e632b0f852f976973ff2f7a3d21b3b2ca2cffb94593109721433cc1f7",
+          "bytes": 334217,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-msl-rems-modrdr-sol4709/data_events.txt",
+          "sha256": "f18a1114f2eef636f36dc71378448bd15c02ef41a183d986fbedd544b706c171",
+          "bytes": 135049,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-msl-rems-modrdr-sol4709/modrdr6.fmt",
+          "sha256": "9609aa0d596bcbafdcca21c6c06bd4134fee6b8d5cbefd81a68133a212864b1a",
+          "bytes": 24665,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-msl-rems-modrdr-sol4709/rme_815485151rmd47090000000_p1.lbl",
+          "sha256": "9498c9956a52eb1ab14c4d17c3b11cef5eb5e9cab539f6bee4897c3c9665047b",
+          "bytes": 3032,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-msl-rems-modrdr-sol4709/rme_815485151rmd47090000000_p1.tab",
+          "sha256": "057f320f21b4816299823aec20d8b571d2a3f1d4d8dc8d5d3c789cbfb1d8e515",
+          "bytes": 12743976,
+          "media_type": "text/plain"
+        }
+      ],
+      "citation": "REMS Team and Centro de Astrobiologia (2026), MSL Mars Rover Environmental Monitoring Station MODRDR V1.0, Release 0041, MSL-M-REMS-5-MODRDR-V1.0, NASA PDS Atmospheres Node.",
+      "notes": "Partial local measurement archive: the complete Release 0041 product index, format/SIS/catalog/errata documents and the complete Sol 4709 MODRDR table are local. The other indexed daily tables are not copied. Sol 4709 contains 34,258 one-second-maximum-cadence rows at Curiosity's rover location; it is not a global climate field."
+    },
+    {
+      "source_id": "nasa-pds-mro-mcs-ddr-v6.2-mrom2104-sample",
+      "title": "MRO Mars Climate Sounder Level 5 Derived Data Record V6.2 — MROM_2104 Indexes and One Profile Product",
+      "authors": ["Daniel J. McCleese", "John T. Schofield", "MRO Mars Climate Sounder Team"],
+      "publisher": "NASA Planetary Data System Atmospheres Node",
+      "published_at": "2025-02-20",
+      "url": "https://atmos.nmsu.edu/PDS/data/MROM_2104/",
+      "doi": "10.17189/6khc-s052",
+      "retrieved_at": "2026-07-30",
+      "license": "NASA PDS source terms apply; preserve dataset and instrument attribution",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-pds-mro-mcs-ddr-v6.2-sample/aareadme.txt",
+          "sha256": "cebb51b21a07e1a1e77be6f81314d573f96328f4fc2f239bcde9c925d3bff2ac",
+          "bytes": 20441,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mro-mcs-ddr-v6.2-sample/voldesc.cat",
+          "sha256": "43f01e887de41b7d0b1c854b7692e1ebee65c4fc6b724b2c76ef5e1954165a69",
+          "bytes": 2207,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mro-mcs-ddr-v6.2-sample/dataset.cat",
+          "sha256": "6a0fdec391b647f67852eb497c66d805d8e2916b4a5a632993489f097889531e",
+          "bytes": 53933,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mro-mcs-ddr-v6.2-sample/inst.cat",
+          "sha256": "b234ae03c7ec90ec061b7c2fafa32ee14362644a5b9b4b538fd6d253165a6cc6",
+          "bytes": 40664,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mro-mcs-ddr-v6.2-sample/dp_sis.asc",
+          "sha256": "920032d2c7f2cc3aa33e9222ed6d09c11d9aa4ad1209989b93f69ce9b25c20a0",
+          "bytes": 66111,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mro-mcs-ddr-v6.2-sample/dp_archsis.asc",
+          "sha256": "f4cc0dc228cdc6293dbcfbfe6bd6a4a1e704b1820befbe43c63b309ac665af62",
+          "bytes": 23454,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mro-mcs-ddr-v6.2-sample/mcs_ddr1.fmt",
+          "sha256": "d29bd8df01f7e18028fcde573e9801dae5e6a4a8229bbbd9bb28e05cdf0373d3",
+          "bytes": 28923,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mro-mcs-ddr-v6.2-sample/mcs_ddr2.fmt",
+          "sha256": "4a0d991f460ed7c3942a33392cdc98a390177503dfaa7ad6b0a906d171dc6518",
+          "bytes": 4855,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mro-mcs-ddr-v6.2-sample/cumindex.lbl",
+          "sha256": "8db9b1437d8c7079c118f6058ef2bfc3b9403b55d0bf02c77b19ff9cd438bde0",
+          "bytes": 3018,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mro-mcs-ddr-v6.2-sample/cumindex.tab",
+          "sha256": "1a6d7740d075d19b38540a9421095e817894c6972feea80bc9ac6f91bcaebf03",
+          "bytes": 3063779,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mro-mcs-ddr-v6.2-sample/index.lbl",
+          "sha256": "2fd351acc1f3fcd9b839aabc865b73239ff6c8195346d22d5483b5bfbfcb14fc",
+          "bytes": 3013,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mro-mcs-ddr-v6.2-sample/index.tab",
+          "sha256": "ce47f1fff1d1631e4798904e317f2c92e44e604014ee1a1b5fe6adf9af4e92ec",
+          "bytes": 29684,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mro-mcs-ddr-v6.2-sample/2015041500_ddr.lbl",
+          "sha256": "17a29d01a97470e2a7fdf82d98c5124cf2861ad28c0c1d863acff401c4d4beb2",
+          "bytes": 1962,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mro-mcs-ddr-v6.2-sample/2015041500_ddr.tab",
+          "sha256": "9fd65ca8c9ef5b5851f0a7c418cf5910b9e59a2b236a7f39b39e531370215ee7",
+          "bytes": 6807454,
+          "media_type": "text/plain"
+        }
+      ],
+      "citation": "McCleese, D.J., Schofield, J.T. and MRO MCS Team (2025 archive build), MRO Mars Climate Sounder Level 5 DDR V6.2, MRO-M-MCS-5-DDR-V6.2, NASA PDS, DOI 10.17189/6khc-s052.",
+      "notes": "Partial local data archive: the MROM_2104 monthly and cumulative indexes, complete format/SIS/catalog documentation, and one actual four-hour DDR product are local. The selected product contains 379 profiles, each with 105 pressure layers. Other products in the 17,032-row cumulative index are not copied. Retrieval fields are not raw in-situ measurements."
+    },
+    {
+      "source_id": "nasa-pds-maven-mag-calibrated-pc-v2.38-sample",
+      "title": "MAVEN MAG Calibrated Planetocentric Data Collection V2.38 and 2025-12-01 One-Second Sample",
+      "authors": ["J. E. P. Connerney", "MAVEN MAG Team"],
+      "publisher": "NASA Planetary Data System, Planetary Plasma Interactions Node",
+      "published_at": "2026-06-09",
+      "url": "https://pds-ppi.igpp.ucla.edu/data/maven-mag-calibrated/data/pc/",
+      "doi": "10.17189/1414247",
+      "retrieved_at": "2026-07-30",
+      "license": "NASA PDS source terms apply; preserve attribution and product labels",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-pds-maven-mag-pc-1s-sample/bundle.xml",
+          "sha256": "6e48e586a565712da084e823095a895153e87b39b4ebd1bb4ef2e9b9732d2a7b",
+          "bytes": 24750,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-mag-pc-1s-sample/readme.txt",
+          "sha256": "b6b35f5fee2edaf8eaa607417a1de613b01ff9fbc91b2981e7d41e1f697eb326",
+          "bytes": 15330,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-maven-mag-pc-1s-sample/collection_data_l2_pc.csv",
+          "sha256": "49aa5fca397b87e894770149edd315651304bae61ba4e8acf379489d54b9f5ce",
+          "bytes": 622728,
+          "media_type": "text/csv"
+        },
+        {
+          "path": "archive/nasa-pds-maven-mag-pc-1s-sample/collection_data_l2_pc.xml",
+          "sha256": "b86bf933b97c149a59742eba712066ccf6b7cc4a2037f2f3a6304fefcf179031",
+          "bytes": 6704,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-mag-pc-1s-sample/errata.md",
+          "sha256": "bba64beec94e9fd996d6d2dc2f0df758cc009646040fba4df092ae3963879a39",
+          "bytes": 1553,
+          "media_type": "text/markdown"
+        },
+        {
+          "path": "archive/nasa-pds-maven-mag-pc-1s-sample/maven_mag_sis.pdf",
+          "sha256": "97c90b9df3bd71b4b791881289433da1fdae1369ae6c0958a1ed3837de9b1a5a",
+          "bytes": 1087396,
+          "media_type": "application/pdf"
+        },
+        {
+          "path": "archive/nasa-pds-maven-mag-pc-1s-sample/mvn_mag_l2_2025335pc1s_20251201_v01_r01.sts",
+          "sha256": "0357bc1e04493f005a148672670e17fdb1db19bcfae68e70c4205b0dedbb9927",
+          "bytes": 12970422,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-maven-mag-pc-1s-sample/mvn_mag_l2_2025335pc1s_20251201_v01_r01.xml",
+          "sha256": "0a9fb1718d56da7082ce180f3bfcc3b1e5e3b0fe0a3bc326eed090263182c6e4",
+          "bytes": 11717,
+          "media_type": "application/xml"
+        }
+      ],
+      "citation": "Connerney, J. E. P. (2026), MAVEN MAG Tabulated Vector Magnetic Field vs. Time in Planetocentric Coordinates Data Collection, Version 2.38, NASA PDS PPI Node, DOI 10.17189/1414247.",
+      "notes": "Kısmi yerel veri arşivi: V2.38/Release 45 planetosentrik koleksiyonunun 7.688 üyelik tam envanteri, paket belgeleri ve 2025-12-01 için bir gerçek 1 saniyelik günlük ürün yereldir; diğer 7.687 gözlemsel ürün kopyalanmamıştır. Alan vektörleri MAVEN uzay aracının zamanla değişen konumunda ölçülmüştür; küresel yüzey veya kabuksal manyetik alan haritası değildir."
+    },
+    {
+      "source_id": "nasa-pds-mgs-mager-derived-fieldmap-v1.0",
+      "title": "MGS MAG/ER Derived Map of Mars Data Collection V1.0",
+      "authors": ["Robert J. Lillis"],
+      "publisher": "NASA Planetary Data System, Planetary Plasma Interactions Node",
+      "published_at": "2024-07-05",
+      "url": "https://pds-ppi.igpp.ucla.edu/collection/urn%3Anasa%3Apds%3Amgs-mager%3Adata-fieldmap-derived",
+      "doi": "10.17189/x1h2-6660",
+      "retrieved_at": "2026-07-30",
+      "license": "NASA PDS source terms apply; preserve attribution and product labels",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-pds-mgs-mager-derived-fieldmap-v1.0/collection_data_er_map_1.0.xml",
+          "sha256": "38ff0e695b57d9f170612547f674a1fedc13a30333a16a32a7e9c94ac5901992",
+          "bytes": 9494,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-mgs-mager-derived-fieldmap-v1.0/collection_data_er_map_1.0.csv",
+          "sha256": "8cf61c80e2734fc1c772b6353168eec922af1f5d2ea4e9f16a9ffb7166a2a00c",
+          "bytes": 67,
+          "media_type": "text/csv"
+        },
+        {
+          "path": "archive/nasa-pds-mgs-mager-derived-fieldmap-v1.0/LILLIS_ER_MAP.xml",
+          "sha256": "f67eb00cad3bce8628e47a3df73c27ba67a3fa9d8c23e618f1546299f216c758",
+          "bytes": 10209,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-mgs-mager-derived-fieldmap-v1.0/LILLIS_ER_MAP.TAB",
+          "sha256": "650ab7b64b97c0d0eec348e9b0411a96a9acb8661e20f7641b8963f7917f544b",
+          "bytes": 3456000,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-mgs-mager-derived-fieldmap-v1.0/data-fieldmap-derived-desc.xml",
+          "sha256": "bc1c109c4f49ba3cbc813fe9fe452490ae1be63764df0169d07679ba07c7b0d6",
+          "bytes": 5676,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-mgs-mager-derived-fieldmap-v1.0/data-fieldmap-derived-desc.txt",
+          "sha256": "770be7811d4cbae6081dddf64adaf2bce109c3b5f5f0fdf5b34ed2eab12923ed",
+          "bytes": 5040,
+          "media_type": "text/plain"
+        }
+      ],
+      "citation": "Lillis, R. J. (2024), MGS MAG/ER Derived Map of Mars Data Collection, Version 1.0, NASA PDS PPI Node, DOI 10.17189/x1h2-6660.",
+      "notes": "Tam yerel koleksiyon: tek üye ürünün envanteri, PDS4 etiketi, 3.456.000 baytlık özgün ASCII harita ve açıklama belgesi yereldir. PDS4 ürünü değişmemiş PDS3 LILLIS_ER_MAP.TAB verisinin göçüdür. ER-türevli büyüklük doğrudan magnetometre ölçümü veya alan vektörü değildir."
+    },
+    {
+      "source_id": "lillis-et-al-2008-icarus-crustal-field-map",
+      "title": "An Improved Crustal Magnetic Field Map of Mars from Electron Reflectometry: Highland Volcano Magmatic History and the End of the Martian Dynamo",
+      "authors": ["Robert J. Lillis", "Herbert V. Frey", "Michael Manga", "David L. Mitchell", "Robert P. Lin", "Mario H. Acuña", "Stephen W. Bougher"],
+      "publisher": "Icarus / Elsevier",
+      "published_at": "2008-04",
+      "url": "https://doi.org/10.1016/j.icarus.2007.09.032",
+      "doi": "10.1016/j.icarus.2007.09.032",
+      "retrieved_at": "2026-07-30",
+      "license": "Publisher copyright applies; locally archived author-hosted PDF and publisher metadata page are retained for research provenance",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-pds-mgs-mager-derived-fieldmap-v1.0/lillisetal2008.pdf",
+          "sha256": "1caa2d5b4839ee16602293b729636748a0ca9cd123d246135fa842786df9ca12",
+          "bytes": 4740647,
+          "media_type": "application/pdf"
+        },
+        {
+          "path": "archive/nasa-pds-mgs-mager-derived-fieldmap-v1.0/lillis-et-al-2008-sciencedirect.html",
+          "sha256": "a134b4b286c20449f1cbc9f1556996ea6e9926e12ce7bd12f8fdfc6444adad78",
+          "bytes": 832803,
+          "media_type": "text/html"
+        }
+      ],
+      "citation": "Lillis, R. J., Frey, H. V., Manga, M., Mitchell, D. L., Lin, R. P., Acuña, M. H., and Bougher, S. W. (2008), An improved crustal magnetic field map of Mars from electron reflectometry, Icarus 194, 575–596, DOI 10.1016/j.icarus.2007.09.032.",
+      "notes": "PDS LILLIS_ER_MAP ürününün yöntem ve yorum kaynağıdır. Yerel PDF Berkeley'deki ortak-yazar arşivinden, HTML ise yayıncının DOI açılış sayfasından alınmıştır."
+    },
+    {
+      "source_id": "nasa-pds-maven-swia-onboard-mom-v2.16-sample",
+      "title": "MAVEN SWIA Calibrated Onboard Survey Moment Data Collection V2.16 and 2025-12-01 Sample",
+      "authors": ["Jasper S. Halekas", "MAVEN SWIA Team"],
+      "publisher": "NASA Planetary Data System, Planetary Plasma Interactions Node",
+      "published_at": "2026-06-11",
+      "url": "https://pds-ppi.igpp.ucla.edu/data/maven-swia-calibrated/data/onboard_svy_mom/",
+      "doi": "10.17189/1414246",
+      "retrieved_at": "2026-07-30",
+      "license": "NASA PDS source terms apply; preserve attribution and product labels",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-pds-maven-swia-onboard-mom-v2.16-sample/bundle.xml",
+          "sha256": "5566803ab53d86d4de393e7623555bf904a6c932fcb5caf0a1240b68523067aa",
+          "bytes": 27694,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-swia-onboard-mom-v2.16-sample/readme.txt",
+          "sha256": "76230e5c6dbb38527661c29ca9caf814cc32832e8a779f343373a0c542a6992e",
+          "bytes": 16205,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-maven-swia-onboard-mom-v2.16-sample/collection_data_l2_onboardsvymom.csv",
+          "sha256": "07f82e1b5bd456e93b57060dcfde759f89b9c6d74746335cb6251a41d10d8c81",
+          "bytes": 401212,
+          "media_type": "text/csv"
+        },
+        {
+          "path": "archive/nasa-pds-maven-swia-onboard-mom-v2.16-sample/collection_data_l2_onboardsvymom.xml",
+          "sha256": "63fd353f066dac70da5085b9510fcc763ce3c32cd9d2992e95315828afd39f34",
+          "bytes": 7031,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-swia-onboard-mom-v2.16-sample/maven_sis_SWIA-r1_3.pdf",
+          "sha256": "bc95a8f9f60a54c6d9fdd07edfc699e788327e8e87fe26e004e359638bc8e8bb",
+          "bytes": 3344040,
+          "media_type": "application/pdf"
+        },
+        {
+          "path": "archive/nasa-pds-maven-swia-onboard-mom-v2.16-sample/maven_swia_pds_sample_labels.txt",
+          "sha256": "6faf41b3d370d73a760fcd9dc8845a6f67bb2d6f8fb8df6e925fc9eccf87cd10",
+          "bytes": 247077,
+          "media_type": "text/html"
+        },
+        {
+          "path": "archive/nasa-pds-maven-swia-onboard-mom-v2.16-sample/mvn_swi_l2_onboardsvymom_20251201_v02_r01.cdf",
+          "sha256": "7875e4e8650399d56f5382ff9147406d0728f6bb81dbe0fde09fd90c28a65043",
+          "bytes": 2417015,
+          "media_type": "application/x-cdf"
+        },
+        {
+          "path": "archive/nasa-pds-maven-swia-onboard-mom-v2.16-sample/mvn_swi_l2_onboardsvymom_20251201_v02_r01.xml",
+          "sha256": "aadd079e13ad8c9cb7788e095370eea87d1338430c6a09c6fbb4d7cb10f4b7f0",
+          "bytes": 24369,
+          "media_type": "application/xml"
+        }
+      ],
+      "citation": "Halekas, J. S. (2026), MAVEN SWIA Calibrated Onboard Survey Moment Data Collection, Version 2.16, NASA PDS PPI Node, DOI 10.17189/1414246.",
+      "notes": "Kısmi yerel veri arşivi: V2.16 koleksiyonunun 4.094 üyelik tam envanteri, paket ve SIS belgeleri ile 2025-12-01 için 21.600 moment setli bir gerçek günlük CDF ürünü yereldir; diğer 4.093 ürün kopyalanmamıştır. Bundle Identification_Area 2.16 bildirirken en yeni Modification_Detail Release 45 için version_id 2.15 yazar; bu kaynak içi tutarsızlık değiştirilmeden korunmuştur."
+    },
+    {
+      "source_id": "nasa-pds-maven-lpw-derived-v7.2-sample",
+      "title": "MAVEN LPW Derived Data Bundle V7.2, LP-NT V6.2, W-N V6.7 and 2025-12-01 Samples",
+      "authors": ["Laila Andersson", "MAVEN LPW Team"],
+      "publisher": "NASA Planetary Data System, Planetary Plasma Interactions Node",
+      "published_at": "2026-06-03",
+      "url": "https://pds-ppi.igpp.ucla.edu/data/maven-lpw-derived/",
+      "doi": "10.17189/gn3w-qx34",
+      "retrieved_at": "2026-07-30",
+      "license": "NASA PDS source terms apply; preserve attribution and product labels",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-pds-maven-lpw-derived-v7.2-sample/bundle_maven_lpw_derived_7.2.xml",
+          "sha256": "1e9c8333361f274928757d8aae6ee6fe541bea88d668b8a63ea58af13a574448",
+          "bytes": 27576,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-lpw-derived-v7.2-sample/collection_data_l2_lpnt_6.2.csv",
+          "sha256": "8044ed583d62dd47aedca1c90d621dbc169ee11dd6878226f6e75eadcf79df21",
+          "bytes": 298275,
+          "media_type": "text/csv"
+        },
+        {
+          "path": "archive/nasa-pds-maven-lpw-derived-v7.2-sample/collection_data_l2_lpnt_6.2.xml",
+          "sha256": "0fdd5c19eac488789b204645bf070b94b366654d61cea1cbd6543a636b7e9585",
+          "bytes": 9581,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-lpw-derived-v7.2-sample/collection_data_l2_wn_6.7.csv",
+          "sha256": "de78ff592ab9998d53d50c5c593a6c3b06a17b82c11b09f998264b68430bae65",
+          "bytes": 77319,
+          "media_type": "text/csv"
+        },
+        {
+          "path": "archive/nasa-pds-maven-lpw-derived-v7.2-sample/collection_data_l2_wn_6.7.xml",
+          "sha256": "e7884534d699351de6575bb857e84e820e01be1ff635e2909d3a3d2474165a39",
+          "bytes": 9046,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-lpw-derived-v7.2-sample/collection_document_1.3.csv",
+          "sha256": "fc3b410741817e8e86932714ad126b481df4d36ebc9c6011e97e2b146541db49",
+          "bytes": 44,
+          "media_type": "text/csv"
+        },
+        {
+          "path": "archive/nasa-pds-maven-lpw-derived-v7.2-sample/collection_document_1.3.xml",
+          "sha256": "d56047b73deb98537b8673d0d3933abfdc2fa20ccc4b7fcd066fab2dfd3a5acc",
+          "bytes": 5650,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-lpw-derived-v7.2-sample/maven_sis_lpw_v32.pdf",
+          "sha256": "a02c8a1a03251e68514ef35db9f0b9f46e9eccd21a4bdfd585da5aaca27c27be",
+          "bytes": 5405438,
+          "media_type": "application/pdf"
+        },
+        {
+          "path": "archive/nasa-pds-maven-lpw-derived-v7.2-sample/maven_sis_lpw_v32.xml",
+          "sha256": "99b806daf7ed164c3ef61000addf51e9731f0577f3af584780462b044208b8a7",
+          "bytes": 6142,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-lpw-derived-v7.2-sample/mvn_lpw_l2_lpnt_20251201_v04_r02.cdf",
+          "sha256": "08c88ea78acbe2e02c78c825816dd4ce3128e269da3b712a00a6782e2e428141",
+          "bytes": 3164308,
+          "media_type": "application/x-cdf"
+        },
+        {
+          "path": "archive/nasa-pds-maven-lpw-derived-v7.2-sample/mvn_lpw_l2_lpnt_20251201_v04_r02.xml",
+          "sha256": "64f0f746b6cb156be7ee413ec7e7546aa5db200511fdc8724639ebcf8edd3454",
+          "bytes": 16091,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-lpw-derived-v7.2-sample/mvn_lpw_l2_wn_20251201_v04_r01.cdf",
+          "sha256": "70cd6a40be0cf01ab053aa177bf73728d4e7491b5bdd98bb8742ec6f55b49aa9",
+          "bytes": 111361,
+          "media_type": "application/x-cdf"
+        },
+        {
+          "path": "archive/nasa-pds-maven-lpw-derived-v7.2-sample/mvn_lpw_l2_wn_20251201_v04_r01.xml",
+          "sha256": "0c83872f29233cf0f5bdfee5e74de3cdf02e8220e934ce1a767aa445eb7b7b04",
+          "bytes": 13998,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-lpw-derived-v7.2-sample/readme_maven_lpw_derived_7.2.txt",
+          "sha256": "de382ea1a1372351b38e26e5b84248c0d6235d5c968eb0930fe3b18fcaba28a6",
+          "bytes": 15601,
+          "media_type": "text/plain"
+        }
+      ],
+      "citation": "Andersson, L. and MAVEN LPW Team (2026), MAVEN LPW Derived Data Bundle, Version 7.2, NASA PDS PPI Node, DOI 10.17189/gn3w-qx34; LP-NT collection DOI 10.17189/8hsd-zd46; W-N collection DOI 10.17189/mcxb-8376.",
+      "notes": "Kısmi yerel veri arşivi: LP-NT V6.2 için 3.977 üyelik ve W-N V6.7 için 1.089 üyelik tam envanterleri, Bundle V7.2, SIS V3.2 ve her koleksiyondan 2025-12-01 tarihli bir gerçek günlük CDF ürünü yereldir. LP-NT ürünü 21.590×10 türetilmiş nicelik, W-N ürünü 30 Langmuir-çizgisi yoğunluk kaydı içerir. Bundle V7.2 document üyesini V1.2 olarak gösterirken aynı resmi dizindeki güncel belge koleksiyonu V1.3'tür; çelişki değiştirilmeden korunmuştur."
+    },
+    {
+      "source_id": "nasa-pds-maven-ngims-l2-v8.0-l3-samples",
+      "title": "MAVEN NGIMS PDS Bundle, L2 V8.0/L3 Inventories and Neutral/Ion/Profile Samples",
+      "authors": ["Meredith K. Elrod", "Tiffany Navas", "Mehdi Benna", "MAVEN NGIMS Team"],
+      "publisher": "NASA Planetary Data System, Atmospheres Node",
+      "published_at": "2026-02-17",
+      "url": "https://pds.nasa.gov/data/pds4/releases/atmos/maven_ngims-20260217/",
+      "doi": "10.17189/1518931",
+      "retrieved_at": "2026-07-30",
+      "license": "NASA PDS source terms apply; preserve attribution and product labels",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/bundle_maven_ngims.xml",
+          "sha256": "55d1fa9d878ec0a3dbc238af2797b6c0228d9e728cb160cc0baaa5b572970862",
+          "bytes": 5464,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/collection_ngims_document.xml",
+          "sha256": "b9dfc744e0c8efd8e5d9805023884dd4d5b98e26de33d6fee3c2091e41026403",
+          "bytes": 2381,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/collection_ngims_document_inventory.csv",
+          "sha256": "cd0ae3053df2bf0bcfaf173e820218d7ec15d9f02b3b1e94e447404651ed76a6",
+          "bytes": 246,
+          "media_type": "text/csv"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/collection_ngims_l2_inventory.csv",
+          "sha256": "eed0df0089d971577b411256b283dbadffb89d5ef0f2e191ad9b012df50e439a",
+          "bytes": 2653057,
+          "media_type": "text/csv"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/collection_ngims_l2_inventory.xml",
+          "sha256": "61d41feedcd7edebcce60612de45776fb20dc5fc8229c7be1a62a17705a5d7f4",
+          "bytes": 7191,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/collection_ngims_l3_inventory.csv",
+          "sha256": "84f99ebd0d8a13b83b9e3e83539b09cd2f890d7b5672c0471d6066c6881acf99",
+          "bytes": 2124651,
+          "media_type": "text/csv"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/collection_ngims_l3_inventory.xml",
+          "sha256": "f3101010961f9081771f6cec5d6d1389190957a3f2bc3fbf32b8cdd4f0baced6",
+          "bytes": 7191,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/mvn_ngi_l2_csn-abund-63116_20251114T235242_v08_r03.csv",
+          "sha256": "79a5c2bfc51859e934e88feb8b7a96e15438d12d86e2b56d4a96cd82ced9675e",
+          "bytes": 823427,
+          "media_type": "text/csv"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/mvn_ngi_l2_csn-abund-63116_20251114T235242_v08_r03.xml",
+          "sha256": "3fd31d9f96caeee73ac10de46d93e6aacf69dbe4b3ae16c0403905ad3c9771ac",
+          "bytes": 13483,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/mvn_ngi_l2_ion-abund-63116_20251114T235242_v08_r01.csv",
+          "sha256": "8382fc59ac7b250a6b7eb28da6e801f5e6c706edbaa10719a80e4ef28ba692ff",
+          "bytes": 688152,
+          "media_type": "text/csv"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/mvn_ngi_l2_ion-abund-63116_20251114T235242_v08_r01.xml",
+          "sha256": "b00316fedfd6005113c7a0e964d69d3fc7c51155027d5858155de615adad9fc2",
+          "bytes": 13767,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/mvn_ngi_l3_res-den-14934_20150211T203346_v06_r01.csv",
+          "sha256": "8a9a953f604a41e4e642849a89138a302cf6d0fb7ef01a3e318407271dd193c6",
+          "bytes": 41021,
+          "media_type": "text/csv"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/mvn_ngi_l3_res-den-14934_20150211T203346_v06_r01.xml",
+          "sha256": "100eb06f9a0aeea760c9b186cb58d39cacc78855bcc396cdb7a682d3a77edb54",
+          "bytes": 11062,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/mvn_ngi_l3_res-sht-14934_20150211T203346_v06_r01.csv",
+          "sha256": "8f5d4a5ec5e382371368325f5d161600be28334006d19a04ae8c34600b057636",
+          "bytes": 1010,
+          "media_type": "text/csv"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/mvn_ngi_l3_res-sht-14934_20150211T203346_v06_r01.xml",
+          "sha256": "28e385f114a2ef4d44ac3d0e46523421c870075882e4ca6cea1f72f82b5e9327",
+          "bytes": 12208,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/ngims_pds_sis_v03_r01.pdf",
+          "sha256": "a5e13ad1dd80d933d1160f9b480e78798ce5d5c787dc5571e8fae195e3232200",
+          "bytes": 2356490,
+          "media_type": "application/pdf"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/ngims_pds_sis_v03_r01.xml",
+          "sha256": "4c3755b76f587e22c3ed25711983e648a26bd49e8468fd99e9799bd679de7359",
+          "bytes": 4058,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/ngims_product_version_changes_v05_r05.pdf",
+          "sha256": "375eba032a315d3ee7f30bcac1193a9dde87949cc2d137e36c4d98fb7fd3d5cd",
+          "bytes": 92749,
+          "media_type": "application/pdf"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/ngims_product_version_changes_v05_r05.xml",
+          "sha256": "62a4802a13c7180f6edd07c8acb073705c0c60009a346cdfac6c38537d23f10c",
+          "bytes": 5695,
+          "media_type": "application/xml"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/ngims_readme.txt",
+          "sha256": "4c16ac086db1369abe8ee89b45bc43d5a2f0bc574aa18a86cb783bd9e68f3e50",
+          "bytes": 4220,
+          "media_type": "text/plain"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/ngims_tid_caveats_v05_r02.pdf",
+          "sha256": "2b66d52a6869e2067ff9a999c7bfbf1185237faf559f88287973d6616c318bb3",
+          "bytes": 26667,
+          "media_type": "application/pdf"
+        },
+        {
+          "path": "archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/ngims_tid_caveats_v05_r02.xml",
+          "sha256": "2c1f560c99effc5e7121ce7b4aa41965ac2aebd88260ddd565c1667a79e0c33f",
+          "bytes": 14787,
+          "media_type": "application/xml"
+        }
+      ],
+      "citation": "Elrod, M. K., Benna, M., and Navas, T., MAVEN Neutral Gas and Ion Mass Spectrometer Data, NASA Planetary Data System, DOI 10.17189/1518931.",
+      "notes": "Kısmi yerel veri arşivi: 2026-02-17 tesliminden L2 V8.0'ın 33.583 ve L3'ün 27.606 üyelik tam envanterleri; SIS V1.13, ürün değişiklikleri ve TID caveat belgeleri; TID 63116 için gerçek nötr V8.3 ve iyon V8.1 L2 ürünleri; TID 14934 için gerçek L3 V6.1 yoğunluk profili ve ölçek-yüksekliği/sıcaklık ürünleri yereldir. L2 dış etiketleri gerçek 18/19 sütuna karşın fields=9 bildirir ve file_size değeri gerçek dosya boyutuna Header offsetini ikinci kez ekler; kaynak hataları değiştirilmeden korunmuştur. Nötr örnekte üç sayısal alanda birlikte görülen belgelenmemiş -999 fiziksel değer değildir. L3 sıcaklık doğrudan ölçüm değil ölçek-yüksekliği uyumundan türetmedir."
+    },
+    {
+      "source_id": "nasa-pds-maven-iuvs-limb-v13-snapshot",
+      "title": "MAVEN IUVS Calibrated, Processed and Derived Limb Collections V13.0 — 2026 Snapshot and Samples",
+      "authors": ["Nicholas M. Schneider", "MAVEN IUVS Team"],
+      "publisher": "NASA Planetary Data System Atmospheres Node",
+      "published_at": "2026-05-14",
+      "url": "https://atmos.nmsu.edu/data_and_services/atmospheres_data/MAVEN/maven_iuvs.html",
+      "doi": "10.17189/1518946",
+      "retrieved_at": "2026-07-30",
+      "license": "NASA PDS source terms apply; preserve bundle citations, labels and source notices",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {"path":"archive/nasa-pds-maven-iuvs-limb-2026-snapshot/maven_iuvs.html","sha256":"e0d57b26ffd0cf9063ccd141c5f6b73858a19d15a9623c37f40eab5cabd10230","bytes":19796,"media_type":"text/html"},
+        {"path":"archive/nasa-pds-maven-iuvs-limb-2026-snapshot/limb.html","sha256":"0f91c47947b4d19fdbf2866ead7ed1360337b76c1728255cee13fc97dfe24f5c","bytes":23974,"media_type":"text/html"},
+        {"path":"archive/nasa-pds-maven-iuvs-limb-2026-snapshot/iuvs_pds_sis.pdf","sha256":"7f41eef1faeecd1a2f6a1227b7283705cbe307f47a21958ae6d8e4d5895d02d2","bytes":19006054,"media_type":"application/pdf"},
+        {"path":"archive/nasa-pds-maven-iuvs-limb-2026-snapshot/iuvs_data_readme.txt","sha256":"8f24abd04a1d4adebac031b2d46a428103a6ed2ed77a2bd650c2baf002bf6008","bytes":14154,"media_type":"text/plain"},
+        {"path":"archive/nasa-pds-maven-iuvs-limb-2026-snapshot/collection_maven_iuvs_calibrated_limb.xml","sha256":"33d6410f24418be5174f6ae36f9d67558cb446f810fd2c2bf7910b12d40ba688","bytes":7752,"media_type":"application/xml"},
+        {"path":"archive/nasa-pds-maven-iuvs-limb-2026-snapshot/collection_maven_iuvs_calibrated_limb_inventory.tab","sha256":"8ee874370f3092780293c38cf05970b793a55180b9063900ccbcae31f2ea97f5","bytes":63002959,"media_type":"text/plain"},
+        {"path":"archive/nasa-pds-maven-iuvs-limb-2026-snapshot/collection_maven_iuvs_processed_limb.xml","sha256":"8d50a37c0980f2e84bd6efe62835e6b1d0aea3366c8e75504568c7c86beea48b","bytes":7746,"media_type":"application/xml"},
+        {"path":"archive/nasa-pds-maven-iuvs-limb-2026-snapshot/collection_maven_iuvs_processed_limb_inventory.tab","sha256":"d5adae4b8fef156553956a476513e1a4f5dc23b07351f9fbb626ba3f3c60b368","bytes":825329,"media_type":"text/plain"},
+        {"path":"archive/nasa-pds-maven-iuvs-limb-2026-snapshot/collection_maven_iuvs_derived_limb.xml","sha256":"9d3729985c22b8b5d880f54ab0130058f6be908cc6b2b33f6169acd742a30e86","bytes":7738,"media_type":"application/xml"},
+        {"path":"archive/nasa-pds-maven-iuvs-limb-2026-snapshot/collection_maven_iuvs_derived_limb_inventory.tab","sha256":"655ce24226f951d788bf16dee03c34b0cc96242ed107b3807bd63fc93e8bd47f","bytes":598460,"media_type":"text/plain"},
+        {"path":"archive/nasa-pds-maven-iuvs-limb-2026-snapshot/mvn_iuv_l1b_inlimb-orbit24914-fuv_20251201T073542.xml","sha256":"eca4392a488b63862c74c7bee90940ba7bf7fef9bd7af112dea3e64132379a5b","bytes":105372,"media_type":"application/xml"},
+        {"path":"archive/nasa-pds-maven-iuvs-limb-2026-snapshot/mvn_iuv_l1b_inlimb-orbit24914-fuv_20251201T073542_v13_r01.fits","sha256":"28340e73abaf55922209f24223e04ab11ccedd8706ac1b8c025a5d5678a72a6c","bytes":4115520,"media_type":"application/fits"},
+        {"path":"archive/nasa-pds-maven-iuvs-limb-2026-snapshot/mvn_iuv_l2_periapse-orbit23508_20250501T000707.xml","sha256":"4682956ebaf87dce3ba1ab3b712c71e909e8c5ffeb7df415193deb18f81683e8","bytes":40118,"media_type":"application/xml"},
+        {"path":"archive/nasa-pds-maven-iuvs-limb-2026-snapshot/mvn_iuv_l2_periapse-orbit23508_20250501T000707_v13_r01.fits","sha256":"87c5597d53202618331b85dada33dbb291f8d2bc0daa7d41f16fe05f5aa3f8cd","bytes":544320,"media_type":"application/fits"}
+      ],
+      "citation": "Schneider, N. et al., MAVEN IUVS Calibrated-level Data Product Bundle, NASA PDS, DOI 10.17189/1518946; Processed DOI 10.17189/1518964; Derived DOI 10.17189/1518956.",
+      "notes": "Kısmi yerel arşiv: V13.0 calibrated koleksiyon etiketi, processed ve derived limb tam envanterleri, resmî web sayfaları, SIS, caveat belgesi, bir gerçek L1B FUV radyans ürünü ve bir gerçek L2 periapsis geri-kazanım ürünü. Ana IUVS sayfası derived ürün için 'none yet archived' derken derived limb koleksiyonu 6.505 üyeyle Şubat 2026'da güncellenmiştir; çelişki korunur. Caveat metni v07 ve 2017 tarihlidir, dolayısıyla içindeki yüzde belirsizlikler v13 için doğrulanmış varsayılan sayılmaz. L2 XML SPECIES açıklaması CO2/O2/O3 yazmasına rağmen gerçek FITS tablosu CO2/N2/O içerir."
+    },
+    {
+      "source_id": "nasa-pds-maven-iuvs-corona-v13-v07-snapshot",
+      "title": "MAVEN IUVS Corona Calibrated V13.0, Processed/Derived V7.0 Collections and L2 Sample",
+      "authors": ["Nicholas M. Schneider", "MAVEN IUVS Team"],
+      "publisher": "NASA Planetary Data System Atmospheres Node",
+      "published_at": "2026-05-14",
+      "url": "https://atmos.nmsu.edu/data_and_services/atmospheres_data/MAVEN/corona.html",
+      "doi": "10.17189/1518946",
+      "retrieved_at": "2026-07-30",
+      "license": "NASA PDS source terms apply; preserve bundle citations, labels and source notices",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {"path":"archive/nasa-pds-maven-iuvs-corona-v13-v07-snapshot/corona.html","sha256":"5d57b32c0214764903c55b8430fb69c092edc13d964f867f0a27b3c0657f833a","bytes":20640,"media_type":"text/html"},
+        {"path":"archive/nasa-pds-maven-iuvs-corona-v13-v07-snapshot/collection_maven_iuvs_calibrated_corona.xml","sha256":"0354e42b1ba2768b9002e03bd1eebad34f7d48facab9b7b8adfe23c26cff9bb4","bytes":7759,"media_type":"application/xml"},
+        {"path":"archive/nasa-pds-maven-iuvs-corona-v13-v07-snapshot/collection_maven_iuvs_calibrated_corona_inventory.tab","sha256":"e0bf1eea5f9e8d62a613488a5f9f05eeb022de421343009c9d68f48f50716b36","bytes":1931803,"media_type":"text/plain"},
+        {"path":"archive/nasa-pds-maven-iuvs-corona-v13-v07-snapshot/collection_maven_iuvs_processed_corona.xml","sha256":"ae9bbb83f59a829cdd6e664f7dbc27c674bee9c1cda8028e73658270e481b389","bytes":7072,"media_type":"application/xml"},
+        {"path":"archive/nasa-pds-maven-iuvs-corona-v13-v07-snapshot/collection_maven_iuvs_processed_corona_inventory.tab","sha256":"e3770d5670497bb68ec5ec1d05287a3752c7f85a530a6619f52fdf2b713b0dfc","bytes":48608,"media_type":"text/plain"},
+        {"path":"archive/nasa-pds-maven-iuvs-corona-v13-v07-snapshot/collection_maven_iuvs_derived_corona.xml","sha256":"c4fe4ec173418c83bae252c15c4eebe5d252c1704d3a5356f7a4bc6719b01c0c","bytes":7064,"media_type":"application/xml"},
+        {"path":"archive/nasa-pds-maven-iuvs-corona-v13-v07-snapshot/collection_maven_iuvs_derived_corona_inventory.tab","sha256":"f31b8911c4ca0b0a9381280bf5612488d343180c62e1e25ec879661bbe81d1c2","bytes":47120,"media_type":"text/plain"},
+        {"path":"archive/nasa-pds-maven-iuvs-corona-v13-v07-snapshot/mvn_iuv_l2_corona-orbit03558-fuv_20160727T114312.xml","sha256":"0caf18c22601103f4b917a846a8de07375f8dc38a977c06df4d91d6b5846ca56","bytes":62136,"media_type":"application/xml"},
+        {"path":"archive/nasa-pds-maven-iuvs-corona-v13-v07-snapshot/mvn_iuv_l2_corona-orbit03558-fuv_20160727T114312_v07_r01.fits","sha256":"5e40a29dbf671fbf08600e76d12687595087d7af312b2eb5a46f80e2365aad5e","bytes":164160,"media_type":"application/fits"}
+      ],
+      "citation": "Schneider, N. et al., MAVEN IUVS Calibrated-level Data Product Bundle, NASA PDS, DOI 10.17189/1518946; Processed DOI 10.17189/1518964; Derived DOI 10.17189/1518956.",
+      "notes": "Kısmi yerel arşiv: calibrated V13.0 koleksiyonunun 18.887 üyelik tam envanteri ile processed ve derived V7.0 koleksiyonlarının 496'şar üyelik tam envanterleri ve bir gerçek derived corona L2 FITS/XML ürünü yereldir; tüm üye FITS dosyaları yerel değildir. Calibrated koleksiyon 2025-12-15'e uzanırken processed/derived V7 koleksiyonları 2016-07-30'da biter; sürüm ve dönem asimetrisi korunur. Örnek ürünün gerçek FITS tabloları H/O türlerini ve H_1216/O_1304 emisyonlarını içerirken XML SPECIES açıklaması CO2/O2/O3 yazar; gerçek veri ile açıklama çelişkisi değiştirilmez. Örnekte H ve O model fiziksel sonuçları IEEE NaN'dır; sıcaklık, yoğunluk, enerji veya kaçış değeri olarak normalize edilmemiştir."
+    },
+    {
+      "source_id": "nasa-pds-maven-iuvs-echelle-v13-v14-snapshot",
+      "title": "MAVEN IUVS Echelle Calibrated and Processed Collections — V13 Labels, V14 Members and L1C Sample",
+      "authors": ["Nicholas M. Schneider", "MAVEN IUVS Team"],
+      "publisher": "NASA Planetary Data System Atmospheres Node",
+      "published_at": "2026-05-14",
+      "url": "https://atmos.nmsu.edu/data_and_services/atmospheres_data/MAVEN/echelle.html",
+      "doi": "10.17189/1518964",
+      "retrieved_at": "2026-07-30",
+      "license": "NASA PDS source terms apply; preserve bundle citations, labels and source notices",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {"path":"archive/nasa-pds-maven-iuvs-echelle-v13-v14-snapshot/echelle.html","sha256":"af06514e4e712492781e4ccc44bdbb7490d94a8a8b65f1a2afc6cd90811e91f2","bytes":20543,"media_type":"text/html"},
+        {"path":"archive/nasa-pds-maven-iuvs-echelle-v13-v14-snapshot/collection_maven_iuvs_calibrated_echelle.xml","sha256":"e62eafed8b949d96ef57f0b05f8777b7afd1cdf7989045b97a42cca940f549f1","bytes":7763,"media_type":"application/xml"},
+        {"path":"archive/nasa-pds-maven-iuvs-echelle-v13-v14-snapshot/collection_maven_iuvs_calibrated_echelle_inventory.tab","sha256":"f1ca1a7e51c5bb435a9010b85263dbbde9434c0b061211258dd2e830758c1754","bytes":4836078,"media_type":"text/plain"},
+        {"path":"archive/nasa-pds-maven-iuvs-echelle-v13-v14-snapshot/collection_maven_iuvs_processed_echelle.xml","sha256":"6550db94dd5da85ef33c94c613c84d9fb8080830af8734d2c7e9e9062c557c2b","bytes":7759,"media_type":"application/xml"},
+        {"path":"archive/nasa-pds-maven-iuvs-echelle-v13-v14-snapshot/collection_maven_iuvs_processed_echelle_inventory.tab","sha256":"5d8f19f41ce185e83817b46565de882266b5ab97ab2762d6c89d22ce53c5f063","bytes":4789417,"media_type":"text/plain"},
+        {"path":"archive/nasa-pds-maven-iuvs-echelle-v13-v14-snapshot/mvn_iuv_l1c_outlimb-orbit24914-ech_20251201T053547.xml","sha256":"12883af67e1da0ed0339850e5ec4945cabdc7378f99a51613f29f08f38196c50","bytes":79672,"media_type":"application/xml"},
+        {"path":"archive/nasa-pds-maven-iuvs-echelle-v13-v14-snapshot/mvn_iuv_l1c_outlimb-orbit24914-ech_20251201T053547_v14_r01.fits","sha256":"decd99f6cb18f9ec47fd4d2d6dce67e2a42c398967d2ce99f622fc278d3ae008","bytes":1584000,"media_type":"application/fits"}
+      ],
+      "citation": "Schneider, N. et al., MAVEN IUVS Calibrated-level Data Product Bundle, NASA PDS, DOI 10.17189/1518946; Schneider, N. et al., MAVEN IUVS Processed-level Data Product Bundle, NASA PDS, DOI 10.17189/1518964.",
+      "notes": "Kısmi yerel arşiv: 47.106 üyelik calibrated ve 46.662 üyelik processed echelle tam envanterleri, resmî echelle sayfası ve bir gerçek V14 L1C outlimb FITS/XML ürünü yereldir; bütün üye FITS dosyaları yerel değildir. Her iki koleksiyon etiketi V13.0 bildirir; calibrated envanter 56 V3.0, 3.478 V13.0, 42.066 V14.0 ve 1.506 V14.1 üye, processed envanter ise 46.662 V14.0 üye içerir. Etiket/üye sürüm uyuşmazlığı değiştirilmeden korunur. Örnek ürün H ve D Lyman-alfa parlaklıklarını verir fakat doğrudan atmosferik D/H bolluk oranı vermez; parlaklık oranından kaynaksız D/H türetilmemiştir."
+    },
+    {
+      "source_id": "nasa-pds-maven-iuvs-disk-v13-v07-snapshot",
+      "title": "MAVEN IUVS Disk Calibrated V13.0, Processed/Derived V7.0 Collections and Paired FUV/MUV L2 Samples",
+      "authors": ["Nicholas M. Schneider", "MAVEN IUVS Team"],
+      "publisher": "NASA Planetary Data System Atmospheres Node",
+      "published_at": "2026-05-14",
+      "url": "https://atmos.nmsu.edu/data_and_services/atmospheres_data/MAVEN/disk.html",
+      "doi": "10.17189/1518956",
+      "retrieved_at": "2026-07-30",
+      "license": "NASA PDS source terms apply; preserve bundle citations, labels and source notices",
+      "archived": true,
+      "archive_exception": null,
+      "archive_files": [
+        {"path":"archive/nasa-pds-maven-iuvs-disk-v13-v07-snapshot/disk.html","sha256":"6c78748bc706c9a8c1c4cbdb7d29a9d8fd3a9862f7a3528d1b33970c6daa9c2a","bytes":20911,"media_type":"text/html"},
+        {"path":"archive/nasa-pds-maven-iuvs-disk-v13-v07-snapshot/iuvs_data_readme.txt","sha256":"8f24abd04a1d4adebac031b2d46a428103a6ed2ed77a2bd650c2baf002bf6008","bytes":14154,"media_type":"text/plain"},
+        {"path":"archive/nasa-pds-maven-iuvs-disk-v13-v07-snapshot/collection_maven_iuvs_calibrated_disk.xml","sha256":"b99039002c9934d53c4e3c8f3963b18f475b38d108a614a3418b6b223767d0a2","bytes":7752,"media_type":"application/xml"},
+        {"path":"archive/nasa-pds-maven-iuvs-disk-v13-v07-snapshot/collection_maven_iuvs_calibrated_disk_inventory.tab","sha256":"654e262c421b980dfff6e2f9c80ee9d33043cc54ab045cac54859b3449d16e49","bytes":62719037,"media_type":"text/plain"},
+        {"path":"archive/nasa-pds-maven-iuvs-disk-v13-v07-snapshot/collection_maven_iuvs_processed_disk.xml","sha256":"f653b58811df6a303e8708ec060420987b6e6a9c626ff1f76d6a9283a4ee00ef","bytes":7065,"media_type":"application/xml"},
+        {"path":"archive/nasa-pds-maven-iuvs-disk-v13-v07-snapshot/collection_maven_iuvs_processed_disk_inventory.tab","sha256":"f866fc6cf5d5447a671e868b7a8d36606d1e2bc4cb1da1686fd3b7d2eaa12dbe","bytes":157170,"media_type":"text/plain"},
+        {"path":"archive/nasa-pds-maven-iuvs-disk-v13-v07-snapshot/collection_maven_iuvs_derived_disk.xml","sha256":"b0ffc71f9a1729e248ef32bc3204a7821b0a4dd2d67e84f3032d4e221d9194b5","bytes":7057,"media_type":"application/xml"},
+        {"path":"archive/nasa-pds-maven-iuvs-disk-v13-v07-snapshot/collection_maven_iuvs_derived_disk_inventory.tab","sha256":"38e89cabacd309fb4df323bbedd3ec8a25fbe57e4b4397591c23ce1503732f12","bytes":175606,"media_type":"text/plain"},
+        {"path":"archive/nasa-pds-maven-iuvs-disk-v13-v07-snapshot/mvn_iuv_l2_apoapse-orbit02941-fuv_20160403T233406.xml","sha256":"208d9b49eae406fcc57e8cc7b3082214785837c2710a5a1644744f5553a74389","bytes":30375,"media_type":"application/xml"},
+        {"path":"archive/nasa-pds-maven-iuvs-disk-v13-v07-snapshot/mvn_iuv_l2_apoapse-orbit02941-fuv_20160403T233406_v07_r01.fits","sha256":"05f8c621278217a25ea58c1603c41885589ef6fdd63fc3cca0ebfd3317b3c8d5","bytes":1877760,"media_type":"application/fits"},
+        {"path":"archive/nasa-pds-maven-iuvs-disk-v13-v07-snapshot/mvn_iuv_l2_apoapse-orbit02941-muv_20160403T233406.xml","sha256":"49c0b7e3a336b56a4d13a25e0a1496d0d9175a5bbdfaf164186d4c169117e1d6","bytes":27659,"media_type":"application/xml"},
+        {"path":"archive/nasa-pds-maven-iuvs-disk-v13-v07-snapshot/mvn_iuv_l2_apoapse-orbit02941-muv_20160403T233406_v07_r01.fits","sha256":"2baf167cdc185bd1b4aac4600c6f75e222e83a7e6614f116deca5c74f59383db","bytes":1008000,"media_type":"application/fits"}
+      ],
+      "citation": "Schneider, N. et al., MAVEN IUVS Calibrated-level Data Product Bundle, NASA PDS, DOI 10.17189/1518946; Processed DOI 10.17189/1518964; Derived DOI 10.17189/1518956.",
+      "notes": "Kısmi yerel arşiv: 633.461 calibrated V13, 1.690 processed V7 ve 1.869 derived V7 disk üyeliğinin tam envanterleri; resmî disk sayfası ve v07 caveat belgesi; aynı apoapse taramasına ait gerçek FUV/MUV L2 FITS/XML ürün çifti yereldir. Calibrated etiket V13.0 olmasına rağmen envanter üyeleri V3.0-V14.1 aralığındadır; processed/derived koleksiyonları 2016-04-05'te biter. FUV XML stop zamanı ile FITS ana başlığındaki tam tarama stop zamanı uyuşmaz; ikisi de korunur. MUV örneği O3 sütunu, albedo ve toz opaklığı içerir, doğrudan H2O içermez. FITS başlığı ölçümsüz hücre için -1 dolgusunu belgeler; aynı maskede görülen belgesiz -40 belirsizlik sentineli fiziksel değer sayılmaz. V07 caveat'ları SZA<80 retrieval sınırını ve yüksek emisyon açısında yüzey-kesişim geometrisi artefaktlarını bildirir."
+    }
+  ]
+}

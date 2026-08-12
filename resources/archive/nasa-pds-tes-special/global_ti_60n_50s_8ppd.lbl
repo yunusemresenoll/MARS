@@ -1,0 +1,56 @@
+PDS_VERSION_ID                 = PDS3
+RECORD_TYPE                    = FIXED_LENGTH
+FILE_RECORDS                   = 882
+RECORD_BYTES                   = 11520
+^IMAGE                         = "GLOBAL_TI_60N_50S_8PPD.IMG"
+
+PRODUCT_ID                     = "GLOBAL_TI_60N_50S_8PPD"
+MISSION_NAME                   = "MARS GLOBAL SURVEYOR"
+INSTRUMENT_HOST_ID             = "MGS"
+INSTRUMENT_ID                  = "TES"
+TARGET_NAME                    = "MARS"
+PRODUCT_CREATION_TIME          = 2002-10-25T15:30:00
+PRODUCER_FULL_NAME             = "MICHAEL MELLON"
+PRODUCER_INSTITUTION_NAME      = "UNIVERSITY OF COLORADO"
+
+OBJECT                         = IMAGE
+  NAME                         = "THERMAL INERTIA"
+  LINES                        = 882
+  LINE_SAMPLES                 = 2880
+  SAMPLE_TYPE                  = PC_REAL
+  SAMPLE_BITS                  = 32
+  DESCRIPTION                  = "This image contains the TES-derived 
+  thermal inertia. Units are J/(m^2*K*sqrt(s))."
+END_OBJECT                     = IMAGE
+
+OBJECT                         = IMAGE_MAP_PROJECTION
+  ^DATA_SET_MAP_PROJECTION     = "DSMAP.CAT"
+  MAP_PROJECTION_TYPE          = "SIMPLE CYLINDRICAL"
+  A_AXIS_RADIUS                = 3396.0 <KM>
+  B_AXIS_RADIUS                = 3396.0 <KM>
+  C_AXIS_RADIUS                = 3396.0 <KM>
+  FIRST_STANDARD_PARALLEL      = "N/A"
+  SECOND_STANDARD_PARALLEL     = "N/A"
+  POSITIVE_LONGITUDE_DIRECTION = "EAST"
+  CENTER_LATITUDE              = 0.0 <DEGREE>
+  CENTER_LONGITUDE             = 0.0 <DEGREE>
+  REFERENCE_LATITUDE           = "N/A"
+  REFERENCE_LONGITUDE          = "N/A"
+  LINE_FIRST_PIXEL             = 1
+  LINE_LAST_PIXEL              = 882
+  SAMPLE_FIRST_PIXEL           = 1
+  SAMPLE_LAST_PIXEL            = 2880
+  MAP_PROJECTION_ROTATION      = 0.0
+  MAP_RESOLUTION               = 8.0 <PIXEL/DEGREE>
+  MAP_SCALE                    = 7.41 <KM/PIXEL>
+  MAXIMUM_LATITUDE             = 60.125 <DEGREE>
+  MINIMUM_LATITUDE             = -50.125 <DEGREE>
+  WESTERNMOST_LONGITUDE        = -180.0 <DEGREE>
+  EASTERNMOST_LONGITUDE        = 180.0 <DEGREE>
+  LINE_PROJECTION_OFFSET       = 481.5
+  SAMPLE_PROJECTION_OFFSET     = 1440.5
+  COORDINATE_SYSTEM_TYPE       = "BODY-FIXED ROTATING"
+  COORDINATE_SYSTEM_NAME       = "PLANETOCENTRIC"
+END_OBJECT                     = IMAGE_MAP_PROJECTION
+
+END

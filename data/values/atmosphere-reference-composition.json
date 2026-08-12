@@ -1,0 +1,72 @@
+{
+  "dataset_id": "mars.atmosphere.reference-composition.nasa-tm-20220006678",
+  "dataset_version": "0.1.0",
+  "record_count": 5,
+  "records": [
+    {
+      "record_id": "mars.atmosphere.composition.co2.reference.nasa-tm-20220006678",
+      "property_id": "atmosphere.composition.co2_volume_fraction",
+      "status": "DERIVED",
+      "value": 0.9532,
+      "unit": "1",
+      "location": {"scope": "GLOBAL"},
+      "time": {"temporal_scope": "UNKNOWN"},
+      "uncertainty": {"kind": "NOT_AVAILABLE", "note": "Tablo bu referans yüzde için belirsizlik vermez."},
+      "source_id": "nasa-tm-20220006678",
+      "source_locator": "Table 4.10, Carbon dioxide (CO2), 95.32 percent by volume",
+      "notes": "Kaynak yüzdesi kanonik boyutsuz hacim oranına tam birim dönüşümüyle çevrilmiştir."
+    },
+    {
+      "record_id": "mars.atmosphere.composition.n2.reference.nasa-tm-20220006678",
+      "property_id": "atmosphere.composition.n2_volume_fraction",
+      "status": "DERIVED",
+      "value": 0.027,
+      "unit": "1",
+      "location": {"scope": "GLOBAL"},
+      "time": {"temporal_scope": "UNKNOWN"},
+      "uncertainty": {"kind": "NOT_AVAILABLE", "note": "Tablo bu referans yüzde için belirsizlik vermez."},
+      "source_id": "nasa-tm-20220006678",
+      "source_locator": "Table 4.10, Nitrogen (N2), 2.70 percent by volume",
+      "notes": "Kaynak yüzdesi kanonik boyutsuz hacim oranına tam birim dönüşümüyle çevrilmiştir."
+    },
+    {
+      "record_id": "mars.atmosphere.composition.ar.reference.nasa-tm-20220006678",
+      "property_id": "atmosphere.composition.ar_volume_fraction",
+      "status": "DERIVED",
+      "value": 0.016,
+      "unit": "1",
+      "location": {"scope": "GLOBAL"},
+      "time": {"temporal_scope": "UNKNOWN"},
+      "uncertainty": {"kind": "NOT_AVAILABLE", "note": "Tablo bu referans yüzde için belirsizlik vermez."},
+      "source_id": "nasa-tm-20220006678",
+      "source_locator": "Table 4.10, Argon (Ar), 1.6 percent by volume",
+      "notes": "Kaynak yüzdesi kanonik boyutsuz hacim oranına tam birim dönüşümüyle çevrilmiştir."
+    },
+    {
+      "record_id": "mars.atmosphere.composition.o2.reference.nasa-tm-20220006678",
+      "property_id": "atmosphere.composition.o2_volume_fraction",
+      "status": "DERIVED",
+      "value": 0.0013,
+      "unit": "1",
+      "location": {"scope": "GLOBAL"},
+      "time": {"temporal_scope": "UNKNOWN"},
+      "uncertainty": {"kind": "NOT_AVAILABLE", "note": "Tablo bu referans yüzde için belirsizlik vermez."},
+      "source_id": "nasa-tm-20220006678",
+      "source_locator": "Table 4.10, Oxygen (O2), 0.13 percent by volume",
+      "notes": "Kaynak yüzdesi kanonik boyutsuz hacim oranına tam birim dönüşümüyle çevrilmiştir."
+    },
+    {
+      "record_id": "mars.atmosphere.composition.co.reference.nasa-tm-20220006678",
+      "property_id": "atmosphere.composition.co_volume_fraction",
+      "status": "DERIVED",
+      "value": 0.0008,
+      "unit": "1",
+      "location": {"scope": "GLOBAL"},
+      "time": {"temporal_scope": "UNKNOWN"},
+      "uncertainty": {"kind": "NOT_AVAILABLE", "note": "Tablo bu referans yüzde için belirsizlik vermez."},
+      "source_id": "nasa-tm-20220006678",
+      "source_locator": "Table 4.10, Carbon monoxide (CO), 0.08 percent by volume",
+      "notes": "Kaynak yüzdesi kanonik boyutsuz hacim oranına tam birim dönüşümüyle çevrilmiştir."
+    }
+  ]
+}

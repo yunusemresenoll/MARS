@@ -1,0 +1,54 @@
+{
+  "dataset_id": "mars.mgs.tes.special-maps-8ppd",
+  "source_id": "nasa-pds-tes-special-maps-2002",
+  "target": "Mars",
+  "processing_state": "ARCHIVED_DERIVED",
+  "products": [
+    {
+      "product_id": "GLOBAL_ALBEDO_8PPD",
+      "property_id": "surface.bolometric_albedo",
+      "data_path": "resources/archive/nasa-pds-tes-special/global_albedo_8ppd.img",
+      "label_path": "resources/archive/nasa-pds-tes-special/global_albedo_8ppd.lbl",
+      "record_count_method": "BINARY_CELLS",
+      "sample_bits": 32,
+      "records": 4147200,
+      "canonical_source_unit": "1",
+      "structure": {
+        "lines": 1440,
+        "samples_per_line": 2880,
+        "sample_type": "PC_REAL",
+        "pixels_per_degree": 8,
+        "map_scale_km_per_pixel": 7.41,
+        "latitude_range_deg": [90, -90],
+        "longitude_range_deg_east": [-180, 180],
+        "projection": "SIMPLE CYLINDRICAL",
+        "coordinate_system": "planetocentric, east-positive"
+      },
+      "observation_period": null,
+      "notes": "Kaynak hücreler little-endian 32-bit IEEE kayan noktalı değerlerdir; herhangi bir küresel ortalama üretilmemiştir."
+    },
+    {
+      "product_id": "GLOBAL_TI_60N_50S_8PPD",
+      "property_id": "surface.thermal_inertia",
+      "data_path": "resources/archive/nasa-pds-tes-special/global_ti_60n_50s_8ppd.img",
+      "label_path": "resources/archive/nasa-pds-tes-special/global_ti_60n_50s_8ppd.lbl",
+      "record_count_method": "BINARY_CELLS",
+      "sample_bits": 32,
+      "records": 2540160,
+      "canonical_source_unit": "J/(m^2*K*sqrt(s))",
+      "structure": {
+        "lines": 882,
+        "samples_per_line": 2880,
+        "sample_type": "PC_REAL",
+        "pixels_per_degree": 8,
+        "map_scale_km_per_pixel": 7.41,
+        "latitude_range_deg": [60.125, -50.125],
+        "longitude_range_deg_east": [-180, 180],
+        "projection": "SIMPLE CYLINDRICAL",
+        "coordinate_system": "planetocentric, east-positive"
+      },
+      "observation_period": null,
+      "notes": "Termal atalet TES verisinden türetilmiştir; bu ürün kutupları kapsayan küresel bir raster değildir."
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1M00.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1M00_1303.sch"
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:msn="http://pds.nasa.gov/pds4/msn/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1M00.xsd
+    
+    http://pds.nasa.gov/pds4/msn/v1
+    https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1M00_1303.xsd
+    ">
+    <Identification_Area> 
+        <logical_identifier>urn:nasa:pds:mgs-mager:data-fieldmap-derived:lillis_er_map</logical_identifier> 
+        <version_id>1.0</version_id>
+        <title>MGS MAG/ER Derived Map of Mars Data</title> 
+        <information_model_version>1.22.0.0</information_model_version> 
+        <product_class>Product_Observational</product_class>
+        <Citation_Information>
+            <publication_year>2024</publication_year> 
+            <description> 
+                This file contains an ASCII file representing a crustal magnetic field   
+                map of Mars.  This map was constructed from data from the Electron           
+                Reflectometer (ER) section of the MAG/ER instrument aboard Mars Global       
+                Surveyor (MGS).
+            </description>
+            <List_Author>
+                <Person>
+                    <given_name>Robert J.</given_name>
+                    <family_name>Lillis</family_name>
+                    <person_orcid>0000-0003-0578-517X</person_orcid>
+                    <sequence_number>1</sequence_number>
+                    <Affiliation>
+                        <organization_name>University of California, Berkeley</organization_name>
+                        <organization_rorid>https://ror.org/01an7q238</organization_rorid>
+                    </Affiliation>
+                </Person>
+            </List_Author>
+        </Citation_Information> 
+        <Modification_History>
+            <Modification_Detail> 
+                <modification_date>2024-07-02</modification_date>
+                <version_id>1.0</version_id>
+                <description> 
+                    This product, LILLIS_ER_MAP.TAB, was originally released 
+                    as part of the PDS3 MGS-M-ER-5-FIELD-MAP-V1.0 data set. The metadata have 
+                    been migrated to PDS4. The data themselves are unchanged.
+                </description>
+            </Modification_Detail>
+        </Modification_History> 
+    </Identification_Area>
+    <Observation_Area>
+        <Time_Coordinates>
+            <start_date_time xsi:nil="true" nilReason="unknown"/>
+            <stop_date_time xsi:nil="true" nilReason="unknown"/>
+        </Time_Coordinates> 
+        <Primary_Result_Summary>
+            <purpose>Science</purpose>
+            <processing_level>Derived</processing_level> 
+            <description>MGS MAG/ER Derived Map of Mars</description>
+            <Science_Facets>
+                <domain>Magnetosphere</domain>
+                <discipline_name>Fields</discipline_name>
+                <facet1>Magnetic</facet1>
+                <facet2>Background</facet2>
+            </Science_Facets>
+        </Primary_Result_Summary> 
+        <Investigation_Area>
+            <name>Mars Global Surveyor</name>
+            <type>Mission</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:investigation:mission.mars_global_surveyor</lid_reference> 
+                <reference_type>data_to_investigation</reference_type>
+            </Internal_Reference> 
+        </Investigation_Area> 
+        <Observing_System>
+            <Observing_System_Component>
+                <name>Mars Global Surveyor</name>
+                <type>Host</type> 
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mgs</lid_reference> 
+                    <reference_type>is_instrument_host</reference_type> 
+                </Internal_Reference> 
+            </Observing_System_Component> 
+            <Observing_System_Component>
+                <name>Electron Reflectometer</name>
+                <type>Instrument</type> 
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument:mgs.er</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference> 
+            </Observing_System_Component> 
+            <Observing_System_Component>
+                <name>Magnetometer</name>
+                <type>Instrument</type> 
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument:mgs.mag</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference> 
+            </Observing_System_Component> 
+        </Observing_System>  
+        <Target_Identification> 
+            <name>Mars</name> 
+            <type>Planet</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference> 
+                <reference_type>data_to_target</reference_type> 
+            </Internal_Reference> 
+        </Target_Identification>
+    </Observation_Area> 
+    <Reference_List>
+        <External_Reference>
+            <doi>10.1016/j.icarus.2007.09.032</doi>
+            <reference_text>
+                An improved crustal magnetic field map of Mars from electron
+                reflectometry: Highland volcano magmatic history and the end of the
+                martian dynamo
+                
+                Robert J. Lillis, Herbert V. Frey, Michael Manga, David L. Mitchell,
+                Robert P. Lin, Mario H. Acuna, Stephen W. Bougher
+                
+                Icarus 194 (2008) 575-596
+            </reference_text>
+            <description>
+                The electron reflectometry map of Mars consists of an ASCII file with
+                latitude and longitude in bins of 0.5 deg.  This map is a derived
+                data product; a number of assumptions went into its creation.
+            </description>
+        </External_Reference>
+        <Source_Product_External> 
+            <external_source_product_identifier>MGS-M-ER-5-FIELD-MAP-V1.0:LILLIS_ER_MAP:LILLIS_ER_MAP.TAB</external_source_product_identifier> 
+            <reference_type>data_to_derived_source_product</reference_type>
+            <doi>10.17189/1519751</doi> 
+            <curating_facility>PDS Planetary Plasma Interactions Node</curating_facility> 
+            <description> 
+                This is the first version converted to PDS4. The DOI references the source PDS3 data set.  
+            </description>
+        </Source_Product_External>
+    </Reference_List> 
+    <File_Area_Observational> 
+        <File>
+            <file_name>LILLIS_ER_MAP.TAB</file_name>
+            <creation_date_time>2010-08-05T14:42:26</creation_date_time>
+            <file_size unit="byte">3456000</file_size>
+            <md5_checksum>906b095d80cc0c3719879eea5aac6d3f</md5_checksum> 
+        </File>
+        <Table_Character>
+            <name>MGS MAG/ER Derived Map of Mars Data</name> 
+            <offset unit="byte">0</offset>
+            <records>43200</records>
+            <description>
+                The contents of the map file are the elements of a 720 x 360-element 
+                matrix, i.e. 720 rows and 360 columns.  The spacing is 0.5 deg in both 
+                latitude and longitude.  The values of latitude are:
+                
+                -89.75 deg, -89.25 deg, -88.75 deg,...... -0.25 deg, 0.25 deg,..., 
+                88.75 deg, 89.25 deg, 89.75 deg.
+                
+                The longitudes are EAST longitudes and, from right to left, are:
+                0.25 deg, 0.75 deg, 1.25 deg,..., 358.75 deg, 359.25 deg, 359.75 deg.
+                
+                In the file, the elements of the matrix are grouped into rows of six
+                values each.
+                
+                IMPORTANT NOTE:  ER-derived magnetic field magnitudes are NOT the same as
+                magnetometer data and should NOT be treated as such.  Users of the data are
+                strongly advised to contact Dr. Robert J. Lillis, the provider of the map,
+                before using the data in publications.
+            </description>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <Record_Character>
+                <fields>0</fields>
+                <groups>1</groups>
+                <record_length unit="byte">80</record_length>
+                <Group_Field_Character>
+                    <repetitions>6</repetitions>
+                    <fields>1</fields>
+                    <groups>0</groups>
+                    <group_location unit="byte">1</group_location>
+                    <group_length unit="byte">78</group_length>
+                    <Field_Character>
+                        <name>Magnetic Field Values 1-6</name>
+                        <field_number>1</field_number>
+                        <field_location unit="byte">1</field_location>
+                        <data_type>ASCII_Real</data_type>
+                        <field_length unit="byte">13</field_length>
+                        <description>
+                            The values of latitude are:
+                            
+                            -89.75 deg, -89.25 deg, -88.75 deg,...... -0.25 deg, 0.25 deg,..., 
+                            88.75 deg, 89.25 deg, 89.75 deg.
+                            
+                            The longitudes are EAST longitudes and, from right to left, are:
+                            0.25 deg, 0.75 deg, 1.25 deg,..., 358.75 deg, 359.25 deg, 359.75 deg.
+                        </description>
+                    </Field_Character>
+                </Group_Field_Character>
+            </Record_Character>
+        </Table_Character>
+    </File_Area_Observational>
+</Product_Observational>

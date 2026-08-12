@@ -1,0 +1,65 @@
+{
+  "dataset_id": "mars.maven.mag.calibrated-pc-v2.38-sample",
+  "source_id": "nasa-pds-maven-mag-calibrated-pc-v2.38-sample",
+  "target": "Mars",
+  "processing_state": "ARCHIVED_DERIVED",
+  "products": [
+    {
+      "product_id": "MAVEN_MAG_L2_PC_COLLECTION_V2.38",
+      "property_id": "magnetic.maven_pc_inventory_row",
+      "data_path": "resources/archive/nasa-pds-maven-mag-pc-1s-sample/collection_data_l2_pc.csv",
+      "label_path": "resources/archive/nasa-pds-maven-mag-pc-1s-sample/collection_data_l2_pc.xml",
+      "record_count_method": "TEXT_LINES",
+      "records": 7688,
+      "canonical_source_unit": null,
+      "structure": {
+        "format": "PDS4 delimited inventory",
+        "fields": 2,
+        "collection_lid": "urn:nasa:pds:maven.mag.calibrated:data.pc",
+        "collection_version": "2.38",
+        "release": "MAVEN Release 45",
+        "coverage_start_utc": "2014-10-10T00:00:00.099Z",
+        "coverage_stop_utc": "2025-12-06T00:00:01.557Z"
+      },
+      "observation_period": "2014-10-10T00:00:00.099Z/2025-12-06T00:00:01.557Z",
+      "notes": "Koleksiyon envanteri tamdır; işaret ettiği 7.688 gözlemsel üründen yalnız 2025-12-01 pc1s ürünü yerelde kopyalanmıştır."
+    },
+    {
+      "product_id": "MVN_MAG_L2_2025335PC1S_20251201_V01_R01",
+      "property_id": "magnetic.maven_pc_sample",
+      "data_path": "resources/archive/nasa-pds-maven-mag-pc-1s-sample/mvn_mag_l2_2025335pc1s_20251201_v01_r01.sts",
+      "label_path": "resources/archive/nasa-pds-maven-mag-pc-1s-sample/mvn_mag_l2_2025335pc1s_20251201_v01_r01.xml",
+      "record_count_method": "PDS_STREAM_ROWS",
+      "data_offset_bytes": 10272,
+      "record_bytes": 150,
+      "records": 86401,
+      "canonical_source_unit": null,
+      "structure": {
+        "format": "PDS4 fixed-field ASCII table with attached textual header",
+        "fields": 13,
+        "cadence_seconds": 1,
+        "coordinate_system": "Planetocentric",
+        "magnetic_field_units": "nT",
+        "spacecraft_position_units": "km",
+        "mission_phase": "EM-6",
+        "field_order": [
+          "SAMPLE UTC",
+          "DECIMAL DAY",
+          "BX PLANETOCENTRIC",
+          "BY PLANETOCENTRIC",
+          "BZ PLANETOCENTRIC",
+          "INSTRUMENT RANGE at byte 70",
+          "X",
+          "Y",
+          "Z",
+          "BDX PAYLOAD",
+          "BDY PAYLOAD",
+          "BDZ PAYLOAD",
+          "INSTRUMENT RANGE at byte 145"
+        ]
+      },
+      "observation_period": "2025-12-01T00:00:00.641Z/2025-12-02T00:00:00.498Z",
+      "notes": "Bir günlük kalibre edilmiş yörünge zaman serisidir. Değerler MAVEN konumundadır; küresel yüzey alanı, sabit Mars alanı veya kabuksal alan haritası olarak kullanılamaz."
+    }
+  ]
+}

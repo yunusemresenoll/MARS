@@ -1,0 +1,59 @@
+{
+  "dataset_id": "mars.maven.swia.reference",
+  "dataset_version": "0.1.0",
+  "record_count": 4,
+  "records": [
+    {
+      "record_id": "mars.plasma.swia-v2.16.collection-product-count",
+      "property_id": "plasma.swia_collection_product_count",
+      "status": "DERIVED",
+      "value": 4094,
+      "unit": "count",
+      "location": {"scope": "ARCHIVE", "collection_lid": "urn:nasa:pds:maven.swia.calibrated:data.onboard_svy_mom"},
+      "time": {"temporal_scope": "ARCHIVE_BUILD", "published_at": "2026-06-10"},
+      "uncertainty": {"kind": "EXACT_FOR_ARCHIVED_PRODUCT"},
+      "source_id": "nasa-pds-maven-swia-onboard-mom-v2.16-sample",
+      "source_locator": "collection_data_l2_onboardsvymom.xml Inventory records = 4094; CSV line count",
+      "notes": "Yerel CDF ürün sayısı değildir."
+    },
+    {
+      "record_id": "mars.plasma.swia-20251201.moment-set-count",
+      "property_id": "plasma.swia_daily_moment_set_count",
+      "status": "DERIVED",
+      "value": 21600,
+      "unit": "count",
+      "location": {"scope": "DATASET", "product_id": "MVN_SWI_L2_ONBOARDSVYMOM_20251201_V02_R01"},
+      "time": {"temporal_scope": "PRODUCT", "start_utc": "2025-12-01T00:00:50.311Z", "stop_utc": "2025-12-02T00:00:49.763Z"},
+      "uncertainty": {"kind": "EXACT_FOR_ARCHIVED_PRODUCT"},
+      "source_id": "nasa-pds-maven-swia-onboard-mom-v2.16-sample",
+      "source_locator": "daily product XML Mission_Area num_mom = 21600 and epoch Axis_Array elements = 21600",
+      "notes": null
+    },
+    {
+      "record_id": "mars.plasma.swia.nominal-accumulation-duration",
+      "property_id": "plasma.swia_nominal_accumulation_duration",
+      "status": "DERIVED",
+      "value": 4,
+      "unit": "s",
+      "location": {"scope": "DATASET", "product_class": "onboard_svy_mom"},
+      "time": {"temporal_scope": "TIME_INVARIANT"},
+      "uncertainty": {"kind": "QUALITATIVE", "note": "SIS bunu birden çok biriktirmenin toplanmadığı ürünler için verir."},
+      "source_id": "nasa-pds-maven-swia-onboard-mom-v2.16-sample",
+      "source_locator": "maven_sis_SWIA-r1_3.pdf, section 5.2.1.5",
+      "notes": "Zaman serisinin her ardışık örneği arasında mutlaka kesintisiz dört saniye olduğu anlamına gelmez."
+    },
+    {
+      "record_id": "mars.plasma.swia.invalid-float-constant",
+      "property_id": "plasma.swia_invalid_numeric_constant",
+      "status": "UNKNOWN",
+      "value": -1.0e31,
+      "unit": null,
+      "location": {"scope": "DATASET", "product_id": "MVN_SWI_L2_ONBOARDSVYMOM_20251201_V02_R01"},
+      "time": {"temporal_scope": "STATIC_PRODUCT_STRUCTURE"},
+      "uncertainty": {"kind": "NOT_AVAILABLE", "note": "Fiziksel ölçüm değil, CDF geçersiz-değer kodudur."},
+      "source_id": "nasa-pds-maven-swia-onboard-mom-v2.16-sample",
+      "source_locator": "daily product XML Special_Constants for floating-point science arrays",
+      "notes": "İstatistik ve fizik hesaplarına dahil edilmez."
+    }
+  ]
+}

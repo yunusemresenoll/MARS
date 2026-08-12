@@ -1,0 +1,91 @@
+{
+  "dataset_id": "mars.maven.lpw.derived-v7.2-sample",
+  "source_id": "nasa-pds-maven-lpw-derived-v7.2-sample",
+  "target": "Mars ionosphere and surrounding plasma",
+  "processing_state": "ARCHIVED_DERIVED",
+  "products": [
+    {
+      "product_id": "MAVEN_LPW_LPNT_COLLECTION_V6.2",
+      "property_id": "plasma.lpw_lpnt_inventory_row",
+      "data_path": "resources/archive/nasa-pds-maven-lpw-derived-v7.2-sample/collection_data_l2_lpnt_6.2.csv",
+      "label_path": "resources/archive/nasa-pds-maven-lpw-derived-v7.2-sample/collection_data_l2_lpnt_6.2.xml",
+      "record_count_method": "TEXT_LINES",
+      "records": 3977,
+      "canonical_source_unit": null,
+      "structure": {
+        "format": "PDS4 delimited inventory",
+        "fields": 2,
+        "collection_lid": "urn:nasa:pds:maven.lpw.derived:data.lp.nt",
+        "collection_version": "6.2",
+        "doi": "10.17189/8hsd-zd46",
+        "coverage_start_utc": "2014-10-11T00:00:00.000Z",
+        "coverage_stop_utc": "2025-12-05T23:59:59.999Z"
+      },
+      "observation_period": "2014-10-11T00:00:00.000Z/2025-12-05T23:59:59.999Z",
+      "notes": "Tam koleksiyon envanteridir; işaret ettiği 3.977 günlük üründen yalnız 2025-12-01 CDF ürünü yerelde kopyalanmıştır."
+    },
+    {
+      "product_id": "MAVEN_LPW_WN_COLLECTION_V6.7",
+      "property_id": "plasma.lpw_wn_inventory_row",
+      "data_path": "resources/archive/nasa-pds-maven-lpw-derived-v7.2-sample/collection_data_l2_wn_6.7.csv",
+      "label_path": "resources/archive/nasa-pds-maven-lpw-derived-v7.2-sample/collection_data_l2_wn_6.7.xml",
+      "record_count_method": "TEXT_LINES",
+      "records": 1089,
+      "canonical_source_unit": null,
+      "structure": {
+        "format": "PDS4 delimited inventory",
+        "fields": 2,
+        "collection_lid": "urn:nasa:pds:maven.lpw.derived:data.w.n",
+        "collection_version": "6.7",
+        "doi": "10.17189/mcxb-8376",
+        "coverage_start_utc": "2014-10-11T00:00:00.000Z",
+        "coverage_stop_utc": "2025-12-01T23:59:59.999Z"
+      },
+      "observation_period": "2014-10-11T00:00:00.000Z/2025-12-01T23:59:59.999Z",
+      "notes": "Tam koleksiyon envanteridir; işaret ettiği 1.089 günlük üründen yalnız 2025-12-01 CDF ürünü yerelde kopyalanmıştır."
+    },
+    {
+      "product_id": "MVN_LPW_L2_LPNT_20251201_V04_R02",
+      "property_id": "plasma.lpw_lpnt_quantity_set",
+      "data_path": "resources/archive/nasa-pds-maven-lpw-derived-v7.2-sample/mvn_lpw_l2_lpnt_20251201_v04_r02.cdf",
+      "label_path": "resources/archive/nasa-pds-maven-lpw-derived-v7.2-sample/mvn_lpw_l2_lpnt_20251201_v04_r02.xml",
+      "record_count_method": "PDS_ARRAY_ELEMENTS",
+      "label_array_id": "epoch",
+      "records": 21590,
+      "canonical_source_unit": null,
+      "structure": {
+        "format": "CDF 3.4 ISTP/IACG with PDS4 external label",
+        "shape": [21590, 10],
+        "quantity_order": ["neL2", "TeL2", "usc", "neLP", "nepm", "nion", "nca", "mion", "jphe", "nefit"],
+        "quantity_units": ["cm^-3", "K", "V", "cm^-3", "cm^-3", "cm^-3", "cm^-3", "amu", "uA", "cm^-3"],
+        "uncertainty_arrays": ["ddata_lo", "ddata_up"],
+        "quality_array": "flag",
+        "instrument_state_array": "info",
+        "missing_value": "NaN"
+      },
+      "observation_period": "2025-12-01T00:00:00.000Z/2025-12-01T23:59:59.999Z",
+      "notes": "IV taramalarına çok-değişkenli uyumdan ve çeşitli yoğunluk ürünlerinin birleştirilmesinden türetilmiştir. Düşük yoğunlukta veya sıcak plazmada uyum başarısız olabilir. NaN fiziksel değer değildir."
+    },
+    {
+      "product_id": "MVN_LPW_L2_WN_20251201_V04_R01",
+      "property_id": "plasma.lpw_wn_density_sample",
+      "data_path": "resources/archive/nasa-pds-maven-lpw-derived-v7.2-sample/mvn_lpw_l2_wn_20251201_v04_r01.cdf",
+      "label_path": "resources/archive/nasa-pds-maven-lpw-derived-v7.2-sample/mvn_lpw_l2_wn_20251201_v04_r01.xml",
+      "record_count_method": "PDS_ARRAY_ELEMENTS",
+      "label_array_id": "epoch",
+      "records": 30,
+      "canonical_source_unit": "cm^-3",
+      "structure": {
+        "format": "CDF 3.4 ISTP/IACG with PDS4 external label",
+        "shape": [30],
+        "science_array": "data",
+        "uncertainty_arrays": ["ddata_lo", "ddata_up"],
+        "quality_array": "flag",
+        "instrument_state_array": "info",
+        "derivation": "electron density from detectable Langmuir line"
+      },
+      "observation_period": "2025-12-01T00:00:00.000Z/2025-12-01T23:59:59.999Z",
+      "notes": "Yalnız Langmuir çizgisinin saptanabildiği anlarda örnek vardır. Belirsizlik ve kalite, çizginin ne kadar kolay tanımlandığını da yansıtır."
+    }
+  ]
+}

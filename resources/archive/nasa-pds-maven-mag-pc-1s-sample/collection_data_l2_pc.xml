@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch" 
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/mission/mvn/v1/PDS4_MVN_1D00_1110.sch"
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Collection
+   xmlns="http://pds.nasa.gov/pds4/pds/v1"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:mvn="http://pds.nasa.gov/pds4/mission/mvn/v1"
+   xsi:schemaLocation="
+       http://pds.nasa.gov/pds4/pds/v1    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd
+         http://pds.nasa.gov/pds4/mission/mvn/v1    https://pds.nasa.gov/pds4/mission/mvn/v1/PDS4_MVN_1D00_1110.xsd
+    ">
+   <Identification_Area>
+      <logical_identifier>urn:nasa:pds:maven.mag.calibrated:data.pc</logical_identifier>
+      <version_id>2.38</version_id>
+      <title>MAVEN MAG Tabulated vector magnetic field vs. time in planetocentric coordinates Data Collection</title>
+      <information_model_version>1.13.0.0</information_model_version>
+      <product_class>Product_Collection</product_class>
+      <Citation_Information>
+         <author_list>Connerney, J. E. P.</author_list>
+         <publication_year>2026</publication_year>
+         <doi>10.17189/1414247</doi>
+         <description>
+            Vector magnetic field data acquired by the Fluxgate Magnetometer instrument aboard the MAVEN spacecraft. The data are calibrated and provided in physical units (nT).  The time resolution depends on the telemetry rate available when the data were taken.  The data are expressed in Planetocentric coordinates.
+         </description>
+      </Citation_Information>
+      <Modification_History>
+         <Modification_Detail>
+            <modification_date>2026-06-09</modification_date>
+            <version_id>2.38</version_id>
+            <description>MAVEN Release 45</description>
+         </Modification_Detail>
+      </Modification_History>
+   </Identification_Area>
+   <Context_Area>
+      <Time_Coordinates>
+         <start_date_time>2014-10-10T00:00:00.099Z</start_date_time>
+         <stop_date_time>2025-12-06T00:00:01.557Z</stop_date_time>
+      </Time_Coordinates>
+      <Primary_Result_Summary>
+         <purpose>Science</purpose>
+         <processing_level>Calibrated</processing_level>
+         <Science_Facets>
+            <domain>Magnetosphere</domain>
+            <discipline_name>Fields</discipline_name>
+            <facet1>Magnetic</facet1>
+            <facet2>Background</facet2>
+         </Science_Facets>
+      </Primary_Result_Summary>
+      <Investigation_Area>
+         <name>Mars Atmosphere and Volatile EvolutioN Mission</name>
+         <type>Mission</type>
+         <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:investigation:mission.maven</lid_reference>
+            <reference_type>collection_to_investigation</reference_type>
+         </Internal_Reference>
+      </Investigation_Area>
+      <Observing_System>
+         <Observing_System_Component>
+            <name>MAVEN</name>
+            <type>Spacecraft</type>   
+            <Internal_Reference>
+               <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.maven</lid_reference>
+               <reference_type>is_instrument_host</reference_type>
+            </Internal_Reference>
+         </Observing_System_Component>
+         <Observing_System_Component>
+            <name>Magnetometer</name>
+            <type>Instrument</type>   
+            <Internal_Reference>
+               <lid_reference>urn:nasa:pds:context:instrument:mag.maven</lid_reference>
+               <reference_type>is_instrument</reference_type>
+            </Internal_Reference>
+         </Observing_System_Component>
+      </Observing_System>
+      <Target_Identification>
+         <name>Mars</name>
+         <type>Planet</type>
+         <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+            <reference_type>collection_to_target</reference_type>
+         </Internal_Reference>
+      </Target_Identification>
+      <Mission_Area>
+         <mvn:MAVEN>
+            <mvn:mission_phase_name>Transition</mvn:mission_phase_name>
+            <mvn:mission_phase_name>Prime Mission</mvn:mission_phase_name>
+            <mvn:mission_phase_name>EM-1</mvn:mission_phase_name>
+            <mvn:mission_phase_name>EM-2</mvn:mission_phase_name>
+            <mvn:mission_phase_name>EM-3</mvn:mission_phase_name>
+            <mvn:mission_phase_name>EM-4</mvn:mission_phase_name>
+            <mvn:mission_phase_name>EM-5</mvn:mission_phase_name>
+            <mvn:mission_phase_name>EM-6</mvn:mission_phase_name>
+         </mvn:MAVEN>
+      </Mission_Area>
+   </Context_Area>
+   <Reference_List>
+
+   </Reference_List>
+   <Collection>
+      <collection_type>Data</collection_type>
+      <description>
+         Vector magnetic field data acquired by the Fluxgate Magnetometer instrument aboard the MAVEN spacecraft. The data are calibrated and provided in physical units (nT).  The time resolution depends on the telemetry rate available when the data were taken.  The data are expressed in Planetocentric coordinates.
+      </description>
+   </Collection>
+   <File_Area_Inventory>
+      <File>
+         <file_name>collection_data_l2_pc_2.38.csv</file_name>
+         <creation_date_time>2026-06-09T10:51:06</creation_date_time>
+         <file_size unit="byte">622728</file_size>
+         <md5_checksum>632f069651269527d6ce6d67327f7a84</md5_checksum>
+      </File>
+      <Inventory>
+         <offset unit="byte">0</offset>
+         <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+         <records>7688</records>
+         <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+         <field_delimiter>Comma</field_delimiter>
+         <Record_Delimited>
+            <fields>2</fields>
+            <groups>0</groups>
+            <maximum_record_length unit="byte">257</maximum_record_length>               
+            <Field_Delimited>
+               <name>Member Status</name>
+               <field_number>1</field_number>
+               <data_type>ASCII_String</data_type>
+               <maximum_field_length unit="byte">1</maximum_field_length>
+            </Field_Delimited>
+            <Field_Delimited>
+               <name>LIDVID_LID</name>
+               <field_number>2</field_number>
+               <data_type>ASCII_LIDVID_LID</data_type>
+               <maximum_field_length unit="byte">255</maximum_field_length>    
+            </Field_Delimited>
+         </Record_Delimited>
+         <reference_type>inventory_has_member_product</reference_type>
+      </Inventory>
+   </File_Area_Inventory>
+</Product_Collection>

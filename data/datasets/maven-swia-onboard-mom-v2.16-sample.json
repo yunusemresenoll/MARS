@@ -1,0 +1,58 @@
+{
+  "dataset_id": "mars.maven.swia.onboard-mom-v2.16-sample",
+  "source_id": "nasa-pds-maven-swia-onboard-mom-v2.16-sample",
+  "target": "Mars and Solar Wind",
+  "processing_state": "ARCHIVED_DERIVED",
+  "products": [
+    {
+      "product_id": "MAVEN_SWIA_ONBOARD_SVY_MOM_COLLECTION_V2.16",
+      "property_id": "plasma.swia_onboard_moment_inventory_row",
+      "data_path": "resources/archive/nasa-pds-maven-swia-onboard-mom-v2.16-sample/collection_data_l2_onboardsvymom.csv",
+      "label_path": "resources/archive/nasa-pds-maven-swia-onboard-mom-v2.16-sample/collection_data_l2_onboardsvymom.xml",
+      "record_count_method": "TEXT_LINES",
+      "records": 4094,
+      "canonical_source_unit": null,
+      "structure": {
+        "format": "PDS4 delimited inventory",
+        "fields": 2,
+        "collection_lid": "urn:nasa:pds:maven.swia.calibrated:data.onboard_svy_mom",
+        "collection_version": "2.16",
+        "release": "MAVEN Release 45",
+        "coverage_start_utc": "2014-03-19T14:19:43.095Z",
+        "coverage_stop_utc": "2025-12-06T00:00:43.587Z"
+      },
+      "observation_period": "2014-03-19T14:19:43.095Z/2025-12-06T00:00:43.587Z",
+      "notes": "Koleksiyon envanteri tamdır; işaret ettiği 4.094 üründen yalnız 2025-12-01 CDF ürünü yerelde kopyalanmıştır."
+    },
+    {
+      "product_id": "MVN_SWI_L2_ONBOARDSVYMOM_20251201_V02_R01",
+      "property_id": "plasma.swia_onboard_moment_set",
+      "data_path": "resources/archive/nasa-pds-maven-swia-onboard-mom-v2.16-sample/mvn_swi_l2_onboardsvymom_20251201_v02_r01.cdf",
+      "label_path": "resources/archive/nasa-pds-maven-swia-onboard-mom-v2.16-sample/mvn_swi_l2_onboardsvymom_20251201_v02_r01.xml",
+      "record_count_method": "PDS_ARRAY_ELEMENTS",
+      "label_array_id": "epoch",
+      "records": 21600,
+      "canonical_source_unit": null,
+      "structure": {
+        "format": "CDF 3.4 ISTP/IACG with PDS4 external label",
+        "moment_sets": 21600,
+        "mission_phase": "EM-6",
+        "time_variables": ["epoch TT2000 ns", "time_met s", "time_unix s"],
+        "science_arrays": {
+          "density": {"shape": [21600], "unit": "cm^-3"},
+          "pressure": {"shape": [21600, 6], "unit": "eV/cm^-3", "coordinates": "instrument"},
+          "velocity": {"shape": [21600, 3], "unit": "km/s", "coordinates": "instrument"},
+          "velocity_mso": {"shape": [21600, 3], "unit": "km/s", "coordinates": "MSO"},
+          "temperature": {"shape": [21600, 3], "unit": "eV", "coordinates": "instrument"},
+          "temperature_mso": {"shape": [21600, 3], "unit": "eV", "coordinates": "MSO"}
+        },
+        "state_arrays": ["atten_state", "telem_mode"],
+        "quality_arrays": ["quality_flag", "decom_flag"],
+        "invalid_float_constant": -1.0e31,
+        "assumed_ion_species": "proton for all ions"
+      },
+      "observation_period": "2025-12-01T00:00:50.311Z/2025-12-02T00:00:49.763Z",
+      "notes": "Araç-üstü hesaplanmış momentlerdir. Görüş alanı/enerji kapsaması kalite_flag ile, mod/zayıflatıcı belirsizliği decom_flag ile denetlenmelidir. SIS'e göre indüklenmiş manyetosfer sınırı içinde key-parameter momentleri genellikle nicel kullanılmamalı; sıcaklık momentleri alfa parçacıkları nedeniyle nicel kullanım için genellikle uygun değildir."
+    }
+  ]
+}

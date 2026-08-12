@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/schema/released/pds/v1/PDS4_PDS_1100.sch"  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Document
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 	
+  http://pds.nasa.gov/pds4/schema/released/pds/v1/PDS4_PDS_1100.xsd">
+<Identification_Area>
+  <logical_identifier>urn:nasa:pds:maven_ngims:document:ngims_product_version_changes</logical_identifier>
+    <version_id>5.5</version_id>
+    <title>NGIMS PRODUCT VERSION CHANGES</title>
+    <information_model_version>1.1.0.0</information_model_version>
+    <product_class>Product_Document</product_class>
+    <Citation_Information>
+        <author_list>Elrod, Meredith</author_list>
+      <publication_year>2018</publication_year>
+      <description>
+        The MAVEN NGIMS chart which details all of the changes made from each version and revision update.
+      </description>
+    </Citation_Information>
+    <Modification_History>
+        <Modification_Detail>
+            <modification_date>2015-11-16</modification_date>
+            <version_id>1.1</version_id>
+            <description>
+                This document includes the changes from each NGIMS
+                product version and revision for all delivered products.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2016-02-16</modification_date>
+            <version_id>2.1</version_id>
+            <description>
+                This documents contains the changes from each NGIMS
+                product version and revision for all delivered products
+                from the start of the mission to november 15 2015.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2016-05-02</modification_date>
+            <version_id>3.1</version_id>
+            <description>
+                This documents contains the changes from each NGIMS
+                product version and revision for all delivered products
+                from the start of the mission to february 15 2016.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2016-07-29</modification_date>
+            <version_id>4.1</version_id>
+            <description>
+                This documents contains the changes from each NGIMS
+                product version and revision for all delivered products
+                from the start of the mission to May 15 2016.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2016-11-08</modification_date>
+            <version_id>5.1</version_id>
+            <description>
+                This documents contains the changes from each NGIMS
+                product version and revision for all delivered products
+                from the start of the mission to August 15 2016.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2017-05-10</modification_date>
+            <version_id>5.2</version_id>
+            <description>
+                This documents contains the changes from each NGIMS
+                product version and revision for all delivered products
+                from the start of the mission to February 2017.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2017-08-10</modification_date>
+            <version_id>5.3</version_id>
+            <description>
+                This documents contains the changes from each NGIMS
+                product version and revision for all delivered products
+                from the start of the mission to May 2017.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2017-11-06</modification_date>
+            <version_id>5.4</version_id>
+            <description>
+                This documents contains the changes from each NGIMS
+                product version and revision for all delivered products
+                from the start of the mission to August 2017.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2018-07-25</modification_date>
+            <version_id>5.5</version_id>
+            <description>
+                This documents contains the changes from each NGIMS
+                product version and revision for all delivered products
+                from the start of the mission to May 2018.
+            </description>
+        </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Document>
+    <document_name>MAVEN NGIMS PRODUCT VERSION CHANGES</document_name>
+    <publication_date>2018-07-25</publication_date>
+    <description>The MAVEN NGIMS chart which details all of the changes made from each version and revision update as well as lists what the latest version and revision of each product is.</description>
+  </Document>
+  <Document_Format_Set>
+    <Document_Format>
+      <format_type>single file</format_type>
+    </Document_Format>
+    <Document_File>
+      <file_name>ngims_product_version_changes_v05_r05.pdf</file_name>
+      <document_standard_id>PDF</document_standard_id>
+    </Document_File>
+  </Document_Format_Set>
+</Product_Document>

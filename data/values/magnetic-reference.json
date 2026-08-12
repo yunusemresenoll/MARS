@@ -1,0 +1,59 @@
+{
+  "dataset_id": "mars.maven.mag.reference",
+  "dataset_version": "0.1.0",
+  "record_count": 4,
+  "records": [
+    {
+      "record_id": "mars.magnetic.maven-pc-v2.38.collection-product-count",
+      "property_id": "magnetic.maven_pc_collection_product_count",
+      "status": "DERIVED",
+      "value": 7688,
+      "unit": "count",
+      "location": {"scope": "ARCHIVE", "collection_lid": "urn:nasa:pds:maven.mag.calibrated:data.pc"},
+      "time": {"temporal_scope": "ARCHIVE_BUILD", "published_at": "2026-06-09"},
+      "uncertainty": {"kind": "EXACT_FOR_ARCHIVED_PRODUCT"},
+      "source_id": "nasa-pds-maven-mag-calibrated-pc-v2.38-sample",
+      "source_locator": "collection_data_l2_pc.xml, Inventory records = 7688; collection_data_l2_pc.csv line count",
+      "notes": "Koleksiyon ürün sayısıdır; yerel gözlemsel dosya sayısı değildir."
+    },
+    {
+      "record_id": "mars.magnetic.maven-pc1s.sample-cadence",
+      "property_id": "magnetic.maven_pc_sample_cadence",
+      "status": "DERIVED",
+      "value": 1,
+      "unit": "Hz",
+      "location": {"scope": "DATASET", "product_class": "pc1s"},
+      "time": {"temporal_scope": "STATIC_PRODUCT_STRUCTURE"},
+      "uncertainty": {"kind": "NOT_APPLICABLE", "note": "Ürün sınıfının tanımlı alt örnekleme aralığıdır."},
+      "source_id": "nasa-pds-maven-mag-calibrated-pc-v2.38-sample",
+      "source_locator": "daily product XML File comment: downsampled to 1 second",
+      "notes": "Tüm MAVEN MAG telemetrisinin sabit çözünürlüğü olduğu anlamına gelmez."
+    },
+    {
+      "record_id": "mars.magnetic.maven-pc1s-20251201.sample-count",
+      "property_id": "magnetic.maven_pc_daily_sample_count",
+      "status": "DERIVED",
+      "value": 86401,
+      "unit": "count",
+      "location": {"scope": "DATASET", "product_id": "MVN_MAG_L2_2025335PC1S_20251201_V01_R01"},
+      "time": {"temporal_scope": "PRODUCT", "start_utc": "2025-12-01T00:00:00.641Z", "stop_utc": "2025-12-02T00:00:00.498Z"},
+      "uncertainty": {"kind": "EXACT_FOR_ARCHIVED_PRODUCT"},
+      "source_id": "nasa-pds-maven-mag-calibrated-pc-v2.38-sample",
+      "source_locator": "daily product XML Table_Character records = 86401; byte-size validation after 10,272-byte header",
+      "notes": null
+    },
+    {
+      "record_id": "mars.magnetic.maven-pc.coordinate-system",
+      "property_id": "magnetic.maven_pc_coordinate_system",
+      "status": "DERIVED",
+      "value": "Planetocentric",
+      "unit": null,
+      "location": {"scope": "DATASET", "collection_lid": "urn:nasa:pds:maven.mag.calibrated:data.pc"},
+      "time": {"temporal_scope": "STATIC_PRODUCT_STRUCTURE"},
+      "uncertainty": {"kind": "NOT_APPLICABLE"},
+      "source_id": "nasa-pds-maven-mag-calibrated-pc-v2.38-sample",
+      "source_locator": "collection_data_l2_pc.xml, Citation_Information and Collection description",
+      "notes": "Alan vektörü ve araç konumu bileşenleri planetosentrik koordinatlarda ifade edilir."
+    }
+  ]
+}

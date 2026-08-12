@@ -1,0 +1,101 @@
+{
+  "dataset_id": "mars.mgs.mola.megdr-final-16ppd",
+  "source_id": "nasa-pds-mola-megdr-16ppd-v2",
+  "target": "Mars",
+  "processing_state": "ARCHIVED_DERIVED",
+  "products": [
+    {
+      "product_id": "mega90n000eb",
+      "property_id": "datum.mola_areoid_radius",
+      "data_path": "resources/archive/nasa-pds-mola-megdr-16ppd/mega90n000eb.img",
+      "label_path": "resources/archive/nasa-pds-mola-megdr-16ppd/mega90n000eb.lbl",
+      "record_count_method": "BINARY_CELLS",
+      "sample_bits": 16,
+      "records": 16588800,
+      "canonical_source_unit": "m",
+      "structure": {
+        "lines": 2880,
+        "samples_per_line": 5760,
+        "sample_type": "MSB_INTEGER",
+        "scaling_factor": 1,
+        "offset_m": 3396000,
+        "pixels_per_degree": 16,
+        "latitude_range_deg": [90, -90],
+        "longitude_range_deg_east": [0, 360],
+        "projection": "SIMPLE CYLINDRICAL",
+        "coordinate_system": "IAU2000 planetocentric, east-positive"
+      },
+      "observation_period": "1997-09-15T19:10:00Z/2001-06-30T11:10:40Z",
+      "notes": "GMM3 mgm1025 areoid, degree and order 50; stored samples require the label offset."
+    },
+    {
+      "product_id": "megc90n000eb",
+      "property_id": "topography.mola_observation_count",
+      "data_path": "resources/archive/nasa-pds-mola-megdr-16ppd/megc90n000eb.img",
+      "label_path": "resources/archive/nasa-pds-mola-megdr-16ppd/megc90n000eb.lbl",
+      "record_count_method": "BINARY_CELLS",
+      "sample_bits": 16,
+      "records": 16588800,
+      "canonical_source_unit": "count",
+      "structure": {
+        "lines": 2880,
+        "samples_per_line": 5760,
+        "sample_type": "MSB_INTEGER",
+        "pixels_per_degree": 16,
+        "latitude_range_deg": [90, -90],
+        "longitude_range_deg_east": [0, 360],
+        "projection": "SIMPLE CYLINDRICAL",
+        "coordinate_system": "IAU2000 planetocentric, east-positive"
+      },
+      "observation_period": "1997-09-15T19:10:00Z/2001-06-30T11:10:40Z",
+      "notes": "Zero count identifies a topography cell supplied by interpolation."
+    },
+    {
+      "product_id": "megr90n000eb",
+      "property_id": "topography.mola_mean_planetary_radius",
+      "data_path": "resources/archive/nasa-pds-mola-megdr-16ppd/megr90n000eb.img",
+      "label_path": "resources/archive/nasa-pds-mola-megdr-16ppd/megr90n000eb.lbl",
+      "record_count_method": "BINARY_CELLS",
+      "sample_bits": 16,
+      "records": 16588800,
+      "canonical_source_unit": "m",
+      "structure": {
+        "lines": 2880,
+        "samples_per_line": 5760,
+        "sample_type": "MSB_INTEGER",
+        "scaling_factor": 1,
+        "offset_m": 3396000,
+        "pixels_per_degree": 16,
+        "latitude_range_deg": [90, -90],
+        "longitude_range_deg_east": [0, 360],
+        "projection": "SIMPLE CYLINDRICAL",
+        "coordinate_system": "IAU2000 planetocentric, east-positive"
+      },
+      "observation_period": "1997-09-15T19:10:00Z/2001-06-30T11:10:40Z",
+      "notes": "Mean planetary radius in each cell; stored samples require the label offset."
+    },
+    {
+      "product_id": "megt90n000eb",
+      "property_id": "topography.mola_median_areoid_height",
+      "data_path": "resources/archive/nasa-pds-mola-megdr-16ppd/megt90n000eb.img",
+      "label_path": "resources/archive/nasa-pds-mola-megdr-16ppd/megt90n000eb.lbl",
+      "record_count_method": "BINARY_CELLS",
+      "sample_bits": 16,
+      "records": 16588800,
+      "canonical_source_unit": "m",
+      "structure": {
+        "lines": 2880,
+        "samples_per_line": 5760,
+        "sample_type": "MSB_INTEGER",
+        "pixels_per_degree": 16,
+        "nominal_map_scale_km_per_pixel": 3.705,
+        "latitude_range_deg": [90, -90],
+        "longitude_range_deg_east": [0, 360],
+        "projection": "SIMPLE CYLINDRICAL",
+        "coordinate_system": "IAU2000 planetocentric, east-positive"
+      },
+      "observation_period": "1997-09-15T19:10:00Z/2001-06-30T11:10:40Z",
+      "notes": "Median planetary radius minus areoid radius. Cells without shots contain interpolated values."
+    }
+  ]
+}

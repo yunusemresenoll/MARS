@@ -1,0 +1,98 @@
+{
+  "dataset_id": "mars.maven.lpw.reference",
+  "dataset_version": "0.1.0",
+  "record_count": 7,
+  "records": [
+    {
+      "record_id": "mars.plasma.lpw-lpnt-v6.2.collection-product-count",
+      "property_id": "plasma.lpw_lpnt_collection_product_count",
+      "status": "DERIVED",
+      "value": 3977,
+      "unit": "count",
+      "location": {"scope": "ARCHIVE", "collection_lid": "urn:nasa:pds:maven.lpw.derived:data.lp.nt"},
+      "time": {"temporal_scope": "ARCHIVE_BUILD", "published_at": "2026-06-03"},
+      "uncertainty": {"kind": "EXACT_FOR_ARCHIVED_PRODUCT"},
+      "source_id": "nasa-pds-maven-lpw-derived-v7.2-sample",
+      "source_locator": "collection_data_l2_lpnt_6.2.xml Inventory records=3977; CSV line count",
+      "notes": "Yereldeki günlük CDF sayısı değildir."
+    },
+    {
+      "record_id": "mars.plasma.lpw-wn-v6.7.collection-product-count",
+      "property_id": "plasma.lpw_wn_collection_product_count",
+      "status": "DERIVED",
+      "value": 1089,
+      "unit": "count",
+      "location": {"scope": "ARCHIVE", "collection_lid": "urn:nasa:pds:maven.lpw.derived:data.w.n"},
+      "time": {"temporal_scope": "ARCHIVE_BUILD", "published_at": "2026-06-03"},
+      "uncertainty": {"kind": "EXACT_FOR_ARCHIVED_PRODUCT"},
+      "source_id": "nasa-pds-maven-lpw-derived-v7.2-sample",
+      "source_locator": "collection_data_l2_wn_6.7.xml Inventory records=1089; CSV line count",
+      "notes": "Yereldeki günlük CDF sayısı değildir."
+    },
+    {
+      "record_id": "mars.plasma.lpw-lpnt-20251201.sample-count",
+      "property_id": "plasma.lpw_lpnt_daily_sample_count",
+      "status": "DERIVED",
+      "value": 21590,
+      "unit": "count",
+      "location": {"scope": "DATASET", "product_id": "MVN_LPW_L2_LPNT_20251201_V04_R02"},
+      "time": {"temporal_scope": "PRODUCT", "start_utc": "2025-12-01T00:00:00.000Z", "stop_utc": "2025-12-01T23:59:59.999Z"},
+      "uncertainty": {"kind": "EXACT_FOR_ARCHIVED_PRODUCT"},
+      "source_id": "nasa-pds-maven-lpw-derived-v7.2-sample",
+      "source_locator": "mvn_lpw_l2_lpnt_20251201_v04_r02.xml epoch Axis_Array elements=21590",
+      "notes": "Her kayıt 10 nicelik taşır."
+    },
+    {
+      "record_id": "mars.plasma.lpw-wn-20251201.detection-count",
+      "property_id": "plasma.lpw_wn_daily_sample_count",
+      "status": "DERIVED",
+      "value": 30,
+      "unit": "count",
+      "location": {"scope": "DATASET", "product_id": "MVN_LPW_L2_WN_20251201_V04_R01"},
+      "time": {"temporal_scope": "PRODUCT", "start_utc": "2025-12-01T00:00:00.000Z", "stop_utc": "2025-12-01T23:59:59.999Z"},
+      "uncertainty": {"kind": "EXACT_FOR_ARCHIVED_PRODUCT"},
+      "source_id": "nasa-pds-maven-lpw-derived-v7.2-sample",
+      "source_locator": "mvn_lpw_l2_wn_20251201_v04_r01.xml epoch Axis_Array elements=30",
+      "notes": "Sabit kadans değil, Langmuir çizgisi tespitlerinin sayısıdır."
+    },
+    {
+      "record_id": "mars.plasma.lpw.quality-threshold-event-study",
+      "property_id": "plasma.lpw_quality_flag",
+      "status": "DERIVED",
+      "value": 50,
+      "unit": null,
+      "location": {"scope": "PRODUCT_FAMILY", "bundle_lid": "urn:nasa:pds:maven.lpw.derived"},
+      "time": {"temporal_scope": "TIME_INVARIANT"},
+      "uncertainty": {"kind": "NOT_APPLICABLE", "note": "SIS kullanım eşiğidir, ölçüm değildir."},
+      "source_id": "nasa-pds-maven-lpw-derived-v7.2-sample",
+      "source_locator": "maven_sis_lpw_v32.pdf, Table 41 and section 5.2.3.2",
+      "notes": "Olay/tekil çalışmalar için flag > 50 önerilir; 50 dahil değildir."
+    },
+    {
+      "record_id": "mars.plasma.lpw-lpnt.quality-threshold-statistical",
+      "property_id": "plasma.lpw_quality_flag",
+      "status": "DERIVED",
+      "value": 46,
+      "unit": null,
+      "location": {"scope": "PRODUCT_FAMILY", "collection_lid": "urn:nasa:pds:maven.lpw.derived:data.lp.nt"},
+      "time": {"temporal_scope": "TIME_INVARIANT"},
+      "uncertainty": {"kind": "NOT_APPLICABLE", "note": "SIS kullanım eşiğidir, ölçüm değildir."},
+      "source_id": "nasa-pds-maven-lpw-derived-v7.2-sample",
+      "source_locator": "maven_sis_lpw_v32.pdf, section 5.2.3.2 and Table 28",
+      "notes": "İstatistiksel çalışmalarda örneklem yanlılığını azaltmak için flag > 46 önerilir; yalnız nepm tabanlı değerleri kapsayabilir."
+    },
+    {
+      "record_id": "mars.plasma.lpw-wn.langmuir-frequency-accuracy",
+      "property_id": "plasma.lpw_wn_langmuir_frequency_accuracy",
+      "status": "DERIVED",
+      "value": 5,
+      "unit": "%",
+      "location": {"scope": "PRODUCT_FAMILY", "collection_lid": "urn:nasa:pds:maven.lpw.derived:data.w.n"},
+      "time": {"temporal_scope": "TIME_INVARIANT"},
+      "uncertainty": {"kind": "APPROXIMATE", "note": "SIS elektron yoğunluğu/Langmuir frekansı doğruluğunu yaklaşık yüzde 5 olarak niteler."},
+      "source_id": "nasa-pds-maven-lpw-derived-v7.2-sample",
+      "source_locator": "maven_sis_lpw_v32.pdf, section 5.2.3.1",
+      "notes": "Üründeki kalite ve yoğunluk belirsizliği çizginin tanımlanabilirliğini de gösterir; her kayda otomatik ±5% hata çubuğu uygulanmamalıdır."
+    }
+  ]
+}

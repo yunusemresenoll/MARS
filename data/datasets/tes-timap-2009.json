@@ -1,0 +1,106 @@
+{
+  "dataset_id": "mars.mgs.tes.timap-v1",
+  "source_id": "nasa-pds-tes-timap-2009",
+  "target": "Mars",
+  "processing_state": "ARCHIVED_DERIVED",
+  "products": [
+    {
+      "product_id": "GLOBAL_TI_DAY_2007",
+      "property_id": "surface.thermal_inertia_day",
+      "data_path": "resources/archive/nasa-pds-tes-timap/mgst_9001.zip",
+      "label_path": "resources/archive/nasa-pds-tes-timap/mgst_9001.zip",
+      "record_count_method": "ZIP_BINARY_CELLS",
+      "data_member": "mgst_9001/data/global_ti_day_2007.img",
+      "label_member_pattern": "mgst_9001/data/global_ti_day_2007.lbl",
+      "sample_bits": 16,
+      "records": 25920000,
+      "canonical_source_unit": "J/(m^2*K*sqrt(s))",
+      "structure": {
+        "lines": 3600,
+        "samples_per_line": 7200,
+        "sample_type": "MSB_INTEGER",
+        "pixels_per_degree": 20,
+        "map_scale_km_per_pixel": 2.96,
+        "latitude_range_deg": [90, -90],
+        "longitude_range_deg_east": [-180, 180],
+        "projection": "SIMPLE CYLINDRICAL",
+        "coordinate_system": "IAU_1991 planetocentric, east-positive",
+        "infilled_latitude_range_deg": [87, -87],
+        "valid_thermal_inertia_range": [5, 5000]
+      },
+      "observation_period": "1999-02/2004-04",
+      "notes": "Yalnız gündüz/northbound verisi; 160–400 K yüzey sıcaklığı seçim aralığı; üç Mars yılı birleşik ürün."
+    },
+    {
+      "product_id": "GLOBAL_TI_NIGHT_2007",
+      "property_id": "surface.thermal_inertia_night",
+      "data_path": "resources/archive/nasa-pds-tes-timap/mgst_9001.zip",
+      "label_path": "resources/archive/nasa-pds-tes-timap/mgst_9001.zip",
+      "record_count_method": "ZIP_BINARY_CELLS",
+      "data_member": "mgst_9001/data/global_ti_night_2007.img",
+      "label_member_pattern": "mgst_9001/data/global_ti_night_2007.lbl",
+      "sample_bits": 16,
+      "records": 25920000,
+      "canonical_source_unit": "J/(m^2*K*sqrt(s))",
+      "structure": {
+        "lines": 3600,
+        "samples_per_line": 7200,
+        "sample_type": "MSB_INTEGER",
+        "pixels_per_degree": 20,
+        "map_scale_km_per_pixel": 2.96,
+        "latitude_range_deg": [90, -90],
+        "longitude_range_deg_east": [-180, 180],
+        "projection": "SIMPLE CYLINDRICAL",
+        "coordinate_system": "IAU_1991 planetocentric, east-positive",
+        "infilled_latitude_range_deg": [87, -87],
+        "valid_thermal_inertia_range": [5, 5000]
+      },
+      "observation_period": "1999-02/2004-04",
+      "notes": "Yalnız gece/southbound verisi; 160–400 K yüzey sıcaklığı seçim aralığı; üç Mars yılı birleşik ürün."
+    },
+    {
+      "product_id": "GLOBAL_TI_MSK_DAY_2007",
+      "property_id": "surface.thermal_inertia_interpolation_mask",
+      "data_path": "resources/archive/nasa-pds-tes-timap/mgst_9001.zip",
+      "label_path": "resources/archive/nasa-pds-tes-timap/mgst_9001.zip",
+      "record_count_method": "ZIP_BINARY_CELLS",
+      "data_member": "mgst_9001/data/global_ti_msk_day_2007.img",
+      "label_member_pattern": "mgst_9001/data/global_ti_msk_day_2007.lbl",
+      "sample_bits": 8,
+      "records": 25920000,
+      "canonical_source_unit": "1",
+      "structure": {
+        "lines": 3600,
+        "samples_per_line": 7200,
+        "sample_type": "MSB_INTEGER",
+        "pixels_per_degree": 20,
+        "zero_means": "infilled_by_interpolation",
+        "associated_product": "GLOBAL_TI_DAY_2007"
+      },
+      "observation_period": "1999-02/2004-04",
+      "notes": "Kaynak kataloğa göre enterpole hücreler ürünün yüzde 8'inden azdır; bu ifade burada yeniden hesaplanmış bir oran değildir."
+    },
+    {
+      "product_id": "GLOBAL_TI_MSK_NIGHT_2007",
+      "property_id": "surface.thermal_inertia_interpolation_mask",
+      "data_path": "resources/archive/nasa-pds-tes-timap/mgst_9001.zip",
+      "label_path": "resources/archive/nasa-pds-tes-timap/mgst_9001.zip",
+      "record_count_method": "ZIP_BINARY_CELLS",
+      "data_member": "mgst_9001/data/global_ti_msk_night_2007.img",
+      "label_member_pattern": "mgst_9001/data/global_ti_msk_night_2007.lbl",
+      "sample_bits": 8,
+      "records": 25920000,
+      "canonical_source_unit": "1",
+      "structure": {
+        "lines": 3600,
+        "samples_per_line": 7200,
+        "sample_type": "MSB_INTEGER",
+        "pixels_per_degree": 20,
+        "zero_means": "infilled_by_interpolation",
+        "associated_product": "GLOBAL_TI_NIGHT_2007"
+      },
+      "observation_period": "1999-02/2004-04",
+      "notes": "Kaynak kataloğa göre enterpole hücreler ürünün yüzde 8'inden azdır; bu ifade burada yeniden hesaplanmış bir oran değildir."
+    }
+  ]
+}

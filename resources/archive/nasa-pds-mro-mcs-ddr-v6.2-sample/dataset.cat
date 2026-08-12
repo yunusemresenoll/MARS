@@ -1,0 +1,938 @@
+PDS_VERSION_ID                    = PDS3
+RECORD_TYPE                       = STREAM
+LABEL_REVISION_NOTE               = "
+    STEVEN GAISER 2006-07-06; initial version;
+    R. Joyner, 2008-05-12, additional info;
+    D. Kass, 2012-10-04, additional info;
+    A. Kleinboehl, 2017-08-14, additional info;
+    A. Kleinboehl, 2024-12-10, additional info
+    "
+
+OBJECT                            = DATA_SET
+  DATA_SET_ID                    = "MRO-M-MCS-5-DDR-V6.2"
+
+ OBJECT                           = DATA_SET_INFORMATION
+  DATA_SET_NAME                  = "MRO MARS CLIMATE SOUNDER LEVEL 5 
+                                     DDR V6.2"
+  DATA_SET_TERSE_DESC            = "The MCS atmospheric profiler detects
+       vertical variations of temperature, dust, water ice, and water vapor
+       concentrations in the Martian atmosphere. Derived Data Records 
+       (DDRs) in the form of Level 2 data products (retrieved geophysical 
+       profiles) are generated from the RDRs"
+  DATA_SET_COLLECTION_MEMBER_FLG = "N"
+  DATA_OBJECT_TYPE               = TABLE
+  ARCHIVE_STATUS                 = "IN QUEUE"
+  START_TIME                     = 2006-09-24T16:00:00.000
+  STOP_TIME                      = NULL
+  DATA_SET_RELEASE_DATE          = 2008-05-22
+  PRODUCER_FULL_NAME             = "DANIEL J. MCCLEESE"
+  DETAILED_CATALOG_FLAG          = "N"
+  CITATION_DESC                  = "McCleese and Schofield, MRO MARS 
+                                   CLIMATE SOUNDER LEVEL 5 DDR V6.2,
+                                   NASA Planetary Data System,
+                                   MRO-M-MCS-5-DDR-V6.2, 2006."
+  ABSTRACT_DESC                  = "NULL"
+  DATA_SET_DESC                  = "
+
+    Data Set Overview
+    =================
+      This document describes how the MRO Mars Climate Sounder (MCS) 
+      Derived Data Record (DDR) was generated, including data sources 
+      and destinations. The document is intended to provide sufficient
+      information to enable users to understand the MCS DDR data product. 
+      The users for whom this document is intended are scientists who 
+      will analyze the data, including those associated with the Mars 
+      Reconnaissance Orbiter (MRO) Project and those in the general 
+      planetary science community.
+
+      This document addresses the Mars Reconnaissance Orbiter Derived 
+      Data Record (DDR) data, and how the data are processed, formatted, 
+      labeled, and uniquely identified. This document discusses standards 
+      used in generating the product and software that may be used to 
+      access the product. The data product structure and organization is 
+      described in sufficient detail to enable a user to fully utilize 
+      the DDR data product. 
+
+      This data set consists of tables and supporting documentation from 
+      the final analysis of the Derived Data Record (DDR) and details how 
+      the DDR data set was derived from the Mars Reconnaissance Orbiter 
+      (MRO) Mars Climate Sounder (MCS) Reduced Data Records (RDR).
+
+      The scientific goals, measurement objectives, and observational 
+      strategies for the DDR dataset are discussed in MCCLEESEETAL2007 
+      and the INST.CAT file accompanying this data set. A mission
+      overview and spacecraft and orbit characteristics are found in
+      ZUREKANDSMREKAR2007 and in the INSTHOST.CAT and MISSION.CAT files.
+      Detailed information addressing processing of the DDR data set are
+      found in KLEINBOEHLETAL2009, KLEINBOEHLETAL2011 and
+      KLEINBOEHLETAL2017.
+
+      MCS is an atmospheric sounder that makes one measurement every 
+      2.048 seconds, containing science, engineering and housekeeping 
+      data, whenever the instrument is powered on. The instrument 
+      operates in a single data-taking mode and observational 
+      flexibility is provided by actuators that allow telescope 
+      boresights to be directed over a range of 270 degrees in azimuth 
+      and elevation.
+
+      Each instrument packet contains one measurement. The MCS DDR 
+      contains time-ordered, atmospheric profile data for the entire MCS 
+      mission, starting with the initial instrument power-on in the MRO 
+      mapping orbit at 16:00 UT on 24th September 2006. The data are 
+      organized by UTC in monthly archive volumes, with 6 four-hour ASCII 
+      tables per day accompanied by detached headers.
+
+      The MCS DDR contains all the profiles processed by the MCS science 
+      team. Gaps in the data set are only evident from discontinuities in 
+      the timing of table rows (see Data Coverage and Quality section).
+      Fields that are not available for a specific profile contain -9999.
+
+
+      Data Product Acquisition
+      ------------------------
+        The MCS software collects 192 sixteen-bit science measurements 
+        from the focal plane interface electronics every 2.048 seconds, 
+        along with associated instrument engineering and housekeeping 
+        measurements. The science and housekeeping data are organized 
+        into data packets that are transmitted to the spacecraft at the 
+        same 2.048-second spacing. The data packets are downlinked to the 
+        MRO Ground Data System (GDS) and placed into the Raw Science Data 
+        Server (RSDS). MCS software queries the data from the RSDS and 
+        assembles them into EDR data tables, each covering a 4 hour time 
+        period.  The data in the EDR tables are then calibrated to
+        produce the RDR tables.  
+
+        The individual records from the RDR tables observing the limb and
+        surface are sorted and grouped, based on the geolocation of the
+        observations. Groups of five limb viewing records are combined
+        with pairs of on-planet views. Geophysical quantities are
+        retrieved from each group of RDR records using spherical radiative
+        transfer. These quantities are used to interpolate geophysical
+        gradients which are then combined with the original groups of RDR
+        records.  Geophysical quantities are re-retrieved using
+        two-dimensional limb radiative transfer. The resulting DDR
+        records are placed into data tables.
+
+        Each MCS DDR data table will be variable in size; typically 
+        5-6 MB for each 4 hour time period; the volume of the DDR data 
+        product will be approximately 36 MB per day; 1 GB per month.
+
+
+      Data Product Generation and Flow
+      --------------------------------
+        The MCS DDR data products, generated by the MCS Instrument Team 
+        at JPL, are constructed from the MRO/MCS RDR data and formatted 
+        according to the MRO/MCS DDR SIS. Meta-data derived from fields 
+        in the DDR, are used to populate the PDS label. 
+
+        MCS science and engineering telemetry are transferred to the MRO 
+        Project RSDS. Once transferred, the MCS software automatically 
+        processes the telemetry into Level 0 EDR data products. The MCS 
+        EDR data products are re-processed into RDR data products.  The 
+        DDR data products are generated from the RDR data products and 
+        then archived locally at the MCS operation center. After an 
+        initial 6 month data validation period, the MCS team assembles 
+        the DDR data products and ancillary files into archive volumes 
+        and transfers the assembled volumes to the PDS Atmospheres Node.  
+        An archive volume consists of one month of data.  Volumes are 
+        delivered approximately every 3 months. 
+
+        The MCS DDR archive will be made available via data releases 
+        scheduled at three month intervals as specified in the Mars 
+        Reconnaissance Orbiter Project Data Archive Generation, 
+        Validation and Transfer Plan.     
+
+
+      Data Processing Level
+      ---------------------
+        This document uses the Committee on Data Management and 
+        Computation (CODMAC) data level numbering system to describe the 
+        processing level of the DDR data product. MCS DDR data products 
+        are considered CODMAC Level 5, equivalent to NASA level 2. The 
+        DDR data files are generated from CODMAC Level 4 or Resampled 
+        Data, which are the time-ordered instrument science data.      
+
+
+      Changes from Previous Versions      
+      ------------------------------      
+        The following section describes the changes between the various      
+        versions of the archived volumes. This archive, regardless of      
+        version number, contains the changes listed below:      
+
+        Version 2:      
+        1. Improved topography calculation to get a better estimate of the     
+           Mars horizon during small rolls (up to 9 deg limb angle).     
+        2. Optimized detector selection for temperature retrieval to achieve
+           improved altitude resolution.     
+        3. Modified detector selection for temperature, dust, and water ice
+           retrieval to better accommodate calibration uncertainties     
+           (particularly in low radiances) that occur during limb staring      
+           (when the instrument is pointed at the limb with a fixed      
+           elevation angle for an extended period of time).    
+        4. MCS Frames kernels changed to modify a fixed instrument tilt
+           identified in off-track limb observations. The tilt of 0.431
+           degrees was applied about an axis in the S/C XY plane inclined
+           at 25.8 degrees to the S/C X-Axis. The elevation rotation in the
+           Frames kernel was changed from -0.203 degrees to -0.030 degrees
+           to compensate for the effect of the tilt change. The overall
+           effect of these changes is to improve limb pointing in the
+           vertical to better than 0.02 degrees in both in and off-track
+           observations.
+        5. Added a single-scattering approximation to the radiative transfer
+           for the calculation of limb radiances (see KLEINBOEHLETAL2011).
+           The surface contribution to the scattering term is based on
+           observed on-planet radiances when available, otherwise it is
+           based on a surface temperature climatology.
+
+        Version 3:
+        1. On-planet observations within a 2 degree great circle distance
+           of the profile location of a limb measurement are selected
+           if available. They are used in combination with the limb
+           measurement for a surface temperature retrieval, a near surface
+           atmospheric temperature retrieval and the atmospheric temperature
+           profile in the lowest 20 km. Channel B1 (31.7 microns)
+           is used to determine the surface temperature. Depending
+           on the atmospheric opacity and viewing angle, either A1
+           (16.5 microns) or A1 and A2 (15.9 microns) are used for the
+           atmospheric temperature retrievals. These are nadir-like views
+           and the corresponding weighting functions are broader than the
+           ones for limb views and have ~10 km vertical resolution. The 
+           algorithm meshes the two types of weighting functions. An
+           overview on results obtained with this version is given
+           in MCCLEESEETAL2010.
+        2. The radiance residual criteria for profile acceptance were
+           slightly modified to be partly based on the absolute
+           radiance and not just the NER. This avoided rejecting
+           otherwise good profiles on the day side equatorial regions
+           (where the warm atmosphere and surface create large
+           radiances).  These profiles will have somewhat larger
+           uncertainties associated with them, reflecting the quality of
+           the radiance fit.
+        3. Finally, the opacity criteria were tuned so the algorithm
+           would better recognize when the limb path is too opaque for
+           temperature sounding.
+
+        Version 4:
+        1. The retrieval code was modified to execute a retrieval with
+           climatological surface pressure in case at the end of a retrieval
+           that included pressure as a retrieved quantity the criteria for a
+           successful retrieval were not met. This leads to a significant
+           improvement in retrieval coverage compared to previous versions.
+           The climatological pressure is based on Viking Lander 1, adjusted
+           for elevation. In Level 2 data files, profiles with retrieved
+           pressure are marked with P_QUAL=0, while profiles with
+           climatological pressure are marked with P_QUAL=9.
+           Intercomparisons of this version with other datasets are
+           found in SHIRLEYETAL2015 and HINSONETAL2014.
+	2. The representation of the polar CO2-ice cap was improved. It is
+           now based on a circular, pole-centered fit to day/night temperature
+           differences in the MCS B1 channel.
+        3. The selection of detectors for temperature retrieval has been
+           optimized to be more conservative in the presence of large aerosol
+           opacities. In addition, on-planet radiance measurements in channel
+           A3 (15.4 microns) are now used for atmospheric temperature
+           retrievals in high aerosol conditions. This extends the vertical
+           range of temperature profile retrievals to lower altitudes by adding
+           information comparable to a T15 temperature. On-planet radiance
+           measurements in channels A2 and A3 can now also be included in
+           the atmospheric temperature retrieval over CO2-ice if sufficient
+           atmospheric opacity is present, extending the vertical range to
+           lower altitudes.
+        4. The vertical coverage of aerosol profile retrievals has been
+           extended. In addition, the climatological surface temperatures
+           during the 2007 dust storm was adjusted to be more representative
+           of conditions during a global dust storm. This yields a
+           significantly better retrieval coverage during dust storm
+           conditions.
+ 
+        Version 5:
+        1. The main upgrade of this version is the use of two-dimensional limb
+           radiative transfer for profile retrievals in a second pass of the
+           retrieval process. The approach provides a correction of horizontal
+           gradients along the line-of-sight of a limb view. Horizontal
+           gradients in temperature, pressure, and dust and water ice
+           extinction are characterized along the line-of-sight through
+           information from neighboring measurements. The derived gradients
+           are represented by means of two-dimensional radiative transfer in
+           the forward model of the retrieval. Retrievals using two-dimensional
+           radiative transfer are not performed for limb viewing directions
+           deviating by more than 2 degrees in azimuth from the nominal 0 and
+           180 degrees of in-track measurements (those with OBS_QUAL values
+           other than 0, 1 or 7). In Level 2 data files, the OBS_QUAL flag of
+           profiles retrieved with two-dimensional radiative transfer is
+           incremented by 10. Two-dimensional radiative transfer has been
+           shown to greatly reduce biases in temperature and aerosol opacity
+           caused by observational geometry, predominantly in the polar winter
+           regions. A detailed description of the procedure together with
+           examples is found in KLEINBOEHLETAL2017.
+        2. Furthermore, the derivation of the climatological surface pressure
+           used in the retrieval was updated in order to use a scale height
+           based on averages from radio science measurements.
+
+        Version 6:
+        1. The primary upgrade of this version is the use of a method for
+           retrieving aerosol profiles from MCS limb measurements that
+           combines information from mid- and far infrared spectroscopic
+           channels. The use of far infrared channels enables aerosol profile
+           retrievals from limb measurements that typically reach about a scale
+           height deeper into the atmosphere than would be possible using
+           mid-infrared channels only.
+           As in earlier versions of the algorithm, retrieval of dust extinction
+           profiles is based on limb observations in MCS channel A5. If at a
+           given tangent altitude the line-of-sight of the limb measurement in
+           channel A5 reaches an optical depth > 1.9 the algorithm will invoke
+           limb measurements of channel B1. Then B1 detectors will replace A5
+           detectors at altitudes below which channel A5 reaches an optical
+           depth > 1.2. B1 detectors are selected for retrieval below the
+           transition altitude as long as their line-of-sight optical depth
+           stays below 1.9 and the surface contribution in their field-of-view
+           stays below 10%. B1 is not used for aerosol retrieval in the winter
+           polar vortex region where CO2 ice is likely to be present.
+           Similarly, retrieval of water ice extinction profiles is based on
+           limb observations in MCS channel A4. If at a given tangent altitude
+           the line-of-sight of the limb measurement in channel A4 reaches an
+           optical depth > 1.9 the algorithm will invoke limb measurements of
+           channel B2. Then B2 detectors will replace A4 detectors at altitudes
+           below which channel A4 reaches an optical depth > 1.2. B1 detectors
+           are selected for retrieval below the transition altitude as long as
+           their line-of-sight optical depth stays below 1.9 and the surface
+           contribution in their field-of-view stays below 10%. In some cases
+           the use of channel B2 might not be sufficient to allow a water ice
+           retrieval down to the lowest scale height. This occurs occasionally
+           within the aphelion cloud belt. In this case the retrieval can
+           select channel B1 in addition to channels A4 and B2. The use of this
+           channel for water ice only occurs under the condition that it is not
+           used for dust retrieval and only in the equatorial region between
+           40S and 40N and in the aphelion season between Ls=0 and 180.
+           Analogously to the other transitions to channels with less opacity,
+           a transition is triggered when detectors are reevaluated and channel
+           B2 reaches an optical depth > 1.9. Then B1 detectors will replace B2
+           detectors at altitudes below which the B2 channel reaches an optical
+           depth > 1.2. Further details of this process, as well as retrieval
+           examples, are given in KLEINBOEHLETAL2024.
+           Even if a detector of a far infrared channel is used for retrieval
+           at a given tangent altitude, the aerosol extinction will still be
+           reported for the center frequency of the nominal retrieval channel
+           for that aerosol in the mid-infrared (A5 for dust, A4 for water ice).
+           Conversion of the extinction in the far infrared channel to the
+           reference extinction in the mid-infrared channel is done using the
+           empirical extinction efficiency ratios in Table 1. These ratios were
+           derived empirically from MCS limb measurements as described in
+           KLEINBOEHLETAL2024. For dust, a single conversion factor is used in
+           all atmospheric conditions. For water ice it turned out that the
+           observed variability in extinction efficiencies required the use
+           of different conversion factors depending on geographic location
+           and local time. For latitudes > 50N polar parameters are used.
+           For latitudes between 80S and 40N at daytime, daytime equatorial
+           parameters are used. Due to the sun-synchronous orbit of MRO with
+           equator crossing times around 3 am and 3 pm local mean solar time,
+           the time period when local true solar time (LTST) is between 9 am
+           and 9 pm is considered daytime. For latitudes between 80S and 40N
+           at nighttime, nighttime equatorial parameters are used. At latitudes
+           between 40N and 50N the conversion parameters are interpolated in
+           latitude between polar and the relevant daytime or nighttime
+           equatorial parameters. At latitudes > 80S, the conversion parameters
+           are interpolated in local time between daytime and nighttime
+           equatorial parameters as the local time changes rapidly at these high
+           latitudes due to the near-polar orbit of MRO.
+           Information on whether a combination of mid- and far infrared
+           channels or only mid-infrared channels were used for dust or water
+           ice profile retrievals is provided in the DUST_QUAL and H2OICE_QUAL
+           flags, respectively.
+
+           Table 1: Extinction efficiency ratios between far infrared and
+           mid-infrared MCS aerosol channels derived empirically (unless
+           otherwise noted). From KLEINBOEHLETAL2024.
+           _____________________________________________________________________
+           Aerosol type Channel pair    Atmospheric conditions  Extinction
+                        (center frequencies)                    efficiency ratio
+           _____________________________________________________________________
+           Dust         B1(316 cm-1) /
+                        A5(463 cm-1)    n/a                     0.504
+           _____________________________________________________________________
+                        B2(254 cm-1) /
+                        A5(463 cm-1)    n/a                     0.299 (2)
+           _____________________________________________________________________
+           Water ice    B2(254 cm-1) /  equatorial belt, day    0.327
+                        A4(843 cm-1)    equatorial belt, night  0.486
+                                        polar north             0.375
+           _____________________________________________________________________
+                        B1(316 cm-1) /  equatorial belt, day    0.123 (1)
+                        A4(843 cm-1)    equatorial belt, night  0.229 (1)
+                                        polar north             0.161 (1) (2)
+           _____________________________________________________________________
+           (1) Derived from Mie calculations.
+           (2) Not used for retrieval in current version.
+
+        2. The extended vertical range of retrievals enabled by the use of far
+           infrared channels allows us to derive a column optical depth from the
+           retrieved aerosol extinction profile by integrating the extinction
+           profile from the surface to the highest retrievable altitude.
+           Due to the limb sounding geometry of the MCS profile measurement, the
+           lowest retrievable altitude in a profile can be a notable distance
+           above the surface, depending on the aerosol loading of the atmosphere.
+           For deriving dust column optical depth, the dust profile is extended
+           homogeneously mixed below the lowest retrievable altitude, and this
+           extension is included in the vertical integration in order to bridge
+           the gap between the lowest retrievable altitude and the surface. For
+           an aerosol column to be reported, it is required that the minimum
+           retrievable altitude is within 15 km of the surface. This distance
+           threshold is raised to 25 km in large-scale regional dust storms, and
+           35 km in global dust events as defined in Table 2. For reporting a
+           dust column, it is additionally required that at the minimum
+           retrievable altitude the dust extinction (at 463 cm-1) is larger than
+           the water ice extinction retrieved simultaneously (at 843 cm-1).
+           Dust and water ice columns are reported in the fields DUST_COLUMN and
+           H2OICE_COLUMN, respectively.
+           Reported column optical depths are not normalized to surface pressure.
+           If for a particular measurement a dust column is reported, a surface
+           pressure will also be reported in the field P_SURF. If this surface
+           pressure is based on a pressure retrieval in the middle atmosphere,
+           extrapolated to the surface, the flag P_QUAL will be set to 0 and
+           an uncertainty associated with this surface pressure will be reported.
+           If the reported surface pressure is only based on surface pressure
+           climatology, flag P_QUAL will be set to 9 and no uncertainty
+           associated with this surface pressure will be reported. While the
+           retrieved surface pressure is not expected to be of sufficient quality
+           for scientific studies, it is provided in order to put the user in the
+           position to calculate a normalized dust column selfconsistently with
+           the surface pressure that was used in the retrieval.
+
+           Table 2: Start and end times of Global Dust Events and large-scale
+           regional dust storms based on 200 K temperature contour at the 50 Pa
+           pressure level at daytime in retrieval version 6. Peak times are based
+           on peak temperatures at 50 Pa at daytime. Parameters of B-storms are
+           only given for completeness, they do not trigger any modifications in
+           the retrieval or quality control. From KLEINBOEHLETAL2024.
+           ____________________________________________________________
+           Mars Year    Storm    Start Ls        Peak Ls        End Ls
+           ____________________________________________________________
+           28           A (1)    221.5           231            259.5
+                        B        252.3           265            266
+                        GDE      266 (2)         275            323.4
+           29           A        231.3           241            265.9
+                        B        259.9           275            292.6
+                        C        311.3           317            323.6
+           30           A        234.9           247            263
+                        B        257.2           269            292.6
+                        C (3)    316.8           323            329.6
+           31           A        209.2           213            237
+                        B        248.4           263            287.4
+                        C        312             319            325.1
+           32           A        218.3           227            247
+                        B        254.9           263            292.6
+                        C        311.3           313            326.3
+           33           A        217.8           223            241
+                        B        249.9           269            291.5
+                        C        324             327            341.9
+           34           GDE      188.8           211            270 (4)
+                        B        260.3           267 (4)        291.2
+                        C        320.5           325            336.5
+           35           A        226.5           237            259
+                        B        257.6           267            293.7
+                        C        316.1           321            329.8
+           36           A        219.6           227            259
+                        B        255.4           265            297.9
+                        C        310.5           315            330.2
+           ____________________________________________________________
+           (1) Event may actually consist of two individual storms.
+           (2) The formal 200 K contour start is Ls = 266; however, the atmosphere
+              was already quite dusty so to properly capture the early activity,
+              the actual retrieval considers the GDE to start at Ls = 262, such
+              that the transition to the higher cutoff altitude and modified
+              uncertainty calculation occurs starting at Ls = 260.
+           (3) Storm defined based on a 197 K temperature contour.
+           (4) Ls was estimated due to data gap.
+
+           Errors for the derived column quantities are estimated based on the
+           errors derived for independent individual layers of an aerosol profile.
+           The total error of the aerosol column is calculated through a 
+           root-sum-square of the error in these layers from the surface to the
+           maximum retrievable altitude. 
+           During global or large-scale regional dust storms, the lowest detector
+           that is useable for limb retrieval may be at a sufficiently high
+           altitude to lead to a large error based on the formal error estimate
+           above. A correction to the uncertainty in the dust column optical depth
+           is provided for these conditions, assuming that the homogeneously mixed
+           extrapolation of the dust profile does not contribute to the uncertainty
+           of the column. The correction considers the variability of the dust
+           surrounding a particular measurement. The resulting error then
+           represents a value based on the dust variation in time and space on a
+           larger scale. This process is applied to the global dust storms as well
+           as the A-storm in MY29 and the C-storms in MY34 and 36 in Table 2.
+           Details on these error estimates can be found in KLEINBOEHLETAL2024.
+
+        3. Surface brightness temperature measurements from MCS are based on
+           channel B1 because this channel has the least aerosol absorption. The
+           characterization of the aerosol profile and column from the limb
+           measurement allows the separation of the contributions of the surface
+           and the atmosphere that contribute to the top-of-the-atmosphere
+           temperature observed in channel B1. Surface brightness temperatures are
+           retrieved using nadir/off-nadir radiative transfer that accounts for the
+           contribution of dust and water ice aerosol based on the results of the
+           limb retrieval as well as a climatological distribution of water vapor,
+           assuming a surface emissivity of one. Errors in retrieved surface
+           brightness temperature are based on a root-sum-square of the
+           signal-to-noise in channel B1 and the quality of the fit. Retrieved
+           surface brightness temperatures are reported if the fit is of sufficient
+           quality and both dust and water ice columns are reported. If one or both
+           aerosol columns are not reported, we evaluate the impact of that aerosol
+           type on the retrieved surface brightness temperature based on the
+           uncertainty in the aerosol and surface/atmosphere temperature contrast
+           and report surface brightness temperature if the aerosol effect is less
+           than 2 K. The error is then based on a root-sum-square of the original
+           error and the uncertainty caused by the aerosol. Details on these
+           retrievals can be found in KLEINBOEHLETAL2024.
+
+
+    Processing - Level 1 (RDR) to Level 2 (DDR)
+    ===============================
+      RDR to DDR data processing can be divided into three phases:
+
+      1.  Pre-processing.
+      2.  Atmospheric profile retrieval.
+      3.  Post-processing.
+
+      For atmospheric profiles that are derived using two-dimensional 
+      radiative transfer in a second retrieval pass, the following steps
+      are added to this procedure:
+
+      4.  Interpolation.
+      5.  Atmospheric profile retrieval with 2D radiative transfer.
+      6.  Post-processing of profiles with 2D radiative transfer.
+
+
+      Pre-Processing
+      --------------
+        Pre-processing takes the MCS level 1 (RDR) data (calibrated radiances
+        and geometry) as its input and performs the following functions:
+
+        1.  Selects groups of 5 contiguous limb viewing measurements.
+        2.  Selects groups of up to 2 contiguous on-planet measurements.
+        3.  Uses radiance, roll, freeze and geometry tests to reject problem 
+            data.
+        4.  Uses MOLA altimetry maps to assign surface altitude to 
+            measurements.
+        5.  Outputs data files with input needed by the profile retrieval 
+            software.
+
+
+      Atmospheric Profile Retrieval
+      -----------------------------
+        Atmospheric profile retrieval is the most complex element of the 
+        MCS level 1 to level 2 processing suite. Its primary functions 
+        are to:
+
+        1.  Read and average groups of 5-limb measurements with geometry
+            as well as accompanying on-planet measurements when available.
+        2.  Select average radiance measurements used for profile retrievals.
+        3.  Retrieve profiles of temperature, dust and water ice as a 
+            function of pressure from radiances assuming spherical symmetry
+            and using a modified Chahine method.
+        4.  Output results of profile retrieval in a form suitable for the 
+            post-processing software.
+
+
+      Post-Processing
+      ---------------
+        Post-processing applies quality control to the retrieved profiles and 
+        outputs level 2 products suitable for input to the PDS. Its chief 
+        functions are to:
+
+        1.  Read relevant data output by the Profile Retrieval software.
+        2.  Select good profile retrievals based on radiance residual 
+            criteria for the pressure, temperature, dust, and water ice 
+            retrievals considered separately.
+        3.  Calculate parameters needed for Level 2 data set.
+        4.  Output formatted level 2 data for each good profile set that is not
+            included in the retrieval with 2D radiative transfer.
+
+      These three phases of level 1 to level 2 data processing are described
+      in more detail in KLEINBOEHLETAL2009.
+
+
+      Interpolation
+      -------------
+        The interpolation is part of the 2D radiative transfer algorithm and
+        derives interpolated fields of temperature, pressure, and dust and
+        water ice extinction along the MRO orbit. It performs the following
+        functions:
+        1.  Ingest a suitable number of profiles retrieved with spherical
+            symmetry along the MRO orbit that passed the quality control of
+            the post-processing.
+        2.  Derive interpolated fields of temperature, pressure, and dust and
+            water ice extinction vs. altitude and distance along the MRO orbit
+            track.
+        3.  Outputs data files with line-of-sight gradients of these fields for
+            the second pass of the atmospheric profile retrieval.
+
+
+      Atmospheric Profile Retrieval with 2D radiative transfer
+      --------------------------------------------------------
+        A second pass of atmospheric profile retrievals is performed with the
+        same functions as described above. The first guesses and constraints
+        are unchanged. Only the assumption of spherical symmetry is dropped.
+        Instead, horizontal gradients in temperature, pressure, and dust and
+        water ice extinction along the line-of-sight of the limb views is
+        taken into account based on the results of the interpolation code.
+
+
+      Post-Processing of profiles with 2D radiative transfer
+      ------------------------------------------------------
+        Post processing of profiles retrieved with 2D radiative transfer is
+        performed with the same software as described above, using the same
+        quality criteria. It outputs formatted level 2 data for each good
+        profile set.
+
+      The interpolation approach and the atmospheric profile retrieval with 2D
+      radiative transfer is described in more detail in KLEINBOEHLETAL2017.
+      If the error in the dust column optical depth is adjusted in conditions
+      of high dust loading this adjustment is performed after nominal
+      retrievals for a sufficient time period are completed.
+
+
+    Data
+    ====
+      The MCS DDR is represented by a single PDS labeled table.  Each 
+      table is accompanied by a full PDS detached label with the same 
+      name except for suffix *.LBL. The PDS label completely describes 
+      the format and contents of the table.
+
+      The naming convention for the tables and detached headers follow 
+      the time-organization of the data itself and use the following 
+      naming convention:
+
+         yyyymmddhh_DDR.TAB; where:  
+
+              yyyy = year in which the data was acquired
+                mm = month of the year in which the data was acquired
+                dd = day of the month in which the data was acquired
+                hh = hour of the day in which the data was acquired
+
+      Note that the hour is UT (to within the nearest second) at the start 
+      of the coverage of the data contained in the file.  There are six
+      possible values for hour.
+
+      The first data after powering on in September 2006 are:
+
+       - 2006092416_DDR.LBL:   The PDS label that describes the DDR data
+       - 2006092416_DDR.TAB:   The actual DDR data formatted into a PDS
+                                 TABLE object
+
+
+    Ancillary Data
+    ==============
+      Ancillary data are used to generate the geometry fields in the MCS 
+      DDR product. This data comes from the navigation team and is 
+      assumed to be the best available. The following SPICE NAIF Kernels 
+      are used:
+
+        1. Sclk to Scet kernel (sclk)
+        2. Leap Seconds kernel (lsk)
+        3. Frame reference kernel (fk)
+        4. Planetary constants kernel (pck)
+        5. Spacecraft ephemeris kernel (spk)
+        6. Pointing kernel (ck)
+
+
+    Coordinate System
+    =================
+      All positions and vectors in the MCS DDR product files are 
+      specified in Areocentric spherical coordinates. All coordinates
+      follow the MRO mission convention and use north latitude and
+      east longitude.
+
+
+    Software
+    ========
+      The MCS DDR products are formatted as columnar ASCII data; and as 
+      such, they can be read and manipulated by standard, public-domain 
+      software. For this reason, no special utilities are provided.
+
+      The MCS DDR products are standard PDS-labeled tables that can be 
+      viewed with NASAView, an application developed by the PDS and 
+      available for a variety of computer platforms from the PDS web 
+      site.
+
+
+    Archive Format
+    ==============
+      The individual archives were delivered to the PDS Atmospheres
+      node as gzipped tar files via ftp.  Once validated they are
+      available online with the archive volume structure.
+      "
+
+  CONFIDENCE_LEVEL_NOTE            = "
+
+    Overview
+    ========
+      The MCS philosophy has been to perform a series of careful quality
+      control checks to make sure the retrieved results fit the observed
+      radiances and not report places where they do not fit and/or are
+      otherwise determined to be incorrect.  This involves both the removal
+      of complete profiles that are problematic and of individual regions of
+      profiles that are otherwise well retrieved.  This is not perfect, but
+      the overall confidence level is high.
+
+      Geometry and Resolution Description      
+      -------------
+        MCS is primarily a limb sounding instrument.  For nominal limb
+        scans MCS views the forward limb in the direction of spacecraft
+        movement along the orbit track.  For any given detector, the
+        vertical resolution is defined by the appropriate weighting
+        function (see KLEINBOEHLETAL2009) and is approximately 5 km.
+        The horizontal weighting function is controlled by the 
+        spherical atmosphere and is approximately 250 km along the look 
+        direction (full-width half-max), centered at the tangent point.  In 
+        moderately opaque conditions (either due to aerosols or the
+        temperature  structure), this may be biased closer to the instrument
+        than the tangent point, but since excessive opacity prevents the
+        measurement from being used, this is a small effect.  The width
+        perpendicular to the look direction is controlled by the horizontal
+        fields of view and is approximately 8 km.  
+
+        The tangent point for each detector (or layer) is closer to the 
+        instrument than the one below it.  This results in a shift of ~200 
+        km between the surface and a view at 80 km altitude along the 
+        line of sight.  To help with this issue, (and indicate the look 
+        direction) the altitude, latitude, and longitude are given for each 
+        pressure surface of the retrieval (columns 13, 14, and 15 in DDR 
+        part 2).  While the views of the two MCS telescopes overlap, 
+        those of the individual arrays do not.  This results in an 
+        effective observation region of ~100 km wide perpendicular to the 
+        line of sight.
+
+        We have also included a simple location for the profile 
+        (Profile_lat and Profile_lon, columns 13 and 14 in DDR 1) for 
+        applications where the exact viewing geometry and profile shape 
+        are not relevant.  These are also useful for searching for 
+        profiles in specific locations. 
+
+        The timestamp on each profile (columns 2, 3, and 4 of the DDR 1 
+        record) is the mean of the time of the limb soundings (from the 
+        RDR dataset) used for the retrieval.  The limb soundings used are 
+        always consecutive (thus at 2 second intervals), but the number 
+        may vary from 4 to 6 (the current version always uses 5 
+        soundings).  This time is used to determine the L_s and orbit 
+        number of the profile.
+
+        Likewise, the Solar_lat, Solar_lon, Solar_zen, Profile_lat, 
+        Profile_lon, Profile_rad, Profile_alt and Limb_ang (columns 9, 
+        10, 11, 13, 14, 15, 16, and 17) are the mean of the relevant RDR 
+        field for the limb soundings used in the retrieval. The latter 5 
+        are thus the geometry for the instrument boresight tangent point 
+        (see the RDR for further description).  The LTST (column 12) is 
+        derived from the averaged fields for convenience.
+
+      Quality Flags      
+      -------------
+        The quality flag (column 1) has limited meaning for the RDR 
+        records.  A value of 0 indicates present and completely valid 
+        data; a value of 1 indicates a record header line; a value of 4 
+        indicates the unpacking software had an issue with the time 
+        interpolation. 
+
+        The GQUAL field describes the quality of the geometry calculation 
+        of the instrument pointing of the RDR records used for each
+        retrieval.  Only radiances with adequate pointing are used for
+        retrievals, however the field is used to flag cases where the
+        geometry was manually corrected.  See the MCS_DDR1.FMT for details.
+
+        The RQUAL field describes the quality of the radiance calibration.
+        The flag is not implemented yet, so for now it's always 0.
+
+        The remaining quality fields primarily defined the coverage of the
+        retrieval. P_QUAL is 0 in case of a successful pressure retrieval
+        and 9 in case climatological pressure was used. T_QUAL indicates
+        the vertical coverage of the temperature profile, DUST_QUAL,
+        H2OICE_QUAL, and CO2ICE_QUAL indicate whether mid- and far infrared
+        channels or only mid-infrared channels were used for aerosol retrieval
+        and whether aerosol column quantities are reported (see MCS_DDR1.FMT
+        for the meaning of each value). OBS_QUAL primarily defines the
+        direction of the observation relative to the spacecraft (or
+        velocity vector). This primarily identifies profile populations in
+        local time. An OBS_QUAL value of 1 indicates a limb staring
+        observation, which may have the limitations described below.
+        The OBS_QUAL flag of profiles retrieved with two-dimensional radiative
+        transfer is incremented by 10.
+        SURF_QUAL is not used at present.
+
+
+    Data Coverage and Quality
+    =========================
+       The MCS detector array is usually placed on the limb to observe from
+       the surface to over 80 km.  In order to avoid detectors that overlap
+       with the surface, the lowest limb detectors used are between 5 km and
+       10 km.  The lowest part of the atmosphere is also often too opaque in
+       the limb path.  This is especially true for the aerosol channels. The
+       retrieval uses on-planet observations (where the detectors were
+       pointed at the surface) to retrieve the temperature down to the
+       surface.  On-planet views are not always available (or useable) and
+       thus some of the profiles are terminated before reaching the surface
+       due to the opacity in the limb path.  This is the case for all aerosol
+       profiles.  The opacity and surface contribution also increases the
+       uncertainty in the retrieved results near the surface.  This is
+       reflected in the error bars.
+
+       Through most of the atmosphere, the MCS retrievals are very good (as
+       reflected in the uncertainty terms in the dataset).  Aerosols do reach
+       undetectable levels fairly low in the atmosphere, but the temperatures
+       usually extend to 80 km or above, although the signal at the top of
+       the atmosphere is often quite low and results in larger uncertainties.
+       The exception is in the cold polar night.  The rapid decrease in
+       density and often cooler temperatures result in running out of signal
+       at slightly lower altitudes.
+
+       The vertical coverage of the MCS profiles was somewhat compromised
+       during the limb staring period (February 9, 2007 through June 18,
+       2007).  During this period, the limb was not tracked around the orbit
+       and was allowed to drift up and down.  This resulted in covering
+       approximately 0 km to 50 km in the southern hemisphere and 15 km to 80
+       km over the north pole (while the array extended to even higher
+       altitudes, there is insufficient signal for routine retrievals).  The
+       poorer calibration during this time results in increased uncertainty
+       at higher altitudes in the profiles as well as more overall
+       uncertainty in the aerosol profiles.
+
+       Starting September 2010 MCS has been performing regular limb scans
+       with the instrument pointed perpendicular or at an angle to the
+       orbit track. This was done in order to enhance the local time coverage
+       of the MCS measurements (see KLEINBOEHLETAL2013). Views perpendicular
+       to the orbit track cause the limb profile to be offset from the orbit
+       track by about 1.5 hours in local time at low latitudes; this offset
+       increases towards higher latitudes. For limb viewing directions
+       deviating more than 2 degrees from the orbit track typically no
+       accompanying on-planet measurements are available so no retrievals
+       of surface quantities are performed and temperature profiles tend to
+       terminate higher in the atmosphere than for nominal in-track
+       measurements.
+
+       The MCS team generally advocates for continuous global coverage,
+       however MRO is a multi-purpose orbiter.  A number of global and
+       regional interruptions/gaps exist in the dataset.  Many of the gaps 
+       are due to spacecraft or instrument activities and anomalies.  These
+       include instrument (MCS or other) calibrations, routine targeted
+       imaging by the MRO cameras and telecommunications with landed
+       missions.  In addition, a number of larger gaps (24 hours to 3 months)
+       exist due to spacecraft issues and the MCS pointing anomalies.
+
+       With the landing of the Curiosity rover on August 6, 2012, MRO became
+       the primary relay orbiter for this rover. MCS cannot perform
+       measurements during relay passes, which creates a persistent data gap
+       in the vicinity of the rover location (4.59S,137.44E). Only
+       occasional measurements are available, either during scheduled
+       campaigns for coordinated observations with the meteorological
+       instruments on the rover or because relay passes were dropped. These
+       measurements are typically limb-only and do not have accompanying
+       on-planet views.
+
+       With the landing of the Perseverance rover on February 18, 2021, MRO
+       became the primary relay orbiter for this rover. MCS cannot perform
+       measurements during relay passes, which creates a persistent data gap
+       in the vicinity of the rover location (18.44N,77.45E). Only
+       occasional measurements are available, either during scheduled
+       campaigns for coordinated observations with the meteorological
+       instruments on the rover or because relay passes were dropped. These
+       measurements are typically limb-only and do not have accompanying
+       on-planet views.
+
+
+    Limitations
+    ===========
+
+      The altitude provided with the MCS observations (column 13 of the
+      DDR 2 record) is based on the reconstructed knowledge of the
+      spacecraft and instrument pointing.  While this is adequately 
+      determined for MCS to be able to track the limb and select 
+      measurements the calculated altitude relative to the surface (or
+      radius to the center of Mars) is only approximate.  The uncertainties 
+      in the overall pointing is <= 3 km at the limb of Mars.  The relative
+      positions of the fields of view are significantly more accurate and 
+      the altitudes of the individual pressure surfaces relative to each
+      other are accurate to <= 100 m.
+
+      In the region where on-planet views are used to extend the temperature
+      profile to the surface (the lowest 5 km to 25 km depending on channel
+      selection), the vertical weighting function starts to resemble a nadir
+      weighting function with a vertical resolution approaching 10 km.
+
+      During times when there is significant aerosol (dust, water ice or CO2
+      ice) in the atmosphere at or above ~30 km, the limb is opaque in the
+      15 micron CO2 band in the region where MCS does its pressure retrieval.
+      In these cases, a pressure retrieval is not possible and geophysical
+      parameters are retrieved and reported based on a pressure profile
+      derived from a climatological surface pressure and the hydrostatic
+      equation.  
+
+
+    Review
+    ======
+      This archival data set was examined by a peer review panel prior to 
+      its acceptance by the Planetary Data System (PDS). The peer review 
+      was conducted in accordance with PDS procedures.
+
+      Prior to creation of the final version of the archival data set, 
+      key elements of the archive were distributed for preliminary 
+      review.  These included electronic versions of example PDS labels, 
+      CATALOG files, and Software Interface Specifications (SISs). 
+      These materials were distributed to PDS personnel, the experiment 
+      investigator, and others, as appropriate.
+      "    
+
+ END_OBJECT                        = DATA_SET_INFORMATION
+
+  OBJECT                           = DATA_SET_TARGET
+    TARGET_NAME                    = MARS
+  END_OBJECT                       = DATA_SET_TARGET
+
+  OBJECT                           = DATA_SET_HOST
+    INSTRUMENT_HOST_ID             = MRO
+    INSTRUMENT_ID                  = MCS
+  END_OBJECT                       = DATA_SET_HOST
+
+  OBJECT                           = DATA_SET_MISSION
+    MISSION_NAME                   = "MARS RECONNAISSANCE ORBITER"
+  END_OBJECT                       = DATA_SET_MISSION
+
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID               = "KLEINBOEHLETAL2024"
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION
+
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID               = "KLEINBOEHLETAL2017"
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION
+
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID               = "SHIRLEYETAL2015"
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION
+
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID               = "HINSONETAL2014"
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION
+
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID               = "KLEINBOEHLETAL2013"
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION
+
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID               = "KLEINBOEHLETAL2011"
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION
+
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID               = "MCCLEESEETAL2010"
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION
+
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID               = "KLEINBOEHLETAL2009"
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION
+
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID               = "MCCLEESEETAL2007"
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION
+
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID               = "ZUREKANDSMREKAR2007"
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION
+
+END_OBJECT                         = DATA_SET
+END

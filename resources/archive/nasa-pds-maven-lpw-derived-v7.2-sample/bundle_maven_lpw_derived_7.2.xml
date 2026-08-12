@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.sch" 
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/mission/mvn/v1/PDS4_MVN_1D00_1110.sch"
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Bundle 
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:mvn="http://pds.nasa.gov/pds4/mission/mvn/v1"
+    xsi:schemaLocation="
+      http://pds.nasa.gov/pds4/pds/v1
+      https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.xsd
+
+      http://pds.nasa.gov/pds4/mission/mvn/v1
+      https://pds.nasa.gov/pds4/mission/mvn/v1/PDS4_MVN_1D00_1110.xsd
+    ">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:maven.lpw.derived</logical_identifier>
+        <version_id>7.2</version_id>
+        <title>MAVEN LPW Derived Data Bundle</title>
+        <information_model_version>1.24.0.0</information_model_version>
+        <product_class>Product_Bundle</product_class>
+        <Citation_Information>
+            <publication_year>2026</publication_year>
+            <doi>10.17189/gn3w-qx34</doi>
+            <description>
+               This bundle contains data which have been derived from other data products or 
+               determined by fits to other data. These are science quality data produced by 
+               the LPW instrument. The data include densities, temperatures, and Poynting 
+               flux. The data have been provided by the LPW team in CDF files. 
+            </description>
+            <List_Author>
+                <Person>
+                    <given_name>Laila</given_name>
+                    <family_name>Andersson</family_name>
+                    <person_orcid>0000-0001-5909-7415</person_orcid>
+                    <sequence_number>1</sequence_number>
+                    <Affiliation>
+                        <organization_name>Laboratory for Atmospheric and Space Physics</organization_name>
+                        <organization_rorid>https://ror.org/01fcjzv38</organization_rorid>
+                        <sequence_number>1</sequence_number>
+                    </Affiliation>
+                    <Affiliation>
+                        <organization_name>University of Colorado Boulder</organization_name>
+                        <organization_rorid>https://ror.org/02ttsq026</organization_rorid>
+                        <sequence_number>2</sequence_number>
+                    </Affiliation>
+                </Person>
+            </List_Author>
+        </Citation_Information>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2026-06-02</modification_date>
+                <version_id>7.2</version_id>
+                <description>
+                    MAVEN Release 45 (2026-05-15): This version is an
+                    incremental release including the initial release of
+                    025-11-15 to 2025-12-05.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2026-02-19</modification_date>
+                <version_id>7.1</version_id>
+                <description>
+                    MAVEN Release 44 (2026-02-13): This version is an
+                    incremental release including the initial release of
+                    2025-08-15 to 2025-11-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2025-11-25</modification_date>
+                <version_id>7.0</version_id>
+                <description>
+                    Part of MAVEN Release 43 (2025-11-14): This version is 
+                    a full re-release of LP-NT data from 2015-01-01 to 
+                    2025-02-14, and initial release of 2025-02-15 to 
+                    2025-08-14. This reprocessing includes updates to the 
+                    LP-product structure. Previously, only the first three 
+                    product slots were populated (LP-density, LP-temperature, 
+                    LP-potential) and the remaining slots contained no data. 
+                    In this version, the first slot now provides 
+                    LP-density-combined, and the remaining slots are populated 
+                    with additional LP-density and related derived quantities.
+                    This release includes incremental coverage for WN data
+                    from 2025-02-15 to 2025-08-01.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2025-05-15</modification_date>
+                <version_id>6.4</version_id>
+                <description>
+                    MAVEN Release 41 (2025-05-15): This version is an
+                    incremental release including the initial release of
+                    2024-11-15 to 2025-02-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2025-02-14</modification_date>
+                <version_id>6.3</version_id>
+                <description>
+                    MAVEN Release 40 (2025-02-14): This version is an
+                    incremental release including the initial release of
+                    2024-08-15 to 2024-11-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2024-11-15</modification_date>
+                <version_id>6.2</version_id>
+                <description>
+                    MAVEN Release 39 (2024-11-15): This version is an
+                    incremental release including the initial release of
+                    2024-05-15 to 2024-08-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2024-08-15</modification_date>
+                <version_id>6.1</version_id>
+                <description>
+                    MAVEN Release 38 (2024-08-15): This version is an
+                    incremental release including the initial release of
+                    2024-02-15 to 2024-05-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2024-07-03</modification_date>
+                <version_id>6.0</version_id>
+                <description>
+                    This version is a full re-release of all LPW data 
+                    from 2014-11-15 to 2024-02-14.  The data was 
+                    reprocessed as a result of fixing various timing
+                    and data processing issues that were found by the
+                    LPW team. 
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2024-05-15</modification_date>
+                <version_id>5.24</version_id>
+                <description>
+                    MAVEN Release 37 (2024-05-15): This version is an incremental release including 
+                    the initial release of 2023-11-15 to 2024-02-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2024-02-15</modification_date>
+                <version_id>5.23</version_id>
+                <description>
+                    MAVEN Release 36 (2024-02-15): This version is an incremental release including 
+                    the initial release of 2023-08-15 to 2023-11-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2023-11-15</modification_date>
+                <version_id>5.22</version_id>
+                <description>
+                    MAVEN Release 35 (2023-11-15): This version is an incremental release including 
+                    the initial release of 2023-05-15 to 2023-08-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2023-08-15</modification_date>
+                <version_id>5.21</version_id>
+                <description>
+                    MAVEN Release 34 (2023-08-15): This version is an incremental release including 
+                    the initial release of 2022-11-15 to 2023-05-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+               <modification_date>2023-05-15</modification_date>
+               <version_id>5.20</version_id>
+               <description>
+                   MAVEN Release 33: This version is an incremental release including the
+                   intial release of 2022-11-15 to 2023-02-14.
+               </description>
+            </Modification_Detail>
+            <Modification_Detail>
+               <modification_date>2023-02-15</modification_date>
+               <version_id>5.19</version_id>
+               <description>
+                   MAVEN Release 32: This version is an incremental release including the
+                   intial release of 2022-08-15 to 2022-11-14.
+               </description>
+            </Modification_Detail>
+            <Modification_Detail>
+               <modification_date>2021-11-15</modification_date>
+               <version_id>5.18</version_id>
+               <description>
+                   MAVEN Release 31: This version is an incremental release including the
+                   intial release of 2022-05-15 to 2022-08-14.
+               </description>
+            </Modification_Detail>
+            <Modification_Detail>
+               <modification_date>2022-08-15</modification_date>
+               <version_id>5.17</version_id>
+               <description>
+                   MAVEN Release 30: This version is an incremental release including the
+                   intial release of 2022-02-23 to 2022-05-14.
+               </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2022-07-11</modification_date>
+                <version_id>5.16</version_id>
+                <description>
+                    MAVEN Release 29: This version is an incremental release including the
+                    initial release of 2022-11-15 to 2022-02-22.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2022-02-22</modification_date>
+                <version_id>5.15</version_id>
+                <description>
+                    MAVEN Release 28 (2022-02-22): This version is an incremental release 
+                    including the initial release of 2021-08-15 to 2021-11-14. This release 
+                    also includes revised versions of all of the PDS4 XML label files and
+                    MAVEN LPW SIS document. These files have been updated in order to address 
+                    peer review liens.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2021-11-29</modification_date>
+                <version_id>5.14</version_id>
+                <description>
+                    MAVEN Release 27: This version is an incremental release including the 
+                    initial release of 2021-05-15 to 2021-08-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2021-08-18</modification_date>
+                <version_id>5.13</version_id>
+                <description>
+                    MAVEN Release 26 (2021-05-18): This version is an incremental release.
+                    It includes LPW data from Releases 25 and 26 (2020-11-15 to 2021-05-16).
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2021-02-17</modification_date>
+                <version_id>5.12</version_id>
+                <description>
+                    MAVEN Release 24 (2021-02-16): This version is an incremental release including 
+                    the initial release of 2020-08-15 to 2020-11-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2020-11-16</modification_date>
+                <version_id>5.11</version_id>
+                <description>
+                    MAVEN Release 23 (2020-11-15): This version is an incremental release including 
+                    the initial release of 2020-05-15 to 2020-08-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2020-08-15</modification_date>
+                <version_id>5.10</version_id>
+                <description>
+                    MAVEN Release 22 (2020-08-15): This version is an incremental release including 
+                    the initial release of 2020-02-15 to 2020-05-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2020-05-13</modification_date>
+                <version_id>5.9</version_id>
+                <description>
+                    MAVEN Release 21 (2020-05-15): This version is an incremental release including 
+                    the initial release of 2019-11-15 to 2020-02-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2020-02-14</modification_date>
+                <version_id>5.8</version_id>
+                <description>
+                    MAVEN Release 20 (2020-02-14): This version is an incremental release including 
+                    the initial release of 2019-08-15 to 2019-11-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2019-11-15</modification_date>
+                <version_id>5.7</version_id>
+                <description>
+                    MAVEN Release 19 (2019-11-15): This version is an incremental release 
+                    including the initial release of 2019-05-15 to 2019-08-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2019-08-09</modification_date>
+                <version_id>5.6</version_id>
+                <description>
+                    MAVEN Release 18 (2019-08-15): This version is an incremental release 
+                    including the initial release of 2019-02-15 to 2019-05-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2019-05-14</modification_date>
+                <version_id>5.5</version_id>
+                <description>
+                    MAVEN Release 17 (2019-05-15): This version is an incremental release 
+                    including the initial release of 2018-11-15 to 2019-02-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2019-02-14</modification_date>
+                <version_id>5.4</version_id>
+                <description>
+                    MAVEN Release 16 (2019-02-15): This version is an incremental release 
+                    including the initial release of 2018-08-15 to 2018-11-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2018-11-15</modification_date>
+                <version_id>5.3</version_id>
+                <description>
+                    MAVEN Release 15 (2018-11-15): This version is an incremental release 
+                    including the initial release of 2018-05-15 to 2018-08-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2018-08-14</modification_date>
+                <version_id>5.2</version_id>
+                <description>
+                    MAVEN Release 14 (2018-08-15): This version is an incremental release 
+                    including the initial release of 2018-02-15 to 2018-05-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2018-05-09</modification_date>
+                <version_id>5.1</version_id>
+                <description>
+                    MAVEN Release 13 (2018-05-15): This version is an incremental release 
+                    including the initial release of 2017-11-15 to 2018-02-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2018-02-27</modification_date>
+                <version_id>5.0</version_id>
+                <description>
+                    MAVEN Release 12 (2018-02-15): This version is full re-release of all 
+                    LPW data due to date, including the initial release of the data from 
+                    2017-08-15 to 2017-11-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2017-11-15</modification_date>
+                <version_id>4.5</version_id>
+                <description>
+                    MAVEN Release 11 (2017-11-15): This version is an incremental release 
+                    including the initial release of 2017-05-15 to 2017-08-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2017-08-12</modification_date>
+                <version_id>4.4</version_id>
+                <description>
+                    MAVEN Release 10 (2017-08-15): This version is an incremental release 
+                    including the initial release of 2017-02-15 to 2017-05-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2017-08-11</modification_date>
+                <version_id>4.3</version_id>
+                <description>
+                    This version included corrections to a 1 second timing error in the data 
+                    following the leap second at 2016-12-31T23:59:60 UTC. Coverage is the 
+                    same as for version 4.2.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2017-05-15</modification_date>
+                <version_id>4.2</version_id>
+                <description>
+                    MAVEN Release 9 (2017-05-15): This version is an incremental release 
+                    including the initial release of 2016-11-15 to 2017-02-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2017-02-14</modification_date>
+                <version_id>4.1</version_id>
+                <description>
+                    MAVEN Release 8 (2017-02-15): This version is an incremental release 
+                    including the initial release of 2016-08-15 to 2016-11-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-12-02</modification_date>
+                <version_id>4.0</version_id>
+                <description>
+                    MAVEN Release 7 (2016-11-15): This version consists of a full redelivery 
+                    of all LPW data due to date, including the intial delivery of data from
+                    2016-05-15 to 2016-08-14. Full coverage includes 2014-10-11 to 2016-08-14 
+                    (data prior to 2014-10-11 are invalid. This version includes an update to 
+                    the format of the 'flag' field, and the addition of an 'info' field. 
+                    Details are included in the updated version of the SIS (Rev 3.0).
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-08-08</modification_date>
+                <version_id>3.1</version_id>
+                <description>
+                    MAVEN Release 6 (2016-08-15): This version is an incremental release 
+                    including the initial release of 2016-02-15 to 2016-05-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-05-26</modification_date>
+                <version_id>3.0</version_id>
+                <description>
+                    MAVEN Release 5. This release consists of a full redelivery 
+                    of all LPW data due to date, including the initial delivery of data from
+                    2015-11-15 to 2016-02-14. Full coverage is 2014-10-06 to 2016-02-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-02-29</modification_date>
+                <version_id>2.1</version_id>
+                <description>
+                    MAVEN Release 4 (2016-02-29): This version is an incremental release 
+                    including the inital release of 2015-08-15 to 2015-11-14.
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2015-12-22</modification_date>
+                <version_id>2.1</version_id>
+                <description>MAVEN Release 3</description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2015-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>MAVEN Initial Release</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Context_Area>
+        <Time_Coordinates>
+           <start_date_time>2014-10-11T00:00:00.000Z</start_date_time>
+            <stop_date_time>2025-12-05T23:59:59.999Z</stop_date_time>
+        </Time_Coordinates>
+             <Primary_Result_Summary>
+                   <purpose>Science</purpose>
+                   <processing_level>Calibrated</processing_level>
+                   <Science_Facets>
+                         <domain>Magnetosphere</domain>
+                         <discipline_name>Fields</discipline_name>
+                         <facet1>Electric</facet1>
+                         <facet2>Waves</facet2>
+                  </Science_Facets>
+            </Primary_Result_Summary>
+             <Investigation_Area>
+                   <name>Mars Atmosphere and Volatile EvolutioN Mission</name>
+                   <type>Mission</type>
+                   <Internal_Reference>
+                         <lid_reference>urn:nasa:pds:context:investigation:mission.maven</lid_reference>
+                         <reference_type>bundle_to_investigation</reference_type>
+                  </Internal_Reference>
+            </Investigation_Area>
+        <Observing_System>
+                   <Observing_System_Component>
+                         <name>MAVEN</name>
+                         <type>Host</type>   
+                         <Internal_Reference>
+                               <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.maven</lid_reference>
+                               <reference_type>is_instrument_host</reference_type>
+                        </Internal_Reference>
+                  </Observing_System_Component>
+            <Observing_System_Component>
+            <name>Langmuir Probe and Waves Instrument</name>
+            <type>Instrument</type>   
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:instrument:lpw.maven</lid_reference>
+                <reference_type>is_instrument</reference_type>
+            </Internal_Reference>
+            </Observing_System_Component>
+        </Observing_System>
+             <Target_Identification>
+                   <name>Mars</name>
+                   <type>Planet</type>
+                   <Internal_Reference>
+                         <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+                         <reference_type>bundle_to_target</reference_type>
+                  </Internal_Reference>
+            </Target_Identification>
+             <Mission_Area>
+                   <mvn:MAVEN>
+                       <mvn:mission_phase_name>Transition</mvn:mission_phase_name>
+                       <mvn:mission_phase_name>Prime Mission</mvn:mission_phase_name>
+                       <mvn:mission_phase_name>EM-1</mvn:mission_phase_name>
+                       <mvn:mission_phase_name>EM-2</mvn:mission_phase_name>
+                       <mvn:mission_phase_name>EM-3</mvn:mission_phase_name>
+                       <mvn:mission_phase_name>EM-4</mvn:mission_phase_name>
+                       <mvn:mission_phase_name>EM-5</mvn:mission_phase_name>
+                       <mvn:mission_phase_name>EM-6</mvn:mission_phase_name>
+                   </mvn:MAVEN>
+            </Mission_Area>
+    </Context_Area>
+    <Reference_List>
+    </Reference_List>
+    <Bundle>
+        <bundle_type>Archive</bundle_type>
+        <description>
+           This bundle contains data which have been derived from other data products or 
+           determined by fits to other data. These are science quality data produced by 
+           the LPW instrument. The data include densities, temperatures, and Poynting 
+           flux. The data have been provided by the LPW team in CDF files. 
+        </description>
+    </Bundle>
+    <File_Area_Text>
+        <File>
+            <file_name>readme_maven_lpw_derived_7.2.txt</file_name>
+            <creation_date_time>2026-06-02T18:00:55</creation_date_time>
+            <md5_checksum>1bd3795d261fe1a4964dcbd8544753fc</md5_checksum>
+            <comment>
+                This file contains a brief overview of the MAVEN LPW derived data bundle.
+            </comment>
+        </File>
+        <Stream_Text>
+            <name>readme_maven_lpw_derived_7.2.txt</name>
+            <offset unit="byte">0</offset>
+            <object_length unit="byte">15601</object_length>
+            <parsing_standard_id>7-Bit ASCII Text</parsing_standard_id>
+            <description>This file contains a brief overview of the MAVEN LPW derived data bundle.</description>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+        </Stream_Text>
+    </File_Area_Text>
+    <Bundle_Member_Entry>
+        <lidvid_reference>urn:nasa:pds:maven.lpw.derived:data.w.n::6.7</lidvid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_data_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lidvid_reference>urn:nasa:pds:maven.lpw.derived:data.lp.nt::6.2</lidvid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_data_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lidvid_reference>urn:nasa:pds:maven.lpw:document::1.2</lidvid_reference>
+        <member_status>Secondary</member_status>
+        <reference_type>bundle_has_document_collection</reference_type>
+    </Bundle_Member_Entry>
+</Product_Bundle>

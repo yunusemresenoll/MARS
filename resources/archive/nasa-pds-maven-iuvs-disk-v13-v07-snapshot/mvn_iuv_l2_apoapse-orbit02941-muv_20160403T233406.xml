@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1301.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/disp/v1/PDS4_DISP_1004.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:disp="http://pds.nasa.gov/pds4/disp/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+  http://pds.nasa.gov/pds4/disp/v1 http://pds.nasa.gov/pds4/disp/v1/PDS4_DISP_1004.xsd
+  http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1301.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:maven.iuvs.derived:disk:mvn_iuv_l2_apoapse-orbit02941-muv_20160403t233406</logical_identifier>
+    <version_id>7.0</version_id>
+    <title>MAVEN IUVS Experiment</title>
+    <information_model_version>1.3.0.1</information_model_version>
+    <product_class>Product_Observational</product_class>
+<Modification_History>
+  <Modification_Detail>
+    <modification_date>2015-07-28</modification_date>
+    <version_id>1.0</version_id>
+    <description>First PDS release of IUVS products</description>
+  </Modification_Detail>
+  <Modification_Detail>
+    <modification_date>2015-08-18</modification_date>
+    <version_id>2.0</version_id>
+    <description>Second PDS release. This collection is only extended with new data -- no data from the previous version has been reprocessed</description>
+  </Modification_Detail>
+  <Modification_Detail>
+    <modification_date>2015-11-16</modification_date>
+    <version_id>3.0</version_id>
+    <description>Third PDS release. Additional upper-level products have been added, and uncertainty has been modified in level 1C periapse. All products have been reprocessed with the new software, even if this would not change the data.</description>
+  </Modification_Detail>
+  <Modification_Detail>
+    <modification_date>2016-02-08</modification_date>
+    <version_id>4.0</version_id>
+    <description>Fourth PDS release. Wavelength scale is improved in level 1B, and all upper-level products use this modified wavelength scale. Additional upper-level products have been added. All products have been reprocessed with the new software, even if this would not change the data.</description>
+  </Modification_Detail>
+  <Modification_Detail>
+    <modification_date>2016-05-10</modification_date>
+    <version_id>5.0</version_id>
+    <description>Fifth PDS release. This collection is only extended with new data -- no data from the previous version has been reprocessed.</description>
+  </Modification_Detail>
+  <Modification_Detail>
+    <modification_date>2016-08-15</modification_date>
+    <version_id>6.0</version_id>
+    <description>Sixth PDS release. A bug in dark subtraction has been fixed.</description>
+  </Modification_Detail>
+  <Modification_Detail>
+    <modification_date>2016-11-15</modification_date>
+    <version_id>7.0</version_id>
+    <description>Seventh PDS release. Periapse retrieval is based on DN, rather than calibrated, images. MUV calibration curve shifted 7nm. Several pixel geometry fields have been modified.</description>
+  </Modification_Detail>
+</Modification_History>
+  </Identification_Area>
+  <Observation_Area>
+    <Time_Coordinates>
+      <start_date_time>2016-04-03T23:34:11.54Z</start_date_time>
+      <stop_date_time>2016-04-03T23:34:11.54Z</stop_date_time>
+    </Time_Coordinates>
+    <Primary_Result_Summary>
+      <purpose>Science</purpose>
+      <processing_level>Derived</processing_level>
+      <Science_Facets>
+      <wavelength_range>Ultraviolet</wavelength_range>
+      <domain>Atmosphere</domain>
+      <discipline_name>Atmospheres</discipline_name>
+      <facet1>Structure</facet1>
+      </Science_Facets>
+    </Primary_Result_Summary>
+    <Investigation_Area>
+      <name>IUVS</name>
+      <type>Mission</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:mission.maven</lid_reference>
+        <reference_type>data_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+    <Observing_System>
+      <name>MAVEN</name>
+      <Observing_System_Component>
+        <name>IUVS</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:iuvs.maven</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>MAVEN</name>
+        <type>Spacecraft</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.maven</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Target_Identification>
+      <name>MARS</name>
+      <type>Planet</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+        <reference_type>data_to_target</reference_type>
+      </Internal_Reference>
+    </Target_Identification>
+    <Discipline_Area>
+    </Discipline_Area>
+  </Observation_Area>
+  <File_Area_Observational>
+    <File>
+      <file_name>mvn_iuv_l2_apoapse-orbit02941-muv_20160403T233406_v07_r01.fits</file_name>
+      <local_identifier>file</local_identifier>
+      <creation_date_time>2016-12-15T01:35:58Z</creation_date_time>
+    </File>
+    <Header>
+      <local_identifier>header_apoapse_geometry</local_identifier>
+      <offset unit="byte">2880</offset>
+      <object_length unit="byte">5760</object_length>
+      <parsing_standard_id>FITS 3.0</parsing_standard_id>
+    </Header>
+    <Table_Binary>
+      <local_identifier>data_apoapse_geometry</local_identifier>
+      <offset unit="byte">8640</offset>
+      <records>1</records>
+      <Record_Binary>
+        <fields>0</fields>
+        <groups>8</groups>
+        <record_length unit="byte">389880</record_length>
+        <Group_Field_Binary>
+          <repetitions>90</repetitions>
+          <fields>1</fields>
+          <groups>0</groups>
+          <group_location unit="byte">1</group_location>
+          <group_length unit="byte">360</group_length>
+          <Field_Binary>
+            <name>LATITUDE</name>
+            <field_location unit="byte">1</field_location>
+            <data_type>IEEE754MSBSingle</data_type>
+            <field_length unit="byte">4</field_length>
+            <unit>deg</unit>
+            <description>Latitude</description>
+          </Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>1</fields>
+          <groups>0</groups>
+          <group_location unit="byte">361</group_location>
+          <group_length unit="byte">720</group_length>
+          <Field_Binary>
+            <name>LONGITUDE</name>
+            <field_location unit="byte">1</field_location>
+            <data_type>IEEE754MSBSingle</data_type>
+            <field_length unit="byte">4</field_length>
+            <unit>deg</unit>
+            <description>Longitude, counted east positive</description>
+          </Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">1081</group_location>
+          <group_length unit="byte">64800</group_length>
+          <Group_Field_Binary>
+            <repetitions>90</repetitions>
+            <fields>1</fields>
+            <groups>0</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">360</group_length>
+            <Field_Binary>
+              <name>LOCAL_TIME</name>
+              <field_location unit="byte">1</field_location>
+              <data_type>IEEE754MSBSingle</data_type>
+              <field_length unit="byte">4</field_length>
+              <unit>hr</unit>
+              <description>Local time</description>
+            </Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">65881</group_location>
+          <group_length unit="byte">64800</group_length>
+          <Group_Field_Binary>
+            <repetitions>90</repetitions>
+            <fields>1</fields>
+            <groups>0</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">360</group_length>
+            <Field_Binary>
+              <name>SOLAR_ZENITH_ANGLE</name>
+              <field_location unit="byte">1</field_location>
+              <data_type>IEEE754MSBSingle</data_type>
+              <field_length unit="byte">4</field_length>
+              <unit>deg</unit>
+              <description>Solar zenith angle</description>
+            </Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">130681</group_location>
+          <group_length unit="byte">64800</group_length>
+          <Group_Field_Binary>
+            <repetitions>90</repetitions>
+            <fields>1</fields>
+            <groups>0</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">360</group_length>
+            <Field_Binary>
+              <name>EMISSION_ANGLE</name>
+              <field_location unit="byte">1</field_location>
+              <data_type>IEEE754MSBSingle</data_type>
+              <field_length unit="byte">4</field_length>
+              <unit>deg</unit>
+              <description>Angle between normal and spacecraft</description>
+            </Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">195481</group_location>
+          <group_length unit="byte">64800</group_length>
+          <Group_Field_Binary>
+            <repetitions>90</repetitions>
+            <fields>1</fields>
+            <groups>0</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">360</group_length>
+            <Field_Binary>
+              <name>PHASE_ANGLE</name>
+              <field_location unit="byte">1</field_location>
+              <data_type>IEEE754MSBSingle</data_type>
+              <field_length unit="byte">4</field_length>
+              <unit>deg</unit>
+              <description>Phase angle</description>
+            </Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">260281</group_location>
+          <group_length unit="byte">64800</group_length>
+          <Group_Field_Binary>
+            <repetitions>90</repetitions>
+            <fields>1</fields>
+            <groups>0</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">360</group_length>
+            <Field_Binary>
+              <name>MODEL_SURFACE_PRESSURE</name>
+              <field_location unit="byte">1</field_location>
+              <data_type>IEEE754MSBSingle</data_type>
+              <field_length unit="byte">4</field_length>
+              <unit>hPa</unit>
+              <description>Model derived surface pressure</description>
+            </Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">325081</group_location>
+          <group_length unit="byte">64800</group_length>
+          <Group_Field_Binary>
+            <repetitions>90</repetitions>
+            <fields>1</fields>
+            <groups>0</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">360</group_length>
+            <Field_Binary>
+              <name>MOLA_ALTITUDE</name>
+              <field_location unit="byte">1</field_location>
+              <data_type>IEEE754MSBSingle</data_type>
+              <field_length unit="byte">4</field_length>
+              <unit>m</unit>
+              <description>MOLA surface elevation above the areoid</description>
+            </Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+      </Record_Binary>
+    </Table_Binary>
+    <Header>
+      <local_identifier>header_apoapse_ozone</local_identifier>
+      <offset unit="byte">400320</offset>
+      <object_length unit="byte">5760</object_length>
+      <parsing_standard_id>FITS 3.0</parsing_standard_id>
+    </Header>
+    <Table_Binary>
+      <local_identifier>data_apoapse_ozone</local_identifier>
+      <offset unit="byte">406080</offset>
+      <records>1</records>
+      <Record_Binary>
+        <fields>0</fields>
+        <groups>3</groups>
+        <record_length unit="byte">194400</record_length>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">1</group_location>
+          <group_length unit="byte">64800</group_length>
+          <Group_Field_Binary>
+            <repetitions>90</repetitions>
+            <fields>1</fields>
+            <groups>0</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">360</group_length>
+            <Field_Binary>
+              <name>COLUMN</name>
+              <field_location unit="byte">1</field_location>
+              <data_type>IEEE754MSBSingle</data_type>
+              <field_length unit="byte">4</field_length>
+              <unit>micrometer*bar</unit>
+              <scaling_factor>1.01325</scaling_factor>
+              <description>Ozone vertical column</description>
+            </Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">64801</group_location>
+          <group_length unit="byte">64800</group_length>
+          <Group_Field_Binary>
+            <repetitions>90</repetitions>
+            <fields>1</fields>
+            <groups>0</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">360</group_length>
+            <Field_Binary>
+              <name>UNCERTAINTY</name>
+              <field_location unit="byte">1</field_location>
+              <data_type>IEEE754MSBSingle</data_type>
+              <field_length unit="byte">4</field_length>
+              <unit>micrometer*bar</unit>
+              <scaling_factor>1.01325</scaling_factor>
+              <description>Uncertainty (1-sigma) on ozone vertical column</description>
+            </Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">129601</group_location>
+          <group_length unit="byte">64800</group_length>
+          <Group_Field_Binary>
+            <repetitions>90</repetitions>
+            <fields>1</fields>
+            <groups>0</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">360</group_length>
+            <Field_Binary>
+              <name>CHI_SQUARE</name>
+              <field_location unit="byte">1</field_location>
+              <data_type>IEEE754MSBSingle</data_type>
+              <field_length unit="byte">4</field_length>
+              <description>Chi square value for the fit</description>
+            </Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+      </Record_Binary>
+    </Table_Binary>
+    <Header>
+      <local_identifier>header_apoapse_albedo</local_identifier>
+      <offset unit="byte">601920</offset>
+      <object_length unit="byte">2880</object_length>
+      <parsing_standard_id>FITS 3.0</parsing_standard_id>
+    </Header>
+    <Table_Binary>
+      <local_identifier>data_apoapse_albedo</local_identifier>
+      <offset unit="byte">604800</offset>
+      <records>1</records>
+      <Record_Binary>
+        <fields>0</fields>
+        <groups>3</groups>
+        <record_length unit="byte">194400</record_length>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">1</group_location>
+          <group_length unit="byte">64800</group_length>
+          <Group_Field_Binary>
+            <repetitions>90</repetitions>
+            <fields>1</fields>
+            <groups>0</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">360</group_length>
+            <Field_Binary>
+              <name>ALBEDO</name>
+              <field_location unit="byte">1</field_location>
+              <data_type>IEEE754MSBSingle</data_type>
+              <field_length unit="byte">4</field_length>
+              <description>MUV mean albedo of the surface + clouds</description>
+            </Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">64801</group_location>
+          <group_length unit="byte">64800</group_length>
+          <Group_Field_Binary>
+            <repetitions>90</repetitions>
+            <fields>1</fields>
+            <groups>0</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">360</group_length>
+            <Field_Binary>
+              <name>UNCERTAINTY</name>
+              <field_location unit="byte">1</field_location>
+              <data_type>IEEE754MSBSingle</data_type>
+              <field_length unit="byte">4</field_length>
+              <description>Uncertainty (1-sigma) on MUV mean albedo</description>
+            </Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">129601</group_location>
+          <group_length unit="byte">64800</group_length>
+          <Group_Field_Binary>
+            <repetitions>90</repetitions>
+            <fields>1</fields>
+            <groups>0</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">360</group_length>
+            <Field_Binary>
+              <name>CHI_SQUARE</name>
+              <field_location unit="byte">1</field_location>
+              <data_type>IEEE754MSBSingle</data_type>
+              <field_length unit="byte">4</field_length>
+              <description>Chi square value for the fit</description>
+            </Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+      </Record_Binary>
+    </Table_Binary>
+    <Header>
+      <local_identifier>header_apoapse_dust</local_identifier>
+      <offset unit="byte">800640</offset>
+      <object_length unit="byte">2880</object_length>
+      <parsing_standard_id>FITS 3.0</parsing_standard_id>
+    </Header>
+    <Table_Binary>
+      <local_identifier>data_apoapse_dust</local_identifier>
+      <offset unit="byte">803520</offset>
+      <records>1</records>
+      <Record_Binary>
+        <fields>0</fields>
+        <groups>3</groups>
+        <record_length unit="byte">194400</record_length>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">1</group_location>
+          <group_length unit="byte">64800</group_length>
+          <Group_Field_Binary>
+            <repetitions>90</repetitions>
+            <fields>1</fields>
+            <groups>0</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">360</group_length>
+            <Field_Binary>
+              <name>OPACITY</name>
+              <field_location unit="byte">1</field_location>
+              <data_type>IEEE754MSBSingle</data_type>
+              <field_length unit="byte">4</field_length>
+              <description>MUV dust vertical opacity</description>
+            </Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">64801</group_location>
+          <group_length unit="byte">64800</group_length>
+          <Group_Field_Binary>
+            <repetitions>90</repetitions>
+            <fields>1</fields>
+            <groups>0</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">360</group_length>
+            <Field_Binary>
+              <name>UNCERTAINTY</name>
+              <field_location unit="byte">1</field_location>
+              <data_type>IEEE754MSBSingle</data_type>
+              <field_length unit="byte">4</field_length>
+              <description>Uncertainty (1-sigma) on MUV dust vertical opacity</description>
+            </Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+        <Group_Field_Binary>
+          <repetitions>180</repetitions>
+          <fields>0</fields>
+          <groups>1</groups>
+          <group_location unit="byte">129601</group_location>
+          <group_length unit="byte">64800</group_length>
+          <Group_Field_Binary>
+            <repetitions>90</repetitions>
+            <fields>1</fields>
+            <groups>0</groups>
+            <group_location unit="byte">1</group_location>
+            <group_length unit="byte">360</group_length>
+            <Field_Binary>
+              <name>CHI_SQUARE</name>
+              <field_location unit="byte">1</field_location>
+              <data_type>IEEE754MSBSingle</data_type>
+              <field_length unit="byte">4</field_length>
+              <description>Chi square value for the fit</description>
+            </Field_Binary>
+          </Group_Field_Binary>
+        </Group_Field_Binary>
+      </Record_Binary>
+    </Table_Binary>
+    <Header>
+      <local_identifier>header_observation</local_identifier>
+      <offset unit="byte">999360</offset>
+      <object_length unit="byte">5760</object_length>
+      <parsing_standard_id>FITS 3.0</parsing_standard_id>
+    </Header>
+    <Table_Binary>
+      <local_identifier>data_observation</local_identifier>
+      <offset unit="byte">1005120</offset>
+      <records>1</records>
+      <Record_Binary>
+        <fields>13</fields>
+        <groups>0</groups>
+        <record_length unit="byte">206</record_length>
+        <Field_Binary>
+          <name>PRODUCT_ID</name>
+          <field_location unit="byte">1</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">65</field_length>
+          <description>Original filename of this product</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>COLLECTION_ID</name>
+          <field_location unit="byte">66</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">4</field_length>
+          <description>PDS collection ID (currently unused)</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>BUNDLE_ID</name>
+          <field_location unit="byte">70</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">7</field_length>
+          <description>PDS bundle ID (currently unused)</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>CODE_SVN_REVISION</name>
+          <field_location unit="byte">77</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">8</field_length>
+          <description>SVN revision number of code used to produce this product</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>ANC_SVN_REVISION</name>
+          <field_location unit="byte">85</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">8</field_length>
+          <description>SVN revision number of ancillary data used to produce this product</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>PRODUCT_CREATION_DATE</name>
+          <field_location unit="byte">93</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">33</field_length>
+          <description>Product creation date</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>CALIBRATION_VERSION</name>
+          <field_location unit="byte">126</field_location>
+          <data_type>SignedMSB2</data_type>
+          <field_length unit="byte">2</field_length>
+        </Field_Binary>
+        <Field_Binary>
+          <name>MISSION_PHASE</name>
+          <field_location unit="byte">128</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">5</field_length>
+          <description>Mission phase string</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>TARGET_NAME</name>
+          <field_location unit="byte">133</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">4</field_length>
+          <description>Target name string</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>ORBIT_SEGMENT</name>
+          <field_location unit="byte">137</field_location>
+          <data_type>SignedMSB2</data_type>
+          <field_length unit="byte">2</field_length>
+          <description>Orbit segment (periapse, apoapse, corona etc, currently 0)</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>ORBIT_NUMBER</name>
+          <field_location unit="byte">139</field_location>
+          <data_type>SignedMSB2</data_type>
+          <field_length unit="byte">2</field_length>
+          <description>Orbit number (MOI is start of orbit 1, orbit number changes 30min before each periapse)</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>SOLAR_LONGITUDE</name>
+          <field_location unit="byte">141</field_location>
+          <data_type>IEEE754MSBSingle</data_type>
+          <field_length unit="byte">4</field_length>
+          <unit>deg</unit>
+          <description>Solar longitude, 0deg=Martian spring equinox, 90deg=solstice, etc</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>L1C_FN</name>
+          <field_location unit="byte">145</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">62</field_length>
+          <description>Name of L1C file used in L2</description>
+        </Field_Binary>
+      </Record_Binary>
+    </Table_Binary>
+  </File_Area_Observational>
+</Product_Observational>

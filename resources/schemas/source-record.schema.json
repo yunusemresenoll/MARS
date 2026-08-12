@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mars.local/schemas/source-record.schema.json",
+  "title": "MARS Source Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "source_id",
+    "title",
+    "publisher",
+    "url",
+    "retrieved_at",
+    "license",
+    "archived",
+    "archive_files",
+    "citation"
+  ],
+  "properties": {
+    "source_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]+$"},
+    "title": {"type": "string", "minLength": 1},
+    "authors": {"type": "array", "items": {"type": "string"}},
+    "publisher": {"type": "string", "minLength": 1},
+    "published_at": {"type": ["string", "null"]},
+    "url": {"type": "string", "minLength": 1},
+    "doi": {"type": ["string", "null"]},
+    "retrieved_at": {"type": "string", "format": "date"},
+    "license": {"type": "string", "minLength": 1},
+    "archived": {"type": "boolean"},
+    "archive_exception": {"type": ["string", "null"]},
+    "archive_files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "sha256", "bytes"],
+        "properties": {
+          "path": {"type": "string", "minLength": 1},
+          "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "bytes": {"type": "integer", "minimum": 0},
+          "media_type": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "citation": {"type": "string", "minLength": 1},
+    "notes": {"type": ["string", "null"]}
+  }
+}
+

@@ -1,0 +1,70 @@
+{
+  "dataset_id": "mars.mro.mcs.ddr-v6.2-mrom2104-sample",
+  "source_id": "nasa-pds-mro-mcs-ddr-v6.2-mrom2104-sample",
+  "target": "Mars",
+  "processing_state": "ARCHIVED_DERIVED",
+  "products": [
+    {
+      "product_id": "MROM_2104_CUMINDEX",
+      "property_id": "climate.mcs_ddr_index_row",
+      "data_path": "resources/archive/nasa-pds-mro-mcs-ddr-v6.2-sample/cumindex.tab",
+      "label_path": "resources/archive/nasa-pds-mro-mcs-ddr-v6.2-sample/cumindex.lbl",
+      "record_count_method": "TEXT_LINES",
+      "records": 17032,
+      "canonical_source_unit": null,
+      "structure": {
+        "format": "PDS3 stream ASCII",
+        "columns": 10,
+        "scope": "cumulative archive through MROM_2104",
+        "dataset_id": "MRO-M-MCS-5-DDR-V6.2"
+      },
+      "observation_period": "2006-09-24/2015-04-30",
+      "notes": "Kümülatif dizin tamdır; işaret ettiği 17.032 DDR ürününden yalnız 2015041500_DDR.TAB yerel olarak kopyalanmıştır."
+    },
+    {
+      "product_id": "MROM_2104_INDEX",
+      "property_id": "climate.mcs_ddr_index_row",
+      "data_path": "resources/archive/nasa-pds-mro-mcs-ddr-v6.2-sample/index.tab",
+      "label_path": "resources/archive/nasa-pds-mro-mcs-ddr-v6.2-sample/index.lbl",
+      "record_count_method": "TEXT_LINES",
+      "records": 164,
+      "canonical_source_unit": null,
+      "structure": {
+        "format": "PDS3 stream ASCII",
+        "columns": 10,
+        "scope": "MROM_2104 monthly volume",
+        "dataset_id": "MRO-M-MCS-5-DDR-V6.2"
+      },
+      "observation_period": "2015-04-01/2015-04-30",
+      "notes": "Nisan 2015 hacim dizinidir."
+    },
+    {
+      "product_id": "2015041500_DDR.TAB",
+      "property_id": "climate.mcs_ddr_profile_record",
+      "data_path": "resources/archive/nasa-pds-mro-mcs-ddr-v6.2-sample/2015041500_ddr.tab",
+      "label_path": "resources/archive/nasa-pds-mro-mcs-ddr-v6.2-sample/2015041500_ddr.lbl",
+      "record_count_method": "PDS_STREAM_ROWS",
+      "data_offset_bytes": 2888,
+      "record_bytes": 17954,
+      "records": 379,
+      "canonical_source_unit": null,
+      "structure": {
+        "format": "PDS3 stream ASCII with textual provenance header",
+        "columns": 1652,
+        "profile_fields": 77,
+        "vertical_layers": 105,
+        "layer_fields": 15,
+        "start_orbit": 40856,
+        "stop_orbit": 40858,
+        "start_solar_longitude_deg": 325.97911,
+        "stop_solar_longitude_deg": 326.07165,
+        "profile_format_path": "resources/archive/nasa-pds-mro-mcs-ddr-v6.2-sample/mcs_ddr1.fmt",
+        "layer_format_path": "resources/archive/nasa-pds-mro-mcs-ddr-v6.2-sample/mcs_ddr2.fmt",
+        "vertical_coordinate": "105 exponentially spaced pressure surfaces",
+        "pressure_grid_equation": "p(i)=610*exp(-0.125*(i-10)) Pa, i=1..105"
+      },
+      "observation_period": "2015-04-15T00:00:22.056/2015-04-15T03:59:36.412",
+      "notes": "Dört saatlik türetilmiş atmosfer profili ürünüdür. Sıcaklık, basınç, toz, su buharı, su-buzu ve CO2-buzu alanları kalite bayraklarıyla birlikte kullanılmalıdır; ürün küresel-anlık bir ızgara değildir."
+    }
+  ]
+}

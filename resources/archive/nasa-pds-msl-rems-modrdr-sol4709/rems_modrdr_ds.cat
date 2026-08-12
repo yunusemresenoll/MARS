@@ -1,0 +1,350 @@
+PDS_VERSION_ID = PDS3
+LABEL_REVISION_NOTE  = "2011-08-26 REMS Team, initial;
+                        2013-02-27 lmora, post-landing updates;
+                        2013-05-20 lmora, note on UV sensor degradation;
+                        2013-08-09 lmora, updates on air temperature sensor;
+                        2013-11-11 lmora, updates on humidity sensor;
+                        2015-06-30 lmora, new data updates;
+                        2016-06-17, lmora, PRODUCER_FULL_NAME update;
+                        2017-02-16, lmora, wind sensor status updates;
+                        2022-11-15, lmora, PRODUCER_FULL_NAME update"
+RECORD_TYPE          = STREAM
+
+OBJECT     = DATA_SET
+  DATA_SET_ID = "MSL-M-REMS-5-MODRDR-V1.0"
+
+  OBJECT     = DATA_SET_INFORMATION
+
+    DATA_SET_NAME                  = "MSL MARS ROVER ENV MONITORING STATION 
+                                      5 MODRDR V1.0"
+    DATA_SET_TERSE_DESC            = "MSL Rover Environmental Monitoring
+                                      Station Models Reduced Data Record"
+    DATA_SET_COLLECTION_MEMBER_FLG = N
+    DATA_OBJECT_TYPE               = TABLE
+    START_TIME                     = 2012-08-07T04:04:38.536
+    STOP_TIME                      = 2025-11-05T00:32:56.288
+    DATA_SET_RELEASE_DATE          = 2026-03-17
+    PRODUCER_FULL_NAME             = "EDUARDO SEBASTIAN"
+    DETAILED_CATALOG_FLAG          = N
+    CITATION_DESC                  = "Gomez-Elvira, J., Mars Science 
+                                      Laboratory Rover Environmental
+                                      Monitoring Station RDR Data
+                                      V1.0, MSL-M-REMS-5-MODRDR-V1.0,
+                                      NASA Planetary Data System, 2013."
+    ABSTRACT_DESC                  = "Data taken by the sensors of the
+                                      Rover Environmental Monitoring
+                                      Station (REMS) aboard the 
+                                      Mars Science Laboratory, in physical
+                                      units, with corrections and modeling."
+    DATA_SET_DESC                  = "
+
+  Data Set Overview
+  =================
+    The REMS instrument is a meteorological suite of sensors designed
+    to provide measurements of air and ground temperatures, wind speed
+    and direction, pressure, humidity and ultraviolet radiation.
+
+    The REMS MODRDR data set contains processed REMS data converted to
+    environmental magnitudes and corrected by factors having an
+    influence in the measurements (such as rover heat sources, shadows
+    and dust, among others).
+
+    The corrections at this level have been applied either by models,
+    by removing invalid data, or by selecting the most representative
+    data (e.g. minimum of several sensors). In the case of the Wind
+    Sensor, modelling includes not only corrections but also the
+    estimation of the wind data itself. All the original data can be
+    found in the previous processing levels.
+
+    Data is a time ordered sequence of rows organized into a table,
+    taken at a maximum resolution of one second. Each data product
+    contains one sol worth of activity and has information from all
+    sensors.
+
+    Like in the ENVRDR there is a confidence level code for each
+    sensor.
+
+    This data set is the highest processing level produced by the REMS
+    team. It should be of interest to anyone wanting to know Mars
+    environmental information at the rover's location.
+
+
+  Parameters
+  ==========
+    This data set includes the following information:
+
+    - Wind sensor: horizontal and vertical wind speed, wind direction.
+    - Ground Temperature Sensor: brightness temperature of thermopile
+      A (band 8-14 um) and its estimated uncertainty.
+    - Air Temperature Sensor: local air temperature around each boom
+      and an estimated ambient temperature around the rover,
+      calculated after a filtering of both local air temperatures.
+    - Ultraviolet Sensor: ultraviolet radiation for each band and
+      their estimated uncertainties.
+    - Humidity Sensor: local relative humidity, volume mixing ratio,
+      their estimated calibration uncertainties and the sensor
+      operating temperature.
+    - Pressure Sensor: pressure and its uncertainty. Pressure Sensor
+      configuration (oscillator and low/high resolution mode).
+
+    Sampling is at 1Hz maximum, with a baseline operation of 5 minutes
+    every hour. Additional measurements can be taken on an on-demand
+    basis beyond those hourly observations. For these additional
+    measurements, and besides tactical day to day conditions and
+    resources, there is a general pattern that covers selected hours
+    of the day built by the scientific team during operations. That
+    pattern is shifted from sol to sol to cover the whole 24 hours
+    after a few sols.
+
+    Additionally, extended measurements can also be triggered
+    automatically if event mode is activated, in which case the REMS
+    computer will decide or not to continue measuring after the
+    regular cadence, by comparing the previous measurements with the
+    expected trend. The objective is to capture any ongoing transitory
+    atmospheric event.
+
+    During the first 72 sols, for each 5 minute block, the following
+    measurement strategy was used: Wind Sensor is switched off for 60
+    seconds, then it is switched on for 235 seconds, and then it is
+    switched off again for the final 5 seconds. The rest of the
+    sensors are switched on all the time. This strategy was based on
+    results obtained during pre-flight testing. However, after
+    evaluating flight data, it was determined that this strategy was
+    not necessary, so from sol 73 onwards all sensors are switched on
+    for each 5 minute block.
+
+    From sol 793 onwards, a new measurement strategy for Humidity
+    Sensor was introduced. It is called HS HRIM (Humidity Sensor High
+    Resolution Interval Mode) and is only used on selected one-hour
+    long observations. This new strategy intends to minimize heating
+    of the Humidity Sensor, and consists of alternately switching on
+    and off the sensor at periodic intervals. At the same time, Boom 2
+    is switched off, which means that there are no Wind Sensor and Air
+    Temperature Sensor measurements.
+
+
+  Processing
+  ==========
+    Processing starts with the generation of the REMS EDRs. The REMS
+    EDR data products are generated by the MIPL (Multimission Image
+    Processing Laboratory) at JPL, under the OPGS, using the telemetry
+    processing software called MSLEdrGen. This software will convert
+    the binary data received from telemetry to ASCII. EDRs will then
+    be retrieved at Centro de Astrobiologia (INTA-CSIC) using the File
+    Exchange Interface (FEI).
+
+    EDR data products have a first automatic process using calibration
+    data. The result of this is the TELRDR data set, which contains
+    electrical magnitudes and thermal data. In parallel, using
+    ancillary data provided by JPL (such as rover location, sun
+    position) the ADRs (Ancillary Data Records) are generated. EDRs,
+    TELRDRs, ADRs, and calibration data are processed together to
+    obtain the ENVRDRs.
+    
+    The level of processing of the ENVRDRs includes environmental
+    magnitudes with minimal corrections (mainly based on the
+    degradation of the sensors). Finally, applying models developed by
+    the REMS team and refining them with the confidence levels, the
+    MODRDR data set is created.
+
+    The processing to be applied to convert ENVRDR to MODRDR is the
+    following:
+
+    - Wind Sensor: application of an inverse model (based on
+      calibration tests on a wind tunnel) to convert differential
+      thermal conductances to wind speed and direction. Data too
+      noisy, data taken with voltage out of range, and data taken with
+      a gain not fully characterized is removed.
+    - Ground Temperature Sensor: removed data from thermopiles B and C
+      since their uncertainty is too high. Removed data not in
+      calibration sequence or acquired when ASIC temperature is unstable.
+    - Air Temperature Sensor: application of a model to get the local
+      air temperature around each boom, by using the individual PT1000
+      sensors temperatures. Afterwards, a a single air temperature is
+      calculated by filtering those two local air temperatures.
+    - Ultraviolet Sensor: removed data measured when SZA (Solar
+      Zenith Angle) is in a range which causes internal reflections inside
+      the photodiodes. Data measured when the rover or the arm were
+      moving is also removed.
+    - Humidity Sensor: the median of the three humidity channels is
+      calculated to get the local relative humidity. Volume Mixing
+      Ratio is also calculated.
+    - Pressure Sensor: data with drift correction applied.
+
+    ADRs are used mainly to populate the confidence level codes found
+    in MODRDRs. Some of those confidence levels take into account the
+    projection of the shadows over the sensors using positions and
+    locations contained in the ADRs.
+    
+    Finally, with a one to one time match between ENVRDR and MODRDR,
+    the resulting data is integrated into a single table.
+
+
+  Data
+  ====
+    Each REMS MODRDR product in the data set is an ASCII table
+    containing all sensors data. Each row contains an acquisition 
+    session, and columns contain the sensors values.
+
+    Columns with related information are placed together, in the
+    following order: time references (REMS clock, LMST and LTST), Wind
+    Sensor, Ground Temperature Sensor, Air Temperature Sensor,
+    Ultraviolet Sensor, Humidity Sensor and Pressure Sensor.
+
+    REMS clock is synced with the spacecraft clock (SCLK) with a
+    maximum deviation of 30 sg. LTST is given with respect to the
+    rover position, in contrast with LTST given in REMS EDR labels and
+    in other MSL data, which is given with respect to landing site.
+
+    A confidence level code for each sensor is included. This code
+    indicates the quality of the data by a string of zeroes and ones.
+    Each character represents a factor by a '1' (good condition) or a
+    '0' (bad condition). The higher the number of ones, the more
+    reliable the measured magnitude is. The character 'X' may be
+    present in some codes for factors whose value is not known at the
+    moment of the data generation. A detailed description of the
+    confidence levels can be found in the REMS RDR SIS.
+
+    In addition to confidence level codes, some sensors include an
+    estimation of the uncertainty in the provided data in another
+    column.
+
+    Columns are delimited by commas and are of fixed length. Rows are
+    time ordered and are separated by a carriage return/line
+    feed. Each table contains a sol of measurements.
+
+    Data may be set to UNK if their value is not known and it will
+    never be (such as saturation, or a specific sensor switched off
+    during acquisition). They may also be set to NULL if their value
+    is not known at the moment of the release of the data set, but it
+    is expected to be known in a future release. If data from a sensor
+    is set to UNK or NULL, its associated confidence level code will
+    also be set to UNK or NULL.
+
+
+  Ancillary Data
+  ==============
+    The ancillary data used in the generation of MODRDR data are
+    laboratory calibration data and ADRs.
+    
+    Calibration data can be found in the CALIB directory. Calibration
+    files are in plain ASCII text format. They are structured in a PDS
+    label-like structure, with the form DATA = VALUE, each value
+    taking up one line. A file per sensor is provided.
+
+    The following information is contained in the ADRs: 
+
+    Solar azimuth and elevation
+    Rover azimuth, elevation, altitude, pitch, yaw and roll
+    Rover speed
+    Masthead azimuth and elevation
+    Rover temperatures
+    UV sensor dust attenuation
+
+
+  Coordinate System
+  =================
+    This data set depends on several coordinate systems used in the MSL
+    project. These are:
+
+    - MSL_TOPO frame, fixed to landing site, is used to define rover
+      position.
+    - MSL_LOCAL_LEVEL, fixed to the rover, is used to define rover
+      orientation (roll, pitch and yaw angles)
+    - MSL_RSM_ZERO_AZ frame, fixed to the rover, is used to define
+      rover remote sensor mast (RSM) azimuth.
+    - MSL_RSM_ZERO_EL, fixed to the rover, is used to define rover
+      remote sensor mast (RSM) elevation.
+    - MSL_ROVER_MECH, fixed to the rover, is used to define Sun
+      position angles (azimuth and elevation)
+
+
+  Software
+  ========
+    No software is provided in this data set. The RDR tables are simple
+    ASCII files that can be displayed on UNIX, Macintosh, and PC
+    platforms with common software.
+
+"
+    CONFIDENCE_LEVEL_NOTE = "
+
+  Confidence Level Overview
+  =========================
+    Since MODRDRs are the last step in the REMS data processing
+    pipeline, its reliability largely depends on that of all the data
+    from previous processing steps.
+
+    In addition, it also depends on the selection of parameters and
+    modeling used by the REMS team.
+
+    From sol 155 onwards, the Ultraviolet Sensor has been degraded
+    beyond its operational functional requirements. This is caused by
+    deposition of dust over it, which has made the attenuation of the
+    signal to be greater than 10%.
+
+    Wind Sensor data of boards 2 and 3 in boom 1 are not provided as
+    they were damaged during landing. In addition, the following Wind
+    Sensor boards in boom 2 are not operative starting on given sols:
+
+    - Board 1, dice 1: since sol 854
+    - Board 2: since sol 1485
+    - Board 3: since sol 1491
+    - Board 1: since sol 1504
+
+
+  Review
+  ======
+    The REMS RDRs were reviewed internally by the REMS team prior to
+    release to the PDS. PDS also performed an external peer review of
+    the REMS RDRs.
+
+
+  Data Coverage and Quality
+  =========================
+    Each MODRDRs table provides sensors values measured during one
+    sol. Data is dependent on REMS EDRs data products, pre-flight
+    calibration data, SPICE data and ancillary data.
+   
+    Sensors switched off at the time of measurement are set to
+    UNK. Data removed from ENVRDRs due to being unreliable are set to
+    UNK in their corresponding sessions in the MODRDRs.
+
+    Confidence level codes whose correspondent values are UNK or NULL
+    are also set to UNK and NULL respectively.
+
+    Wind data is preliminary and is pending further revision. Only
+    horizontal speed and direction is given due to damage in wind
+    boards.
+
+    Degradation of the Ultraviolet Sensor from sol 155 onwards is
+    flagged in its confidence level code as having an attenuation above
+    10%.
+
+
+  Limitations
+  ===========
+    These data has been subjected to estimations and corrections. To
+    check the original data, refer to ENVRDR and TELRDR records.
+      "
+  END_OBJECT           = DATA_SET_INFORMATION
+
+  OBJECT               = DATA_SET_MISSION
+    MISSION_NAME       = "MARS SCIENCE LABORATORY"
+  END_OBJECT           = DATA_SET_MISSION
+
+  OBJECT               = DATA_SET_TARGET
+    TARGET_NAME        = MARS
+  END_OBJECT           = DATA_SET_TARGET
+
+  OBJECT               = DATA_SET_HOST
+    INSTRUMENT_HOST_ID = MSL
+    INSTRUMENT_ID      = REMS
+  END_OBJECT           = DATA_SET_HOST
+
+  OBJECT               = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID   = "GOMEZELVIRAETAL2012"
+  END_OBJECT           = DATA_SET_REFERENCE_INFORMATION
+
+END_OBJECT             = DATA_SET
+
+END

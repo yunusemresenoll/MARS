@@ -1,0 +1,64 @@
+{
+  "dataset_id": "mars.usgs.sim3292.vector-layers",
+  "source_id": "usgs-sim3292-2014",
+  "target": "Mars",
+  "processing_state": "ARCHIVED_DERIVED",
+  "products": [
+    {
+      "product_id": "sim3292_global_geology",
+      "property_id": "geology.map_unit_code",
+      "data_path": "resources/archive/usgs-sim3292/sim3292_database.zip",
+      "label_path": "resources/archive/usgs-sim3292/sim3292_metadata.xml",
+      "data_member": "SIM3292_MarsGlobalGeologicGIS_20M/SIM3292_Shapefiles/SIM3292_Global_Geology.dbf",
+      "record_count_method": "ZIP_DBF_RECORDS",
+      "records": 1311,
+      "canonical_source_unit": null,
+      "structure": {
+        "geometry": "POLYGON",
+        "geometry_member": "SIM3292_MarsGlobalGeologicGIS_20M/SIM3292_Shapefiles/SIM3292_Global_Geology.shp",
+        "map_scale": "1:20000000",
+        "horizontal_tie": "MOLA",
+        "minimum_outcrop_width_km": 40,
+        "minimum_outcrop_length_km": 100
+      },
+      "observation_period": null,
+      "notes": "DBF kayıt sayısı ZIP içinden doğrulanır. Geometri, eş adlı SHP/SHX üyelerindedir."
+    },
+    {
+      "product_id": "sim3292_global_contacts",
+      "property_id": "geology.contact_type",
+      "data_path": "resources/archive/usgs-sim3292/sim3292_database.zip",
+      "label_path": "resources/archive/usgs-sim3292/sim3292_metadata.xml",
+      "data_member": "SIM3292_MarsGlobalGeologicGIS_20M/SIM3292_Shapefiles/SIM3292_Global_Contacts.dbf",
+      "record_count_method": "ZIP_DBF_RECORDS",
+      "records": 3800,
+      "canonical_source_unit": null,
+      "structure": {
+        "geometry": "POLYLINE",
+        "geometry_member": "SIM3292_MarsGlobalGeologicGIS_20M/SIM3292_Shapefiles/SIM3292_Global_Contacts.shp",
+        "map_scale": "1:20000000",
+        "minimum_line_spacing_km": 40
+      },
+      "observation_period": null,
+      "notes": "Certain, Approximate, Border ve Internal dokanak sınıflarını içerir."
+    },
+    {
+      "product_id": "sim3292_global_structure",
+      "property_id": "geology.structure_morphology",
+      "data_path": "resources/archive/usgs-sim3292/sim3292_database.zip",
+      "label_path": "resources/archive/usgs-sim3292/sim3292_metadata.xml",
+      "data_member": "SIM3292_MarsGlobalGeologicGIS_20M/SIM3292_Shapefiles/SIM3292_Global_Structure.dbf",
+      "record_count_method": "ZIP_DBF_RECORDS",
+      "records": 3593,
+      "canonical_source_unit": null,
+      "structure": {
+        "geometry": "POLYLINE",
+        "geometry_member": "SIM3292_MarsGlobalGeologicGIS_20M/SIM3292_Shapefiles/SIM3292_Global_Structure.shp",
+        "map_scale": "1:20000000",
+        "minimum_feature_length_km": 100
+      },
+      "observation_period": null,
+      "notes": "Morfoloji, köken, yorum ve korunmuşluk alanlarını içerir."
+    }
+  ]
+}

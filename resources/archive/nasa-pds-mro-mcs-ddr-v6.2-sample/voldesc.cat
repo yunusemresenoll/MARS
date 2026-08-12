@@ -1,0 +1,50 @@
+PDS_VERSION_ID               = PDS3
+RECORD_TYPE                  = STREAM
+
+OBJECT                       = VOLUME
+  VOLUME_SERIES_NAME         = "MISSION TO MARS"
+  VOLUME_SET_ID              = "USA_NASA_JPL_MROM_2xxx"
+  VOLUME_SET_NAME            = "MARS CLIMATE SOUNDER DDR"             
+  VOLUMES                    = 1
+  VOLUME_ID                  = "MROM_2104"                            
+  VOLUME_VERSION_ID          = "VERSION 3"                            
+  VOLUME_NAME                = "VOLUME 2104:  APRIL 2015"             
+  PUBLICATION_DATE           =  2008-05-20
+  DATA_SET_ID                = "MRO-M-MCS-5-DDR-V6.2"                 
+  MEDIUM_TYPE                = "CD-ROM"
+  VOLUME_FORMAT              = "ISO-9660_LEVEL2"
+
+  MISSION_NAME               = "MARS RECONNAISSANCE ORBITER"
+  SPACECRAFT_NAME            = "MARS RECONNAISSANCE ORBITER"
+  SPACECRAFT_ID              = MRO
+  INSTRUMENT_ID              = "MCS"
+
+  DESCRIPTION                = "This volume contains geophysical profile data
+                                from the MRO MCS Instrument"
+
+  OBJECT                     = DATA_PRODUCER 
+    INSTITUTION_NAME         = "JET PROPULSION LABORATORY"     
+    FACILITY_NAME            = "JET PROPULSION LABORATORY"
+    FULL_NAME                = "DANIEL J. MCCLEESE"              
+    DISCIPLINE_NAME          = "ATMOSPHERES"
+    ADDRESS_TEXT             = "JET PROPULSION LABORATORY
+                                MAIL STOP 301-345
+                                4800 OAK GROVE DRIVE
+                                PASADENA, CA 91109"
+    TELEPHONE_NUMBER         = "8183542317"
+    ELECTRONIC_MAIL_TYPE     = "INTERNET"
+    ELECTRONIC_MAIL_ID       = "DANIEL.J.MCCLEESE@JPL.NASA.GOV"
+  END_OBJECT                 = DATA_PRODUCER    
+     
+  OBJECT                     = CATALOG
+    ^MISSION_CATALOG         = "MISSION.CAT"
+    ^INSTRUMENT_HOST_CATALOG = "INSTHOST.CAT"
+    ^INSTRUMENT_CATALOG      = "INST.CAT"
+    ^DATA_SET_CATALOG        = "DATASET.CAT"
+    ^PERSONNEL_CATALOG       = "PERSON.CAT"
+    ^REFERENCE_CATALOG       = "REF.CAT"
+  END_OBJECT                 = CATALOG
+
+END_OBJECT                   = VOLUME
+
+END

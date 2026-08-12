@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1L00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Bundle
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 	https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1L00.xsd"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:maven_ngims</logical_identifier>
+    <version_id>1.1</version_id>
+    <title>MAVEN Neutral Gas and Ion Mass Spectrometer Data</title>
+    <information_model_version>1.21.0.0</information_model_version>  <!--RChen was 1.1.0.0; needed <doi>-->
+    <product_class>Product_Bundle</product_class>
+    <Citation_Information>
+      <author_list>Elrod, M. K.; Benna, M.;Navas, T.</author_list>
+      <publication_year>2014</publication_year>
+      <doi>10.17189/1518931</doi>
+      <description>
+        This bundle contains the data collected by the Neutral Gas and Ion Mass
+        Spectrometer (NGIMS) instrument aboard the Mars Atmosphere and Volatile
+        EvolutioN (MAVEN) satellite, along with
+        the documents and other information necessary for the
+        interpretation of that data.
+      </description>
+    </Citation_Information>
+  </Identification_Area>
+  <Context_Area>
+    <Investigation_Area>
+      <name>MAVEN</name>
+      <type>Mission</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:mission.maven</lid_reference>
+        <reference_type>bundle_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+    <Observing_System>
+        <name>MAVEN</name>
+        <Observing_System_Component>
+            <name>NGIMS</name>
+            <type>Instrument</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:instrument:ngims.maven</lid_reference>
+                <reference_type>is_instrument</reference_type>
+            </Internal_Reference>
+        </Observing_System_Component>
+        <Observing_System_Component>
+            <name>MAVEN</name>
+            <type>Host</type>  <!--RChen was Spacecraft-->
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.maven</lid_reference>
+                <reference_type>is_instrument_host</reference_type>
+            </Internal_Reference>
+        </Observing_System_Component>
+    </Observing_System>
+    <Target_Identification>
+        <name>Mars</name>
+        <type>Planet</type>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+            <reference_type>data_to_target</reference_type>
+        </Internal_Reference>
+    </Target_Identification>
+  </Context_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:resource:resource.maven_ngims_online</lid_reference>
+      <reference_type>has_resource</reference_type>
+    </Internal_Reference>
+  </Reference_List>
+  <Bundle>
+    <bundle_type>Archive</bundle_type>
+  </Bundle>
+  <File_Area_Text>
+    <File>
+      <file_name>ngims_readme.txt</file_name>
+    </File>
+    <Stream_Text>
+      <offset unit="byte">0</offset>
+      <parsing_standard_id>7-Bit ASCII Text</parsing_standard_id>
+      <record_delimiter>Carriage-Return Line-Feed</record_delimiter>  <!--RChen was carriage-return line-feed-->
+    </Stream_Text>
+  </File_Area_Text>
+  <Bundle_Member_Entry>
+    <lid_reference>urn:nasa:pds:maven_ngims:calibration</lid_reference>
+    <member_status>Primary</member_status>
+    <reference_type>bundle_has_data_collection</reference_type>
+  </Bundle_Member_Entry>
+  <Bundle_Member_Entry>
+    <lid_reference>urn:nasa:pds:maven_ngims:l1a</lid_reference>
+    <member_status>Primary</member_status>
+    <reference_type>bundle_has_data_collection</reference_type>
+  </Bundle_Member_Entry>
+  <Bundle_Member_Entry>
+    <lid_reference>urn:nasa:pds:maven_ngims:l2</lid_reference>
+    <member_status>Primary</member_status>
+    <reference_type>bundle_has_data_collection</reference_type>
+  </Bundle_Member_Entry>
+  <Bundle_Member_Entry>
+      <lid_reference>urn:nasa:pds:maven_ngims:l1b</lid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+  </Bundle_Member_Entry>
+  <Bundle_Member_Entry>
+      <lid_reference>urn:nasa:pds:maven_ngims:l3</lid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+  </Bundle_Member_Entry>
+  <Bundle_Member_Entry>
+    <lid_reference>urn:nasa:pds:maven_ngims:document</lid_reference>
+    <member_status>Primary</member_status>
+    <reference_type>bundle_has_document_collection</reference_type>
+  </Bundle_Member_Entry>
+  <Bundle_Member_Entry>
+    <lid_reference>urn:nasa:pds:maven_ngims:context</lid_reference>
+    <member_status>Primary</member_status>
+    <reference_type>bundle_has_context_collection</reference_type>
+  </Bundle_Member_Entry>
+  <Bundle_Member_Entry>
+    <lid_reference>urn:nasa:pds:maven_ngims:xml_schema</lid_reference>
+    <member_status>Primary</member_status>
+    <reference_type>bundle_has_schema_collection</reference_type>
+  </Bundle_Member_Entry>  
+</Product_Bundle>

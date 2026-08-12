@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1J00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/mission/ody/v1/PDS4_ODY_1J00_1030.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Observational xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:ody="http://pds.nasa.gov/pds4/mission/ody/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1J00.xsd
+    http://pds.nasa.gov/pds4/mission/ody/v1 https://pds.nasa.gov/pds4/mission/ody/v1/PDS4_ODY_1J00_1030.xsd
+                        ">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:odyssey_grs_special:data:ns_fast_020917</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Mars Odyssey GRS special science product: ns_fast_020917</title>
+        <information_model_version>1.19.0.0</information_model_version>
+        <product_class>Product_Observational</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2026-01-20</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial PDS4 version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Observation_Area>
+        <Time_Coordinates>
+            <start_date_time>2002-03-20T00:00:00.000Z</start_date_time>
+            <stop_date_time>2002-04-18T00:00:00.000Z</stop_date_time>
+        </Time_Coordinates>
+        <Investigation_Area>
+            <name>Mars Odyssey</name>
+            <type>Mission</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:investigation:mission.2001_mars_odyssey</lid_reference>
+                <reference_type>data_to_investigation</reference_type>
+            </Internal_Reference>
+        </Investigation_Area>
+        <Observing_System>
+            <Observing_System_Component>
+                <name>2001 MARS ODYSSEY</name>
+                <type>Host</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.ody</lid_reference>
+                    <reference_type>is_instrument_host</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+            <Observing_System_Component>
+                <name>NEUTRON SPECTROMETER</name>
+                <type>Instrument</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument:ody.ns</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+        </Observing_System>
+        <Target_Identification>
+            <name>Mars</name>
+            <type>Planet</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+                <reference_type>data_to_target</reference_type>
+            </Internal_Reference>
+        </Target_Identification>
+        <Mission_Area>
+            <ody:ODY_Parameters>
+                <ody:GRS_Observation_Information>
+                    <ody:release_number>1</ody:release_number>
+                    <ody:product_type>GRS_SPECIAL</ody:product_type>
+                    <ody:mission_phase_name>MAPPING</ody:mission_phase_name>
+                </ody:GRS_Observation_Information>
+            </ody:ODY_Parameters>
+        </Mission_Area>
+    </Observation_Area>
+    <Reference_List>
+        <External_Reference>
+            <doi>10.1126/science.1073541</doi>
+            <reference_text>W. C. Feldman et al., Global Distribution of Neutrons from Mars: Results from Mars Odyssey. Science 297, 75-78 (2002). DOI:10.1126/science.1073541</reference_text>
+            <description>The paper that uses this Neutron Spectrometer product</description>
+        </External_Reference>
+    </Reference_List>
+    <File_Area_Observational>
+        <File>
+            <file_name>ns_fast_020917.tab</file_name>
+            <creation_date_time>2002-09-17T00:00:00.000Z</creation_date_time>
+        </File>
+        <Table_Character>
+            <name>NS FAST NEUTRON FLUX</name>
+            <local_identifier>ns_fast_neutron_flux</local_identifier>
+            <offset unit="byte">0</offset>
+            <records>259200</records>
+            <description>
+                This table contains data used
+                to generate the fast neutron maps in Figures 1 and 2 in
+                Feldman et al., Global Distribution of Neutrons from Mars: 
+                Results from Mars Odyssey, Science, 297, 75-78, 2002. The 
+                figures are maps of thermal, epithermal, and fast neutron 
+                flux measured by the Neutron Spectrometer over the first 25.7
+                days of mapping.
+            </description>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <Record_Character>
+                <fields>3</fields>
+                <groups>0</groups>
+                <record_length unit="byte">26</record_length>
+                <Field_Character>
+                    <name>LONGITUDE</name>
+                    <field_number>1</field_number>
+                    <field_location unit="byte">1</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">7</field_length>
+                    <unit>DEGREE</unit>
+                    <description>Longitude of center of 0.5 by 0.5
+                        degree area. Values range from 0 to 360, increasing to the
+                        east.</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>LATITUDE</name>
+                    <field_number>2</field_number>
+                    <field_location unit="byte">10</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">6</field_length>
+                    <unit>DEGREE</unit>
+                    <description>Latitude of center of 0.5 by 0.5
+                        degree area.</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>FAST NEUTRON FLUX</name>
+                    <field_number>3</field_number>
+                    <field_location unit="byte">18</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">7</field_length>
+                    <unit>counts/second</unit>
+                    <description>Fast neutron flux for the
+                        given 0.5 by 0.5 degree area, in counts per second.</description>
+                    <Special_Constants>
+                        <invalid_constant>-99.999</invalid_constant>
+                    </Special_Constants>
+                </Field_Character>
+            </Record_Character>
+        </Table_Character>
+    </File_Area_Observational>
+    <File_Area_Observational_Supplemental>
+        <File>
+            <file_name>ns_fast_020917.lbl</file_name>
+            <creation_date_time>2002-09-17T00:00:00.000Z</creation_date_time>
+        </File>
+        <Stream_Text>
+            <offset unit="byte">0</offset>
+            <parsing_standard_id>PDS3</parsing_standard_id>
+            <description>PDS3 label</description>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+        </Stream_Text>
+    </File_Area_Observational_Supplemental>
+</Product_Observational>

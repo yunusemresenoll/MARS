@@ -1,0 +1,122 @@
+PDS_VERSION_ID                     = PDS3                                     
+LABEL_REVISION_NOTE                = "2013-07-23: J. Peterson;                
+2013-08-01, PDS PPI;                                                          
+2013-08-17, PDS PPI;                                                          
+2018-08-06, PPI, removed ARCHIVE_STATUS keyword;                              
+2024-02-21, PPI, updated START_TIME, STOP_TIME, RELEASE_DATE                  
+2024-08-02, PPI, updated START_TIME, STOP_TIME, RELEASE_DATE                  
+2024-12-09, PPI, updated START_TIME, STOP_TIME, RELEASE_DATE                  
+2025-03-17, PPI, updated STOP_TIME, RELEASE_DATE                              
+2025-08-01, PPI, updated STOP_TIME, RELEASE_DATE                              
+2025-12-05, PPI, updated STOP_TIME, RELEASE_DATE                              
+2026-03-17, PPI, updated STOP_TIME, RELEASE_DATE"                             
+RECORD_TYPE                        = STREAM                                   
+                                                                              
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "MSL-M-RAD-3-RDR-V1.0"                   
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "MSL MARS RADIATION ASSESSMENT           
+                                      DETECTOR RDR"                           
+    DATA_SET_COLLECTION_MEMBER_FLG = "N"                                      
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+    START_TIME                     = 2011-11-20T18:24:41                      
+    STOP_TIME                      = 2025-11-05T01:25:27                      
+    DATA_SET_RELEASE_DATE          = 2025-12-05                               
+    PRODUCER_FULL_NAME             = "SWRI MSLRAD TEAM"                       
+    DETAILED_CATALOG_FLAG          = "N"                                      
+    DATA_SET_TERSE_DESC            = "                                        
+Mars Science Laboratory Radiation Assessment Detector Reduced                 
+Data Record"                                                                  
+                                                                              
+    CITATION_DESC                  = "J. Peterson, S. Rafkin,                 
+C. Zeitlin, B. Ehresmann, E. Weigle, S. Jeffers, and D.M. Hassler,            
+MSL MARS RADIATION ASSESSMENT DETECTOR RDR V1.0, MSL-M-RAD-3-RDR-V1.0,        
+NASA Planetary Data System, 2013."                                            
+                                                                              
+    ABSTRACT_DESC                  = "This data set contains the RDR          
+data from the MSL Radiation Assessment Detector (RAD) instrument.             
+The RDR data are calibrated data reconstructed from EDR data."                
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+                                                                              
+  Data Set Overview                                                           
+  =================                                                           
+                                                                              
+This data set contains data that is useful for determining                    
+the energetic particle environment experienced by the Mars Science            
+Laboratory rover at the surface of Mars. The RDR data products are            
+calibrated data reconstructed from EDR data and formatted                     
+according to the RAD RDR Software Interface Specification (RDR                
+SIS).                                                                         
+                                                                              
+                                                                              
+  Processing                                                                  
+  ==========                                                                  
+                                                                              
+The Committee On Data Management and Computation (CODMAC) data                
+level numbering system is used to describe the processing level of            
+the RDR data product.  RAD RDR data products are considered CODMAC Level      
+3 or Calibrated Data (equivalent to NASA level 1-A) products.  The RDR        
+data files are generated from RAD EDR data.  RDR data files are ASCII         
+text, and each one spans either a Sol (if data is from the surface -          
+after landing) or an Earth day (if data is from cruise to Mars).              
+EDR data is first ingested into the RAD team's database, and then             
+RDR files are created from this data, enabling straightforward                
+sorting by Sol or date.                                                       
+                                                                              
+                                                                              
+  Data                                                                        
+  ====                                                                        
+                                                                              
+Each RAD RDR product consists of two files.  The first file is an             
+ASCII formatted detached PDS label. The second file is an ASCII               
+data file for a RAD Sol/date.  The data in a RAD RDR file is derived          
+from RAD EDR data, but numeric information is uncompressed,                   
+calibrated to physical units, and converted to ASCII.  The data is            
+presented in a generally human-readable form, but lines can be                
+very long in order to maintain machine-readability as well.	                  
+                                                                              
+                                                                              
+  Software                                                                    
+  ========                                                                    
+                                                                              
+No software support is provided.                                              
+                                                                              
+                                                                              
+  Media/Format                                                                
+  ============                                                                
+                                                                              
+The data set will be delivered and kept online.                               
+                                                                              
+                                                                              
+                                                                              
+"                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+RDR Data have been reviewed by the RAD team and/or software to                
+check for data set completeness and screened for non-physical                 
+values such as negative energy.  RAD finds no obvious errors in               
+the data at this time."                                                       
+                                                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = MARS                                     
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID             = MSL                                      
+    INSTRUMENT_ID                  = RAD                                      
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+   OBJECT                          = DATA_SET_MISSION                         
+     MISSION_NAME                  = "MARS SCIENCE LABORATORY"                
+   END_OBJECT                      = DATA_SET_MISSION                         
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "HASSLERETAL2012"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+END_OBJECT                         = DATA_SET                                 
+END                                                                           
+                                                                              

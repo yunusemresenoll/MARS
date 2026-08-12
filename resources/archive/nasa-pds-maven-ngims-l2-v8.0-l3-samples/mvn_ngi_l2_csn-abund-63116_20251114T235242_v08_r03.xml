@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1100.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+	http://pds.nasa.gov/pds4/schema/released/pds/v1/PDS4_PDS_1100.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:maven_ngims:l2:mvn_ngi_l2_csn-abund-63116_20251114t235242</logical_identifier>
+        <version_id>8.3</version_id>
+        <title>Calibrated NGIMS Science Data</title>
+        <information_model_version>1.1.0.0</information_model_version>
+        <product_class>Product_Observational</product_class>
+    </Identification_Area>
+    <Observation_Area>
+        <Time_Coordinates>
+            <start_date_time>2025-11-15T00:00:54Z</start_date_time>
+            <stop_date_time>2025-11-15T01:32:13Z</stop_date_time>
+        </Time_Coordinates>
+        <Primary_Result_Summary>
+            <purpose>Science</purpose>
+            <processing_level>Derived</processing_level>
+      		<Science_Facets>
+                <domain>Atmosphere</domain>
+                <discipline_name>Atmospheres</discipline_name>
+                <facet1>Structure</facet1>
+      		</Science_Facets>
+        </Primary_Result_Summary>
+        <Investigation_Area>
+            <name>MAVEN with Neutral Gas and Ion Mass Spectrometer</name>
+            <type>Mission</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:investigation:mission.maven</lid_reference>
+                <reference_type>data_to_investigation</reference_type>
+            </Internal_Reference>
+        </Investigation_Area>
+        <Observing_System>
+            <name>MAVEN</name>
+            <Observing_System_Component>
+                <name>Neutral Gas and Ion Mass Spectrometer</name>
+                <type>Instrument</type>
+                <description>
+                    The MAVEN Neutral Gas and Ion Mass Spectrometer (NGIMS) instrument
+                    description is included in the MAVEN NGIMS Software
+                    Interface Specification (SIS) file 'ngims_pds_sis.docx'
+                    in the document collection of the MAVEN NGIMS bundle.
+                </description>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument:ngims.maven</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+            <Observing_System_Component>
+                <name>MAVEN</name>
+                <type>Spacecraft</type>
+                <description>
+                    The MAVEN spacecraft description document is included
+                    as a secondary member of the document collection of the
+                    MAVEN NGIMS bundle.
+                </description>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.maven</lid_reference>
+                    <reference_type>is_instrument_host</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+        </Observing_System>
+        <Target_Identification>
+            <name>Mars</name>
+            <type>Planet</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+                <reference_type>data_to_target</reference_type>
+            </Internal_Reference>
+        </Target_Identification>
+    </Observation_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:maven_ngims:document:ngims_pds_sis</lid_reference>
+            <reference_type>data_to_document</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:maven_ngims:document:maven_pds_spacecraft</lid_reference>
+            <reference_type>data_to_document</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <File_Area_Observational>
+        <File>
+            <file_name>mvn_ngi_l2_csn-abund-63116_20251114T235242_v08_r03.csv</file_name>
+            <local_identifier>mvn_ngi_l2_csn-abund-63116_20251114t235242</local_identifier>
+            <creation_date_time>2026-02-02T10:04:08</creation_date_time>
+            <file_size unit="byte">823551</file_size>
+            <records>4255</records>
+        </File>
+        <Header>
+            <name>Column headings for TABLE</name>
+            <local_identifier>HEADER</local_identifier>
+            <offset unit="byte">0</offset>
+            <object_length unit="byte">124</object_length>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+        </Header>
+        <Table_Delimited>
+            <name>Calbrated NGIMS Housekeeping Values</name>
+            <local_identifier>TABLE</local_identifier>
+            <offset unit="byte">124</offset>
+            <object_length unit="byte">823427</object_length>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <description>
+                A spreadsheet containing all NGIMS science data for the given
+                period of time, contains the derived products of the data (Level 2).
+            </description>
+            <records>4254</records>
+            <record_delimiter>carriage-return line-feed</record_delimiter>
+            <field_delimiter>comma</field_delimiter>
+            <Record_Delimited>
+                <fields>9</fields>
+                <groups>0</groups>
+                <Field_Delimited>
+                    <name>T_UTC</name>
+                    <field_number>1</field_number>
+                    <data_type>ASCII_Date_Time</data_type>
+                    <description>
+                        Timestamp in UTC format yyyy-mm-ddThh:mm:ss.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>T_UNIX</name>
+                    <field_number>2</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <unit>SECONDS</unit>
+                    <description>
+                        Timestamp at the start of the integration period in
+                        Universal Coordinate Time using the Unix Epoch
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>T_SCLK</name>
+                    <field_number>3</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <unit>SECONDS</unit>
+                    <description>
+                        SCLK Timestamp at the start of the integration period
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>T_TID</name>
+                    <field_number>4</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <unit>SECONDS</unit>
+                    <description>
+                        Seconds since start of this experiment run.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>TID</name>
+                    <field_number>5</field_number>
+                    <data_type>ASCII_NonNegative_Integer</data_type>
+                    <description>
+                        Unique identification number of this data
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>ORBIT</name>
+                    <field_number>6</field_number>
+                    <data_type>ASCII_NonNegative_Integer</data_type>
+                    <description>
+                        Mission Orbit Identificaion Number
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>FOCUS_MODE</name>
+                    <field_number>7</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>
+                        Text ID of the tuning in use by NGIMS during ion counting. 
+                        Can be one of 'csn', 'osnb', 'osnt' or 'osion'
+                        Descriptions of different tuning modes can be found in
+                        the SIS document accompanying this archive.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>ALT</name>
+                    <field_number>8</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <unit>KM</unit>
+                    <description>
+                        Altitude of the spacecraft during ion counting.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>LST</name>
+                    <field_number>9</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <unit>HOURS</unit>
+                    <description>
+                        local solar time in hours from midnight
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>LONG</name>
+                    <field_number>10</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <unit>DEGREES</unit>
+                    <description>
+                        longitude
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>LAT</name>
+                    <field_number>11</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <unit>DEGREES</unit>
+                    <description>
+                        latitude
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>SZA</name>
+                    <field_number>12</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <unit>DEGREES</unit>
+                    <description>
+                        solar zenith angle in degrees.
+                    </description>
+                </Field_Delimited>
+                
+                <Field_Delimited>
+                    <name>MASS</name>
+                    <field_number>13</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <unit>AMU PER ELEMENTARY CHARGE</unit>
+                    <description>
+                        Mass-to-charge ratio of ions (u/e) scanned during
+                        the integration period starting at TIME. This
+                        field is left blank during DAC scans.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>SPECIES</name>
+                    <field_number>14</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>
+                        Name of neutral mass density calculated
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>CPS_DT_BKGD</name>
+                    <field_number>15</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <unit>HERTZ</unit>
+                    <description>
+                        background subtracted deadtime corrected cps.
+                        recommend for use in all science computations
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>ABUNDANCE</name>
+                    <field_number>16</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <unit>PARTICLES_PER_CC</unit>
+                    <description>
+                        Particle density of neutrals.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>PRECISION</name>
+                    <field_number>17</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>
+                        Percent error including poisson statistics and error from interpolation to 2 second cadence.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>QUALITY</name>
+                    <field_number>18</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>
+                        Quality flag for entire run. see SIS for full list of flags.
+                    </description>
+                </Field_Delimited>
+                
+            </Record_Delimited>
+        </Table_Delimited>
+    </File_Area_Observational>
+</Product_Observational>

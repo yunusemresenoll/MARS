@@ -1,0 +1,33 @@
+{
+  "dataset_id": "mars.msl.rems.reference",
+  "dataset_version": "0.1.0",
+  "record_count": 2,
+  "records": [
+    {
+      "record_id": "mars.meteorology.rems.maximum-sampling-cadence",
+      "property_id": "meteorology.rems_sampling_cadence",
+      "status": "MEASURED",
+      "value": 1,
+      "unit": "Hz",
+      "location": {"scope": "INSTRUMENT", "platform": "MSL_CURIOSITY", "instrument": "REMS"},
+      "time": {"temporal_scope": "DATASET_REFERENCE"},
+      "uncertainty": {"kind": "NOT_APPLICABLE", "note": "Veri örnekleme tanımıdır."},
+      "source_id": "nasa-pds-msl-rems-modrdr-release41-sol4709",
+      "source_locator": "rems_modrdr_ds.cat, Data Set Overview and Parameters: maximum resolution of one second / sampling at 1 Hz maximum",
+      "notes": "Kesintisiz 1 Hz gözlem değildir; temel strateji genellikle saat başına beş dakikalık bloklardır."
+    },
+    {
+      "record_id": "mars.meteorology.rems.archived-product-sol-number.4709",
+      "property_id": "meteorology.rems_planet_day_number",
+      "status": "MEASURED",
+      "value": 4709,
+      "unit": "sol",
+      "location": {"scope": "ROVER_POINT", "platform": "MSL_CURIOSITY", "region": "GALE_CRATER"},
+      "time": {"temporal_scope": "PRODUCT", "start_utc": "2025-11-04T00:48:36.470", "stop_utc": "2025-11-05T00:32:56.288"},
+      "uncertainty": {"kind": "NOT_APPLICABLE", "note": "Ürün kimlik metadatasıdır."},
+      "source_id": "nasa-pds-msl-rems-modrdr-release41-sol4709",
+      "source_locator": "rme_815485151rmd47090000000_p1.lbl, PLANET_DAY_NUMBER = 4709",
+      "notes": "MSL inişinden itibaren görev sol numarasıdır."
+    }
+  ]
+}

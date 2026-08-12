@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/schema/released/pds/v1/PDS4_PDS_1100.sch" ?>
+<Product_Document
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 	
+  http://pds.nasa.gov/pds4/schema/released/pds/v1/PDS4_PDS_1100.xsd">
+<Identification_Area>
+    <logical_identifier>urn:nasa:pds:maven_ngims:document:ngims_tid_caveats</logical_identifier>
+    <version_id>5.2</version_id>
+    <title>NGIMS TID CAVEATS</title>
+    <information_model_version>1.1.0.0</information_model_version>
+    <product_class>Product_Document</product_class>
+    <Citation_Information>
+     	  <author_list>Vaidya, Jaykumar</author_list>
+	  <author_list>Stone, Shane</author_list>
+	  <author_list>Lee, Yuni</author_list>
+	  <author_list>Benna, Mehdi</author_list>
+      <publication_year>2026</publication_year>
+      <description>
+        The MAVEN NGIMS list of TIDs which encountered processing issues due to a variety of reasons.
+      </description>
+    </Citation_Information>
+    <Modification_History>
+        <Modification_Detail>
+            <modification_date>2015-11-16</modification_date>
+            <version_id>1.0</version_id>
+            <description>
+                This document lists which NGIMS runs could not be
+                processed into higher level products due to a
+                variety of issues such as comm passes or bad attitude.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2016-02-16</modification_date>
+            <version_id>1.4</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through November
+                15, 2015.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2016-05-02</modification_date>
+            <version_id>1.5</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through February
+                15, 2016.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2016-07-28</modification_date>
+            <version_id>1.6</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through May
+                15, 2016.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2016-11-08</modification_date>
+            <version_id>1.7</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through August
+                15, 2016.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2017-05-10</modification_date>
+            <version_id>1.8</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through February
+                15, 2017.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2017-08-10</modification_date>
+            <version_id>1.9</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through May
+                15, 2017.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2017-11-06</modification_date>
+            <version_id>2.0</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through August
+                15, 2017.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2018-01-26</modification_date>
+            <version_id>2.0</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through November
+                15, 2017.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2018-05-01</modification_date>
+            <version_id>2.3</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through February
+                15, 2018.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2018-07-26</modification_date>
+            <version_id>2.4</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through May
+                15, 2018.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2018-11-05</modification_date>
+            <version_id>2.5</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through August
+                15, 2018.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2019-02-05</modification_date>
+            <version_id>2.6</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through November
+                15, 2018.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2019-04-30</modification_date>
+            <version_id>2.7</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through
+                February 12, 2019.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2019-10-22</modification_date>
+            <version_id>2.8</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through
+                May 15, 2019.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2020-01-31</modification_date>
+            <version_id>2.9</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through
+                November 15, 2019.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2020-07-29</modification_date>
+            <version_id>3.2</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through
+                May 15, 2020.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2020-11-02</modification_date>
+            <version_id>3.3</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through
+                August 15, 2020.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2021-04-30</modification_date>
+            <version_id>3.4</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through
+                February 15, 2021.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2021-07-28</modification_date>
+            <version_id>3.4</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through
+                May 15, 2021.
+            </description>
+        </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2022-02-30</modification_date>
+            <version_id>3.4</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through
+                November 15, 2021.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2022-04-30</modification_date>
+            <version_id>3.8</version_id>
+            <description>
+                 This documents is an extension of the previously
+                 delivered document which now goes through
+                 February 22, 2022.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2022-11-01</modification_date>
+            <version_id>3.9</version_id>
+            <description>
+                 This documents is an extension of the previously
+                 delivered document which now goes through
+                 August 15, 2022.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2023-02-01</modification_date>
+            <version_id>4.1</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through
+                November 15, 2022.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2023-05-04</modification_date>
+            <version_id>4.2</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through
+                February 15, 2023.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2023-10-31</modification_date>
+            <version_id>4.3</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through
+                August 15, 2023.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2024-01-31</modification_date>
+            <version_id>4.4</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through
+                November 15, 2023.
+            </description>
+        </Modification_Detail>
+	<Modification_Detail>
+            <modification_date>2024-08-01</modification_date>
+            <version_id>4.5</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through
+                May 15, 2024.
+            </description>
+        </Modification_Detail>
+	<Modification_Detail>
+            <modification_date>2024-11-01</modification_date>
+            <version_id>4.6</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through
+                August 15, 2024.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2025-01-28</modification_date>
+            <version_id>4.7</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through
+                November 15, 2024.
+            </description>
+        </Modification_Detail>
+        <Modification_Detail>
+            <modification_date>2025-04-28</modification_date>
+            <version_id>4.8</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through February 15, 2025.
+            </description>
+        </Modification_Detail>
+	<Modification_Detail>
+            <modification_date>2025-08-01</modification_date>
+            <version_id>4.9</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through May 15, 2025.
+            </description>
+        </Modification_Detail>
+	<Modification_Detail>
+            <modification_date>2025-11-01</modification_date>
+            <version_id>5.0</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through Aug 15, 2025.
+            </description>
+        </Modification_Detail>
+	<Modification_Detail>
+            <modification_date>2026-02-02</modification_date>
+            <version_id>5.1</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through Nov 14, 2025.
+            </description>
+        </Modification_Detail>
+	<Modification_Detail>
+            <modification_date>2026-05-06</modification_date>
+            <version_id>5.2</version_id>
+            <description>
+                This documents is an extension of the previously
+                delivered document which now goes through Dec 06, 2025.
+            </description>
+        </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Document>
+    <document_name>MAVEN NGIMS TID CAVEATS </document_name>
+    <publication_date>2026-05-06</publication_date>
+    <description>The MAVEN NGIMS list of TIDs which encountered processing issues due to a variety of reasons.</description>
+  </Document>
+  <Document_Format_Set>
+    <Document_Format>
+      <format_type>single file</format_type>
+    </Document_Format>
+    <Document_File>
+      <file_name>ngims_tid_caveats_v05_r02.pdf</file_name>
+      <document_standard_id>PDF</document_standard_id>
+    </Document_File>
+  </Document_Format_Set>
+</Product_Document>

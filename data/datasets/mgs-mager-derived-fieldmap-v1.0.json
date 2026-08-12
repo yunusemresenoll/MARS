@@ -1,0 +1,55 @@
+{
+  "dataset_id": "mars.mgs.mager.derived-fieldmap-v1.0",
+  "source_id": "nasa-pds-mgs-mager-derived-fieldmap-v1.0",
+  "target": "Mars",
+  "processing_state": "ARCHIVED_DERIVED",
+  "products": [
+    {
+      "product_id": "MGS_MAGER_DERIVED_FIELDMAP_COLLECTION_V1.0",
+      "property_id": "magnetic.mgs_er_collection_inventory_row",
+      "data_path": "resources/archive/nasa-pds-mgs-mager-derived-fieldmap-v1.0/collection_data_er_map_1.0.csv",
+      "label_path": "resources/archive/nasa-pds-mgs-mager-derived-fieldmap-v1.0/collection_data_er_map_1.0.xml",
+      "record_count_method": "TEXT_LINES",
+      "records": 1,
+      "canonical_source_unit": null,
+      "structure": {
+        "format": "PDS4 delimited inventory",
+        "fields": 2,
+        "collection_lid": "urn:nasa:pds:mgs-mager:data-fieldmap-derived",
+        "collection_version": "1.0",
+        "member_count": 1
+      },
+      "observation_period": null,
+      "notes": "Tek üyeli koleksiyonun tamamı yereldir."
+    },
+    {
+      "product_id": "LILLIS_ER_MAP",
+      "property_id": "magnetic.mgs_er_map_ascii_record",
+      "data_path": "resources/archive/nasa-pds-mgs-mager-derived-fieldmap-v1.0/LILLIS_ER_MAP.TAB",
+      "label_path": "resources/archive/nasa-pds-mgs-mager-derived-fieldmap-v1.0/LILLIS_ER_MAP.xml",
+      "record_count_method": "FIXED_BYTES",
+      "record_bytes": 80,
+      "records": 43200,
+      "canonical_source_unit": "nT",
+      "structure": {
+        "format": "PDS4 fixed-field ASCII",
+        "physical_records": 43200,
+        "values_per_record": 6,
+        "map_cells": 259200,
+        "longitude_cells": 720,
+        "latitude_cells": 360,
+        "angular_spacing_deg": 0.5,
+        "latitude_centres_deg": "-89.75 to 89.75 ascending",
+        "longitude_centres_deg_east": "0.25 to 359.75; PDS states right-to-left",
+        "field": "ER-derived crustal magnetic-field magnitude B185",
+        "reference_altitude_km_above_areoid": 185,
+        "effective_spatial_resolution_km_approx": 200,
+        "global_detection_threshold_nT": 4,
+        "raw_undocumented_negative_code": -7777.7,
+        "raw_undocumented_negative_code_occurrences": 29827
+      },
+      "observation_period": null,
+      "notes": "Tam küresel türetilmiş büyüklük haritasıdır; alan vektörü veya doğrudan MAG ölçümü değildir. Ham dosyadaki 29.827 adet -7777.7 değeri mevcut PDS4 etiketinde ve açıklama belgesinde tanımlanmadığından fiziksel nT değeri olarak kullanılamaz. PDS'nin 720×360 matris ifadesi ile '720 rows and 360 columns' cümlesi eksen adlandırması bakımından çelişkilidir; özgün sıralama korunmuş, kaynak dışı reshape varsayımı yapılmamıştır."
+    }
+  ]
+}

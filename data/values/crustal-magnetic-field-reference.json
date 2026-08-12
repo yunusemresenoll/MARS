@@ -1,0 +1,98 @@
+{
+  "dataset_id": "mars.mgs.mager.crustal-field-reference",
+  "dataset_version": "0.1.0",
+  "record_count": 7,
+  "records": [
+    {
+      "record_id": "mars.magnetic.crustal-field.reference-altitude",
+      "property_id": "magnetic.crustal_field_reference_altitude",
+      "status": "DERIVED",
+      "value": 185,
+      "unit": "km",
+      "location": {"scope": "GLOBAL", "reference_surface": "Mars areoid"},
+      "time": {"temporal_scope": "TIME_INVARIANT"},
+      "uncertainty": {"kind": "QUALITATIVE", "note": "Makaleye göre elektron saçılma derinliğinin değişken katmanı yaklaşık 160–240 km, ortalama en yüksek duyarlılık yüksekliği 185 km'dir."},
+      "source_id": "lillis-et-al-2008-icarus-crustal-field-map",
+      "source_locator": "section 2 and section 5",
+      "notes": "Harita bütün hücreleri ortak B185 yüksekliğine taşır."
+    },
+    {
+      "record_id": "mars.magnetic.crustal-field.grid-spacing",
+      "property_id": "magnetic.crustal_field_grid_spacing",
+      "status": "DERIVED",
+      "value": 0.5,
+      "unit": "deg",
+      "location": {"scope": "GLOBAL"},
+      "time": {"temporal_scope": "TIME_INVARIANT"},
+      "uncertainty": {"kind": "NOT_AVAILABLE"},
+      "source_id": "nasa-pds-mgs-mager-derived-fieldmap-v1.0",
+      "source_locator": "LILLIS_ER_MAP.xml Table_Character description; data-fieldmap-derived-desc.txt Data",
+      "notes": "Hem enlem hem boylam merkez aralığıdır."
+    },
+    {
+      "record_id": "mars.magnetic.crustal-field.latitude-cell-count",
+      "property_id": "magnetic.crustal_field_latitude_cell_count",
+      "status": "DERIVED",
+      "value": 360,
+      "unit": "count",
+      "location": {"scope": "DATASET", "product_id": "LILLIS_ER_MAP"},
+      "time": {"temporal_scope": "STATIC_PRODUCT_STRUCTURE"},
+      "uncertainty": {"kind": "EXACT_FOR_ARCHIVED_PRODUCT"},
+      "source_id": "nasa-pds-mgs-mager-derived-fieldmap-v1.0",
+      "source_locator": "LILLIS_ER_MAP.xml, latitude centres -89.75 through 89.75 at 0.5 degree spacing",
+      "notes": null
+    },
+    {
+      "record_id": "mars.magnetic.crustal-field.longitude-cell-count",
+      "property_id": "magnetic.crustal_field_longitude_cell_count",
+      "status": "DERIVED",
+      "value": 720,
+      "unit": "count",
+      "location": {"scope": "DATASET", "product_id": "LILLIS_ER_MAP"},
+      "time": {"temporal_scope": "STATIC_PRODUCT_STRUCTURE"},
+      "uncertainty": {"kind": "EXACT_FOR_ARCHIVED_PRODUCT"},
+      "source_id": "nasa-pds-mgs-mager-derived-fieldmap-v1.0",
+      "source_locator": "LILLIS_ER_MAP.xml, east-longitude centres 0.25 through 359.75 at 0.5 degree spacing",
+      "notes": null
+    },
+    {
+      "record_id": "mars.magnetic.crustal-field.map-cell-count",
+      "property_id": "magnetic.crustal_field_map_cell_count",
+      "status": "DERIVED",
+      "value": 259200,
+      "unit": "count",
+      "location": {"scope": "DATASET", "product_id": "LILLIS_ER_MAP"},
+      "time": {"temporal_scope": "STATIC_PRODUCT_STRUCTURE"},
+      "uncertainty": {"kind": "EXACT_FOR_ARCHIVED_PRODUCT"},
+      "source_id": "nasa-pds-mgs-mager-derived-fieldmap-v1.0",
+      "source_locator": "LILLIS_ER_MAP.xml, 43,200 records and 6 repetitions per record",
+      "notes": "720 × 360 = 259.200."
+    },
+    {
+      "record_id": "mars.magnetic.crustal-field.effective-spatial-resolution",
+      "property_id": "magnetic.crustal_field_effective_spatial_resolution",
+      "status": "DERIVED",
+      "value": 200,
+      "unit": "km",
+      "location": {"scope": "GLOBAL", "reference_altitude_km": 185},
+      "time": {"temporal_scope": "TIME_INVARIANT"},
+      "uncertainty": {"kind": "QUALITATIVE", "note": "Makalede yaklaşık değer olarak verilir; 50–100 km tipik konum izleme hataları etkin çözünürlüğü kötüleştirebilir."},
+      "source_id": "lillis-et-al-2008-icarus-crustal-field-map",
+      "source_locator": "section 3.4 and section 5",
+      "notes": "0,5° dosya örnek aralığıyla karıştırılmamalıdır."
+    },
+    {
+      "record_id": "mars.magnetic.crustal-field.global-detection-threshold",
+      "property_id": "magnetic.crustal_field_global_detection_threshold",
+      "status": "DERIVED",
+      "value": 4,
+      "unit": "nT",
+      "location": {"scope": "GLOBAL", "reference_altitude_km": 185},
+      "time": {"temporal_scope": "TIME_INVARIANT"},
+      "uncertainty": {"kind": "QUALITATIVE", "note": "Küresel güvenilir kabuksal özellik algılama eşiği; yerel duyarlılık değişebilir."},
+      "source_id": "lillis-et-al-2008-icarus-crustal-field-map",
+      "source_locator": "section 4.4 and section 5",
+      "notes": "Eşik altındaki değerler fiziksel sıfır olarak yorumlanmaz."
+    }
+  ]
+}

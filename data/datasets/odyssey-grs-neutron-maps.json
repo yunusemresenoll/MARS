@@ -1,0 +1,103 @@
+{
+  "dataset_id": "mars.odyssey.grs-special.neutron-maps",
+  "source_id": "nasa-pds-odyssey-grs-special",
+  "target": "Mars",
+  "processing_state": "ARCHIVED_DERIVED",
+  "products": [
+    {
+      "product_id": "ns_epithermal_020917",
+      "property_id": "neutron.ns_epithermal_flux",
+      "data_path": "resources/archive/nasa-pds-odyssey-grs-special/ns_epithermal_020917.tab",
+      "label_path": "resources/archive/nasa-pds-odyssey-grs-special/ns_epithermal_020917.xml",
+      "records": 259200,
+      "canonical_source_unit": "counts/s",
+      "structure": {
+        "cell_width_deg": 0.5,
+        "cell_height_deg": 0.5,
+        "longitude_min_deg": 0,
+        "longitude_max_deg": 360,
+        "longitude_direction": "east_positive",
+        "latitude_min_deg": -90,
+        "latitude_max_deg": 90
+      },
+      "observation_period": "First 25.7 days of mapping",
+      "notes": "Each record contains longitude, latitude and epithermal neutron flux."
+    },
+    {
+      "product_id": "ns_thermal_020917",
+      "property_id": "neutron.ns_thermal_flux",
+      "data_path": "resources/archive/nasa-pds-odyssey-grs-special/ns_thermal_020917.tab",
+      "label_path": "resources/archive/nasa-pds-odyssey-grs-special/ns_thermal_020917.xml",
+      "records": 259200,
+      "canonical_source_unit": "counts/s",
+      "structure": {
+        "cell_width_deg": 0.5,
+        "cell_height_deg": 0.5,
+        "longitude_min_deg": 0,
+        "longitude_max_deg": 360,
+        "longitude_direction": "east_positive",
+        "latitude_min_deg": -90,
+        "latitude_max_deg": 90
+      },
+      "observation_period": "First 25.7 days of mapping",
+      "notes": "Each record contains longitude, latitude and thermal neutron flux."
+    },
+    {
+      "product_id": "ns_fast_020917",
+      "property_id": "neutron.ns_fast_flux",
+      "data_path": "resources/archive/nasa-pds-odyssey-grs-special/ns_fast_020917.tab",
+      "label_path": "resources/archive/nasa-pds-odyssey-grs-special/ns_fast_020917.xml",
+      "records": 259200,
+      "canonical_source_unit": "counts/s",
+      "structure": {
+        "cell_width_deg": 0.5,
+        "cell_height_deg": 0.5,
+        "longitude_min_deg": 0,
+        "longitude_max_deg": 360,
+        "longitude_direction": "east_positive",
+        "latitude_min_deg": -90,
+        "latitude_max_deg": 90
+      },
+      "observation_period": "First 25.7 days of mapping",
+      "notes": "Each record contains longitude, latitude and fast neutron flux."
+    },
+    {
+      "product_id": "hend_epithermal_020917",
+      "property_id": "neutron.hend_epithermal_flux",
+      "data_path": "resources/archive/nasa-pds-odyssey-grs-special/hend_epithermal_020917.tab",
+      "label_path": "resources/archive/nasa-pds-odyssey-grs-special/hend_epithermal_020917.xml",
+      "records": 4050,
+      "canonical_source_unit": "counts/s",
+      "structure": {
+        "cell_width_deg": 4,
+        "cell_height_deg": 4,
+        "longitude_min_deg": -180,
+        "longitude_max_deg": 180,
+        "longitude_direction": "east_positive",
+        "latitude_min_deg": -90,
+        "latitude_max_deg": 90
+      },
+      "observation_period": "First 55 days of mapping",
+      "notes": "The XML label defines the conversion required to recover original count-rate values."
+    },
+    {
+      "product_id": "hend_fast_020917",
+      "property_id": "neutron.hend_fast_flux",
+      "data_path": "resources/archive/nasa-pds-odyssey-grs-special/hend_fast_020917.tab",
+      "label_path": "resources/archive/nasa-pds-odyssey-grs-special/hend_fast_020917.xml",
+      "records": 4050,
+      "canonical_source_unit": "counts/s",
+      "structure": {
+        "cell_width_deg": 4,
+        "cell_height_deg": 4,
+        "longitude_min_deg": -180,
+        "longitude_max_deg": 180,
+        "longitude_direction": "east_positive",
+        "latitude_min_deg": -90,
+        "latitude_max_deg": 90
+      },
+      "observation_period": "First 55 days of mapping",
+      "notes": "The XML label defines the conversion required to recover original count-rate values."
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "dataset_id": "mars.maven.ngims.l2-v8.0-l3-samples",
+  "source_id": "nasa-pds-maven-ngims-l2-v8.0-l3-samples",
+  "target": "Mars upper neutral atmosphere and ionosphere",
+  "processing_state": "ARCHIVED_DERIVED",
+  "products": [
+    {
+      "product_id": "MAVEN_NGIMS_L2_COLLECTION_V8.0_20260217",
+      "property_id": "atmosphere.ngims_l2_inventory_row",
+      "data_path": "resources/archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/collection_ngims_l2_inventory.csv",
+      "label_path": "resources/archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/collection_ngims_l2_inventory.xml",
+      "record_count_method": "TEXT_LINES",
+      "records": 33583,
+      "canonical_source_unit": null,
+      "structure": {
+        "format": "PDS4 delimited collection inventory",
+        "fields": 2,
+        "collection_lid": "urn:nasa:pds:maven_ngims:l2",
+        "collection_version": "8.0",
+        "release_snapshot": "maven_ngims-20260217",
+        "member_version_examples": {"csn_abundance": "8.3", "ion_abundance": "8.1"}
+      },
+      "observation_period": "2014-10-18/2025-11-14",
+      "notes": "PDS'nin 2026-02-17 teslim anlık görüntüsündeki tam L2 envanteridir; yalnız iki TID 63116 örnek ürünü yerelde kopyalanmıştır."
+    },
+    {
+      "product_id": "MAVEN_NGIMS_L3_COLLECTION_20260217",
+      "property_id": "atmosphere.ngims_l3_inventory_row",
+      "data_path": "resources/archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/collection_ngims_l3_inventory.csv",
+      "label_path": "resources/archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/collection_ngims_l3_inventory.xml",
+      "record_count_method": "TEXT_LINES",
+      "records": 27606,
+      "canonical_source_unit": null,
+      "structure": {
+        "format": "PDS4 delimited collection inventory",
+        "fields": 2,
+        "collection_lid": "urn:nasa:pds:maven_ngims:l3",
+        "release_snapshot": "maven_ngims-20260217",
+        "sample_member_version": "6.1"
+      },
+      "observation_period": "2014-10-18/2025-08-10",
+      "notes": "PDS'nin 2026-02-17 teslim anlık görüntüsündeki tam L3 envanteridir; yalnız TID 14934 res-den ve res-sht örnekleri yerelde kopyalanmıştır."
+    },
+    {
+      "product_id": "MVN_NGI_L2_CSN_ABUND_63116_20251114T235242_V08_R03",
+      "property_id": "atmosphere.ngims_l2_neutral_abundance_record",
+      "data_path": "resources/archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/mvn_ngi_l2_csn-abund-63116_20251114T235242_v08_r03.csv",
+      "label_path": "resources/archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/mvn_ngi_l2_csn-abund-63116_20251114T235242_v08_r03.xml",
+      "record_count_method": "TEXT_LINES",
+      "records": 4255,
+      "canonical_source_unit": null,
+      "structure": {
+        "format": "PDS4 CSV with detached XML label",
+        "header_rows": 1,
+        "science_rows": 4254,
+        "declared_columns": 18,
+        "species": ["Ar", "CO2", "N2", "He", "CO", "O"],
+        "focus_mode": "csn",
+        "orbit": 24808,
+        "tid": 63116,
+        "quality_codes_present": ["IV", "IU", "OV", "OU"],
+        "undocumented_minus_999_triplets": 1815
+      },
+      "observation_period": "2025-11-15T00:00:54Z/2025-11-15T01:32:13Z",
+      "notes": "Kapalı-kaynak nötr bolluk ürünüdür. cps_dt_bkd, abundance ve precision alanlarında aynı 1.815 satırda görülen -999 etikette/SIS'te özel sabit olarak tanımlanmamıştır; fiziksel değer kabul edilmez."
+    },
+    {
+      "product_id": "MVN_NGI_L2_ION_ABUND_63116_20251114T235242_V08_R01",
+      "property_id": "ionosphere.ngims_l2_ion_abundance_record",
+      "data_path": "resources/archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/mvn_ngi_l2_ion-abund-63116_20251114T235242_v08_r01.csv",
+      "label_path": "resources/archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/mvn_ngi_l2_ion-abund-63116_20251114T235242_v08_r01.xml",
+      "record_count_method": "TEXT_LINES",
+      "records": 3356,
+      "canonical_source_unit": null,
+      "structure": {
+        "format": "PDS4 CSV with detached XML label",
+        "header_rows": 1,
+        "science_rows": 3355,
+        "declared_columns": 19,
+        "ion_mass_channels": 42,
+        "focus_mode": "osion",
+        "orbit": 24808,
+        "tid": 63116,
+        "quality_codes_present": ["SCP", "SCH"]
+      },
+      "observation_period": "2025-11-15T00:00:54Z/2025-11-15T01:32:13Z",
+      "notes": "İyon türü adı değil kütle/yük kanalı verir; aynı nominal kütlede birden çok olası iyon bulunduğundan kaynaksız kimyasal kimlik ataması yapılmaz. Yoğunluk kalibrasyonunda STATIC uzay aracı potansiyeli kullanılmıştır."
+    },
+    {
+      "product_id": "MVN_NGI_L3_RES_DEN_14934_20150211T203346_V06_R01",
+      "property_id": "atmosphere.ngims_l3_resampled_density_record",
+      "data_path": "resources/archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/mvn_ngi_l3_res-den-14934_20150211T203346_v06_r01.csv",
+      "label_path": "resources/archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/mvn_ngi_l3_res-den-14934_20150211T203346_v06_r01.xml",
+      "record_count_method": "TEXT_LINES",
+      "records": 363,
+      "canonical_source_unit": null,
+      "structure": {
+        "format": "PDS4 CSV with detached XML label",
+        "header_rows": 1,
+        "science_rows": 362,
+        "declared_columns": 12,
+        "species": ["Ar", "CO2", "CO", "N2", "O"],
+        "orbit": 717,
+        "tid": 14934,
+        "quality_codes_present": ["IV", "IU"],
+        "binning": "constant log-density bins, 0.2 steps"
+      },
+      "observation_period": "2015-02-11T20:35:08Z/2015-02-11T22:19:26Z",
+      "notes": "Eşit geometrik irtifa ızgarası değildir. SIS'e göre yoğunluklar log(yoğunluk) üzerinde 0,2 adımlı sabit yoğunluk kutularında ortalanmıştır; alt alan her satırın temsilî irtifasıdır."
+    },
+    {
+      "product_id": "MVN_NGI_L3_RES_SHT_14934_20150211T203346_V06_R01",
+      "property_id": "atmosphere.ngims_l3_scale_height_temperature_record",
+      "data_path": "resources/archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/mvn_ngi_l3_res-sht-14934_20150211T203346_v06_r01.csv",
+      "label_path": "resources/archive/nasa-pds-maven-ngims-l2-v8.0-l3-samples/mvn_ngi_l3_res-sht-14934_20150211T203346_v06_r01.xml",
+      "record_count_method": "TEXT_LINES",
+      "records": 7,
+      "canonical_source_unit": null,
+      "structure": {
+        "format": "PDS4 CSV with detached XML label",
+        "header_rows": 1,
+        "science_rows": 6,
+        "declared_columns": 15,
+        "species": ["Ar", "CO2", "N2", "CO", "O", "He"],
+        "orbit": 717,
+        "tid": 14934,
+        "quality_codes_present": ["HI", "na"],
+        "valid_fit_rows": 5
+      },
+      "observation_period": "2015-02-11T20:35:08Z/2015-02-11T22:19:26Z",
+      "notes": "Sıcaklık doğrudan termometre ölçümü değildir; alt-log(yoğunluk) doğrusal uyumundan ölçek yüksekliği, ardından H=mg/kT ilişkisiyle türetilmiştir. He satırında sonuç yoktur."
+    }
+  ]
+}

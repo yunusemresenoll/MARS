@@ -1,0 +1,1680 @@
+PDS_VERSION_ID               = PDS3
+RECORD_TYPE                  = STREAM
+
+
+OBJECT                       = TEXT
+  INTERCHANGE_FORMAT         = ASCII
+  PUBLICATION_DATE           = 2026-03-17
+  NOTE                       = "List of data related events altering REMS 
+                               regular acquisition cadence"
+END_OBJECT                   = TEXT
+END
+
+The following table contains a list of dates and times with events
+that may have an impact in the REMS regular acquisition cadence of 5
+minutes every hour (due to reasons such as rover maintenance, REMS
+powered off to not to conflict with other activities, tests, etc).
+
+As part of those events, this table also shows the sols in which REMS
+sensor underwent the following maintenance activities: GTS
+calibration, HS regeneration, HS defrosting and PS calibration.
+
+This table also reflects Humidity Sensor on/off tests and the beginning
+of nominal use of the HS HRIM measurement strategy (for which the
+tests were performed). Refer to catalogs for an explanation of this
+strategy.
+
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+|    1 |                                        |     | X     |         |     |
+|    2 | No activity                            |     |       |         |     |
+|    3 | No activity                            |     |       |         |     |
+|    4 | No activity                            |     |       |         |     |
+|    5 | No activity                            |     |       |         |     |
+|    6 | No activity                            |     |       |         |     |
+|    7 | No activity                            |     |       |         |     |
+|    8 | No activity                            |     |       |         |     |
+|    9 |                                        |     |       |         | X   |
+|   10 |                                        |     |       |         | X   |
+|   11 |                                        |     | X     |         |     |
+|   13 | No activity from 05:00 to 11:00        | X   | X     |         |     |
+|   14 |                                        | X   |       |         |     |
+|   16 |                                        | X   |       |         |     |
+|   18 | No activity from 12:00                 |     |       |         |     |
+|   19 | No activity from 00:00 to 12:00        |     |       |         |     |
+|   20 | No activity from 03:00 to 11:00        | X   | X     |         |     |
+|   26 |                                        |     |       | X       |     |
+|   29 |                                        | X   |       |         |     |
+|   30 |                                        |     |       | X       |     |
+|   31 | No data for ATS,GTS and WS from        |     |       |         |     |
+|      | 12:00 to 20:00                         |     |       |         |     |
+|      | No activity from 21:00                 |     |       |         |     |
+|   32 | No activity from 00:00 to 11:00        |     |       |         |     |
+|   34 | No data for ATS,GTS and WS at 11:00    |     |       |         |     |
+|   38 |                                        | X   |       |         |     |
+|   43 | HS configuration tests                 |     |       |         |     |
+|   44 | HS configuration tests                 | X   |       |         |     |
+|   45 | HS configuration tests                 |     |       |         |     |
+|   46 | HS configuration tests                 |     |       |         |     |
+|   47 | HS configuration tests                 |     |       |         |     |
+|   48 | HS configuration tests                 |     |       |         |     |
+|   49 | HS configuration tests                 |     |       |         |     |
+|   50 | HS configuration tests                 |     |       |         |     |
+|   51 | HS configuration tests                 |     |       |         |     |
+|   52 | HS configuration tests                 |     |       |         |     |
+|   69 | No activity from 07:00 to 11:00        |     | X     |         |     |
+|   72 |                                        | X   |       |         |     |
+|   73 | WS always on from this sol on          |     |       |         |     |
+|   82 |                                        | X   | X     |         |     |
+|   90 |                                        | X   | X     |         |     |
+|   99 |                                        | X   |       |         | X   |
+|  100 |                                        |     | X     |         | X   |
+|  112 |                                        |     | X     |         |     |
+|  113 | No activity at 13:00                   |     |       |         |     |
+|  120 |                                        | X   |       |         |     |
+|  121 |                                        |     | X     |         |     |
+|  131 |                                        | X   | X     |         |     |
+|  148 |                                        |     | X     |         |     |
+|  152 |                                        | X   |       |         |     |
+|  158 |                                        | X   |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  159 |                                        | X   |       |         |     |
+|  160 |                                        |     | X     |         |     |
+|  161 |                                        | X   |       |         |     |
+|  162 |                                        | X   |       |         |     |
+|  163 |                                        | X   |       |         |     |
+|  164 |                                        | X   |       |         |     |
+|  165 |                                        | X   |       |         |     |
+|  176 |                                        |     | X     |         |     |
+|  181 |                                        |     | X     |         |     |
+|  188 |                                        | X   |       |         |     |
+|  189 |                                        | X   |       |         |     |
+|  192 | No activity from 14:00                 |     |       |         |     |
+|  193 | No activity                            |     |       |         |     |
+|  194 | No activity                            |     |       |         |     |
+|  195 | No activity from 00:00 to 13:00        | X   |       |         |     |
+|  197 | No activity from 12:00 to 13:00        |     |       |         |     |
+|  199 | No activity from 12:00 to 14:00        |     |       |         |     |
+|  200 | No activity from 13:00                 |     |       |         |     |
+|  201 | No activity                            |     |       |         |     |
+|  202 | No activity                            |     |       |         |     |
+|  203 | No activity                            |     |       |         |     |
+|  204 | No activity                            |     |       |         |     |
+|  205 | No activity                            |     |       |         |     |
+|  206 | No activity                            |     |       |         |     |
+|  207 | No activity                            |     |       |         |     |
+|  208 | No activity                            |     |       |         |     |
+|  209 | No activity                            |     |       |         |     |
+|  210 | No activity                            |     |       |         |     |
+|  211 | No activity                            |     |       |         |     |
+|  212 | No activity                            |     |       |         |     |
+|  213 | No activity                            |     |       |         |     |
+|  214 | No activity                            |     |       |         |     |
+|  215 | No activity                            |     |       |         |     |
+|  216 | No activity                            |     |       |         |     |
+|  217 | No activity                            |     |       |         |     |
+|  218 | No activity                            |     |       |         |     |
+|  219 | No activity                            |     |       |         |     |
+|  220 | No activity from 00:00 to 12:00        |     |       |         |     |
+|  227 |                                        | X   |       |         |     |
+|  229 |                                        | X   |       |         |     |
+|  230 |                                        | X   |       |         |     |
+|  231 |                                        | X   |       |         |     |
+|  232 |                                        | X   |       |         |     |
+|  233 |                                        | X   |       |         |     |
+|  234 |                                        |     | X     |         |     |
+|  236 | Solar Conjunction                      |     |       |         |     |
+|  237 | Solar Conjunction                      |     |       |         |     |
+|  238 | Solar Conjunction                      |     |       |         |     |
+|  239 | Solar Conjunction                      |     |       |         |     |
+|  240 | Solar Conjunction                      |     |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  241 | Solar Conjunction                      |     |       |         |     |
+|  242 | Solar Conjunction                      |     |       |         |     |
+|  243 | Solar Conjunction                      |     |       |         |     |
+|  244 | Solar Conjunction                      |     | X     |         |     |
+|  245 | Solar Conjunction                      | X   |       |         |     |
+|  246 | Solar Conjunction                      | X   |       |         |     |
+|  247 | Solar Conjunction                      | X   |       |         |     |
+|  248 | Solar Conjunction                      | X   |       |         |     |
+|  249 | Solar Conjunction                      | X   |       |         |     |
+|  250 | Solar Conjunction                      | X   |       |         |     |
+|  251 | Solar Conjunction                      | X   |       |         |     |
+|  252 | Solar Conjunction                      |     |       |         |     |
+|  253 | Solar Conjunction                      |     |       |         |     |
+|  254 | Solar Conjunction                      |     | X     |         |     |
+|  255 | Solar Conjunction                      |     |       |         |     |
+|  256 | Solar Conjunction                      |     |       |         |     |
+|  257 | Solar Conjunction                      |     |       |         |     |
+|  258 | Solar Conjunction                      |     |       |         |     |
+|  259 | Solar Conjunction                      |     |       |         |     |
+|  260 | Solar Conjunction                      |     |       |         |     |
+|  261 | Solar Conjunction                      |     |       |         |     |
+|  262 | No activity from 13:00                 |     |       |         |     |
+|  263 | No activity                            |     |       |         |     |
+|  264 | No activity                            |     |       |         |     |
+|  265 | No activity                            |     |       |         |     |
+|  266 | No activity                            |     |       |         |     |
+|  267 | No activity from 00:00 to 13:00        |     |       |         |     |
+|  269 |                                        |     | X     |         |     |
+|  274 |                                        |     |       |         | X   |
+|  275 |                                        | X   |       |         | X   |
+|  276 |                                        | X   |       |         |     |
+|  277 |                                        | X   |       |         |     |
+|  278 |                                        | X   |       |         |     |
+|  279 |                                        | X   |       |         |     |
+|  280 |                                        | X   |       |         |     |
+|  281 |                                        |     | X     |         |     |
+|  282 |                                        | X   |       |         |     |
+|  283 |                                        | X   |       |         |     |
+|  284 |                                        | X   |       |         |     |
+|  285 |                                        | X   |       |         |     |
+|  289 |                                        |     | X     |         |     |
+|  299 |                                        |     | X     |         |     |
+|  309 |                                        |     | X     |         |     |
+|  314 |                                        | X   |       |         |     |
+|  315 |                                        | X   |       |         |     |
+|  316 |                                        | X   |       |         |     |
+|  317 |                                        | X   |       |         |     |
+|  318 |                                        | X   |       |         |     |
+|  319 |                                        | X   | X     |         |     |
+|  320 |                                        | X   |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  321 |                                        | X   |       |         |     |
+|  322 |                                        | X   |       |         |     |
+|  323 |                                        | X   |       |         |     |
+|  324 |                                        | X   |       |         |     |
+|  329 |                                        |     | X     |         |     |
+|  340 |                                        |     | X     |         |     |
+|  348 | No activity from 18:01:57              |     |       |         |     |
+|      | to 18:02:27                            |     |       |         |     |
+|  349 | No activity from 11:33:50              |     | X     |         |     |
+|      | to 13:05:00                            |     |       |         |     |
+|  355 |                                        | X   |       |         |     |
+|  357 |                                        | X   |       |         |     |
+|  358 | No activity from 16:00 to 23:00        | X   |       |         |     |
+|  359 | No activity                            |     |       |         |     |
+|  360 | No activity                            |     |       |         |     |
+|  361 | No activity                            |     |       |         |     |
+|  362 | No activity                            |     |       |         |     |
+|  363 | No activity                            |     |       |         |     |
+|  364 | No activity                            |     |       |         |     |
+|  365 | No activity from 00:00 to 11:00        |     |       |         |     |
+|  366 |                                        |     | X     |         |     |
+|  370 |                                        |     |       |         | X   |
+|  371 |                                        |     |       |         | X   |
+|  376 |                                        |     | X     |         |     |
+|  386 |                                        | X   | X     |         |     |
+|  387 |                                        | X   |       |         |     |
+|  388 |                                        | X   |       |         |     |
+|  392 |                                        | X   |       |         |     |
+|  393 |                                        | X   |       |         |     |
+|  394 |                                        | X   |       |         |     |
+|  395 |                                        | X   |       |         |     |
+|  396 |                                        | X   |       |         |     |
+|  398 |                                        | X   | X     |         |     |
+|  399 |                                        | X   |       |         |     |
+|  408 |                                        |     | X     |         |     |
+|  416 |                                        |     | X     |         |     |
+|  426 |                                        |     | X     |         |     |
+|  430 |                                        | X   |       |         |     |
+|  431 |                                        | X   |       |         |     |
+|  434 |                                        | X   |       |         |     |
+|  435 |                                        | X   |       |         |     |
+|  436 |                                        | X   | X     |         |     |
+|  437 |                                        | X   |       |         |     |
+|  438 |                                        | X   |       |         |     |
+|  440 |                                        | X   |       |         |     |
+|  441 |                                        | X   |       |         |     |
+|  442 |                                        | X   |       |         |     |
+|  444 | No activity from 11:00 to 23:00        |     |       |         |     |
+|  445 | No activity                            |     |       |         |     |
+|  446 | No activity                            |     |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  447 | No activity                            |     |       |         |     |
+|  448 | No activity                            |     |       |         |     |
+|  449 | No activity                            |     |       |         |     |
+|  450 | No activity                            |     |       |         |     |
+|  451 | No activity                            |     |       |         |     |
+|  452 | No activity                            |     |       |         |     |
+|  453 | No activity                            |     |       |         |     |
+|  454 | No activity from 00:00 to 11:00        |     | X     |         |     |
+|  457 | No activity from 12:00 to 23:00        |     |       |         |     |
+|  458 | No activity                            |     |       |         |     |
+|  459 | No activity                            |     |       |         |     |
+|  460 | No activity                            |     |       |         |     |
+|  461 | No activity                            |     |       |         |     |
+|  462 | No activity from 00:00 to 11:00        |     |       |         |     |
+|  464 |                                        |     | X     |         |     |
+|  474 |                                        |     | X     |         |     |
+|  478 | No activity from 14:00 to 23:00        |     |       |         |     |
+|  479 | No activity                            |     |       |         |     |
+|  480 | No activity                            |     |       |         |     |
+|  481 | No activity                            |     |       |         |     |
+|  482 | No activity                            |     |       |         |     |
+|  483 | No activity                            |     |       |         |     |
+|  484 | No activity                            |     |       |         |     |
+|  485 | No activity from 00:00 to 11:00        | X   | X     |         |     |
+|  486 |                                        | X   |       |         |     |
+|  487 |                                        | X   |       |         |     |
+|  488 |                                        | X   |       |         |     |
+|  489 |                                        | X   |       |         |     |
+|  490 |                                        | X   |       |         |     |
+|  491 |                                        | X   |       |         |     |
+|  492 |                                        | X   |       |         |     |
+|  493 |                                        | X   |       |         |     |
+|  494 |                                        | X   |       |         |     |
+|  495 |                                        |     | X     |         |     |
+|  505 |                                        |     | X     |         |     |
+|  508 |                                        |     |       |         | X   |
+|  509 |                                        |     |       |         | X   |
+|  516 |                                        |     | X     |         |     |
+|  521 |                                        | X   |       |         |     |
+|  522 |                                        | X   |       |         |     |
+|  524 |                                        | X   |       |         |     |
+|  525 |                                        | X   |       |         |     |
+|  526 |                                        | X   |       |         |     |
+|  527 |                                        | X   | X     |         |     |
+|  528 |                                        | X   |       |         |     |
+|  530 |                                        | X   |       |         |     |
+|  531 |                                        | X   |       |         |     |
+|  532 |                                        | X   |       |         |     |
+|  538 |                                        |     | X     |         |     |
+|  548 |                                        |     | X     |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  559 |                                        |     | X     |         |     |
+|  569 | No activity from 04:00:00              |     | X     |         |     |
+|      | to 04:02:45                            |     |       |         |     |
+|  570 | No activity from 02:01:28-02:05:28,    |     |       |         |     |
+|      | 03:01:26-03:05:00 and                  |     |       |         |     |
+|      | 04:01:27-04:05:00                      |     |       |         |     |
+|  573 |                                        | X   |       |         |     |
+|  574 |                                        | X   |       |         |     |
+|  575 |                                        | X   |       |         |     |
+|  578 |                                        | X   |       |         |     |
+|  579 |                                        | X   |       |         |     |
+|  580 |                                        | X   | X     |         |     |
+|  581 |                                        | X   |       |         |     |
+|  582 |                                        | X   |       |         |     |
+|  583 |                                        |     |       |         | X   |
+|  584 |                                        | X   |       |         | X   |
+|  585 |                                        | X   |       |         |     |
+|  590 |                                        |     | X     |         |     |
+|  598 | No data at 06:00, 07:00                |     |       |         |     |
+|  600 | No data at 02:00, 03:00-23:00          |     |       |         |     |
+|  601 | No data at 00:00-11:00                 |     |       |         |     |
+|  602 |                                        |     | X     |         |     |
+|  615 |                                        | X   |       |         |     |
+|  616 |                                        |     | X     |         |     |
+|  618 |                                        | X   |       |         |     |
+|  621 |                                        | X   |       |         |     |
+|  622 |                                        | X   |       |         |     |
+|  626 |                                        | X   | X     |         |     |
+|  627 |                                        | X   |       |         |     |
+|  628 |                                        | X   |       |         |     |
+|  629 |                                        | X   |       |         |     |
+|  630 |                                        |     |       |         |     |
+|  631 | HS On/Off Test from 04:00 to 06:00     |     |       |         |     |
+|  632 |                                        | X   |       |         |     |
+|  633 |                                        | X   |       |         |     |
+|  636 |                                        |     | X     |         |     |
+|  646 | HS On/Off test from 04:00 to 06:05     |     | X     |         |     |
+|  647 | Boom2/HS On/Off test from 04:00        |     |       |         |     |
+|      | to 06:05                               |     |       |         |     |
+|  656 |                                        |     | X     |         |     |
+|  657 |                                        | X   |       |         |     |
+|  659 |                                        | X   |       |         |     |
+|  660 |                                        | X   |       |         |     |
+|  661 |                                        | X   |       |         |     |
+|  662 |                                        | X   |       |         |     |
+|  663 |                                        | X   |       |         |     |
+|  665 |                                        | X   |       |         |     |
+|  666 |                                        | X   | X     |         |     |
+|  667 |                                        | X   |       |         |     |
+|  668 |                                        | X   |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  673 | Boom2/HS On/Off test from 00:00        |     |       |         |     |
+|      | to 02:05                               |     |       |         |     |
+|  676 |                                        |     | X     |         |     |
+|  688 |                                        |     | X     |         |     |
+|  697 | No data at 10:00                       |     |       |         |     |
+|  699 | No data at 06:00, 07:00-11:00          |     |       |         |     |
+|  700 |                                        |     | X     |         |     |
+|  701 |                                        | X   |       |         |     |
+|  702 |                                        | X   |       |         |     |
+|  703 |                                        | X   |       |         |     |
+|  704 |                                        | X   |       |         |     |
+|  705 |                                        | X   |       |         |     |
+|  707 |                                        | X   |       |         |     |
+|  708 |                                        | X   |       |         |     |
+|  709 |                                        | X   |       |         |     |
+|  710 |                                        | X   | X     |         | X   |
+|  711 |                                        | X   |       |         | X   |
+|  719 | Boom2/HS  On/Off Test 04:00-06:00      |     |       |         |     |
+|  720 | Boom2/HS  On/Off Test 04:00-05:00 and  |     | X     |         |     |
+|      | 06:00-07:00                            |     |       |         |     |
+|  721 | Boom2/HS  On/Off Test M05:00-07:00     |     |       |         |     |
+|  723 | Boom2/HS  On/Off Test 00:00-02:00      |     |       |         |     |
+|  724 | Boom2/HS  On/Off Test 00:00-01:00 and  |     |       |         |     |
+|      | 02:00-03:00                            |     |       |         |     |
+|  725 | Boom2/HS  On/Off Test 01:00-03:00      |     |       |         |     |
+|  730 |                                        |     | X     |         |     |
+|  740 |                                        |     | X     |         |     |
+|  741 | HS test: 01:00-02:00 (Boom2 off+HS on) | X   |       |         |     |
+|      | and 02:00-03:00 (Boom2 off+HS on/off)  |     |       |         |     |
+|  742 |                                        | X   |       |         |     |
+|  743 |                                        | X   |       |         |     |
+|  744 |                                        | X   |       |         |     |
+|  746 |                                        | X   |       |         |     |
+|  747 |                                        | X   |       |         |     |
+|  749 |                                        | X   |       |         |     |
+|  750 |                                        | X   | X     |         |     |
+|  752 |                                        | X   |       |         |     |
+|  753 |                                        | X   |       |         |     |
+|  760 |                                        |     | X     |         |     |
+|  766 | Start Extended Mission                 |     |       |         |     |
+|  772 |                                        |     | X     |         |     |
+|  782 |                                        |     | X     |         |     |
+|  783 |                                        | X   |       |         |     |
+|  784 |                                        | X   |       |         |     |
+|  786 |                                        | X   |       |         |     |
+|  787 |                                        | X   |       |         |     |
+|  788 |                                        | X   |       |         |     |
+|  789 |                                        | X   |       |         |     |
+|  790 |                                        | X   |       |         |     |
+|  792 |                                        |     | X     |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  793 | Begin nominal use of HS HRIM           | X   |       |         |     |
+|      | acquisition mode                       |     |       |         |     |
+|  794 |                                        | X   |       |         |     |
+|  795 |                                        | X   |       |         |     |
+|  802 |                                        |     | X     |         |     |
+|  805 |                                        |     |       |         | X   |
+|  806 |                                        |     |       |         | X   |
+|  812 |                                        |     | X     |         |     |
+|  822 |                                        |     | X     |         |     |
+|  830 |                                        | X   |       |         |     |
+|  831 |                                        | X   |       |         |     |
+|  833 |                                        |     | X     |         |     |
+|  834 |                                        | X   |       |         |     |
+|  835 |                                        | X   |       |         |     |
+|  836 |                                        | X   |       |         |     |
+|  837 |                                        | X   |       |         |     |
+|  838 |                                        | X   |       |         |     |
+|  840 |                                        | X   |       |         |     |
+|  841 | No data at 04:00                       | X   |       |         |     |
+|  842 | No data at 09:00, 10:00, 11:00         | X   |       |         |     |
+|  844 |                                        |     | X     |         |     |
+|  854 |                                        |     | X     |         |     |
+|  864 |                                        |     | X     |         |     |
+|  870 | No data at 03:00, 04:00, 16:00,        |     |       |         |     |
+|      | 20:00-23:00                            |     |       |         |     |
+|  871 | No data at 00:00, 01:00-04:00, 05:00,  |     |       |         |     |
+|      | 6:00-10:00, 11:00-12:00                |     |       |         |     |
+|  873 | No activity from 11:00 to 0:00         |     |       |         |     |
+|  874 | No activity                            |     |       |         |     |
+|  875 | No activity                            |     |       |         |     |
+|  876 | No activity                            |     |       |         |     |
+|  877 | No activity                            |     |       |         |     |
+|  878 | No activity                            |     |       |         |     |
+|  879 | No activity                            |     |       |         |     |
+|  880 | No activity from 0:00 to 12:00         | X   | X     |         |     |
+|  881 |                                        | X   |       |         |     |
+|  882 |                                        | X   |       |         |     |
+|  884 |                                        | X   |       |         |     |
+|  888 |                                        | X   |       |         |     |
+|  890 |                                        | X   | X     |         |     |
+|  892 |                                        | X   |       |         |     |
+|  893 |                                        | X   |       |         |     |
+|  896 |                                        | X   |       |         |     |
+|  897 |                                        | X   |       |         |     |
+|  900 |                                        |     | X     |         |     |
+|  910 |                                        |     | X     |         |     |
+|  912 | No data at 04:00                       |     |       |         |     |
+|  913 | No data at 04:00,05:00-23:00           |     |       |         |     |
+|  914 | No data at 00:00-11:00                 |     |       |         |     |
+|  920 |                                        |     | X     |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  927 |                                        | X   |       |         |     |
+|  928 |                                        | X   |       |         |     |
+|  929 |                                        | X   |       |         |     |
+|  930 |                                        | X   |       |         |     |
+|  931 |                                        |     | X     |         |     |
+|  932 |                                        | X   |       |         |     |
+|  933 |                                        | X   |       |         |     |
+|  935 |                                        | X   |       |         |     |
+|  936 |                                        | X   |       |         |     |
+|  937 | No activity from 19:00 to 0:00         |     |       |         |     |
+|  938 | No activity                            |     |       |         |     |
+|  939 | No activity from 0:00 to 13:00         | X   |       |         |     |
+|  940 |                                        | X   |       |         |     |
+|  941 |                                        |     | X     |         |     |
+|  942 |                                        |     |       |         | X   |
+|  943 |                                        |     |       |         | X   |
+|  952 |                                        |     | X     |         |     |
+|  955 | No activity from 15:00 to 0:00         |     |       |         |     |
+|  956 | No activity                            |     |       |         |     |
+|  957 | No activity from 0:00 to 11:00         |     |       |         |     |
+|  962 |                                        |     | X     |         |     |
+|  970 |                                        | X   |       |         |     |
+|  972 |                                        | X   | X     |         |     |
+|  974 |                                        | X   |       |         |     |
+|  975 |                                        | X   |       |         |     |
+|  976 |                                        | X   |       |         |     |
+|  978 |                                        | X   |       |         |     |
+|  980 |                                        | X   |       |         |     |
+|  981 |                                        | X   |       |         |     |
+|  982 |                                        | X   | X     |         |     |
+|  983 |                                        | X   |       |         |     |
+|  997 |                                        |     | X     |         |     |
+| 1002 |                                        |     | X     |         |     |
+| 1005 | Solar Conjunction                      |     |       |         |     |
+| 1006 | Solar Conjunction                      |     |       |         |     |
+| 1007 | Solar Conjunction                      |     |       |         |     |
+| 1008 | Solar Conjunction                      |     |       |         |     |
+| 1009 | Solar Conjunction                      |     |       |         |     |
+| 1010 | Solar Conjunction                      |     |       |         |     |
+| 1011 | Solar Conjunction                      |     |       |         |     |
+| 1012 | Solar Conjunction                      |     | X     |         |     |
+| 1013 | Solar Conjunction                      |     |       |         |     |
+| 1014 | Solar Conjunction                      |     |       |         |     |
+| 1015 | Solar Conjunction                      |     |       |         |     |
+| 1016 | Solar Conjunction                      |     |       |         |     |
+| 1017 | Solar Conjunction                      |     |       |         |     |
+| 1018 | Solar Conjunction                      |     |       |         |     |
+| 1019 | Solar Conjunction                      |     |       |         |     |
+| 1020 | Solar Conjunction                      |     |       |         |     |
+| 1021 | Solar Conjunction                      |     |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 1022 | Solar Conjunction                      |     | X     |         |     |
+| 1023 | Solar Conjunction                      |     |       |         |     |
+| 1024 | Solar Conjunction                      |     |       |         |     |
+| 1025 | Solar Conjunction                      |     |       |         |     |
+| 1028 |                                        | X   |       |         |     |
+| 1029 |                                        | X   |       |         |     |
+| 1030 |                                        | X   |       |         |     |
+| 1031 |                                        | X   |       |         |     |
+| 1032 |                                        | X   | X     |         |     |
+| 1034 |                                        | X   |       |         |     |
+| 1035 |                                        | X   |       |         |     |
+| 1037 |                                        | X   |       |         |     |
+| 1038 |                                        | X   |       |         |     |
+| 1040 |                                        | X   |       |         |     |
+| 1043 |                                        |     | X     |         |     |
+| 1048 |                                        | X   |       |         |     |
+| 1054 |                                        |     | X     |         |     |
+| 1062 |                                        |     |       |         | X   |
+| 1063 |                                        |     | X     |         | X   |
+| 1071 |                                        | X   |       |         |     |
+| 1072 |                                        | X   |       |         |     |
+| 1073 |                                        | X   | X     |         |     |
+| 1075 |                                        | X   |       |         |     |
+| 1076 |                                        | X   |       |         |     |
+| 1077 |                                        | X   |       |         |     |
+| 1078 |                                        | X   |       |         |     |
+| 1079 |                                        | X   |       |         |     |
+| 1080 |                                        | X   |       |         |     |
+| 1082 |                                        | X   |       |         |     |
+| 1084 |                                        |     | X     |         |     |
+| 1094 |                                        |     | X     |         |     |
+| 1104 |                                        |     | X     |         |     |
+| 1113 |                                        | X   |       |         |     |
+| 1114 |                                        | X   |       |         |     |
+| 1115 |                                        | X   | X     |         |     |
+| 1116 |                                        | X   |       |         |     |
+| 1118 |                                        | X   |       |         |     |
+| 1119 |                                        | X   |       |         |     |
+| 1120 |                                        | X   |       |         |     |
+| 1121 |                                        | X   |       |         |     |
+| 1122 |                                        | X   |       |         |     |
+| 1125 |                                        | X   |       |         |     |
+| 1126 |                                        |     | X     |         |     |
+| 1136 |                                        |     | X     |         |     |
+| 1145 |                                        |     | X     |         |     |
+| 1146 | No wind data from 13:05 to 15:05       |     |       |         |     |
+| 1147 | No wind data from 13:05 to 15:05       |     |       |         |     |
+| 1148 | No wind data from 13:05 to 15:05       |     |       |         |     |
+| 1149 | No wind data from 13:05 to 15:05       |     |       |         |     |
+| 1150 | No wind data from 13:05 to 15:05       |     |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 1151 | No wind data from 13:05 to 15:05       |     |       |         |     |
+| 1152 | No wind data from 13:05 to 15:05       |     |       |         |     |
+| 1153 | No wind data from 13:05 to 15:05       |     |       |         |     |
+| 1154 |                                        | X   |       |         |     |
+| 1155 |                                        | X   |       |         |     |
+| 1156 |                                        |     | X     |         |     |
+| 1157 |                                        | X   |       |         |     |
+| 1158 |                                        | X   |       |         |     |
+| 1159 |                                        | X   |       |         |     |
+| 1160 |                                        | X   |       |         | X   |
+| 1161 |                                        |     |       |         | X   |
+| 1162 |                                        | X   |       |         |     |
+| 1167 |                                        |     | X     |         |     |
+| 1169 |                                        | X   |       |         |     |
+| 1170 |                                        | X   |       |         |     |
+| 1171 |                                        | X   |       |         |     |
+| 1176 |                                        | X   |       |         |     |
+| 1189 |                                        |     | X     |         |     |
+| 1195 |                                        |     | X     |         |     |
+| 1197 |                                        | X   |       |         |     |
+| 1199 |                                        | X   |       |         |     |
+| 1200 |                                        | X   |       |         |     |
+| 1203 |                                        | X   |       |         |     |
+| 1204 |                                        | X   |       |         |     |
+| 1205 |                                        | X   | X     |         |     |
+| 1207 |                                        |     | X     |         |     |
+| 1208 |                                        | X   |       |         |     |
+| 1216 |                                        |     | X     |         |     |
+| 1228 |                                        |     | X     |         |     |
+| 1242 |                                        | X   | X     |         |     |
+| 1244 |                                        | X   |       |         |     |
+| 1246 |                                        | X   |       |         |     |
+| 1247 |                                        | X   |       |         |     |
+| 1248 |                                        | X   |       |         |     |
+| 1251 |                                        | X   |       |         |     |
+| 1252 |                                        | X   | X     |         |     |
+| 1253 |                                        | X   |       |         |     |
+| 1254 |                                        | X   |       |         |     |
+| 1255 |                                        | X   |       |         |     |
+| 1262 |                                        |     | X     |         |     |
+| 1284 |                                        |     | X     |         |     |
+| 1286 |                                        | X   |       |         |     |
+| 1288 |                                        | X   |       |         |     |
+| 1289 |                                        | X   |       |         |     |
+| 1290 |                                        | X   |       |         |     |
+| 1292 |                                        | X   |       |         |     |
+| 1293 |                                        | X   |       |         |     |
+| 1294 |                                        |     | X     |         |     |
+| 1295 |                                        | X   |       |         |     |
+| 1296 |                                        | X   |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 1299 |                                        | X   |       |         |     |
+| 1300 |                                        | X   |       |         | X   |
+| 1301 |                                        |     |       |         | X   |
+| 1308 |                                        |     | X     |         |     |
+| 1319 |                                        |     | X     |         |     |
+| 1330 |                                        | X   |       |         |     |
+| 1331 |                                        | X   |       |         |     |
+| 1332 |                                        | X   | X     |         |     |
+| 1334 |                                        | X   |       |         |     |
+| 1335 |                                        | X   |       |         |     |
+| 1337 |                                        | X   |       |         |     |
+| 1338 |                                        | X   |       |         |     |
+| 1340 |                                        | X   |       |         |     |
+| 1341 |                                        | X   |       |         |     |
+| 1342 |                                        |     | X     |         |     |
+| 1351 |                                        |     | X     |         |     |
+| 1361 |                                        |     | X     |         |     |
+| 1371 |                                        | X   |       |         |     |
+| 1372 |                                        | X   | X     |         |     |
+| 1377 |                                        | X   |       |         |     |
+| 1378 |                                        | X   |       |         |     |
+| 1380 |                                        | X   |       |         |     |
+| 1382 |                                        | X   | X     |         |     |
+| 1383 |                                        | X   |       |         |     |
+| 1386 |                                        | X   |       |         |     |
+| 1388 |                                        | X   |       |         |     |
+| 1389 | No activity since 02:50                |     |       |         |     |
+| 1390 | No activity                            |     |       |         |     |
+| 1391 | No activity                            |     |       |         |     |
+| 1392 | No activity                            |     |       |         |     |
+| 1393 | No activity                            |     |       |         |     |
+| 1394 | No activity                            |     |       |         |     |
+| 1395 | No activity                            |     |       |         |     |
+| 1396 | No activity                            |     |       |         |     |
+| 1397 | No activity                            |     |       |         |     |
+| 1398 | No activity until 11:15                |     |       |         |     |
+| 1405 |                                        |     | X     |         |     |
+| 1415 |                                        |     | X     |         |     |
+| 1419 |                                        |     |       |         | X   |
+| 1420 |                                        | X   |       |         | X   |
+| 1424 |                                        | X   |       |         |     |
+| 1425 |                                        | X   |       |         |     |
+| 1426 |                                        | X   |       |         |     |
+| 1427 |                                        |     | X     |         |     |
+| 1428 |                                        | X   |       |         |     |
+| 1430 |                                        | X   |       |         |     |
+| 1431 |                                        | X   |       |         |     |
+| 1434 |                                        | X   |       |         |     |
+| 1436 |                                        | X   |       |         |     |
+| 1438 |                                        |     | X     |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 1439 |                                        | X   |       |         |     |
+| 1440 |                                        | X   |       |         |     |
+| 1447 |                                        |     | X     |         |     |
+| 1457 |                                        |     | X     |         |     |
+| 1468 |                                        |     | X     |         |     |
+| 1472 |                                        | X   |       |         |     |
+| 1473 |                                        | X   |       |         |     |
+| 1474 |                                        | X   |       |         |     |
+| 1475 |                                        | X   |       |         |     |
+| 1476 |                                        | X   |       |         |     |
+| 1478 |                                        | X   | X     |         |     |
+| 1479 |                                        | X   |       |         |     |
+| 1480 |                                        | X   |       |         |     |
+| 1482 |                                        | X   |       |         |     |
+| 1484 |                                        | X   |       |         |     |
+| 1488 |                                        |     | X     |         |     |
+| 1499 |                                        |     | X     |         |     |
+| 1510 |                                        |     | X     |         |     |
+| 1514 |                                        |     |       |         | X   |
+| 1515 |                                        | X   |       |         | X   |
+| 1516 |                                        | X   |       |         |     |
+| 1517 |                                        | X   |       |         |     |
+| 1519 |                                        |     | X     |         |     |
+| 1520 |                                        | X   |       |         |     |
+| 1521 |                                        | X   |       |         |     |
+| 1522 |                                        | X   |       |         |     |
+| 1523 |                                        | X   |       |         |     |
+| 1524 |                                        | X   |       |         |     |
+| 1526 |                                        | X   |       |         |     |
+| 1527 |                                        | X   |       |         |     |
+| 1529 |                                        |     | X     |         |     |
+| 1538 |                                        |     | X     |         |     |
+| 1549 |                                        |     | X     |         |     |
+| 1556 |                                        |     | X     |         |     |
+| 1567 |                                        |     | X     |         |     |
+| 1575 |                                        | X   |       |         |     |
+| 1576 |                                        | X   |       |         |     |
+| 1577 |                                        | X   | X     |         |     |
+| 1578 |                                        | X   |       |         |     |
+| 1580 |                                        | X   |       |         |     |
+| 1581 |                                        | X   |       |         |     |
+| 1582 |                                        | X   |       |         |     |
+| 1583 |                                        | X   |       |         |     |
+| 1587 |                                        | X   |       |         |     |
+| 1588 |                                        | X   | X     |         |     |
+| 1598 |                                        |     | X     |         |     |
+| 1600 | No data at 19:00-20:05                 |     |       |         |     |
+| 1601 | No data at 04:00-07:05, 08:00-14:00    |     |       |         |     |
+| 1608 |                                        |     | X     |         |     |
+| 1610 | No activity between 9:25-16:00,        |     |       |         |     |
+|      | 18:00-23:00                            |     |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 1611 | No activity between 10:00-17:00,       |     |       |         |     |
+|      | 19:00-23:00                            |     |       |         |     |
+| 1612 | No activity between 0:00-12:00         |     |       |         |     |
+| 1622 |                                        | X   |       |         |     |
+| 1624 |                                        | X   | X     |         |     |
+| 1626 |                                        | X   |       |         |     |
+| 1628 |                                        | X   |       |         |     |
+| 1629 |                                        | X   |       |         |     |
+| 1630 |                                        | X   |       |         |     |
+| 1632 |                                        | X   |       |         |     |
+| 1633 |                                        | X   |       |         |     |
+| 1634 |                                        | X   |       |         |     |
+| 1635 |                                        | X   | X     |         |     |
+| 1647 |                                        |     | X     |         |     |
+| 1648 |                                        |     |       |         | X   |
+| 1649 |                                        |     |       |         | X   |
+| 1657 |                                        |     | X     |         |     |
+| 1665 |                                        | X   |       |         |     |
+| 1666 |                                        | X   |       |         |     |
+| 1668 |                                        | X   |       |         |     |
+| 1669 |                                        | X   |       |         |     |
+| 1670 |                                        | X   |       |         |     |
+| 1671 |                                        | X   |       |         |     |
+| 1672 |                                        | X   | X     |         |     |
+| 1674 |                                        | X   |       |         |     |
+| 1676 |                                        | X   |       |         |     |
+| 1677 |                                        | X   |       |         |     |
+| 1695 |                                        |     | X     |         |     |
+| 1703 |                                        |     | X     |         |     |
+| 1710 |                                        | X   |       |         |     |
+| 1711 |                                        | X   |       |         |     |
+| 1713 |                                        |     | X     |         |     |
+| 1714 |                                        | X   |       |         |     |
+| 1716 |                                        | X   |       |         |     |
+| 1717 |                                        | X   |       |         |     |
+| 1719 |                                        | X   |       |         |     |
+| 1720 |                                        | X   |       |         |     |
+| 1722 |                                        | X   |       |         |     |
+| 1723 |                                        | X   |       |         |     |
+| 1725 |                                        | X   |       |         |     |
+| 1727 |                                        |     | X     |         |     |
+| 1739 |                                        |     | X     |         |     |
+| 1751 |                                        |     | X     |         |     |
+| 1758 | Solar Conjunction                      |     |       |         |     |
+| 1759 | Solar Conjunction                      |     |       |         |     |
+| 1760 | Solar Conjunction                      |     |       |         |     |
+| 1761 | Solar Conjunction                      |     |       |         |     |
+| 1762 | Solar Conjunction                      |     | X     |         |     |
+| 1763 | Solar Conjunction                      |     |       |         |     |
+| 1764 | Solar Conjunction                      |     |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 1765 | Solar Conjunction                      |     |       |         |     |
+| 1766 | Solar Conjunction                      |     |       |         |     |
+| 1767 | Solar Conjunction                      |     |       |         |     |
+| 1768 | Solar Conjunction                      |     |       |         |     |
+| 1769 | Solar Conjunction                      |     |       |         |     |
+| 1770 | Solar Conjunction                      |     |       |         |     |
+| 1771 | Solar Conjunction                      |     |       |         |     |
+| 1772 | Solar Conjunction                      |     |       |         |     |
+| 1773 | Solar Conjunction                      |     | X     |         |     |
+| 1774 | Solar Conjunction                      |     |       |         |     |
+| 1775 | Solar Conjunction                      |     |       |         |     |
+| 1776 | Solar Conjunction                      |     |       |         |     |
+| 1777 | Solar Conjunction                      |     |       |         |     |
+| 1778 | Solar Conjunction                      |     |       |         |     |
+| 1782 |                                        | X   |       |         |     |
+| 1783 |                                        |     |       |         | X   |
+| 1784 |                                        | X   |       |         | X   |
+| 1785 |                                        |     | X     |         |     |
+| 1787 |                                        | X   |       |         |     |
+| 1789 |                                        | X   |       |         |     |
+| 1790 |                                        | X   |       |         |     |
+| 1791 |                                        | X   |       |         |     |
+| 1792 |                                        | X   |       |         |     |
+| 1794 |                                        | X   |       |         |     |
+| 1795 |                                        | X   |       |         |     |
+| 1796 |                                        | X   | X     |         |     |
+| 1806 |                                        |     | X     |         |     |
+| 1820 |                                        |     | X     |         |     |
+| 1827 |                                        | X   |       |         |     |
+| 1828 |                                        | X   |       |         |     |
+| 1830 |                                        | X   | X     |         |     |
+| 1831 |                                        | X   |       |         |     |
+| 1833 |                                        | X   |       |         |     |
+| 1834 |                                        | X   |       |         |     |
+| 1836 |                                        | X   |       |         |     |
+| 1837 |                                        | X   |       |         |     |
+| 1842 |                                        | X   | X     |         |     |
+| 1843 |                                        | X   |       |         |     |
+| 1853 |                                        |     | X     |         |     |
+| 1864 |                                        |     | X     |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 1871 |                                        |     |       |         | X   |
+| 1870 |                                        |     |       |         | X   |
+| 1872 |                                        |     | X     |         |     |
+| 1875 |                                        | X   |       |         |     |
+| 1876 |                                        | X   |       |         |     |
+| 1877 |                                        | X   |       |         |     |
+| 1878 |                                        | X   |       |         |     |
+| 1879 |                                        | X   |       |         |     |
+| 1881 |                                        | X   |       |         |     |
+| 1883 |                                        |     | X     |         |     |
+| 1886 |                                        | X   |       |         |     |
+| 1887 |                                        | X   |       |         |     |
+| 1888 |                                        | X   |       |         |     |
+| 1889 |                                        | X   |       |         |     |
+| 1893 |                                        |     | X     |         |     |
+| 1903 |                                        |     | X     |         |     |
+| 1913 |                                        |     | X     |         |     |
+| 1921 |                                        | X   |       |         |     |
+| 1922 |                                        | X   |       |         |     |
+| 1923 |                                        | X   | X     |         |     |
+| 1924 |                                        | X   |       |         |     |
+| 1925 |                                        | X   |       |         |     |
+| 1926 |                                        | X   |       |         |     |
+| 1927 |                                        | X   |       |         |     |
+| 1928 |                                        | X   |       |         |     |
+| 1929 |                                        | X   |       |         |     |
+| 1930 |                                        | X   |       |         |     |
+| 1933 |                                        |     | X     |         |     |
+| 1945 |                                        |     | X     |         |     |
+| 1953 |                                        |     | X     |         |     |
+| 1961 |                                        | X   |       |         |     |
+| 1963 |                                        | X   | X     |         |     |
+| 1964 |                                        | X   |       |         |     |
+| 1965 |                                        | X   |       |         |     |
+| 1966 |                                        | X   |       |         |     |
+| 1969 |                                        | X   |       |         |     |
+| 1971 |                                        | X   |       |         |     |
+| 1973 |                                        | X   | X     |         |     |
+| 1974 |                                        | X   |       |         |     |
+| 1975 |                                        | X   |       |         |     |
+| 1983 |                                        |     | X     |         |     |
+| 1993 |                                        |     | X     |         |     |
+| 2001 |                                        |     |       |         | X   |
+| 2002 |                                        |     | X     |         | X   |
+| 2005 |                                        | X   |       |         |     |
+| 2006 |                                        | X   |       |         |     |
+| 2007 |                                        | X   |       |         |     |
+| 2008 |                                        | X   |       |         |     |
+| 2009 |                                        | X   |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 2012 |                                        | X   |       |         |     |
+| 2014 |                                        | X   | X     |         |     |
+| 2015 |                                        | X   |       |         |     |
+| 2017 |                                        | X   |       |         |     |
+| 2028 |                                        |     | X     |         |     |
+| 2038 |                                        |     | X     |         |     |
+| 2048 |                                        | X   |       |         |     |
+| 2049 |                                        | X   |       |         |     |
+| 2050 |                                        | X   |       |         |     |
+| 2051 |                                        |     | X     |         |     |
+| 2052 |                                        | X   |       |         |     |
+| 2053 |                                        | X   |       |         |     |
+| 2055 |                                        | X   |       |         |     |
+| 2056 |                                        | X   |       |         |     |
+| 2057 |                                        | X   |       |         |     |
+| 2058 |                                        | X   |       |         |     |
+| 2061 |                                        | X   |       |         |     |
+| 2062 |                                        |     | X     |         |     |
+| 2072 |                                        |     | X     |         |     |
+| 2082 |                                        |     | X     |         |     |
+| 2090 |                                        | X   |       |         |     |
+| 2091 |                                        | X   |       |         |     |
+| 2092 |                                        |     | X     |         |     |
+| 2093 |                                        | X   |       |         |     |
+| 2096 |                                        | X   |       |         |     |
+| 2097 |                                        | X   |       |         |     |
+| 2100 |                                        | X   |       |         |     |
+| 2101 |                                        |     | X     |         |     |
+| 2105 |                                        | X   |       |         |     |
+| 2106 |                                        | X   |       |         |     |
+| 2108 |                                        | X   |       |         |     |
+| 2109 |                                        | X   |       |         |     |
+| 2113 |                                        |     | X     |         |     |
+| 2123 |                                        |     | X     |         |     |
+| 2126 |                                        |     |       |         | X   |
+| 2127 |                                        |     |       |         | X   |
+| 2134 |                                        |     | X     |         |     |
+| 2139 |                                        | X   |       |         |     |
+| 2142 |                                        | X   |       |         |     |
+| 2143 |                                        | X   |       |         |     |
+| 2144 |                                        |     | X     |         |     |
+| 2145 |                                        | X   |       |         |     |
+| 2150 |                                        | X   |       |         |     |
+| 2153 |                                        | X   |       |         |     |
+| 2154 |                                        | X   |       |         |     |
+| 2155 |                                        |     | X     |         |     |
+| 2156 |                                        | X   |       |         |     |
+| 2166 |                                        |     | X     |         |     |
+| 2175 | No activity from sol 2175M12:15        |     |       |         |     |
+|      | to sol 2204M12:10                      |     |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 2204 |                                        | X   | X     |         |     |
+| 2206 |                                        | X   |       |         |     |
+| 2207 |                                        | X   |       |         |     |
+| 2208 |                                        | X   |       |         |     |
+| 2210 |                                        | X   |       |         |     |
+| 2211 |                                        | X   |       |         |     |
+| 2212 |                                        | X   |       |         |     |
+| 2213 |                                        | X   |       |         |     |
+| 2214 |                                        | X   | X     |         |     |
+| 2215 |                                        | X   |       |         |     |
+| 2216 |                                        | X   |       |         |     |
+| 2224 |                                        |     |       |         | X   |
+| 2225 |                                        |     | X     |         | X   |
+| 2236 |                                        |     | X     |         |     |
+| 2246 |                                        | X   |       |         |     |
+| 2247 |                                        |     |       |         |     |
+| 2248 |                                        | X   | X     |         |     |
+| 2249 |                                        | X   |       |         |     |
+| 2250 |                                        | X   |       |         |     |
+| 2252 |                                        | X   |       |         |     |
+| 2253 |                                        | X   |       |         |     |
+| 2255 |                                        | X   |       |         |     |
+| 2256 |                                        | X   |       |         |     |
+| 2258 |                                        | X   | X     |         |     |
+| 2259 |                                        | X   |       |         |     |
+| 2262 | Data gaps near 11:38                   |     |       |         |     |
+| 2265 | Data gaps near 03:10                   |     |       |         |     |
+| 2268 |                                        |     | X     |         |     |
+| 2278 |                                        |     | X     |         |     |
+| 2288 |                                        |     | X     |         |     |
+| 2289 |                                        | X   |       |         |     |
+| 2297 |                                        | X   |       |         |     |
+| 2298 |                                        | X   |       |         |     |
+| 2300 |                                        |     | X     |         |     |
+| 2301 |                                        | X   |       |         |     |
+| 2302 |                                        | X   |       |         |     |
+| 2303 |                                        | X   |       |         |     |
+| 2304 |                                        | X   |       |         |     |
+| 2307 |                                        | X   |       |         |     |
+| 2309 |                                        | X   |       |         |     |
+| 2310 |                                        | X   | X     |         |     |
+| 2312 |                                        | X   |       |         |     |
+| 2320 | No data from 19:13 to sol 233312:24    |     |       |         |     |
+| 2338 |                                        |     | X     |         |     |
+| 2339 | No data from 20:07 to sol2347M13:10    |     |       |         |     |
+| 2350 |                                        | X   |       |         |     |
+| 2351 |                                        | X   |       |         |     |
+| 2352 |                                        | X   |       |         |     |
+| 2353 |                                        | X   |       |         |     |
+| 2356 |                                        | X   |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 2357 |                                        | X   |       |         |     |
+| 2358 |                                        |     |       |         | X   |
+| 2359 |                                        | X   |       |         | X   |
+| 2361 |                                        | X   | X     |         |     |
+| 2362 |                                        | X   |       |         |     |
+| 2363 |                                        | X   |       |         |     |
+| 2371 |                                        |     | X     |         |     |
+| 2381 |                                        |     | X     |         |     |
+| 2391 |                                        |     | X     |         |     |
+| 2398 |                                        | X   |       |         |     |
+| 2399 |                                        | X   |       |         |     |
+| 2400 |                                        | X   |       |         |     |
+| 2401 |                                        | X   |       |         |     |
+| 2403 |                                        | X   |       |         |     |
+| 2402 |                                        |     | X     |         |     |
+| 2404 |                                        | X   |       |         |     |
+| 2405 |                                        | X   |       |         |     |
+| 2406 |                                        | X   |       |         |     |
+| 2407 |                                        | X   |       |         |     |
+| 2411 |                                        | X   |       |         |     |
+| 2412 |                                        |     | X     |         |     |
+| 2417 | Wind Sensor OFF data volume tests      |     |       |         |     |
+| 2418 | Wind Sensor OFF data volume tests      |     |       |         |     |
+| 2419 | Wind Sensor OFF data volume tests      |     |       |         |     |
+| 2420 | Wind Sensor OFF data volume tests      |     |       |         |     |
+| 2421 | Wind Sensor OFF data volume tests      |     |       |         |     |
+| 2422 | Wind Sensor OFF data volume tests      |     |       |         |     |
+| 2423 | Wind Sensor OFF data volume tests      |     | X     |         |     |
+| 2424 | Wind Sensor OFF data volume tests      |     |       |         |     |
+| 2432 |                                        |     | X     |         |     |
+| 2435 | Missing some data near 07:10           |     |       |         |     |
+| 2438 | Missing some data near 12:24           |     |       |         |     |
+| 2445 |                                        |     | X     |         |     |
+| 2446 |                                        | X   |       |         |     |
+| 2447 |                                        | X   |       |         |     |
+| 2448 |                                        | X   |       |         |     |
+| 2449 |                                        | X   |       |         |     |
+| 2451 |                                        | X   |       |         |     |
+| 2452 |                                        | X   |       |         |     |
+| 2453 |                                        | X   |       |         |     |
+| 2454 |                                        | X   |       |         |     |
+| 2455 |                                        | X   | X     |         |     |
+| 2457 |                                        | X   |       |         |     |
+| 2465 |                                        |     | X     |         |     |
+| 2473 | Wind Sensor OFF data volume tests      |     |       |         |     |
+| 2474 | Wind Sensor OFF data volume tests      |     |       |         |     |
+| 2475 | Wind Sensor OFF data volume tests      |     | X     |         |     |
+| 2482 |                                        |     |       |         | X   |
+| 2483 |                                        |     |       |         | X   |
+| 2486 |                                        |     | X     |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 2493 |                                        | X   |       |         |     |
+| 2495 |                                        | X   |       |         |     |
+| 2496 |                                        | X   | X     |         |     |
+| 2497 |                                        | X   |       |         |     |
+| 2499 |                                        | X   |       |         |     |
+| 2500 |                                        | X   |       |         |     |
+| 2501 |                                        | X   |       |         |     |
+| 2502 |                                        | X   |       |         |     |
+| 2503 |                                        | X   |       |         |     |
+| 2507 |                                        |     | X     |         |     |
+| 2508 | Solar Conjunction                      |     |       |         |     |
+| 2509 | Solar Conjunction                      |     |       |         |     |
+| 2500 | Solar Conjunction                      |     |       |         |     |
+| 2511 | Solar Conjunction                      |     |       |         |     |
+| 2512 | Solar Conjunction                      |     |       |         |     |
+| 2513 | Solar Conjunction                      |     |       |         |     |
+| 2514 | Solar Conjunction                      |     |       |         |     |
+| 2515 | Solar Conjunction                      |     |       |         |     |
+| 2516 | Solar Conjunction                      |     | X     |         |     |
+| 2517 | Solar Conjunction                      |     |       |         |     |
+| 2518 | Solar Conjunction                      |     |       |         |     |
+| 2519 | Solar Conjunction                      |     |       |         |     |
+| 2520 | Solar Conjunction                      |     |       |         |     |
+| 2521 | Solar Conjunction                      |     |       |         |     |
+| 2523 | Wind Sensor OFF data volume test       |     |       |         |     |
+| 2524 | Wind Sensor OFF data volume test       |     |       |         |     |
+| 2526 |                                        |     | X     |         |     |
+| 2537 |                                        |     | X     |         |     |
+| 2541 |                                        | X   |       |         |     |
+| 2542 |                                        | X   |       |         |     |
+| 2543 |                                        | X   |       |         |     |
+| 2544 |                                        | X   |       |         |     |
+| 2547 |                                        |     | X     |         |     |
+| 2548 |                                        | X   |       |         |     |
+| 2549 |                                        | X   |       |         |     |
+| 2550 |                                        | X   |       |         |     |
+| 2551 |                                        | X   |       |         |     |
+| 2553 |                                        | X   |       |         |     |
+| 2554 |                                        | X   |       |         |     |
+| 2557 |                                        |     | X     |         |     |
+| 2558 | Wind Sensor OFF at 15:00 from this     |     |       |         |     |
+|      | point onwards to reduce data volume    |     |       |         |     |
+| 2567 |                                        |     | X     |         |     |
+| 2577 |                                        |     | X     |         |     |
+| 2579 |                                        |     |       |         | X   |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 2580 |                                        |     |       |         | X   |
+| 2587 |                                        |     | X     |         |     |
+| 2589 |                                        | X   |       |         |     |
+| 2590 | Wind Sensor ON after GTS cal           | X   |       |         |     |
+| 2591 | Wind Sensor ON after GTS cal           | X   |       |         |     |
+| 2592 | Wind Sensor ON after GTS cal           | X   |       |         |     |
+| 2593 |                                        | X   |       |         |     |
+| 2596 |                                        | X   |       |         |     |
+| 2597 |                                        | X   | X     |         |     |
+| 2598 |                                        | X   |       |         |     |
+| 2599 |                                        | X   |       |         |     |
+| 2602 |                                        | X   |       |         |     |
+| 2606 |                                        |     | X     |         |     |
+| 2627 |                                        |     | X     |         |     |
+| 2636 |                                        |     | X     |         |     |
+| 2639 |                                        | X   |       |         |     |
+| 2641 |                                        | X   |       |         |     |
+| 2643 |                                        | X   |       |         |     |
+| 2644 |                                        | X   |       |         |     |
+| 2645 |                                        | X   |       |         |     |
+| 2646 |                                        | X   | X     |         |     |
+| 2647 |                                        | X   |       |         |     |
+| 2653 |                                        | X   |       |         |     |
+| 2654 |                                        | X   |       |         |     |
+| 2655 |                                        | X   |       |         |     |
+| 2658 | Wind Sensor ON 2658M15:00-2659M12:05   |     |       |         |     |
+| 2659 | Wind Sensor ON 2658M15:00-2659M12:05   |     |       |         |     |
+| 2662 |                                        |     | X     |         |     |
+| 2675 |                                        |     | X     |         |     |
+| 2685 |                                        |     | X     |         |     |
+| 2689 |                                        | X   |       |         |     |
+| 2690 |                                        | X   |       |         |     |
+| 2691 |                                        | X   |       |         |     |
+| 2692 |                                        | X   |       |         |     |
+| 2693 |                                        | X   |       |         |     |
+| 2695 | Reached 100% memory at 09:44:30        | X   |       |         |     |
+| 2696 |                                        | X   |       |         |     |
+| 2697 | Reached 100% memory at 13:46:20        | X   | X     |         |     |
+| 2698 |                                        | X   |       |         |     |
+| 2699 |                                        | X   |       |         |     |
+| 2707 | Reached 100% memory at 22:00           |     |       |         |     |
+| 2712 |                                        |     | X     |         |     |
+| 2713 |                                        |     |       |         | X   |
+| 2714 |                                        |     |       |         | X   |
+| 2721 | Missing some data near 08:02           |     |       |         |     |
+| 2722 |                                        |     | X     |         |     |
+| 2734 |                                        |     | X     |         |     |
+| 2737 |                                        | X   |       |         |     |
+| 2738 |                                        | X   |       |         |     |
+| 2739 |                                        | X   |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 2740 |                                        | X   |       |         |     |
+| 2741 |                                        | X   |       |         |     |
+| 2742 |                                        | X   |       |         |     |
+| 2743 |                                        | X   |       |         |     |
+| 2744 |                                        | X   |       |         |     |
+| 2745 |                                        | X   | X     |         |     |
+| 2746 |                                        | X   |       |         |     |
+| 2754 |                                        |     | X     |         |     |
+| 2759 | Wind Sensor ON 2759M10:00-2760M09:05   |     |       |         |     |
+| 2760 | Wind Sensor ON 2759M10:00-2760M09:05   |     |       |         |     |
+| 2764 |                                        |     | X     |         |     |
+| 2785 |                                        | X   |       |         |     |
+| 2786 |                                        | X   |       |         |     |
+| 2787 |                                        | X   |       |         |     |
+| 2788 |                                        | X   |       |         |     |
+| 2789 |                                        |     | X     |         |     |
+| 2790 |                                        | X   |       |         |     |
+| 2791 | Missing some data near 20:13           | X   |       |         |     |
+| 2792 |                                        | X   |       |         |     |
+| 2793 |                                        | X   |       |         |     |
+| 2794 |                                        | X   |       |         |     |
+| 2795 |                                        | X   |       |         |     |
+| 2799 |                                        |     | X     |         |     |
+| 2807 | No activity from 15:00 to 23:59        |     |       |         |     |
+| 2808 | No activity                            |     |       |         |     |
+| 2809 | No activity                            |     |       |         |     |
+| 2810 | No activity from 00:00 to 14:24        |     |       |         |     |
+| 2812 |                                        |     | X     |         |     |
+| 2814 | No activity from 06:35 to 23:59        |     |       |         |     |
+| 2815 | No activity                            |     |       |         |     |
+| 2816 | No activity from 00:00 to 13:15        |     |       |         |     |
+| 2823 |                                        |     | X     |         |     |
+| 2836 |                                        | X   |       |         |     |
+| 2837 |                                        |     |       |         |     |
+| 2838 |                                        |     |       |         |     |
+| 2839 |                                        | X   |       |         | X   |
+| 2840 |                                        |     |       |         | X   |
+| 2841 |                                        | X   |       |         |     |
+| 2842 |                                        | X   |       |         |     |
+| 2843 |                                        | X   |       |         |     |
+| 2849 |                                        |     | X     |         |     |
+| 2861 |                                        |     | X     |         |     |
+| 2871 |                                        |     | X     |         |     |
+| 2878 |                                        | X   |       |         |     |
+| 2879 | Wind Sensor ON temporarily             | X   |       |         |     |
+| 2881 |                                        | X   | X     |         |     |
+| 2882 |                                        | X   |       |         |     |
+| 2883 | Reached 100% memory at 01:xx           | X   |       |         |     |
+| 2884 |                                        | X   |       |         |     |
+| 2885 |                                        | X   |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 2887 |                                        | X   |       |         |     |
+| 2888 |                                        | X   |       |         |     |
+| 2889 |                                        | X   | X     |         |     |
+| 2909 |                                        |     | X     |         |     |
+| 2922 |                                        |     | X     |         |     |
+| 2929 |                                        | X   |       |         |     |
+| 2930 |                                        | X   |       |         |     |
+| 2931 |                                        | X   |       |         |     |
+| 2932 |                                        | X   |       |         |     |
+| 2933 |                                        | X   |       |         |     |
+| 2934 |                                        |     | X     |         |     |
+| 2935 |                                        | X   |       |         | X   |
+| 2936 |                                        | X   |       |         | X   |
+| 2937 |                                        | X   |       |         |     |
+| 2938 |                                        | X   |       |         |     |
+| 2939 |                                        | X   |       |         |     |
+| 2946 |                                        |     | X     |         |     |
+| 2955 | Reached 100% memory at 19:xx           |     | X     |         |     |
+| 2963 | No activity from 08:42 to 11:50        |     |       |         |     |
+| 2965 | No activity since 08:48                |     |       |         |     |
+| 2966 | No activity                            |     |       |         |     |
+| 2967 | No activity up to 10:30                |     |       |         |     |
+| 2975 |                                        |     | X     |         |     |
+| 2979 |                                        | X   |       |         |     |
+| 2980 |                                        | X   |       |         |     |
+| 2981 |                                        | X   |       |         |     |
+| 2983 |                                        | X   |       |         |     |
+| 2984 |                                        | X   |       |         |     |
+| 2985 |                                        | X   | X     |         |     |
+| 2987 |                                        | X   |       |         |     |
+| 2989 |                                        | X   |       |         |     |
+| 2990 |                                        | X   |       |         |     |
+| 2991 |                                        | X   |       |         |     |
+| 2995 |                                        |     | X     |         |     |
+| 3005 |                                        |     | X     |         |     |
+| 3015 |                                        |     | X     |         |     |
+| 3025 |                                        | X   | X     |         |     |
+| 3026 |                                        | X   |       |         |     |
+| 3027 |                                        | X   |       |         |     |
+| 3029 |                                        | X   |       |         |     |
+| 3031 |                                        | X   |       |         |     |
+| 3032 |                                        | X   |       |         |     |
+| 3033 |                                        | X   |       |         |     |
+| 3034 |                                        | X   |       |         |     |
+| 3035 |                                        | X   | X     |         |     |
+| 3052 |                                        |     | X     |         |     |
+| 3060 | Reached 100% memory at 00:xx           |     |       |         |     |
+|      | No data 00:00-01:05, 17:05-04:05       |     |       |         |     |
+| 3061 |                                        |     | X     |         |     |
+| 3068 | No data 14:00-16:05                    |     |       |         |     |
+| 3069 |                                        | X   |       |         |     |
+| 3070 |                                        | X   |       |         |     |
+| 3071 |                                        | X   |       |         |     |
+| 3072 |                                        |     | X     |         |     |
+| 3073 |                                        | X   |       |         |     |
+| 3074 |                                        | X   |       |         |     |
+| 3076 |                                        |     |       |         | X   |
+| 3077 |                                        | X   |       |         | X   |
+| 3079 |                                        | X   |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 3081 |                                        | X   |       |         |     |
+| 3082 |                                        | X   | X     |         |     |
+| 3083 |                                        | X   |       |         |     |
+| 3093 |                                        |     | X     |         |     |
+| 3103 |                                        |     | X     |         |     |
+| 3114 |                                        |     | X     |         |     |
+| 3118 |                                        | X   |       |         |     |
+| 3121 |                                        | X   |       |         |     |
+| 3123 |                                        | X   |       |         |     |
+| 3124 |                                        | X   | X     |         |     |
+| 3125 |                                        | X   |       |         |     |
+| 3128 |                                        | X   |       |         |     |
+| 3129 |                                        | X   |       |         |     |
+| 3130 |                                        | X   |       |         |     |
+| 3133 |                                        | X   |       |         |     |
+| 3131 |                                        | X   |       |         |     |
+| 3135 |                                        |     | X     |         |     |
+| 3145 |                                        |     | X     |         |     |
+| 3164 |                                        | X   |       |         |     |
+| 3166 |                                        | X   |       |         |     |
+| 3167 |                                        | X   |       |         |     |
+| 3169 |                                        | X   |       |         |     |
+| 3172 |                                        | X   |       |         |     |
+| 3175 |                                        | X   |       |         |     |
+| 3176 |                                        | X   |       |         |     |
+| 3177 |                                        | X   |       |         |     |
+| 3178 |                                        | X   |       |         |     |
+| 3179 |                                        | X   |       |         |     |
+| 3183 |                                        |     | X     |         |     |
+| 3185 | Reached 100% memory at 11:xx. Session  |     |       |         |     |
+|      | losts 14:00-22:05.                     |     |       |         |     |
+| 3192 |                                        |     |       |         | X   |
+| 3193 |                                        |     |       |         | X   |
+| 3195 |                                        |     | X     |         |     |
+| 3204 |                                        |     | X     |         |     |
+| 3212 |                                        | X   |       |         |     |
+| 3213 |                                        | X   |       |         |     |
+| 3214 |                                        | X   | X     |         |     |
+| 3219 |                                        | X   |       |         |     |
+| 3221 |                                        | X   |       |         |     |
+| 3223 |                                        | X   |       |         |     |
+| 3224 |                                        | X   |       |         |     |
+| 3225 |                                        | X   |       |         |     |
+| 3226 | Reached 100% memory at 23:xx. No data  | X   |       |         |     |
+|      | ~23:20-23:59                           |     |       |         |     |
+| 3227 | No data 00:00-23:59                    | X   |       |         |     |
+| 3228 | No data 00:00-12:00                    |     |       |         |     |
+| 3237 | Reached 100% memory at 17. No data     |     |       |         |     |
+|      | 18:00-23:59                            |     |       |         |     |
+| 3238 | No data 00:00-12:00                    |     | X     |         |     |
+| 3249 |                                        |     | X     |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 3254 | Solar Conjunction                      |     |       |         |     |
+| 3255 | Solar Conjunction                      |     |       |         |     |
+| 3256 | Solar Conjunction                      |     | X     |         |     |
+| 3257 | Solar Conjunction                      |     |       |         |     |
+| 3258 | Solar Conjunction                      |     |       |         |     |
+| 3259 | Solar Conjunction                      |     |       |         |     |
+| 3260 | Solar Conjunction                      | X   |       |         |     |
+| 3261 | Solar Conjunction                      | X   |       |         |     |
+| 3262 | Solar Conjunction                      | X   |       |         |     |
+| 3263 | Solar Conjunction                      |     |       |         |     |
+| 3264 | Solar Conjunction                      |     |       |         |     |
+| 3265 | Solar Conjunction                      | X   |       |         |     |
+| 3266 | Solar Conjunction                      | X   |       |         |     |
+| 3267 | Solar Conjunction                      | X   | X     |         |     |
+| 3268 | Solar Conjunction                      | X   |       |         |     |
+| 3269 | Solar Conjunction                      |     |       |         |     |
+| 3270 | Solar Conjunction                      |     |       |         |     |
+| 3271 | Solar Conjunction                      |     |       |         |     |
+| 3272 |                                        | X   |       |         |     |
+| 3273 |                                        | X   |       |         |     |
+| 3287 | Reached 100% memory at 07:xx. No data  |     |       |         |     |
+|      | 07:00-10:00                            |     |       |         |     |
+| 3289 |                                        |     |       |         | X   |
+| 3290 |                                        |     |       |         | X   |
+| 3294 | Reached 100% memory at 2395M02:xx. No  |     |       |         |     |
+|      | data 10:00-11:05, 02:00-04:05          |     |       |         |     |
+| 3303 |                                        | X   |       |         |     |
+| 3304 |                                        | X   |       |         |     |
+| 3305 |                                        | X   |       |         |     |
+| 3306 | Reached 100% memory at 22:xx. No data  |     |       |         |     |
+|      | 3306M18:00 - 3307M09:05                |     |       |         |     |
+| 3307 |                                        | X   |       |         |     |
+| 3308 |                                        | X   |       |         |     |
+| 3309 |                                        | X   |       |         |     |
+| 3310 |                                        | X   |       |         |     |
+| 3311 |                                        | X   |       |         |     |
+| 3313 |                                        | X   |       |         |     |
+| 3314 |                                        | X   |       |         |     |
+| 3353 |                                        | X   |       |         |     |
+| 3356 |                                        | X   |       |         |     |
+| 3357 |                                        | X   |       |         |     |
+| 3361 |                                        | X   |       |         |     |
+| 3362 |                                        | X   |       |         |     |
+| 3363 |                                        | X   |       |         |     |
+| 3364 |                                        | X   |       |         |     |
+| 3365 |                                        | X   |       |         |     |
+| 3367 |                                        |     | X     |         |     |
+| 3368 |                                        | X   |       |         |     |
+| 3369 |                                        | X   |       |         |     |
+| 3399 |                                        | X   |       |         |     |
+| 3404 |                                        | X   |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 3405 |                                        | X   |       |         |     |
+| 3409 | Reached 100% memory at 01:43. No data  | X   |       |         |     |
+|      | 1:43-10:05                             |     |       |         |     |
+| 3413 |                                        | X   |       |         |     |
+| 3418 |                                        | X   |       |         |     |
+| 3419 |                                        | X   |       |         |     |
+| 3422 |                                        | X   |       |         |     |
+| 3424 |                                        | X   |       |         |     |
+| 3428 |                                        | X   |       |         |     |
+| 3429 |                                        | X   |       |         |     |
+| 3430 | Missing data between 10:00-10:20 due   |     |       |         |     |
+|      | to memory full                         |     |       |         |     |
+| 3431 | Reached 100% memory at 09:02. Missing  |     |       |         |     |
+|      | data between 09:02-00:00               |     |       |         |     |
+| 3432 | Missing data between 00:00-16:00       |     |       |         | X   |
+| 3433 |                                        |     |       |         | X   |
+| 3441 | No data between 06:00-18:00            |     |       |         |     |
+| 3446 | Missing session 10:00. Reached 100%    |     |       |         |     |
+|      | memory at 23:01                        |     |       |         |     |
+| 3447 | Missing data from 00:00-11:00          |     |       |         |     |
+| 3458 | No data between 16:00-21:00 due        |     |       |         |     |
+|      | to data transfer glitch                |     |       |         |     |
+| 3459 |                                        | X   |       |         |     |
+| 3461 |                                        | X   |       |         |     |
+| 3460 |                                        | X   |       |         |     |
+| 3465 |                                        | X   |       |         |     |
+| 3466 |                                        | X   |       |         |     |
+| 3467 |                                        | X   |       |         |     |
+| 3470 |                                        | X   |       |         |     |
+| 3471 |                                        | X   |       |         |     |
+| 3472 | Missing data between 18:09-00:00 due   |     |       |         |     |
+|      | to data transfer glitch                |     |       |         |     |
+| 3473 | Missing data between 00:00-04:00       |     |       |         |     |
+| 3475 |                                        | X   |       |         |     |
+| 3476 |                                        | X   |       |         |     |
+| 3492 | Missing data between 10:20-13:00 due   |     |       |         |     |
+|      | to data transfer glitch                |     |       |         |     |
+| 3496 | No activity between 03:00-00:00        |     |       |         |     |
+| 3497 | No activity                            |     |       |         |     |
+| 3498 | No activity                            |     |       |         |     |
+| 3499 | No activity                            |     |       |         |     |
+| 3500 | No activity                            |     |       |         |     |
+| 3501 | No activity                            |     |       |         |     |
+| 3502 | No activity                            |     |       |         |     |
+| 3503 | No activity between 00:00-12:00        |     |       |         |     |
+| 3512 |                                        | X   |       |         |     |
+| 3513 |                                        | X   |       |         |     |
+| 3521 | No data between 17:00-00:00 due to     |     |       |         |     |
+|      | transfer glitch                        |     |       |         |     |
+| 3522 | No data between 00:00-04:00            |     |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 3525 |                                        | X   |       |         |     |
+| 3526 |                                        | X   |       |         |     |
+| 3527 |                                        | X   |       |         |     |
+| 3529 |                                        | X   |       |         |     |
+| 3535 |                                        | X   |       |         |     |
+| 3536 |                                        | X   |       |         |     |
+| 3537 |                                        | X   |       |         |     |
+| 3538 | Missing data between 04:00-05:04 due   |     |       |         |     |
+|      | to memory full.                        |     |       |         |     |
+| 3539 | Reached 100% memory at 18:47. Missing  |     |       |         |     |
+|      | data between 18:47-00:00               |     |       |         |     |
+| 3540 | Missing data between 00:00-17:00       |     |       |         |     |
+| 3546 |                                        |     | X     |         |     |
+| 3571 |                                        | X   |       |         |     |
+| 3572 |                                        | X   |       |         |     |
+| 3573 | Reached 100% memory at 07:47. Missing  |     |       |         |     |
+|      | data between 07:47-11:00               |     |       |         |     |
+| 3574 |                                        | X   |       |         | X   |
+| 3578 |                                        | X   |       |         |     |
+| 3579 |                                        | X   |       |         |     |
+| 3580 |                                        | X   |       |         |     |
+| 3581 |                                        | X   |       |         |     |
+| 3583 | No activity 19:20-23:59                |     |       |         |     |
+| 3584 | No activity                            |     |       |         |     |
+| 3585 | No activity                            |     |       |         |     |
+| 3586 | No activity                            |     |       |         |     |
+| 3587 | No activity                            |     |       |         |     |
+| 3588 | No activity                            |     |       |         |     |
+| 3589 | No activity 00:00-11:22                |     |       |         |     |
+| 3641 |                                        |     |       |         | X   |
+| 3642 |                                        |     |       |         | X   |
+| 3680 |                                        | X   |       |         |     |
+| 3681 |                                        | X   |       |         |     |
+| 3682 |                                        | X   |       |         |     |
+| 3685 |                                        | X   |       |         |     |
+| 3686 |                                        | X   |       |         |     |
+| 3688 |                                        | X   |       |         |     |
+| 3689 |                                        | X   |       |         |     |
+| 3691 |                                        | X   |       |         |     |
+| 3692 |                                        | X   |       |         |     |
+| 3694 |                                        | X   |       |         |     |
+| 3726 |                                        |     | X     |         |     |
+| 3756 | No data between 22:20-00:00 due to     |     |       |         |     |
+|      | transfer glitch                        |     |       |         |     |
+| 3757 | No data between 00:00-11:00            |     |       |         |     |
+| 3778 |                                        |     |       |         | X   |
+| 3779 |                                        |     |       |         | X   |
+| 3788 | No data starting 17:32:22              |     |       |         |     |
+| 3789 | No data                                |     |       |         |     |
+| 3790 | No data                                |     |       |         |     |
+| 3791 | No data                                |     |       |         |     |
+| 3792 | No data                                |     |       |         |     |
+| 3793 | No data up to 12:24                    |     |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 3799 |                                        | X   |       |         |     |
+| 3801 |                                        | X   |       |         |     |
+| 3802 |                                        | X   |       |         |     |
+| 3805 |                                        | X   |       |         |     |
+| 3809 |                                        | X   |       |         |     |
+| 3811 |                                        | X   |       |         |     |
+| 3812 |                                        | X   |       |         |     |
+| 3813 |                                        | X   |       |         |     |
+| 3815 |                                        | X   |       |         |     |
+| 3818 |                                        | X   |       |         |     |
+| 3882 | No data 10:00-10:20                    |     |       |         |     |
+| 3884 | Missing data between 07:00-23:59       |     |       |         |     |
+| 3885 | Missing data between 00:00-13:00       |     |       |         |     |
+| 3890 | Missing data between 10:00-13:00       |     |       |         |     |
+| 3902 |                                        |     |       |         | X   |
+| 3903 |                                        |     |       |         | X   |
+| 3910 |                                        |     | X     |         |     |
+| 3919 |                                        | X   |       |         |     |
+| 3920 |                                        | X   |       |         |     |
+| 3921 |                                        | X   |       |         |     |
+| 3922 |                                        | X   |       |         |     |
+| 3923 |                                        | X   |       |         |     |
+| 3925 |                                        | X   |       |         |     |
+| 3926 |                                        | X   |       |         |     |
+| 3927 |                                        | X   |       |         |     |
+| 3929 |                                        | X   |       |         |     |
+| 3932 | Missing data between 20:00-23:59       | X   |       |         |     |
+| 3933 | Missing data between 00:00-23:59       |     |       |         |     |
+| 3934 | Missing data between 00:00-16:00       |     |       |         |     |
+| 3996 |                                        |     |       |         | X   |
+| 3997 |                                        |     |       |         | X   |
+| 4004 | Solar Conjunction                      |     |       |         |     |
+| 4005 | Solar Conjunction                      |     |       |         |     |
+| 4006 | Solar Conjunction                      |     |       |         |     |
+| 4007 | Solar Conjunction                      |     |       |         |     |
+| 4008 | Solar Conjunction                      |     |       |         |     |
+| 4009 | Solar Conjunction                      |     |       |         |     |
+| 4010 | Solar Conjunction                      |     |       |         |     |
+| 4011 | Solar Conjunction                      |     |       |         |     |
+| 4012 | Solar Conjunction                      |     |       |         |     |
+| 4013 | Solar Conjunction                      |     |       |         |     |
+| 4014 | Solar Conjunction                      |     |       |         |     |
+| 4015 | Solar Conjunction                      |     |       |         |     |
+| 4016 | Solar Conjunction                      |     |       |         |     |
+| 4017 | Solar Conjunction                      |     |       |         |     |
+| 4018 | Solar Conjunction                      |     |       |         |     |
+| 4019 | Solar Conjunction                      |     |       |         |     |
+| 4020 | Solar Conjunction                      |     |       |         |     |
+| 4021 | Solar Conjunction                      |     |       |         |     |
+| 4022 | Solar Conjunction                      |     |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 4025 | Missing data at 10:00                  |     |       |         |     |
+| 4027 | Missing data between 04:00-10:05 due   |     |       |         |     |
+|      | to memory full                         |     |       |         |     |
+| 4034 |                                        | X   |       |         |     |
+| 4035 |                                        | X   |       |         |     |
+| 4036 |                                        | X   |       |         |     |
+| 4039 |                                        | X   |       |         |     |
+| 4040 |                                        | X   |       |         |     |
+| 4041 |                                        | X   |       |         |     |
+| 4042 |                                        | X   |       |         |     |
+| 4043 |                                        | X   |       |         |     |
+| 4045 |                                        | X   |       |         |     |
+| 4091 | Missing some data between 04:00-06:05  |     |       |         |     |
+| 4093 | Missing data between 00:00-11:05 due   |     | X     |         |     |
+|      | to memory full                         |     |       |         |     |
+| 4114 | Missing some data between 01:00-03:05  |     |       |         |     |
+|      | and 16:00-16:05 due to data transfer   |     |       |         |     |
+|      | glitch                                 |     |       |         |     |
+| 4133 |                                        |     |       |         | X   |
+| 4134 |                                        |     |       |         | X   |
+| 4167 |                                        | X   |       |         |     |
+| 4168 |                                        | X   |       |         |     |
+| 4169 |                                        | X   |       |         |     |
+| 4173 |                                        | X   |       |         |     |
+| 4174 |                                        | X   |       |         |     |
+| 4175 |                                        | X   |       |         |     |
+| 4176 |                                        | X   |       |         |     |
+| 4177 |                                        | X   |       |         |     |
+| 4179 |                                        | X   |       |         |     |
+| 4180 |                                        | X   |       |         |     |
+| 4257 |                                        |     |       |         | X   |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 4258 |                                        |     |       |         | X   |
+| 4275 |                                        |     | X     |         |     |
+| 4299 |                                        | X   |       |         |     |
+| 4300 |                                        | X   |       |         |     |
+| 4301 |                                        | X   |       |         |     |
+| 4302 |                                        | X   |       |         |     |
+| 4303 |                                        | X   |       |         |     |
+| 4305 |                                        | X   |       |         |     |
+| 4306 |                                        | X   |       |         |     |
+| 4307 |                                        | X   |       |         |     |
+| 4308 |                                        | X   |       |         |     |
+| 4309 |                                        | X   |       |         |     |
+| 4354 |                                        |     |       |         | X   |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 4355 |                                        |     |       |         | X   |
+| 4356 | Missing some data between 22:00-23:59  |     |       |         |     |
+|      | due to data transfer glitch            |     |       |         |     |
+| 4357 | Missing some data between 12:00-16:05  |     |       |         |     |
+|      | due to data transfer glitch            |     |       |         |     |
+| 4364 | Missing some data between 07:00-08:05  |     |       |         |     |
+|      | due to memory full in runout execution |     |       |         |     |
+| 4366 | Missing some data between 03:00-11:05  |     |       |         |     |
+|      | due to memory full in runout execution |     |       |         |     |
+| 4416 | Missing data between 10:00-00:00 due   |     |       |         |     |
+|      | to memory full in runout execution     |     |       |         |     |
+| 4417 | Missing some data between 00:00-05:05  |     |       |         |     |
+|      | due to memory full in runout execution |     |       |         |     |
+| 4419 | Missing some data between 04:00-23:59  |     |       |         |     |
+|      | due to memory full in runout execution |     |       |         |     |
+| 4420 | Missing some data between 00:00-23:59  |     |       |         |     |
+|      | due to memory full in runout execution |     |       |         |     |
+| 4421 | Missing some data between 00:00-23:59  |     |       |         |     |
+|      | due to memory full in runout execution |     |       |         |     |
+| 4422 | Missing some data between 00:00-23:59  |     |       |         |     |
+|      | due to memory full in runout execution |     |       |         |     |
+| 4423 | Missing some data between 00:00-23:59  |     |       |         |     |
+|      | due to memory full in runout execution |     |       |         |     |
+| 4424 | Missing some data between 00:00-23:59  |     |       |         |     |
+|      | due to memory full in runout execution |     |       |         |     |
+| 4425 | Missing some data between 00:00-11:05  |     |       |         |     |
+|      | due to memory full in runout execution |     |       |         |     |
+| 4437 |                                        | X   |       |         |     |
+| 4438 |                                        | X   |       |         |     |
+| 4439 |                                        | X   |       |         |     |
+| 4440 |                                        | X   |       |         |     |
+| 4441 |                                        | X   |       |         |     |
+| 4443 |                                        | X   |       |         |     |
+| 4444 |                                        | X   |       |         |     |
+| 4445 |                                        | X   |       |         |     |
+| 4446 |                                        | X   |       |         |     |
+| 4447 |                                        | X   |       |         |     |
+| 4455 |                                        |     | X     |         |     |
+| 4488 |                                        |     |       |         | X   |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 4489 |                                        |     |       |         | X   |
+| 4520 | Missing some data between 10:00-12:05  |     |       |         |     |
+|      | due to memory full in runout execution |     |       |         |     |
+| 4522 | Missing some data between 06:00-13:05  |     |       |         |     |
+|      | due to memory full in runout execution |     |       |         |     |
+| 4570 |                                        | X   |       |         |     |
+| 4571 |                                        | X   |       |         |     |
+| 4572 |                                        | X   |       |         |     |
+| 4573 |                                        | X   |       |         |     |
+| 4576 |                                        | X   |       |         |     |
+| 4577 |                                        | X   |       |         |     |
+| 4579 |                                        | X   |       |         |     |
+| 4581 |                                        | X   |       |         |     |
+| 4582 |                                        | X   |       |         |     |
+| 4583 |                                        | X   |       |         |     |
+| 4602 | Missing some data between 16:00-20:05  |     |       |         |     |
+|      | due to data transfer glitch            |     |       |         |     |
+| 4603 | Missing some data between 04:00-06:05  |     |       |         |     |
+|      | due to data transfer glitch            |     |       |         |     |
+|------+----------------------------------------+-----+-------+---------+-----|
+|  Sol | Event                                  | GTS | HS    | HS      | PS  |
+|      |                                        | Cal | Regen | Defrost | Cal |
+|------+----------------------------------------+-----+-------+---------+-----|
+| 4614 |                                        |     |       |         | X   |
+| 4615 |                                        |     |       |         | X   |
+| 4637 |                                        |     | X     |         |     |
+| 4645 | Missing some data between 15:00-15:05  |     |       |         |     |
+|      | due to data transfer glitch            |     |       |         |     |
+| 4646 | Missing some data between 04:00-09:05  |     |       |         |     |
+|      | due to data transfer glitch            |     |       |         |     |
+| 4690 |                                        | X   |       |         |     |
+| 4691 |                                        | X   |       |         |     |
+| 4692 |                                        | X   |       |         |     |
+| 4693 |                                        | X   |       |         |     |
+| 4695 |                                        | X   |       |         |     |
+| 4696 | Missing some data between 16:00-23:59  |     |       |         |     |
+| 4697 | Missing some data between 00:00-03:05  | X   |       |         |     |
+| 4701 |                                        | X   |       |         |     |
+| 4702 |                                        | X   |       |         |     |
+| 4703 |                                        | X   |       |         |     |
+| 4704 |                                        | X   |       |         |     |
+| 4705 |                                        | X   |       |         |     |
+| 4709 |                                        |     |       |         | X   |
+|------+----------------------------------------+-----+-------+---------+-----|

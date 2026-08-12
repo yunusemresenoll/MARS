@@ -1,0 +1,30 @@
+{
+  "dataset_id": "mars.mro.crism.mica-type-spectra",
+  "source_id": "nasa-pds-crism-mica-2015",
+  "target": "Mars",
+  "processing_state": "ARCHIVED_DERIVED",
+  "products": [
+    {
+      "product_id": "mrocr_8001_type_spectra",
+      "property_id": "spectroscopy.crism_ratioed_if_corrected",
+      "data_path": "resources/archive/nasa-pds-crism-mica/mrocr_8001.zip",
+      "label_path": "resources/archive/nasa-pds-crism-mica/mrocr_8001.zip",
+      "data_member_pattern": "mrocr_8001/data/*.tab",
+      "label_member_pattern": "mrocr_8001/data/*.lbl",
+      "record_count_method": "ZIP_TEXT_LINES",
+      "records": 14880,
+      "canonical_source_unit": "1",
+      "structure": {
+        "spectra": 31,
+        "samples_per_spectrum": 480,
+        "columns_per_sample": 7,
+        "wavelength_unit": "um",
+        "wavelength_min": 0.43613,
+        "wavelength_max": 3.89676,
+        "coordinate_system": "IAU2000 planetocentric, east-positive longitude"
+      },
+      "observation_period": "More than seven years of CRISM surface measurements represented by the library",
+      "notes": "31 TAB üyesinin satır toplamı ZIP içinden doğrulanır. MICA 545 kanaldan bilinen sorunları olmayan 480 kanallık alt kümeyi kullanır."
+    }
+  ]
+}
